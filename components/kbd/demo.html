@@ -1,0 +1,282 @@
+<!-- Kbd (Keyboard) Component Demo -->
+
+<section class="demo-section">
+  <h3>Basic Keys</h3>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center;">
+    <kbd class="kbd">A</kbd>
+    <kbd class="kbd">B</kbd>
+    <kbd class="kbd">C</kbd>
+    <kbd class="kbd">1</kbd>
+    <kbd class="kbd">2</kbd>
+    <kbd class="kbd">3</kbd>
+    <kbd class="kbd">Ctrl</kbd>
+    <kbd class="kbd">Alt</kbd>
+    <kbd class="kbd">Shift</kbd>
+    <kbd class="kbd">Enter</kbd>
+    <kbd class="kbd">Esc</kbd>
+    <kbd class="kbd">Tab</kbd>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Sizes</h3>
+  <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center;">
+    <div>
+      <kbd class="kbd kbd--xs">XS</kbd>
+      <span style="font-size: var(--font-size-xs); color: var(--text-tertiary); margin-left: 4px;">Extra Small</span>
+    </div>
+    <div>
+      <kbd class="kbd kbd--sm">SM</kbd>
+      <span style="font-size: var(--font-size-xs); color: var(--text-tertiary); margin-left: 4px;">Small</span>
+    </div>
+    <div>
+      <kbd class="kbd">Default</kbd>
+    </div>
+    <div>
+      <kbd class="kbd kbd--lg">LG</kbd>
+      <span style="font-size: var(--font-size-xs); color: var(--text-tertiary); margin-left: 4px;">Large</span>
+    </div>
+    <div>
+      <kbd class="kbd kbd--xl">XL</kbd>
+      <span style="font-size: var(--font-size-xs); color: var(--text-tertiary); margin-left: 4px;">Extra Large</span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Variants</h3>
+  <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center;">
+    <div>
+      <kbd class="kbd">Default</kbd>
+    </div>
+    <div>
+      <kbd class="kbd kbd--light">Light</kbd>
+    </div>
+    <div>
+      <kbd class="kbd kbd--dark">Dark</kbd>
+    </div>
+    <div>
+      <kbd class="kbd kbd--outline">Outline</kbd>
+    </div>
+    <div>
+      <kbd class="kbd kbd--primary">Primary</kbd>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Key Combinations</h3>
+  <div style="display: flex; flex-direction: column; gap: 16px;">
+    <div class="kbd-combo">
+      <kbd class="kbd">Ctrl</kbd>
+      <span class="kbd-combo__separator">+</span>
+      <kbd class="kbd">C</kbd>
+      <span style="margin-left: 12px; color: var(--text-secondary); font-size: var(--font-size-sm);">Copy</span>
+    </div>
+    <div class="kbd-combo">
+      <kbd class="kbd">Ctrl</kbd>
+      <span class="kbd-combo__separator">+</span>
+      <kbd class="kbd">V</kbd>
+      <span style="margin-left: 12px; color: var(--text-secondary); font-size: var(--font-size-sm);">Paste</span>
+    </div>
+    <div class="kbd-combo">
+      <kbd class="kbd">Ctrl</kbd>
+      <span class="kbd-combo__separator">+</span>
+      <kbd class="kbd">Shift</kbd>
+      <span class="kbd-combo__separator">+</span>
+      <kbd class="kbd">P</kbd>
+      <span style="margin-left: 12px; color: var(--text-secondary); font-size: var(--font-size-sm);">Command Palette</span>
+    </div>
+    <div class="kbd-combo">
+      <kbd class="kbd">Alt</kbd>
+      <span class="kbd-combo__separator">+</span>
+      <kbd class="kbd">Tab</kbd>
+      <span style="margin-left: 12px; color: var(--text-secondary); font-size: var(--font-size-sm);">Switch Window</span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Mac-Style Keys</h3>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center;">
+    <kbd class="kbd kbd--mac kbd--symbol">&#8984;</kbd>
+    <kbd class="kbd kbd--mac kbd--symbol">&#8997;</kbd>
+    <kbd class="kbd kbd--mac kbd--symbol">&#8963;</kbd>
+    <kbd class="kbd kbd--mac kbd--symbol">&#8679;</kbd>
+    <kbd class="kbd kbd--mac">fn</kbd>
+    <kbd class="kbd kbd--mac">delete</kbd>
+    <kbd class="kbd kbd--mac">return</kbd>
+  </div>
+  <div style="margin-top: 16px;">
+    <div class="kbd-combo">
+      <kbd class="kbd kbd--mac kbd--symbol">&#8984;</kbd>
+      <span class="kbd-combo__separator">+</span>
+      <kbd class="kbd kbd--mac">C</kbd>
+      <span style="margin-left: 12px; color: var(--text-secondary); font-size: var(--font-size-sm);">Copy (Mac)</span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Special Keys</h3>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center;">
+    <kbd class="kbd kbd--wide">Space</kbd>
+    <kbd class="kbd">&#8593;</kbd>
+    <kbd class="kbd">&#8595;</kbd>
+    <kbd class="kbd">&#8592;</kbd>
+    <kbd class="kbd">&#8594;</kbd>
+    <kbd class="kbd">PgUp</kbd>
+    <kbd class="kbd">PgDn</kbd>
+    <kbd class="kbd">Home</kbd>
+    <kbd class="kbd">End</kbd>
+    <kbd class="kbd">Ins</kbd>
+    <kbd class="kbd">Del</kbd>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Function Keys</h3>
+  <div class="kbd-row" style="flex-wrap: wrap;">
+    <kbd class="kbd">F1</kbd>
+    <kbd class="kbd">F2</kbd>
+    <kbd class="kbd">F3</kbd>
+    <kbd class="kbd">F4</kbd>
+    <kbd class="kbd">F5</kbd>
+    <kbd class="kbd">F6</kbd>
+    <kbd class="kbd">F7</kbd>
+    <kbd class="kbd">F8</kbd>
+    <kbd class="kbd">F9</kbd>
+    <kbd class="kbd">F10</kbd>
+    <kbd class="kbd">F11</kbd>
+    <kbd class="kbd">F12</kbd>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Interactive Keys</h3>
+  <p style="margin-bottom: 12px; color: var(--text-secondary); font-size: var(--font-size-sm);">Click the keys to see the pressed state</p>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center;">
+    <kbd class="kbd kbd--interactive kbd--lg">A</kbd>
+    <kbd class="kbd kbd--interactive kbd--lg">S</kbd>
+    <kbd class="kbd kbd--interactive kbd--lg">D</kbd>
+    <kbd class="kbd kbd--interactive kbd--lg">F</kbd>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Gaming Style</h3>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center;">
+    <kbd class="kbd kbd--glossy kbd--lg">W</kbd>
+    <kbd class="kbd kbd--glossy kbd--lg">A</kbd>
+    <kbd class="kbd kbd--glossy kbd--lg">S</kbd>
+    <kbd class="kbd kbd--glossy kbd--lg">D</kbd>
+    <kbd class="kbd kbd--glossy kbd--lg kbd--extra-wide">Space</kbd>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Inline Shortcut Hints</h3>
+  <div style="display: flex; flex-direction: column; gap: 12px;">
+    <div class="kbd-hint">
+      <span class="kbd-hint__label">Save:</span>
+      <kbd class="kbd kbd--sm">Ctrl</kbd>
+      <kbd class="kbd kbd--sm">S</kbd>
+    </div>
+    <div class="kbd-hint">
+      <span class="kbd-hint__label">Undo:</span>
+      <kbd class="kbd kbd--sm">Ctrl</kbd>
+      <kbd class="kbd kbd--sm">Z</kbd>
+    </div>
+    <div class="kbd-hint">
+      <span class="kbd-hint__label">Search:</span>
+      <kbd class="kbd kbd--sm">Ctrl</kbd>
+      <kbd class="kbd kbd--sm">K</kbd>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Mini Keyboard</h3>
+  <div class="keyboard">
+    <div class="keyboard__row">
+      <kbd class="kbd">Q</kbd>
+      <kbd class="kbd">W</kbd>
+      <kbd class="kbd">E</kbd>
+      <kbd class="kbd">R</kbd>
+      <kbd class="kbd">T</kbd>
+      <kbd class="kbd">Y</kbd>
+      <kbd class="kbd">U</kbd>
+      <kbd class="kbd">I</kbd>
+      <kbd class="kbd">O</kbd>
+      <kbd class="kbd">P</kbd>
+    </div>
+    <div class="keyboard__row" style="margin-left: 20px;">
+      <kbd class="kbd">A</kbd>
+      <kbd class="kbd">S</kbd>
+      <kbd class="kbd">D</kbd>
+      <kbd class="kbd">F</kbd>
+      <kbd class="kbd">G</kbd>
+      <kbd class="kbd">H</kbd>
+      <kbd class="kbd">J</kbd>
+      <kbd class="kbd">K</kbd>
+      <kbd class="kbd">L</kbd>
+    </div>
+    <div class="keyboard__row" style="margin-left: 40px;">
+      <kbd class="kbd">Z</kbd>
+      <kbd class="kbd">X</kbd>
+      <kbd class="kbd">C</kbd>
+      <kbd class="kbd">V</kbd>
+      <kbd class="kbd">B</kbd>
+      <kbd class="kbd">N</kbd>
+      <kbd class="kbd">M</kbd>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Common Shortcuts Reference</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: var(--bg-secondary); border-radius: var(--radius-md);">
+      <span style="font-size: var(--font-size-sm);">New File</span>
+      <div class="kbd-row">
+        <kbd class="kbd kbd--sm">Ctrl</kbd>
+        <kbd class="kbd kbd--sm">N</kbd>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: var(--bg-secondary); border-radius: var(--radius-md);">
+      <span style="font-size: var(--font-size-sm);">Open File</span>
+      <div class="kbd-row">
+        <kbd class="kbd kbd--sm">Ctrl</kbd>
+        <kbd class="kbd kbd--sm">O</kbd>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: var(--bg-secondary); border-radius: var(--radius-md);">
+      <span style="font-size: var(--font-size-sm);">Save</span>
+      <div class="kbd-row">
+        <kbd class="kbd kbd--sm">Ctrl</kbd>
+        <kbd class="kbd kbd--sm">S</kbd>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: var(--bg-secondary); border-radius: var(--radius-md);">
+      <span style="font-size: var(--font-size-sm);">Find</span>
+      <div class="kbd-row">
+        <kbd class="kbd kbd--sm">Ctrl</kbd>
+        <kbd class="kbd kbd--sm">F</kbd>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: var(--bg-secondary); border-radius: var(--radius-md);">
+      <span style="font-size: var(--font-size-sm);">Replace</span>
+      <div class="kbd-row">
+        <kbd class="kbd kbd--sm">Ctrl</kbd>
+        <kbd class="kbd kbd--sm">H</kbd>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: var(--bg-secondary); border-radius: var(--radius-md);">
+      <span style="font-size: var(--font-size-sm);">Go to Line</span>
+      <div class="kbd-row">
+        <kbd class="kbd kbd--sm">Ctrl</kbd>
+        <kbd class="kbd kbd--sm">G</kbd>
+      </div>
+    </div>
+  </div>
+</section>

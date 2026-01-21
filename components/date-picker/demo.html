@@ -1,0 +1,457 @@
+<!-- Date Picker Component Demo -->
+
+<section class="demo-section">
+  <h3>Basic Date Picker</h3>
+  <div class="date-picker is-open" style="position: static;">
+    <div class="date-picker__input-wrapper">
+      <input type="text" class="date-picker__input" placeholder="Select a date" value="January 15, 2026">
+      <svg class="date-picker__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"/>
+      </svg>
+    </div>
+    <div class="date-picker__calendar" style="position: static; opacity: 1; visibility: visible; transform: none;">
+      <div class="date-picker__header">
+        <button class="date-picker__nav-btn">
+          <svg viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"/>
+          </svg>
+        </button>
+        <span class="date-picker__title">January 2026</span>
+        <button class="date-picker__nav-btn">
+          <svg viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>
+          </svg>
+        </button>
+      </div>
+      <div class="date-picker__weekdays">
+        <span class="date-picker__weekday">Su</span>
+        <span class="date-picker__weekday">Mo</span>
+        <span class="date-picker__weekday">Tu</span>
+        <span class="date-picker__weekday">We</span>
+        <span class="date-picker__weekday">Th</span>
+        <span class="date-picker__weekday">Fr</span>
+        <span class="date-picker__weekday">Sa</span>
+      </div>
+      <div class="date-picker__days">
+        <button class="date-picker__day date-picker__day--outside">28</button>
+        <button class="date-picker__day date-picker__day--outside">29</button>
+        <button class="date-picker__day date-picker__day--outside">30</button>
+        <button class="date-picker__day date-picker__day--outside">31</button>
+        <button class="date-picker__day">1</button>
+        <button class="date-picker__day">2</button>
+        <button class="date-picker__day">3</button>
+        <button class="date-picker__day">4</button>
+        <button class="date-picker__day">5</button>
+        <button class="date-picker__day">6</button>
+        <button class="date-picker__day">7</button>
+        <button class="date-picker__day">8</button>
+        <button class="date-picker__day">9</button>
+        <button class="date-picker__day">10</button>
+        <button class="date-picker__day">11</button>
+        <button class="date-picker__day">12</button>
+        <button class="date-picker__day">13</button>
+        <button class="date-picker__day date-picker__day--today">14</button>
+        <button class="date-picker__day date-picker__day--selected">15</button>
+        <button class="date-picker__day">16</button>
+        <button class="date-picker__day">17</button>
+        <button class="date-picker__day">18</button>
+        <button class="date-picker__day">19</button>
+        <button class="date-picker__day">20</button>
+        <button class="date-picker__day">21</button>
+        <button class="date-picker__day">22</button>
+        <button class="date-picker__day">23</button>
+        <button class="date-picker__day">24</button>
+        <button class="date-picker__day">25</button>
+        <button class="date-picker__day">26</button>
+        <button class="date-picker__day">27</button>
+        <button class="date-picker__day">28</button>
+        <button class="date-picker__day">29</button>
+        <button class="date-picker__day">30</button>
+        <button class="date-picker__day">31</button>
+        <button class="date-picker__day date-picker__day--outside">1</button>
+        <button class="date-picker__day date-picker__day--outside">2</button>
+        <button class="date-picker__day date-picker__day--outside">3</button>
+        <button class="date-picker__day date-picker__day--outside">4</button>
+        <button class="date-picker__day date-picker__day--outside">5</button>
+        <button class="date-picker__day date-picker__day--outside">6</button>
+        <button class="date-picker__day date-picker__day--outside">7</button>
+      </div>
+      <div class="date-picker__footer">
+        <button class="date-picker__today">Today</button>
+        <button class="date-picker__clear">Clear</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Date Range Selection</h3>
+  <div class="date-picker--inline" style="width: 280px;">
+    <div class="date-picker__calendar" style="position: static; opacity: 1; visibility: visible; transform: none;">
+      <div class="date-picker__header">
+        <button class="date-picker__nav-btn">
+          <svg viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"/>
+          </svg>
+        </button>
+        <span class="date-picker__title">January 2026</span>
+        <button class="date-picker__nav-btn">
+          <svg viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>
+          </svg>
+        </button>
+      </div>
+      <div class="date-picker__weekdays">
+        <span class="date-picker__weekday">Su</span>
+        <span class="date-picker__weekday">Mo</span>
+        <span class="date-picker__weekday">Tu</span>
+        <span class="date-picker__weekday">We</span>
+        <span class="date-picker__weekday">Th</span>
+        <span class="date-picker__weekday">Fr</span>
+        <span class="date-picker__weekday">Sa</span>
+      </div>
+      <div class="date-picker__days">
+        <button class="date-picker__day date-picker__day--outside">28</button>
+        <button class="date-picker__day date-picker__day--outside">29</button>
+        <button class="date-picker__day date-picker__day--outside">30</button>
+        <button class="date-picker__day date-picker__day--outside">31</button>
+        <button class="date-picker__day">1</button>
+        <button class="date-picker__day">2</button>
+        <button class="date-picker__day">3</button>
+        <button class="date-picker__day">4</button>
+        <button class="date-picker__day">5</button>
+        <button class="date-picker__day">6</button>
+        <button class="date-picker__day">7</button>
+        <button class="date-picker__day">8</button>
+        <button class="date-picker__day">9</button>
+        <button class="date-picker__day date-picker__day--range-start">10</button>
+        <button class="date-picker__day date-picker__day--in-range">11</button>
+        <button class="date-picker__day date-picker__day--in-range">12</button>
+        <button class="date-picker__day date-picker__day--in-range">13</button>
+        <button class="date-picker__day date-picker__day--in-range">14</button>
+        <button class="date-picker__day date-picker__day--in-range">15</button>
+        <button class="date-picker__day date-picker__day--range-end">16</button>
+        <button class="date-picker__day">17</button>
+        <button class="date-picker__day">18</button>
+        <button class="date-picker__day">19</button>
+        <button class="date-picker__day">20</button>
+        <button class="date-picker__day">21</button>
+        <button class="date-picker__day">22</button>
+        <button class="date-picker__day">23</button>
+        <button class="date-picker__day">24</button>
+        <button class="date-picker__day">25</button>
+        <button class="date-picker__day">26</button>
+        <button class="date-picker__day">27</button>
+        <button class="date-picker__day">28</button>
+        <button class="date-picker__day">29</button>
+        <button class="date-picker__day">30</button>
+        <button class="date-picker__day">31</button>
+        <button class="date-picker__day date-picker__day--outside">1</button>
+        <button class="date-picker__day date-picker__day--outside">2</button>
+        <button class="date-picker__day date-picker__day--outside">3</button>
+        <button class="date-picker__day date-picker__day--outside">4</button>
+        <button class="date-picker__day date-picker__day--outside">5</button>
+        <button class="date-picker__day date-picker__day--outside">6</button>
+        <button class="date-picker__day date-picker__day--outside">7</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Month/Year Selectors</h3>
+  <div class="date-picker--inline" style="width: 280px;">
+    <div class="date-picker__calendar" style="position: static; opacity: 1; visibility: visible; transform: none;">
+      <div class="date-picker__header">
+        <button class="date-picker__nav-btn">
+          <svg viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"/>
+          </svg>
+        </button>
+        <div class="date-picker__selects">
+          <select class="date-picker__select">
+            <option selected>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+          </select>
+          <select class="date-picker__select">
+            <option>2024</option>
+            <option>2025</option>
+            <option selected>2026</option>
+            <option>2027</option>
+            <option>2028</option>
+          </select>
+        </div>
+        <button class="date-picker__nav-btn">
+          <svg viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>
+          </svg>
+        </button>
+      </div>
+      <div class="date-picker__weekdays">
+        <span class="date-picker__weekday">Su</span>
+        <span class="date-picker__weekday">Mo</span>
+        <span class="date-picker__weekday">Tu</span>
+        <span class="date-picker__weekday">We</span>
+        <span class="date-picker__weekday">Th</span>
+        <span class="date-picker__weekday">Fr</span>
+        <span class="date-picker__weekday">Sa</span>
+      </div>
+      <div class="date-picker__days">
+        <button class="date-picker__day date-picker__day--outside">28</button>
+        <button class="date-picker__day date-picker__day--outside">29</button>
+        <button class="date-picker__day date-picker__day--outside">30</button>
+        <button class="date-picker__day date-picker__day--outside">31</button>
+        <button class="date-picker__day">1</button>
+        <button class="date-picker__day">2</button>
+        <button class="date-picker__day">3</button>
+        <button class="date-picker__day">4</button>
+        <button class="date-picker__day">5</button>
+        <button class="date-picker__day">6</button>
+        <button class="date-picker__day">7</button>
+        <button class="date-picker__day">8</button>
+        <button class="date-picker__day">9</button>
+        <button class="date-picker__day">10</button>
+        <button class="date-picker__day">11</button>
+        <button class="date-picker__day">12</button>
+        <button class="date-picker__day">13</button>
+        <button class="date-picker__day date-picker__day--today">14</button>
+        <button class="date-picker__day">15</button>
+        <button class="date-picker__day">16</button>
+        <button class="date-picker__day">17</button>
+        <button class="date-picker__day">18</button>
+        <button class="date-picker__day">19</button>
+        <button class="date-picker__day">20</button>
+        <button class="date-picker__day">21</button>
+        <button class="date-picker__day">22</button>
+        <button class="date-picker__day">23</button>
+        <button class="date-picker__day">24</button>
+        <button class="date-picker__day">25</button>
+        <button class="date-picker__day">26</button>
+        <button class="date-picker__day">27</button>
+        <button class="date-picker__day">28</button>
+        <button class="date-picker__day">29</button>
+        <button class="date-picker__day">30</button>
+        <button class="date-picker__day">31</button>
+        <button class="date-picker__day date-picker__day--outside">1</button>
+        <button class="date-picker__day date-picker__day--outside">2</button>
+        <button class="date-picker__day date-picker__day--outside">3</button>
+        <button class="date-picker__day date-picker__day--outside">4</button>
+        <button class="date-picker__day date-picker__day--outside">5</button>
+        <button class="date-picker__day date-picker__day--outside">6</button>
+        <button class="date-picker__day date-picker__day--outside">7</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Time Picker</h3>
+  <div class="date-picker--inline" style="width: 280px;">
+    <div class="date-picker__calendar" style="position: static; opacity: 1; visibility: visible; transform: none;">
+      <div class="date-picker__header">
+        <button class="date-picker__nav-btn">
+          <svg viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"/>
+          </svg>
+        </button>
+        <span class="date-picker__title">January 2026</span>
+        <button class="date-picker__nav-btn">
+          <svg viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>
+          </svg>
+        </button>
+      </div>
+      <div class="date-picker__weekdays">
+        <span class="date-picker__weekday">Su</span>
+        <span class="date-picker__weekday">Mo</span>
+        <span class="date-picker__weekday">Tu</span>
+        <span class="date-picker__weekday">We</span>
+        <span class="date-picker__weekday">Th</span>
+        <span class="date-picker__weekday">Fr</span>
+        <span class="date-picker__weekday">Sa</span>
+      </div>
+      <div class="date-picker__days">
+        <button class="date-picker__day date-picker__day--outside">28</button>
+        <button class="date-picker__day date-picker__day--outside">29</button>
+        <button class="date-picker__day date-picker__day--outside">30</button>
+        <button class="date-picker__day date-picker__day--outside">31</button>
+        <button class="date-picker__day">1</button>
+        <button class="date-picker__day">2</button>
+        <button class="date-picker__day">3</button>
+        <button class="date-picker__day">4</button>
+        <button class="date-picker__day">5</button>
+        <button class="date-picker__day">6</button>
+        <button class="date-picker__day">7</button>
+        <button class="date-picker__day">8</button>
+        <button class="date-picker__day">9</button>
+        <button class="date-picker__day">10</button>
+        <button class="date-picker__day">11</button>
+        <button class="date-picker__day">12</button>
+        <button class="date-picker__day">13</button>
+        <button class="date-picker__day date-picker__day--today date-picker__day--selected">14</button>
+        <button class="date-picker__day">15</button>
+        <button class="date-picker__day">16</button>
+        <button class="date-picker__day">17</button>
+        <button class="date-picker__day">18</button>
+        <button class="date-picker__day">19</button>
+        <button class="date-picker__day">20</button>
+        <button class="date-picker__day">21</button>
+        <button class="date-picker__day">22</button>
+        <button class="date-picker__day">23</button>
+        <button class="date-picker__day">24</button>
+        <button class="date-picker__day">25</button>
+        <button class="date-picker__day">26</button>
+        <button class="date-picker__day">27</button>
+        <button class="date-picker__day">28</button>
+        <button class="date-picker__day">29</button>
+        <button class="date-picker__day">30</button>
+        <button class="date-picker__day">31</button>
+        <button class="date-picker__day date-picker__day--outside">1</button>
+        <button class="date-picker__day date-picker__day--outside">2</button>
+        <button class="date-picker__day date-picker__day--outside">3</button>
+        <button class="date-picker__day date-picker__day--outside">4</button>
+        <button class="date-picker__day date-picker__day--outside">5</button>
+        <button class="date-picker__day date-picker__day--outside">6</button>
+        <button class="date-picker__day date-picker__day--outside">7</button>
+      </div>
+      <div class="date-picker__time">
+        <span class="date-picker__time-label">Time:</span>
+        <div class="date-picker__time-inputs">
+          <input type="text" class="date-picker__time-input" value="10">
+          <span class="date-picker__time-separator">:</span>
+          <input type="text" class="date-picker__time-input" value="30">
+          <select class="date-picker__select" style="width: auto;">
+            <option selected>AM</option>
+            <option>PM</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Sizes</h3>
+  <div style="display: flex; flex-direction: column; gap: 16px;">
+    <div>
+      <p style="font-size: var(--font-size-xs); color: var(--text-tertiary); margin-bottom: 8px;">Small</p>
+      <div class="date-picker date-picker--sm">
+        <div class="date-picker__input-wrapper">
+          <input type="text" class="date-picker__input" placeholder="Select date" value="Jan 14, 2026">
+          <svg class="date-picker__icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p style="font-size: var(--font-size-xs); color: var(--text-tertiary); margin-bottom: 8px;">Default</p>
+      <div class="date-picker">
+        <div class="date-picker__input-wrapper">
+          <input type="text" class="date-picker__input" placeholder="Select date" value="January 14, 2026">
+          <svg class="date-picker__icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p style="font-size: var(--font-size-xs); color: var(--text-tertiary); margin-bottom: 8px;">Large</p>
+      <div class="date-picker date-picker--lg">
+        <div class="date-picker__input-wrapper">
+          <input type="text" class="date-picker__input" placeholder="Select date" value="January 14, 2026">
+          <svg class="date-picker__icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Disabled Dates</h3>
+  <div class="date-picker--inline" style="width: 280px;">
+    <div class="date-picker__calendar" style="position: static; opacity: 1; visibility: visible; transform: none;">
+      <div class="date-picker__header">
+        <button class="date-picker__nav-btn">
+          <svg viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"/>
+          </svg>
+        </button>
+        <span class="date-picker__title">January 2026</span>
+        <button class="date-picker__nav-btn">
+          <svg viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>
+          </svg>
+        </button>
+      </div>
+      <div class="date-picker__weekdays">
+        <span class="date-picker__weekday">Su</span>
+        <span class="date-picker__weekday">Mo</span>
+        <span class="date-picker__weekday">Tu</span>
+        <span class="date-picker__weekday">We</span>
+        <span class="date-picker__weekday">Th</span>
+        <span class="date-picker__weekday">Fr</span>
+        <span class="date-picker__weekday">Sa</span>
+      </div>
+      <div class="date-picker__days">
+        <button class="date-picker__day date-picker__day--outside date-picker__day--disabled">28</button>
+        <button class="date-picker__day date-picker__day--outside date-picker__day--disabled">29</button>
+        <button class="date-picker__day date-picker__day--outside date-picker__day--disabled">30</button>
+        <button class="date-picker__day date-picker__day--outside date-picker__day--disabled">31</button>
+        <button class="date-picker__day date-picker__day--disabled">1</button>
+        <button class="date-picker__day date-picker__day--disabled">2</button>
+        <button class="date-picker__day date-picker__day--disabled">3</button>
+        <button class="date-picker__day date-picker__day--disabled">4</button>
+        <button class="date-picker__day date-picker__day--disabled">5</button>
+        <button class="date-picker__day date-picker__day--disabled">6</button>
+        <button class="date-picker__day date-picker__day--disabled">7</button>
+        <button class="date-picker__day date-picker__day--disabled">8</button>
+        <button class="date-picker__day date-picker__day--disabled">9</button>
+        <button class="date-picker__day date-picker__day--disabled">10</button>
+        <button class="date-picker__day date-picker__day--disabled">11</button>
+        <button class="date-picker__day date-picker__day--disabled">12</button>
+        <button class="date-picker__day date-picker__day--disabled">13</button>
+        <button class="date-picker__day date-picker__day--today">14</button>
+        <button class="date-picker__day">15</button>
+        <button class="date-picker__day">16</button>
+        <button class="date-picker__day">17</button>
+        <button class="date-picker__day">18</button>
+        <button class="date-picker__day">19</button>
+        <button class="date-picker__day">20</button>
+        <button class="date-picker__day">21</button>
+        <button class="date-picker__day">22</button>
+        <button class="date-picker__day">23</button>
+        <button class="date-picker__day">24</button>
+        <button class="date-picker__day">25</button>
+        <button class="date-picker__day">26</button>
+        <button class="date-picker__day">27</button>
+        <button class="date-picker__day">28</button>
+        <button class="date-picker__day">29</button>
+        <button class="date-picker__day">30</button>
+        <button class="date-picker__day">31</button>
+        <button class="date-picker__day date-picker__day--outside">1</button>
+        <button class="date-picker__day date-picker__day--outside">2</button>
+        <button class="date-picker__day date-picker__day--outside">3</button>
+        <button class="date-picker__day date-picker__day--outside">4</button>
+        <button class="date-picker__day date-picker__day--outside">5</button>
+        <button class="date-picker__day date-picker__day--outside">6</button>
+        <button class="date-picker__day date-picker__day--outside">7</button>
+      </div>
+      <div class="date-picker__footer">
+        <span style="font-size: var(--font-size-xs); color: var(--text-tertiary);">Past dates disabled</span>
+      </div>
+    </div>
+  </div>
+</section>

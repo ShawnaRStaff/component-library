@@ -1,0 +1,301 @@
+/**
+ * Grid System Component
+ *
+ * A flexible 12-column grid system with responsive breakpoints.
+ *
+ * Usage:
+ * <div class="grid">
+ *   <div class="grid__col grid__col--6">Half width</div>
+ *   <div class="grid__col grid__col--6">Half width</div>
+ * </div>
+ */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-4);
+  width: 100%;
+}
+
+/* Gap variants */
+.grid--gap-0 { gap: 0; }
+.grid--gap-1 { gap: var(--space-1); }
+.grid--gap-2 { gap: var(--space-2); }
+.grid--gap-3 { gap: var(--space-3); }
+.grid--gap-4 { gap: var(--space-4); }
+.grid--gap-6 { gap: var(--space-6); }
+.grid--gap-8 { gap: var(--space-8); }
+
+/* Alignment */
+.grid--align-start { align-items: start; }
+.grid--align-center { align-items: center; }
+.grid--align-end { align-items: end; }
+.grid--align-stretch { align-items: stretch; }
+
+.grid--justify-start { justify-items: start; }
+.grid--justify-center { justify-items: center; }
+.grid--justify-end { justify-items: end; }
+
+/* Grid columns - default (mobile first) */
+.grid__col {
+  grid-column: span 12;
+  min-width: 0; /* Prevent overflow */
+}
+
+.grid__col--1 { grid-column: span 1; }
+.grid__col--2 { grid-column: span 2; }
+.grid__col--3 { grid-column: span 3; }
+.grid__col--4 { grid-column: span 4; }
+.grid__col--5 { grid-column: span 5; }
+.grid__col--6 { grid-column: span 6; }
+.grid__col--7 { grid-column: span 7; }
+.grid__col--8 { grid-column: span 8; }
+.grid__col--9 { grid-column: span 9; }
+.grid__col--10 { grid-column: span 10; }
+.grid__col--11 { grid-column: span 11; }
+.grid__col--12 { grid-column: span 12; }
+
+/* Auto-fit columns */
+.grid__col--auto { grid-column: auto; }
+
+/* Column offset */
+.grid__col--start-1 { grid-column-start: 1; }
+.grid__col--start-2 { grid-column-start: 2; }
+.grid__col--start-3 { grid-column-start: 3; }
+.grid__col--start-4 { grid-column-start: 4; }
+.grid__col--start-5 { grid-column-start: 5; }
+.grid__col--start-6 { grid-column-start: 6; }
+.grid__col--start-7 { grid-column-start: 7; }
+.grid__col--start-8 { grid-column-start: 8; }
+.grid__col--start-9 { grid-column-start: 9; }
+.grid__col--start-10 { grid-column-start: 10; }
+.grid__col--start-11 { grid-column-start: 11; }
+.grid__col--start-12 { grid-column-start: 12; }
+
+/* Row spanning */
+.grid__col--row-2 { grid-row: span 2; }
+.grid__col--row-3 { grid-row: span 3; }
+.grid__col--row-4 { grid-row: span 4; }
+
+/* ===================
+   Small screens (sm: 640px+)
+   =================== */
+@media (min-width: 640px) {
+  .grid__col--sm-1 { grid-column: span 1; }
+  .grid__col--sm-2 { grid-column: span 2; }
+  .grid__col--sm-3 { grid-column: span 3; }
+  .grid__col--sm-4 { grid-column: span 4; }
+  .grid__col--sm-5 { grid-column: span 5; }
+  .grid__col--sm-6 { grid-column: span 6; }
+  .grid__col--sm-7 { grid-column: span 7; }
+  .grid__col--sm-8 { grid-column: span 8; }
+  .grid__col--sm-9 { grid-column: span 9; }
+  .grid__col--sm-10 { grid-column: span 10; }
+  .grid__col--sm-11 { grid-column: span 11; }
+  .grid__col--sm-12 { grid-column: span 12; }
+}
+
+/* ===================
+   Medium screens (md: 768px+)
+   =================== */
+@media (min-width: 768px) {
+  .grid__col--md-1 { grid-column: span 1; }
+  .grid__col--md-2 { grid-column: span 2; }
+  .grid__col--md-3 { grid-column: span 3; }
+  .grid__col--md-4 { grid-column: span 4; }
+  .grid__col--md-5 { grid-column: span 5; }
+  .grid__col--md-6 { grid-column: span 6; }
+  .grid__col--md-7 { grid-column: span 7; }
+  .grid__col--md-8 { grid-column: span 8; }
+  .grid__col--md-9 { grid-column: span 9; }
+  .grid__col--md-10 { grid-column: span 10; }
+  .grid__col--md-11 { grid-column: span 11; }
+  .grid__col--md-12 { grid-column: span 12; }
+}
+
+/* ===================
+   Large screens (lg: 1024px+)
+   =================== */
+@media (min-width: 1024px) {
+  .grid__col--lg-1 { grid-column: span 1; }
+  .grid__col--lg-2 { grid-column: span 2; }
+  .grid__col--lg-3 { grid-column: span 3; }
+  .grid__col--lg-4 { grid-column: span 4; }
+  .grid__col--lg-5 { grid-column: span 5; }
+  .grid__col--lg-6 { grid-column: span 6; }
+  .grid__col--lg-7 { grid-column: span 7; }
+  .grid__col--lg-8 { grid-column: span 8; }
+  .grid__col--lg-9 { grid-column: span 9; }
+  .grid__col--lg-10 { grid-column: span 10; }
+  .grid__col--lg-11 { grid-column: span 11; }
+  .grid__col--lg-12 { grid-column: span 12; }
+}
+
+/* ===================
+   Extra large screens (xl: 1280px+)
+   =================== */
+@media (min-width: 1280px) {
+  .grid__col--xl-1 { grid-column: span 1; }
+  .grid__col--xl-2 { grid-column: span 2; }
+  .grid__col--xl-3 { grid-column: span 3; }
+  .grid__col--xl-4 { grid-column: span 4; }
+  .grid__col--xl-5 { grid-column: span 5; }
+  .grid__col--xl-6 { grid-column: span 6; }
+  .grid__col--xl-7 { grid-column: span 7; }
+  .grid__col--xl-8 { grid-column: span 8; }
+  .grid__col--xl-9 { grid-column: span 9; }
+  .grid__col--xl-10 { grid-column: span 10; }
+  .grid__col--xl-11 { grid-column: span 11; }
+  .grid__col--xl-12 { grid-column: span 12; }
+}
+
+/* ===================
+   Auto-fit Grid Variants
+   =================== */
+
+/* Equal columns that auto-wrap */
+.grid--auto-fit {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid--auto-fit-sm {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.grid--auto-fit-lg {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+/* Fixed column counts */
+.grid--cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 768px) {
+  .grid--cols-2,
+  .grid--cols-3,
+  .grid--cols-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grid--cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===================
+   Named Grid Template Areas
+   =================== */
+
+/* Page layout with header, sidebar, main, footer */
+.grid--layout-page {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  min-height: 100%;
+}
+
+@media (min-width: 768px) {
+  .grid--layout-page {
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header header"
+      "sidebar main"
+      "footer footer";
+  }
+}
+
+/* Dashboard layout - header, sidebar, widgets, main */
+.grid--layout-dashboard {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "widgets"
+    "main"
+    "footer";
+}
+
+@media (min-width: 768px) {
+  .grid--layout-dashboard {
+    grid-template-columns: 1fr 1fr 1fr 280px;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+      "header  header  header  header"
+      "widget1 widget2 widget3 sidebar"
+      "main    main    main    sidebar"
+      "footer  footer  footer  footer";
+  }
+}
+
+/* Holy grail layout */
+.grid--layout-holy-grail {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+@media (min-width: 768px) {
+  .grid--layout-holy-grail {
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header header header"
+      "nav    main   aside"
+      "footer footer footer";
+  }
+}
+
+/* Magazine/blog layout */
+.grid--layout-magazine {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "featured"
+    "article1"
+    "article2"
+    "article3";
+  gap: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .grid--layout-magazine {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "featured featured article1"
+      "article2 article3 article1";
+  }
+}
+
+/* Grid area assignments */
+.grid__area--header { grid-area: header; }
+.grid__area--footer { grid-area: footer; }
+.grid__area--sidebar { grid-area: sidebar; }
+.grid__area--main { grid-area: main; }
+.grid__area--nav { grid-area: nav; }
+.grid__area--aside { grid-area: aside; }
+.grid__area--widgets { grid-area: widgets; }
+.grid__area--widget1 { grid-area: widget1; }
+.grid__area--widget2 { grid-area: widget2; }
+.grid__area--widget3 { grid-area: widget3; }
+.grid__area--featured { grid-area: featured; }
+.grid__area--article1 { grid-area: article1; }
+.grid__area--article2 { grid-area: article2; }
+.grid__area--article3 { grid-area: article3; }

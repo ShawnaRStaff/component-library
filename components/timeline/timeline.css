@@ -1,0 +1,414 @@
+/**
+ * Timeline Component
+ *
+ * Display chronological events or activities.
+ *
+ * Usage:
+ * <div class="timeline">
+ *   <div class="timeline__item">
+ *     <div class="timeline__marker"></div>
+ *     <div class="timeline__content">
+ *       <div class="timeline__title">Event Title</div>
+ *       <div class="timeline__time">2 hours ago</div>
+ *     </div>
+ *   </div>
+ * </div>
+ */
+
+.timeline {
+  position: relative;
+  padding-left: var(--space-8);
+}
+
+/* Vertical line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--border-default);
+}
+
+/* ===================
+   Timeline Item
+   =================== */
+
+.timeline__item {
+  position: relative;
+  padding-bottom: var(--space-6);
+}
+
+.timeline__item:last-child {
+  padding-bottom: 0;
+}
+
+/* ===================
+   Timeline Marker
+   =================== */
+
+.timeline__marker {
+  position: absolute;
+  left: calc(-1 * var(--space-8) + 3px);
+  top: 4px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--bg-primary);
+  border: 2px solid var(--color-primary-500);
+  border-radius: var(--radius-full);
+  z-index: 1;
+}
+
+/* Marker variants */
+.timeline__marker--filled {
+  background-color: var(--color-primary-500);
+}
+
+.timeline__marker--success {
+  border-color: var(--color-success-500);
+}
+
+.timeline__marker--success.timeline__marker--filled {
+  background-color: var(--color-success-500);
+}
+
+.timeline__marker--warning {
+  border-color: var(--color-warning-500);
+}
+
+.timeline__marker--warning.timeline__marker--filled {
+  background-color: var(--color-warning-500);
+}
+
+.timeline__marker--danger {
+  border-color: var(--color-danger-500);
+}
+
+.timeline__marker--danger.timeline__marker--filled {
+  background-color: var(--color-danger-500);
+}
+
+.timeline__marker--neutral {
+  border-color: var(--color-neutral-400);
+}
+
+.timeline__marker--neutral.timeline__marker--filled {
+  background-color: var(--color-neutral-400);
+}
+
+/* Icon marker */
+.timeline__marker--icon {
+  width: 32px;
+  height: 32px;
+  left: calc(-1 * var(--space-8) - 8px);
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary-100);
+  border: none;
+  color: var(--color-primary-600);
+}
+
+.timeline__marker--icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.timeline__marker--icon.timeline__marker--success {
+  background-color: var(--color-success-100);
+  color: var(--color-success-600);
+}
+
+.timeline__marker--icon.timeline__marker--warning {
+  background-color: var(--color-warning-100);
+  color: var(--color-warning-600);
+}
+
+.timeline__marker--icon.timeline__marker--danger {
+  background-color: var(--color-danger-100);
+  color: var(--color-danger-600);
+}
+
+/* ===================
+   Timeline Content
+   =================== */
+
+.timeline__content {
+  min-height: 32px;
+}
+
+.timeline__title {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.timeline__time {
+  font-size: var(--font-size-sm);
+  color: var(--text-tertiary);
+  margin-bottom: var(--space-2);
+}
+
+.timeline__description {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+/* ===================
+   Timeline Card
+   =================== */
+
+.timeline__card {
+  background-color: var(--bg-secondary);
+  border: var(--border-width-thin) solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  margin-top: var(--space-2);
+}
+
+.timeline__card-title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.timeline__card-body {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+/* ===================
+   Size Variants
+   =================== */
+
+/* Compact timeline */
+.timeline--compact {
+  padding-left: var(--space-6);
+}
+
+.timeline--compact::before {
+  left: 5px;
+}
+
+.timeline--compact .timeline__item {
+  padding-bottom: var(--space-4);
+}
+
+.timeline--compact .timeline__marker {
+  width: 8px;
+  height: 8px;
+  left: calc(-1 * var(--space-6) + 2px);
+  top: 6px;
+}
+
+.timeline--compact .timeline__title {
+  font-size: var(--font-size-sm);
+}
+
+.timeline--compact .timeline__time {
+  font-size: var(--font-size-xs);
+}
+
+/* Large timeline */
+.timeline--lg {
+  padding-left: var(--space-12);
+}
+
+.timeline--lg::before {
+  left: 11px;
+  width: 3px;
+}
+
+.timeline--lg .timeline__item {
+  padding-bottom: var(--space-8);
+}
+
+.timeline--lg .timeline__marker {
+  width: 14px;
+  height: 14px;
+  left: calc(-1 * var(--space-12) + 5px);
+  border-width: 3px;
+}
+
+.timeline--lg .timeline__marker--icon {
+  width: 40px;
+  height: 40px;
+  left: calc(-1 * var(--space-12) - 8px);
+}
+
+.timeline--lg .timeline__marker--icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ===================
+   Alternate Layout
+   =================== */
+
+.timeline--alternate {
+  padding-left: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline--alternate::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline--alternate .timeline__item {
+  width: 50%;
+  padding-right: var(--space-8);
+  padding-left: 0;
+}
+
+.timeline--alternate .timeline__item:nth-child(even) {
+  margin-left: 50%;
+  padding-left: var(--space-8);
+  padding-right: 0;
+}
+
+.timeline--alternate .timeline__marker {
+  left: auto;
+  right: calc(-1 * var(--space-8) + 3px);
+}
+
+.timeline--alternate .timeline__item:nth-child(even) .timeline__marker {
+  right: auto;
+  left: calc(-1 * var(--space-8) + 3px);
+}
+
+.timeline--alternate .timeline__item:nth-child(odd) .timeline__content {
+  text-align: right;
+}
+
+/* ===================
+   Horizontal Timeline
+   =================== */
+
+.timeline--horizontal {
+  display: flex;
+  padding-left: 0;
+  padding-top: var(--space-8);
+  overflow-x: auto;
+  gap: var(--space-2);
+}
+
+.timeline--horizontal::before {
+  left: 0;
+  right: 0;
+  top: 7px;
+  bottom: auto;
+  width: auto;
+  height: 2px;
+}
+
+.timeline--horizontal .timeline__item {
+  flex: 0 0 auto;
+  min-width: 150px;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.timeline--horizontal .timeline__marker {
+  left: 50%;
+  top: calc(-1 * var(--space-8) + 3px);
+  transform: translateX(-50%);
+}
+
+.timeline--horizontal .timeline__marker--icon {
+  top: calc(-1 * var(--space-8) - 8px);
+}
+
+/* ===================
+   Connected Cards
+   =================== */
+
+.timeline--connected .timeline__item::after {
+  content: '';
+  position: absolute;
+  left: calc(-1 * var(--space-8) + 8px);
+  top: 14px;
+  width: calc(var(--space-8) - 8px);
+  height: 2px;
+  background-color: var(--border-default);
+}
+
+/* ===================
+   Activity Feed Style
+   =================== */
+
+.timeline--activity .timeline__item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.timeline--activity .timeline__avatar {
+  position: absolute;
+  left: calc(-1 * var(--space-8) - 8px);
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+}
+
+.timeline--activity .timeline__text {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+.timeline--activity .timeline__text strong {
+  color: var(--text-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+.timeline--activity .timeline__text a {
+  color: var(--color-primary-600);
+  text-decoration: none;
+}
+
+.timeline--activity .timeline__text a:hover {
+  text-decoration: underline;
+}
+
+/* ===================
+   No Line Variant
+   =================== */
+
+.timeline--no-line::before {
+  display: none;
+}
+
+/* ===================
+   Dashed Line
+   =================== */
+
+.timeline--dashed::before {
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--border-default) 0,
+    var(--border-default) 4px,
+    transparent 4px,
+    transparent 8px
+  );
+}
+
+/* ===================
+   Gradient Line
+   =================== */
+
+.timeline--gradient::before {
+  background: linear-gradient(
+    to bottom,
+    var(--color-primary-500),
+    var(--color-primary-200)
+  );
+}

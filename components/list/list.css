@@ -1,0 +1,266 @@
+/**
+ * List Component
+ *
+ * Styled list items with icons, actions, and interactive states.
+ *
+ * Usage:
+ * <ul class="list">
+ *   <li class="list__item">Item content</li>
+ * </ul>
+ */
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===================
+   List Item
+   =================== */
+
+.list__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-bottom: var(--border-width-thin) solid var(--border-default);
+  transition: background-color var(--duration-fast) var(--easing-default);
+}
+
+.list__item:last-child {
+  border-bottom: none;
+}
+
+/* Hover state */
+.list--hover .list__item:hover {
+  background-color: var(--bg-secondary);
+}
+
+/* Interactive/Clickable */
+.list__item--interactive {
+  cursor: pointer;
+}
+
+.list__item--interactive:hover {
+  background-color: var(--bg-secondary);
+}
+
+.list__item--interactive:active {
+  background-color: var(--color-neutral-200);
+}
+
+/* Selected state */
+.list__item--selected {
+  background-color: var(--color-primary-50);
+}
+
+.list__item--selected:hover {
+  background-color: var(--color-primary-100);
+}
+
+/* ===================
+   List Item Parts
+   =================== */
+
+.list__icon {
+  width: 20px;
+  height: 20px;
+  color: var(--text-tertiary);
+  flex-shrink: 0;
+}
+
+.list__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.list__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.list__title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.list__description {
+  font-size: var(--font-size-xs);
+  color: var(--text-secondary);
+  margin: var(--space-1) 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.list__meta {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+  flex-shrink: 0;
+}
+
+.list__action {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-shrink: 0;
+}
+
+/* ===================
+   Size Variants
+   =================== */
+
+.list--sm .list__item {
+  padding: var(--space-2) var(--space-3);
+}
+
+.list--sm .list__icon {
+  width: 16px;
+  height: 16px;
+}
+
+.list--sm .list__avatar {
+  width: 32px;
+  height: 32px;
+}
+
+.list--sm .list__title {
+  font-size: var(--font-size-xs);
+}
+
+.list--lg .list__item {
+  padding: var(--space-4) var(--space-5);
+}
+
+.list--lg .list__avatar {
+  width: 48px;
+  height: 48px;
+}
+
+.list--lg .list__title {
+  font-size: var(--font-size-base);
+}
+
+/* ===================
+   Style Variants
+   =================== */
+
+/* Bordered */
+.list--bordered {
+  border: var(--border-width-thin) solid var(--border-default);
+  border-radius: var(--radius-lg);
+}
+
+.list--bordered .list__item:first-child {
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.list--bordered .list__item:last-child {
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+/* Divided */
+.list--divided .list__item {
+  border-bottom: var(--border-width-thin) solid var(--border-default);
+}
+
+/* Striped */
+.list--striped .list__item:nth-child(even) {
+  background-color: var(--bg-secondary);
+}
+
+/* Flush (no padding) */
+.list--flush .list__item {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Spaced */
+.list--spaced .list__item {
+  border-bottom: none;
+  margin-bottom: var(--space-2);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-secondary);
+}
+
+.list--spaced .list__item:last-child {
+  margin-bottom: 0;
+}
+
+/* ===================
+   Ordered List Numbers
+   =================== */
+
+.list--ordered {
+  counter-reset: list-counter;
+}
+
+.list--ordered .list__item {
+  counter-increment: list-counter;
+}
+
+.list--ordered .list__item::before {
+  content: counter(list-counter) ".";
+  min-width: 24px;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
+}
+
+/* ===================
+   List Subheader
+   =================== */
+
+.list__subheader {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: var(--bg-secondary);
+  border-bottom: var(--border-width-thin) solid var(--border-default);
+}
+
+/* ===================
+   Empty State
+   =================== */
+
+.list__empty {
+  padding: var(--space-8);
+  text-align: center;
+  color: var(--text-tertiary);
+}
+
+/* ===================
+   Loading State
+   =================== */
+
+.list__item--loading {
+  pointer-events: none;
+}
+
+.list__item--loading .list__title,
+.list__item--loading .list__description {
+  background: linear-gradient(90deg, var(--color-neutral-200) 25%, var(--color-neutral-100) 50%, var(--color-neutral-200) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--radius-sm);
+  color: transparent;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}

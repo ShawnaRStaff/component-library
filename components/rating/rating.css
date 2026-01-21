@@ -1,0 +1,343 @@
+/**
+ * Rating Component
+ *
+ * Star rating and other rating input styles.
+ *
+ * Usage:
+ * <div class="rating">
+ *   <input type="radio" name="rating" value="1">
+ *   <input type="radio" name="rating" value="2">
+ *   ...
+ * </div>
+ */
+
+.rating {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+/* Star rating - display only */
+.rating__stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.rating__star {
+  width: 20px;
+  height: 20px;
+  color: var(--color-neutral-300);
+}
+
+.rating__star--filled {
+  color: var(--color-warning-400);
+}
+
+.rating__star--half {
+  position: relative;
+}
+
+.rating__star--half::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Interactive star rating */
+.rating--interactive {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 2px;
+}
+
+.rating--interactive input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.rating--interactive label {
+  cursor: pointer;
+  color: var(--color-neutral-300);
+  transition: color var(--duration-fast) var(--easing-default);
+}
+
+.rating--interactive label svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.rating--interactive label:hover,
+.rating--interactive label:hover ~ label,
+.rating--interactive input:checked ~ label {
+  color: var(--color-warning-400);
+}
+
+.rating--interactive input:focus-visible ~ label:first-of-type {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Sizes */
+.rating--sm .rating__star,
+.rating--sm label svg {
+  width: 16px;
+  height: 16px;
+}
+
+.rating--lg .rating__star,
+.rating--lg label svg {
+  width: 32px;
+  height: 32px;
+}
+
+.rating--xl .rating__star,
+.rating--xl label svg {
+  width: 40px;
+  height: 40px;
+}
+
+/* Colors */
+.rating--primary .rating__star--filled,
+.rating--primary input:checked ~ label,
+.rating--primary label:hover,
+.rating--primary label:hover ~ label {
+  color: var(--color-primary-500);
+}
+
+.rating--danger .rating__star--filled,
+.rating--danger input:checked ~ label,
+.rating--danger label:hover,
+.rating--danger label:hover ~ label {
+  color: var(--color-danger-500);
+}
+
+.rating--success .rating__star--filled,
+.rating--success input:checked ~ label,
+.rating--success label:hover,
+.rating--success label:hover ~ label {
+  color: var(--color-success-500);
+}
+
+/* With value display */
+.rating__value {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  margin-left: var(--space-2);
+}
+
+.rating__count {
+  font-size: var(--font-size-sm);
+  color: var(--text-tertiary);
+  margin-left: var(--space-1);
+}
+
+/* Rating bar (horizontal progress style) */
+.rating-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.rating-bar__label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.rating-bar__label svg {
+  width: 14px;
+  height: 14px;
+  color: var(--color-warning-400);
+}
+
+.rating-bar__track {
+  flex: 1;
+  height: 8px;
+  background-color: var(--bg-tertiary);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.rating-bar__fill {
+  height: 100%;
+  background-color: var(--color-warning-400);
+  border-radius: var(--radius-full);
+  transition: width var(--duration-normal) var(--easing-default);
+}
+
+.rating-bar__count {
+  font-size: var(--font-size-sm);
+  color: var(--text-tertiary);
+  min-width: 40px;
+  text-align: right;
+}
+
+/* Rating summary */
+.rating-summary {
+  display: flex;
+  gap: var(--space-6);
+}
+
+.rating-summary__average {
+  text-align: center;
+}
+
+.rating-summary__number {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.rating-summary__stars {
+  margin: var(--space-2) 0;
+}
+
+.rating-summary__count {
+  font-size: var(--font-size-sm);
+  color: var(--text-tertiary);
+}
+
+.rating-summary__bars {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+/* Emoji rating */
+.rating--emoji {
+  display: inline-flex;
+  gap: var(--space-2);
+}
+
+.rating--emoji input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.rating--emoji label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  font-size: 28px;
+  background-color: var(--bg-secondary);
+  border: var(--border-width-thin) solid transparent;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--easing-default);
+  opacity: 0.6;
+}
+
+.rating--emoji label:hover {
+  background-color: var(--bg-tertiary);
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.rating--emoji input:checked + label {
+  background-color: var(--color-primary-50);
+  border-color: var(--color-primary-300);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.rating--emoji input:focus-visible + label {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+}
+
+/* Thumbs rating */
+.rating--thumbs {
+  display: inline-flex;
+  gap: var(--space-2);
+}
+
+.rating--thumbs input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.rating--thumbs label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--text-tertiary);
+  background-color: var(--bg-secondary);
+  border: var(--border-width-thin) solid transparent;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--easing-default);
+}
+
+.rating--thumbs label svg {
+  width: 20px;
+  height: 20px;
+}
+
+.rating--thumbs label:hover {
+  color: var(--text-primary);
+  background-color: var(--bg-tertiary);
+}
+
+.rating--thumbs input:checked + label.rating__thumb-up {
+  color: white;
+  background-color: var(--color-success-500);
+  border-color: var(--color-success-500);
+}
+
+.rating--thumbs input:checked + label.rating__thumb-down {
+  color: white;
+  background-color: var(--color-danger-500);
+  border-color: var(--color-danger-500);
+}
+
+/* Heart rating */
+.rating--hearts .rating__star--filled,
+.rating--hearts input:checked ~ label,
+.rating--hearts label:hover,
+.rating--hearts label:hover ~ label {
+  color: var(--color-danger-500);
+}
+
+/* Disabled state */
+.rating--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Read-only (no hover effects) */
+.rating--readonly label {
+  cursor: default;
+}
+
+.rating--readonly label:hover {
+  color: var(--color-neutral-300);
+}
+
+.rating--readonly input:checked ~ label {
+  color: var(--color-warning-400);
+}

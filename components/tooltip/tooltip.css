@@ -1,0 +1,274 @@
+/**
+ * Tooltip Component
+ *
+ * Usage (CSS-only):
+ * <span class="tooltip" data-tooltip="Tooltip text">Hover me</span>
+ *
+ * Usage (with wrapper):
+ * <div class="tooltip-wrapper">
+ *   <button>Hover me</button>
+ *   <div class="tooltip__content">Tooltip text</div>
+ * </div>
+ */
+
+/* CSS-only tooltip using data attribute */
+.tooltip {
+  position: relative;
+  cursor: help;
+}
+
+.tooltip::before,
+.tooltip::after {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--duration-normal) var(--easing-default),
+              visibility var(--duration-normal) var(--easing-default);
+  z-index: var(--z-tooltip);
+}
+
+/* Tooltip bubble */
+.tooltip::after {
+  content: attr(data-tooltip);
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: var(--space-2) var(--space-3);
+  max-width: 200px;
+  width: max-content;
+
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+  text-align: center;
+  white-space: normal;
+
+  color: var(--color-neutral-0);
+  background-color: var(--color-neutral-800);
+  border-radius: var(--radius-md);
+}
+
+/* Arrow */
+.tooltip::before {
+  content: "";
+  bottom: calc(100% + 2px);
+  left: 50%;
+  transform: translateX(-50%);
+
+  border: 6px solid transparent;
+  border-top-color: var(--color-neutral-800);
+}
+
+/* Show on hover/focus */
+.tooltip:hover::before,
+.tooltip:hover::after,
+.tooltip:focus::before,
+.tooltip:focus::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Positions */
+.tooltip--bottom::after {
+  bottom: auto;
+  top: calc(100% + 8px);
+}
+
+.tooltip--bottom::before {
+  bottom: auto;
+  top: calc(100% + 2px);
+  border-top-color: transparent;
+  border-bottom-color: var(--color-neutral-800);
+}
+
+.tooltip--left::after {
+  bottom: auto;
+  left: auto;
+  right: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip--left::before {
+  bottom: auto;
+  left: auto;
+  right: calc(100% + 2px);
+  top: 50%;
+  transform: translateY(-50%);
+  border-top-color: transparent;
+  border-left-color: var(--color-neutral-800);
+}
+
+.tooltip--right::after {
+  bottom: auto;
+  left: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip--right::before {
+  bottom: auto;
+  left: calc(100% + 2px);
+  top: 50%;
+  transform: translateY(-50%);
+  border-top-color: transparent;
+  border-right-color: var(--color-neutral-800);
+}
+
+/* Themes */
+.tooltip--light::after {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  border: var(--border-width-thin) solid var(--border-default);
+  box-shadow: var(--shadow-md);
+}
+
+.tooltip--light::before {
+  border-top-color: var(--bg-primary);
+}
+
+.tooltip--light.tooltip--bottom::before {
+  border-top-color: transparent;
+  border-bottom-color: var(--bg-primary);
+}
+
+/* Sizes */
+.tooltip--sm::after {
+  padding: var(--space-1) var(--space-2);
+  font-size: 10px;
+  max-width: 150px;
+}
+
+.tooltip--lg::after {
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--font-size-sm);
+  max-width: 300px;
+}
+
+/* No wrap */
+.tooltip--nowrap::after {
+  white-space: nowrap;
+  max-width: none;
+}
+
+/* ===================
+   Wrapper-based Tooltip
+   (for more control)
+   =================== */
+
+.tooltip-wrapper {
+  position: relative;
+  display: inline-flex;
+}
+
+.tooltip__content {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: var(--space-2) var(--space-3);
+  max-width: 200px;
+  width: max-content;
+
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-normal);
+  text-align: center;
+
+  color: var(--color-neutral-0);
+  background-color: var(--color-neutral-800);
+  border-radius: var(--radius-md);
+
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--duration-normal) var(--easing-default),
+              visibility var(--duration-normal) var(--easing-default);
+  z-index: var(--z-tooltip);
+}
+
+.tooltip__content::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: var(--color-neutral-800);
+}
+
+.tooltip-wrapper:hover .tooltip__content,
+.tooltip-wrapper:focus-within .tooltip__content {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Wrapper positions */
+.tooltip-wrapper--bottom .tooltip__content {
+  bottom: auto;
+  top: calc(100% + 8px);
+}
+
+.tooltip-wrapper--bottom .tooltip__content::before {
+  top: auto;
+  bottom: 100%;
+  border-top-color: transparent;
+  border-bottom-color: var(--color-neutral-800);
+}
+
+.tooltip-wrapper--left .tooltip__content {
+  bottom: auto;
+  left: auto;
+  right: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip-wrapper--left .tooltip__content::before {
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  border-top-color: transparent;
+  border-left-color: var(--color-neutral-800);
+}
+
+.tooltip-wrapper--right .tooltip__content {
+  bottom: auto;
+  left: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip-wrapper--right .tooltip__content::before {
+  top: 50%;
+  left: auto;
+  right: 100%;
+  transform: translateY(-50%);
+  border-top-color: transparent;
+  border-right-color: var(--color-neutral-800);
+}
+
+/* Rich tooltip (with title, etc.) */
+.tooltip__title {
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-1);
+}
+
+.tooltip__text {
+  font-weight: var(--font-weight-normal);
+}
+
+/* Delay variants */
+.tooltip--delay-short:hover::after,
+.tooltip--delay-short:hover::before {
+  transition-delay: 0.1s;
+}
+
+.tooltip--delay-long:hover::after,
+.tooltip--delay-long:hover::before {
+  transition-delay: 0.5s;
+}

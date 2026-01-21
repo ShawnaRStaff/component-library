@@ -1,0 +1,421 @@
+/**
+ * Aspect Ratio Component
+ *
+ * Maintain consistent aspect ratios for images, videos, and containers.
+ *
+ * Usage:
+ * <div class="aspect-ratio aspect-ratio--16-9">
+ *   <img src="image.jpg" alt="">
+ * </div>
+ */
+
+.aspect-ratio {
+  position: relative;
+  width: 100%;
+}
+
+.aspect-ratio::before {
+  content: '';
+  display: block;
+}
+
+.aspect-ratio > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Images and videos fill container */
+.aspect-ratio > img,
+.aspect-ratio > video {
+  object-fit: cover;
+}
+
+.aspect-ratio > iframe {
+  border: 0;
+}
+
+/* ===================
+   Common Aspect Ratios
+   =================== */
+
+/* Square */
+.aspect-ratio--1-1::before,
+.aspect-ratio--square::before {
+  padding-top: 100%;
+}
+
+/* 4:3 - Classic TV / iPad */
+.aspect-ratio--4-3::before {
+  padding-top: 75%; /* 3/4 * 100 */
+}
+
+/* 3:2 - Classic photo */
+.aspect-ratio--3-2::before {
+  padding-top: 66.666%; /* 2/3 * 100 */
+}
+
+/* 16:9 - Widescreen / YouTube */
+.aspect-ratio--16-9::before {
+  padding-top: 56.25%; /* 9/16 * 100 */
+}
+
+/* 21:9 - Ultrawide / Cinematic */
+.aspect-ratio--21-9::before {
+  padding-top: 42.857%; /* 9/21 * 100 */
+}
+
+/* 2:1 - Univisium */
+.aspect-ratio--2-1::before {
+  padding-top: 50%;
+}
+
+/* 3:1 - Panorama */
+.aspect-ratio--3-1::before {
+  padding-top: 33.333%;
+}
+
+/* 4:5 - Portrait (Instagram) */
+.aspect-ratio--4-5::before {
+  padding-top: 125%; /* 5/4 * 100 */
+}
+
+/* 9:16 - Vertical video (Stories/Reels) */
+.aspect-ratio--9-16::before {
+  padding-top: 177.778%; /* 16/9 * 100 */
+}
+
+/* 2:3 - Portrait photo */
+.aspect-ratio--2-3::before {
+  padding-top: 150%; /* 3/2 * 100 */
+}
+
+/* Golden ratio */
+.aspect-ratio--golden::before {
+  padding-top: 61.8%; /* 1/1.618 * 100 */
+}
+
+/* ===================
+   Object Fit Variants
+   =================== */
+
+.aspect-ratio--contain > img,
+.aspect-ratio--contain > video {
+  object-fit: contain;
+}
+
+.aspect-ratio--fill > img,
+.aspect-ratio--fill > video {
+  object-fit: fill;
+}
+
+.aspect-ratio--scale-down > img,
+.aspect-ratio--scale-down > video {
+  object-fit: scale-down;
+}
+
+.aspect-ratio--none > img,
+.aspect-ratio--none > video {
+  object-fit: none;
+}
+
+/* ===================
+   Object Position
+   =================== */
+
+.aspect-ratio--top > img,
+.aspect-ratio--top > video {
+  object-position: top;
+}
+
+.aspect-ratio--bottom > img,
+.aspect-ratio--bottom > video {
+  object-position: bottom;
+}
+
+.aspect-ratio--left > img,
+.aspect-ratio--left > video {
+  object-position: left;
+}
+
+.aspect-ratio--right > img,
+.aspect-ratio--right > video {
+  object-position: right;
+}
+
+/* ===================
+   Border Radius
+   =================== */
+
+.aspect-ratio--rounded {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.aspect-ratio--rounded-lg {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.aspect-ratio--rounded-xl {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.aspect-ratio--circle {
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+/* ===================
+   Background Variants
+   =================== */
+
+.aspect-ratio--bg-primary {
+  background-color: var(--bg-primary);
+}
+
+.aspect-ratio--bg-secondary {
+  background-color: var(--bg-secondary);
+}
+
+.aspect-ratio--bg-tertiary {
+  background-color: var(--bg-tertiary);
+}
+
+/* ===================
+   Overlay
+   =================== */
+
+.aspect-ratio__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  opacity: 0;
+  transition: opacity var(--duration-normal) var(--easing-default);
+}
+
+.aspect-ratio:hover .aspect-ratio__overlay {
+  opacity: 1;
+}
+
+.aspect-ratio__overlay--visible {
+  opacity: 1;
+}
+
+/* Gradient overlays */
+.aspect-ratio__overlay--gradient-bottom {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+  align-items: flex-end;
+  padding: var(--space-4);
+  opacity: 1;
+}
+
+.aspect-ratio__overlay--gradient-top {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+  align-items: flex-start;
+  padding: var(--space-4);
+  opacity: 1;
+}
+
+/* ===================
+   Placeholder/Loading
+   =================== */
+
+.aspect-ratio--placeholder {
+  background-color: var(--color-neutral-100);
+}
+
+.aspect-ratio--placeholder::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%239ca3af'%3E%3Cpath d='M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+/* Loading skeleton animation */
+.aspect-ratio--loading {
+  background: linear-gradient(
+    90deg,
+    var(--color-neutral-100) 0%,
+    var(--color-neutral-200) 50%,
+    var(--color-neutral-100) 100%
+  );
+  background-size: 200% 100%;
+  animation: aspect-ratio-shimmer 1.5s infinite;
+}
+
+.aspect-ratio--loading::after {
+  display: none;
+}
+
+@keyframes aspect-ratio-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* ===================
+   Video Play Button
+   =================== */
+
+.aspect-ratio__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: var(--radius-full);
+  color: white;
+  cursor: pointer;
+  transition: transform var(--duration-fast) var(--easing-default),
+              background-color var(--duration-fast) var(--easing-default);
+}
+
+.aspect-ratio__play:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  background-color: var(--color-primary-600);
+}
+
+.aspect-ratio__play svg {
+  width: 24px;
+  height: 24px;
+  margin-left: 4px; /* Optical center for play icon */
+}
+
+/* ===================
+   Grid Layouts
+   =================== */
+
+.aspect-ratio-grid {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.aspect-ratio-grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.aspect-ratio-grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.aspect-ratio-grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Featured + grid layout */
+.aspect-ratio-grid--featured {
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.aspect-ratio-grid--featured > *:first-child {
+  grid-row: span 2;
+}
+
+/* ===================
+   Responsive Ratios
+   =================== */
+
+@media (min-width: 640px) {
+  .sm\:aspect-ratio--16-9::before {
+    padding-top: 56.25%;
+  }
+
+  .sm\:aspect-ratio--4-3::before {
+    padding-top: 75%;
+  }
+
+  .sm\:aspect-ratio--1-1::before {
+    padding-top: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:aspect-ratio--16-9::before {
+    padding-top: 56.25%;
+  }
+
+  .md\:aspect-ratio--4-3::before {
+    padding-top: 75%;
+  }
+
+  .md\:aspect-ratio--1-1::before {
+    padding-top: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:aspect-ratio--16-9::before {
+    padding-top: 56.25%;
+  }
+
+  .lg\:aspect-ratio--4-3::before {
+    padding-top: 75%;
+  }
+
+  .lg\:aspect-ratio--1-1::before {
+    padding-top: 100%;
+  }
+}
+
+/* ===================
+   Modern aspect-ratio Property
+   =================== */
+
+/* For browsers that support native aspect-ratio */
+@supports (aspect-ratio: 1) {
+  .aspect-ratio--native {
+    aspect-ratio: var(--aspect-ratio, 16 / 9);
+  }
+
+  .aspect-ratio--native::before {
+    display: none;
+  }
+
+  .aspect-ratio--native > * {
+    position: static;
+    height: 100%;
+  }
+
+  .aspect-ratio--native.aspect-ratio--1-1 {
+    --aspect-ratio: 1 / 1;
+  }
+
+  .aspect-ratio--native.aspect-ratio--4-3 {
+    --aspect-ratio: 4 / 3;
+  }
+
+  .aspect-ratio--native.aspect-ratio--16-9 {
+    --aspect-ratio: 16 / 9;
+  }
+
+  .aspect-ratio--native.aspect-ratio--21-9 {
+    --aspect-ratio: 21 / 9;
+  }
+}

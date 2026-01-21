@@ -1,0 +1,203 @@
+<!-- Toggle/Switch Component Demo -->
+
+<section class="demo-section">
+  <h3>Default Toggle</h3>
+  <div class="demo-row">
+    <label class="toggle">
+      <input type="checkbox" class="toggle__input">
+      <span class="toggle__track"></span>
+    </label>
+    <label class="toggle">
+      <input type="checkbox" class="toggle__input" checked>
+      <span class="toggle__track"></span>
+    </label>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Label</h3>
+  <div class="demo-row">
+    <label class="toggle">
+      <input type="checkbox" class="toggle__input">
+      <span class="toggle__track"></span>
+      <span class="toggle__label">Enable notifications</span>
+    </label>
+  </div>
+  <div class="demo-row" style="margin-top: 12px;">
+    <label class="toggle toggle--label-left">
+      <input type="checkbox" class="toggle__input" checked>
+      <span class="toggle__track"></span>
+      <span class="toggle__label">Label on left</span>
+    </label>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>States</h3>
+  <div class="demo-row">
+    <label class="toggle">
+      <input type="checkbox" class="toggle__input">
+      <span class="toggle__track"></span>
+      <span class="toggle__label">Default Off</span>
+    </label>
+    <label class="toggle">
+      <input type="checkbox" class="toggle__input" checked>
+      <span class="toggle__track"></span>
+      <span class="toggle__label">Default On</span>
+    </label>
+  </div>
+  <div class="demo-row" style="margin-top: 12px;">
+    <label class="toggle">
+      <input type="checkbox" class="toggle__input" disabled>
+      <span class="toggle__track"></span>
+      <span class="toggle__label">Disabled Off</span>
+    </label>
+    <label class="toggle">
+      <input type="checkbox" class="toggle__input" disabled checked>
+      <span class="toggle__track"></span>
+      <span class="toggle__label">Disabled On</span>
+    </label>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Sizes</h3>
+  <div class="demo-row">
+    <label class="toggle toggle--sm">
+      <input type="checkbox" class="toggle__input" checked>
+      <span class="toggle__track"></span>
+      <span class="toggle__label">Small</span>
+    </label>
+    <label class="toggle">
+      <input type="checkbox" class="toggle__input" checked>
+      <span class="toggle__track"></span>
+      <span class="toggle__label">Medium (default)</span>
+    </label>
+    <label class="toggle toggle--lg">
+      <input type="checkbox" class="toggle__input" checked>
+      <span class="toggle__track"></span>
+      <span class="toggle__label">Large</span>
+    </label>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Color Variants</h3>
+  <div class="demo-row">
+    <label class="toggle">
+      <input type="checkbox" class="toggle__input" checked>
+      <span class="toggle__track"></span>
+      <span class="toggle__label">Primary (default)</span>
+    </label>
+    <label class="toggle toggle--success">
+      <input type="checkbox" class="toggle__input" checked>
+      <span class="toggle__track"></span>
+      <span class="toggle__label">Success</span>
+    </label>
+    <label class="toggle toggle--danger">
+      <input type="checkbox" class="toggle__input" checked>
+      <span class="toggle__track"></span>
+      <span class="toggle__label">Danger</span>
+    </label>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Icons</h3>
+  <div class="demo-row">
+    <label class="toggle toggle--with-icons">
+      <input type="checkbox" class="toggle__input">
+      <span class="toggle__track"></span>
+      <span class="toggle__label">With check icon</span>
+    </label>
+    <label class="toggle toggle--with-icons">
+      <input type="checkbox" class="toggle__input" checked>
+      <span class="toggle__track"></span>
+      <span class="toggle__label">With check icon</span>
+    </label>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Interactive Status</h3>
+  <div class="demo-row">
+    <label class="toggle">
+      <input type="checkbox" class="toggle__input" data-toggle-status="status-display">
+      <span class="toggle__track"></span>
+      <span class="toggle__label">Status: <strong id="status-display">Off</strong></span>
+    </label>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Toggle Group</h3>
+  <div class="toggle-group" style="max-width: 400px;">
+    <label class="toggle">
+      <input type="checkbox" class="toggle__input" checked>
+      <span class="toggle__track"></span>
+      <span class="toggle__label">Email notifications</span>
+    </label>
+    <label class="toggle">
+      <input type="checkbox" class="toggle__input">
+      <span class="toggle__track"></span>
+      <span class="toggle__label">Push notifications</span>
+    </label>
+    <label class="toggle">
+      <input type="checkbox" class="toggle__input" checked>
+      <span class="toggle__track"></span>
+      <span class="toggle__label">SMS notifications</span>
+    </label>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Settings Pattern</h3>
+  <div style="max-width: 500px;">
+    <div class="toggle-row">
+      <div class="toggle-row__content">
+        <div class="toggle-row__title">Dark Mode</div>
+        <div class="toggle-row__description">Use dark theme across the application</div>
+      </div>
+      <label class="toggle">
+        <input type="checkbox" class="toggle__input">
+        <span class="toggle__track"></span>
+      </label>
+    </div>
+    <div class="toggle-row">
+      <div class="toggle-row__content">
+        <div class="toggle-row__title">Auto-save</div>
+        <div class="toggle-row__description">Automatically save changes as you work</div>
+      </div>
+      <label class="toggle">
+        <input type="checkbox" class="toggle__input" checked>
+        <span class="toggle__track"></span>
+      </label>
+    </div>
+    <div class="toggle-row">
+      <div class="toggle-row__content">
+        <div class="toggle-row__title">Analytics</div>
+        <div class="toggle-row__description">Help us improve by sending anonymous usage data</div>
+      </div>
+      <label class="toggle">
+        <input type="checkbox" class="toggle__input">
+        <span class="toggle__track"></span>
+      </label>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Feature Toggle Pattern</h3>
+  <div style="max-width: 500px;">
+    <div class="toggle-item">
+      <label class="toggle">
+        <input type="checkbox" class="toggle__input" checked>
+        <span class="toggle__track"></span>
+      </label>
+      <div class="toggle-item__content">
+        <div class="toggle-item__title">Two-factor authentication</div>
+        <div class="toggle-item__description">Add an extra layer of security to your account by requiring a verification code in addition to your password.</div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,345 @@
+/**
+ * Tree View Component
+ *
+ * Hierarchical tree structure for displaying nested data.
+ *
+ * Usage:
+ * <ul class="tree">
+ *   <li class="tree__item">
+ *     <div class="tree__node">...</div>
+ *     <ul class="tree__children">...</ul>
+ *   </li>
+ * </ul>
+ */
+
+.tree {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-sm);
+}
+
+.tree__item {
+  position: relative;
+}
+
+.tree__node {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background-color var(--duration-fast) var(--easing-default);
+}
+
+.tree__node:hover {
+  background-color: var(--bg-secondary);
+}
+
+.tree__node.is-selected {
+  background-color: var(--color-primary-50);
+  color: var(--color-primary-700);
+}
+
+.tree__node.is-selected .tree__icon {
+  color: var(--color-primary-500);
+}
+
+/* Expand/collapse toggle */
+.tree__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: var(--text-tertiary);
+  background: none;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--easing-default);
+}
+
+.tree__toggle:hover {
+  color: var(--text-primary);
+  background-color: var(--bg-tertiary);
+}
+
+.tree__toggle svg {
+  width: 16px;
+  height: 16px;
+  transition: transform var(--duration-fast) var(--easing-default);
+}
+
+.tree__item.is-expanded > .tree__node .tree__toggle svg {
+  transform: rotate(90deg);
+}
+
+/* Placeholder for items without children */
+.tree__toggle--placeholder {
+  visibility: hidden;
+}
+
+/* Icon */
+.tree__icon {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  color: var(--text-tertiary);
+}
+
+.tree__icon--folder {
+  color: var(--color-warning-500);
+}
+
+.tree__icon--file {
+  color: var(--text-tertiary);
+}
+
+/* Label */
+.tree__label {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text-primary);
+}
+
+/* Badge/count */
+.tree__badge {
+  padding: 0 var(--space-2);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-tertiary);
+  background-color: var(--bg-tertiary);
+  border-radius: var(--radius-full);
+}
+
+/* Actions (show on hover) */
+.tree__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  opacity: 0;
+  transition: opacity var(--duration-fast) var(--easing-default);
+}
+
+.tree__node:hover .tree__actions {
+  opacity: 1;
+}
+
+.tree__action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: var(--text-tertiary);
+  background: none;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--easing-default);
+}
+
+.tree__action:hover {
+  color: var(--text-primary);
+  background-color: var(--bg-tertiary);
+}
+
+.tree__action svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Children container */
+.tree__children {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: var(--space-6);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height var(--duration-normal) var(--easing-default);
+}
+
+.tree__item.is-expanded > .tree__children {
+  max-height: 1000px;
+}
+
+/* Connecting lines */
+.tree--lines .tree__children {
+  position: relative;
+}
+
+.tree--lines .tree__children::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: var(--space-4);
+  width: 1px;
+  background-color: var(--border-default);
+}
+
+.tree--lines .tree__children .tree__item::before {
+  content: '';
+  position: absolute;
+  left: -14px;
+  top: 14px;
+  width: 12px;
+  height: 1px;
+  background-color: var(--border-default);
+}
+
+/* Checkbox selection */
+.tree__checkbox {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  cursor: pointer;
+  accent-color: var(--color-primary-500);
+}
+
+/* Drag and drop states */
+.tree__node.is-dragging {
+  opacity: 0.5;
+}
+
+.tree__node.is-drop-target {
+  background-color: var(--color-primary-50);
+  outline: 2px dashed var(--color-primary-300);
+  outline-offset: -2px;
+}
+
+.tree__node.is-drop-before::before {
+  content: '';
+  position: absolute;
+  left: var(--space-2);
+  right: var(--space-2);
+  top: 0;
+  height: 2px;
+  background-color: var(--color-primary-500);
+}
+
+.tree__node.is-drop-after::after {
+  content: '';
+  position: absolute;
+  left: var(--space-2);
+  right: var(--space-2);
+  bottom: 0;
+  height: 2px;
+  background-color: var(--color-primary-500);
+}
+
+/* Loading state */
+.tree__loading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  color: var(--text-tertiary);
+  font-size: var(--font-size-xs);
+}
+
+.tree__loading-spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--border-default);
+  border-top-color: var(--color-primary-500);
+  border-radius: 50%;
+  animation: tree-spin 0.8s linear infinite;
+}
+
+@keyframes tree-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Empty state */
+.tree__empty {
+  padding: var(--space-4);
+  text-align: center;
+  color: var(--text-tertiary);
+  font-size: var(--font-size-sm);
+}
+
+/* Sizes */
+.tree--sm .tree__node {
+  padding: var(--space-1);
+  font-size: var(--font-size-xs);
+}
+
+.tree--sm .tree__toggle,
+.tree--sm .tree__icon {
+  width: 16px;
+  height: 16px;
+}
+
+.tree--lg .tree__node {
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--font-size-base);
+}
+
+.tree--lg .tree__toggle,
+.tree--lg .tree__icon {
+  width: 22px;
+  height: 22px;
+}
+
+/* Compact mode */
+.tree--compact .tree__node {
+  padding: 2px var(--space-2);
+}
+
+.tree--compact .tree__children {
+  padding-left: var(--space-4);
+}
+
+/* File browser style */
+.tree--files .tree__icon--folder-open {
+  display: none;
+}
+
+.tree--files .tree__item.is-expanded .tree__icon--folder {
+  display: none;
+}
+
+.tree--files .tree__item.is-expanded .tree__icon--folder-open {
+  display: block;
+}
+
+/* Indented style (no toggle button) */
+.tree--indented .tree__toggle {
+  display: none;
+}
+
+.tree--indented .tree__children {
+  max-height: none;
+}
+
+/* Multi-select highlight */
+.tree__node.is-focused {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: -2px;
+}
+
+/* Disabled state */
+.tree__item.is-disabled .tree__node {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Read-only */
+.tree--readonly .tree__node {
+  cursor: default;
+}
+
+.tree--readonly .tree__toggle {
+  cursor: pointer;
+}

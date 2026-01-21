@@ -1,0 +1,155 @@
+<!-- Checkbox Component Demo -->
+
+<section class="demo-section">
+  <h3>Default Checkbox</h3>
+  <div class="demo-row">
+    <label class="checkbox">
+      <input type="checkbox" class="checkbox__input">
+      <span class="checkbox__box"></span>
+      <span class="checkbox__label">Unchecked</span>
+    </label>
+    <label class="checkbox">
+      <input type="checkbox" class="checkbox__input" checked>
+      <span class="checkbox__box"></span>
+      <span class="checkbox__label">Checked</span>
+    </label>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>States</h3>
+  <div class="demo-row">
+    <label class="checkbox">
+      <input type="checkbox" class="checkbox__input">
+      <span class="checkbox__box"></span>
+      <span class="checkbox__label">Default</span>
+    </label>
+    <label class="checkbox">
+      <input type="checkbox" class="checkbox__input" data-indeterminate>
+      <span class="checkbox__box"></span>
+      <span class="checkbox__label">Indeterminate</span>
+    </label>
+    <label class="checkbox">
+      <input type="checkbox" class="checkbox__input" disabled>
+      <span class="checkbox__box"></span>
+      <span class="checkbox__label">Disabled</span>
+    </label>
+    <label class="checkbox">
+      <input type="checkbox" class="checkbox__input" disabled checked>
+      <span class="checkbox__box"></span>
+      <span class="checkbox__label">Disabled Checked</span>
+    </label>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Error State</h3>
+  <div class="demo-row">
+    <label class="checkbox checkbox--error">
+      <input type="checkbox" class="checkbox__input">
+      <span class="checkbox__box"></span>
+      <span class="checkbox__label">Accept terms and conditions</span>
+    </label>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Sizes</h3>
+  <div class="demo-row">
+    <label class="checkbox checkbox--sm">
+      <input type="checkbox" class="checkbox__input" checked>
+      <span class="checkbox__box"></span>
+      <span class="checkbox__label">Small</span>
+    </label>
+    <label class="checkbox">
+      <input type="checkbox" class="checkbox__input" checked>
+      <span class="checkbox__box"></span>
+      <span class="checkbox__label">Medium (default)</span>
+    </label>
+    <label class="checkbox checkbox--lg">
+      <input type="checkbox" class="checkbox__input" checked>
+      <span class="checkbox__box"></span>
+      <span class="checkbox__label">Large</span>
+    </label>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Checkbox Group (Vertical)</h3>
+  <div class="checkbox-group">
+    <label class="checkbox">
+      <input type="checkbox" class="checkbox__input" name="options" value="1">
+      <span class="checkbox__box"></span>
+      <span class="checkbox__label">Option 1</span>
+    </label>
+    <label class="checkbox">
+      <input type="checkbox" class="checkbox__input" name="options" value="2">
+      <span class="checkbox__box"></span>
+      <span class="checkbox__label">Option 2</span>
+    </label>
+    <label class="checkbox">
+      <input type="checkbox" class="checkbox__input" name="options" value="3">
+      <span class="checkbox__box"></span>
+      <span class="checkbox__label">Option 3</span>
+    </label>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Checkbox Group (Horizontal)</h3>
+  <div class="checkbox-group checkbox-group--horizontal">
+    <label class="checkbox">
+      <input type="checkbox" class="checkbox__input" name="colors" value="red">
+      <span class="checkbox__box"></span>
+      <span class="checkbox__label">Red</span>
+    </label>
+    <label class="checkbox">
+      <input type="checkbox" class="checkbox__input" name="colors" value="green">
+      <span class="checkbox__box"></span>
+      <span class="checkbox__label">Green</span>
+    </label>
+    <label class="checkbox">
+      <input type="checkbox" class="checkbox__input" name="colors" value="blue">
+      <span class="checkbox__box"></span>
+      <span class="checkbox__label">Blue</span>
+    </label>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Select All Pattern</h3>
+  <div class="checkbox-group">
+    <label class="checkbox" style="font-weight: 600;">
+      <input type="checkbox" class="checkbox__input" data-select-all="fruits">
+      <span class="checkbox__box"></span>
+      <span class="checkbox__label">Select All Fruits</span>
+    </label>
+    <div style="margin-left: 24px;" class="checkbox-group">
+      <label class="checkbox">
+        <input type="checkbox" class="checkbox__input" data-group="fruits">
+        <span class="checkbox__box"></span>
+        <span class="checkbox__label">Apple</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" class="checkbox__input" data-group="fruits">
+        <span class="checkbox__box"></span>
+        <span class="checkbox__label">Banana</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" class="checkbox__input" data-group="fruits">
+        <span class="checkbox__box"></span>
+        <span class="checkbox__label">Orange</span>
+      </label>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Without Label</h3>
+  <div class="demo-row">
+    <label class="checkbox">
+      <input type="checkbox" class="checkbox__input" aria-label="Standalone checkbox">
+      <span class="checkbox__box"></span>
+    </label>
+  </div>
+</section>

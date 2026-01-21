@@ -1,0 +1,290 @@
+/**
+ * Form Group Component
+ *
+ * Wrapper for form fields with label, input, and helper/error text.
+ *
+ * Usage:
+ * <div class="form-group">
+ *   <label class="form-group__label">Email</label>
+ *   <input class="input" type="email">
+ *   <span class="form-group__helper">We'll never share your email.</span>
+ * </div>
+ */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.form-group + .form-group {
+  margin-top: var(--space-4);
+}
+
+/* ===================
+   Label
+   =================== */
+
+.form-group__label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+}
+
+.form-group__label--required::after {
+  content: " *";
+  color: var(--color-danger-500);
+}
+
+/* Optional indicator */
+.form-group__optional {
+  font-weight: var(--font-weight-normal);
+  color: var(--text-tertiary);
+  margin-left: var(--space-1);
+}
+
+/* ===================
+   Helper / Error Text
+   =================== */
+
+.form-group__helper {
+  font-size: var(--font-size-xs);
+  color: var(--text-secondary);
+  margin-top: var(--space-1);
+}
+
+.form-group__error {
+  font-size: var(--font-size-xs);
+  color: var(--color-danger-600);
+  margin-top: var(--space-1);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.form-group__error-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.form-group__success {
+  font-size: var(--font-size-xs);
+  color: var(--color-success-600);
+  margin-top: var(--space-1);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+/* ===================
+   States
+   =================== */
+
+.form-group--error .form-group__label {
+  color: var(--color-danger-600);
+}
+
+.form-group--error .input,
+.form-group--error .textarea,
+.form-group--error .select {
+  border-color: var(--color-danger-500);
+}
+
+.form-group--error .input:focus,
+.form-group--error .textarea:focus,
+.form-group--error .select:focus {
+  border-color: var(--color-danger-500);
+  box-shadow: 0 0 0 3px var(--color-danger-100);
+}
+
+.form-group--success .input,
+.form-group--success .textarea,
+.form-group--success .select {
+  border-color: var(--color-success-500);
+}
+
+.form-group--success .input:focus,
+.form-group--success .textarea:focus,
+.form-group--success .select:focus {
+  border-color: var(--color-success-500);
+  box-shadow: 0 0 0 3px var(--color-success-100);
+}
+
+.form-group--disabled .form-group__label {
+  color: var(--text-tertiary);
+}
+
+/* ===================
+   Inline Form Group
+   =================== */
+
+.form-group--inline {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.form-group--inline .form-group__label {
+  min-width: 120px;
+  margin-bottom: 0;
+}
+
+.form-group--inline .input,
+.form-group--inline .select {
+  flex: 1;
+}
+
+/* ===================
+   Horizontal Layout
+   =================== */
+
+.form-group--horizontal {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
+.form-group--horizontal .form-group__label {
+  min-width: 150px;
+  padding-top: var(--space-2);
+}
+
+.form-group--horizontal .form-group__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+/* ===================
+   Input with Addons
+   =================== */
+
+.form-group__input-group {
+  display: flex;
+  align-items: stretch;
+}
+
+.form-group__addon {
+  display: flex;
+  align-items: center;
+  padding: 0 var(--space-3);
+  background-color: var(--bg-secondary);
+  border: var(--border-width-thin) solid var(--border-default);
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.form-group__addon--start {
+  border-right: none;
+  border-radius: var(--radius-md) 0 0 var(--radius-md);
+}
+
+.form-group__addon--end {
+  border-left: none;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.form-group__input-group .input {
+  flex: 1;
+  min-width: 0;
+}
+
+.form-group__input-group .input:first-child {
+  border-radius: var(--radius-md) 0 0 var(--radius-md);
+}
+
+.form-group__input-group .input:last-child {
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.form-group__input-group .input:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+/* ===================
+   Character Count
+   =================== */
+
+.form-group__counter {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+  text-align: right;
+  margin-top: var(--space-1);
+}
+
+.form-group__counter--warning {
+  color: var(--color-warning-600);
+}
+
+.form-group__counter--error {
+  color: var(--color-danger-600);
+}
+
+/* ===================
+   Form Row (Multiple Fields)
+   =================== */
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-4);
+}
+
+.form-row .form-group + .form-group {
+  margin-top: 0;
+}
+
+/* Specific column spans */
+.form-row--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.form-row--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 640px) {
+  .form-row--2,
+  .form-row--3 {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group--inline,
+  .form-group--horizontal {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-group--inline .form-group__label,
+  .form-group--horizontal .form-group__label {
+    min-width: 0;
+    padding-top: 0;
+  }
+}
+
+/* ===================
+   Fieldset
+   =================== */
+
+.fieldset {
+  border: var(--border-width-thin) solid var(--border-default);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  margin: 0;
+}
+
+.fieldset__legend {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  padding: 0 var(--space-2);
+}
+
+.fieldset__description {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-4);
+}

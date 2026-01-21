@@ -1,0 +1,177 @@
+<!-- Divider Component Demo -->
+
+<section class="demo-section">
+  <h3>Default Divider</h3>
+  <div>
+    <p>Content above the divider</p>
+    <hr class="divider">
+    <p>Content below the divider</p>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Variants</h3>
+  <div style="display: flex; flex-direction: column; gap: 24px;">
+    <div>
+      <span style="font-size: 12px; color: var(--text-secondary);">Subtle</span>
+      <hr class="divider divider--subtle divider--sm">
+    </div>
+    <div>
+      <span style="font-size: 12px; color: var(--text-secondary);">Default</span>
+      <hr class="divider divider--sm">
+    </div>
+    <div>
+      <span style="font-size: 12px; color: var(--text-secondary);">Strong</span>
+      <hr class="divider divider--strong divider--sm">
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Thickness</h3>
+  <div style="display: flex; flex-direction: column; gap: 24px;">
+    <div>
+      <span style="font-size: 12px; color: var(--text-secondary);">Thin (1px)</span>
+      <hr class="divider divider--thin divider--sm">
+    </div>
+    <div>
+      <span style="font-size: 12px; color: var(--text-secondary);">Medium (2px)</span>
+      <hr class="divider divider--medium divider--sm">
+    </div>
+    <div>
+      <span style="font-size: 12px; color: var(--text-secondary);">Thick (3px)</span>
+      <hr class="divider divider--thick divider--sm">
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Styles</h3>
+  <div style="display: flex; flex-direction: column; gap: 24px;">
+    <div>
+      <span style="font-size: 12px; color: var(--text-secondary);">Solid (default)</span>
+      <hr class="divider divider--sm">
+    </div>
+    <div>
+      <span style="font-size: 12px; color: var(--text-secondary);">Dashed</span>
+      <hr class="divider divider--dashed divider--sm">
+    </div>
+    <div>
+      <span style="font-size: 12px; color: var(--text-secondary);">Dotted</span>
+      <hr class="divider divider--dotted divider--sm">
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Text</h3>
+  <div style="display: flex; flex-direction: column; gap: 24px;">
+    <div class="divider divider--with-text">
+      <span>OR</span>
+    </div>
+    <div class="divider divider--with-text">
+      <span>Continue with</span>
+    </div>
+    <div class="divider divider--with-text divider--text-left">
+      <span>Section Title</span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Colored</h3>
+  <div style="display: flex; flex-direction: column; gap: 16px;">
+    <hr class="divider divider--primary divider--medium divider--sm">
+    <hr class="divider divider--success divider--medium divider--sm">
+    <hr class="divider divider--warning divider--medium divider--sm">
+    <hr class="divider divider--danger divider--medium divider--sm">
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Gradient</h3>
+  <div style="display: flex; flex-direction: column; gap: 24px;">
+    <hr class="divider divider--gradient">
+    <hr class="divider divider--gradient-primary">
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Vertical Divider</h3>
+  <div class="demo-row" style="height: 40px; align-items: center;">
+    <span>Home</span>
+    <div class="divider divider--vertical"></div>
+    <span>Products</span>
+    <div class="divider divider--vertical"></div>
+    <span>About</span>
+    <div class="divider divider--vertical"></div>
+    <span>Contact</span>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>In Buttons</h3>
+  <div class="demo-row">
+    <div style="display: inline-flex; align-items: center; background: var(--bg-secondary); border-radius: var(--radius-md); padding: 4px;">
+      <button class="btn btn--ghost btn--sm">Copy</button>
+      <div class="divider divider--vertical" style="height: 24px; margin: 0 4px;"></div>
+      <button class="btn btn--ghost btn--sm">Cut</button>
+      <div class="divider divider--vertical" style="height: 24px; margin: 0 4px;"></div>
+      <button class="btn btn--ghost btn--sm">Paste</button>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Section Divider</h3>
+  <div>
+    <p>End of section content</p>
+    <div class="divider divider--section">
+      <span>✦</span>
+    </div>
+    <p>Start of new section</p>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Inset Divider (for Lists)</h3>
+  <div style="max-width: 300px; background: var(--bg-secondary); border-radius: var(--radius-md); padding: var(--space-2) 0;">
+    <div style="padding: var(--space-3) var(--space-4); display: flex; align-items: center; gap: var(--space-3);">
+      <div class="avatar avatar--sm">
+        <span class="avatar__initials">A</span>
+      </div>
+      <span>Alice Johnson</span>
+    </div>
+    <hr class="divider divider--inset divider--none">
+    <div style="padding: var(--space-3) var(--space-4); display: flex; align-items: center; gap: var(--space-3);">
+      <div class="avatar avatar--sm">
+        <span class="avatar__initials">B</span>
+      </div>
+      <span>Bob Smith</span>
+    </div>
+    <hr class="divider divider--inset divider--none">
+    <div style="padding: var(--space-3) var(--space-4); display: flex; align-items: center; gap: var(--space-3);">
+      <div class="avatar avatar--sm">
+        <span class="avatar__initials">C</span>
+      </div>
+      <span>Carol White</span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Spacing</h3>
+  <div style="background: var(--bg-secondary); padding: var(--space-4); border-radius: var(--radius-md);">
+    <p>Extra small spacing</p>
+    <hr class="divider divider--xs">
+    <p>Small spacing</p>
+    <hr class="divider divider--sm">
+    <p>Medium spacing (default)</p>
+    <hr class="divider divider--md">
+    <p>Large spacing</p>
+    <hr class="divider divider--lg">
+    <p>Extra large spacing</p>
+    <hr class="divider divider--xl">
+    <p>Content after</p>
+  </div>
+</section>

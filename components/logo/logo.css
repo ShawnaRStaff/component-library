@@ -1,0 +1,328 @@
+/**
+ * Logo Component
+ *
+ * Reusable logo marks and brand elements.
+ *
+ * Usage:
+ * <div class="logo">
+ *   <div class="logo__mark">...</div>
+ *   <span class="logo__text">Brand</span>
+ * </div>
+ */
+
+/* Logo Container */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+/* Logo Mark (Icon/Symbol) */
+.logo__mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+
+  background-color: var(--color-primary-500);
+  border-radius: var(--radius-lg);
+  color: white;
+
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+.logo__mark svg {
+  width: 60%;
+  height: 60%;
+}
+
+/* Logo Text */
+.logo__text {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.logo__tagline {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-normal);
+  color: var(--text-tertiary);
+  margin-top: 2px;
+}
+
+/* ===================
+   Sizes
+   =================== */
+
+.logo--xs .logo__mark {
+  width: 24px;
+  height: 24px;
+  font-size: var(--font-size-xs);
+  border-radius: var(--radius-md);
+}
+
+.logo--xs .logo__text {
+  font-size: var(--font-size-sm);
+}
+
+.logo--sm .logo__mark {
+  width: 32px;
+  height: 32px;
+  font-size: var(--font-size-sm);
+}
+
+.logo--sm .logo__text {
+  font-size: var(--font-size-md);
+}
+
+.logo--md .logo__mark {
+  width: 40px;
+  height: 40px;
+  font-size: var(--font-size-lg);
+}
+
+.logo--md .logo__text {
+  font-size: var(--font-size-xl);
+}
+
+.logo--lg .logo__mark {
+  width: 48px;
+  height: 48px;
+  font-size: var(--font-size-xl);
+}
+
+.logo--lg .logo__text {
+  font-size: var(--font-size-2xl);
+}
+
+.logo--xl .logo__mark {
+  width: 64px;
+  height: 64px;
+  font-size: var(--font-size-2xl);
+  border-radius: var(--radius-xl);
+}
+
+.logo--xl .logo__text {
+  font-size: var(--font-size-3xl);
+}
+
+/* ===================
+   Mark Shapes
+   =================== */
+
+.logo__mark--circle {
+  border-radius: var(--radius-full);
+}
+
+.logo__mark--square {
+  border-radius: var(--radius-md);
+}
+
+.logo__mark--rounded {
+  border-radius: var(--radius-lg);
+}
+
+/* ===================
+   Mark Colors
+   =================== */
+
+.logo__mark--primary {
+  background-color: var(--color-primary-500);
+  color: white;
+}
+
+.logo__mark--secondary {
+  background-color: var(--color-secondary-500);
+  color: white;
+}
+
+.logo__mark--success {
+  background-color: var(--color-success-500);
+  color: white;
+}
+
+.logo__mark--warning {
+  background-color: var(--color-warning-500);
+  color: var(--color-neutral-900);
+}
+
+.logo__mark--danger {
+  background-color: var(--color-danger-500);
+  color: white;
+}
+
+.logo__mark--dark {
+  background-color: var(--color-neutral-900);
+  color: white;
+}
+
+.logo__mark--light {
+  background-color: var(--color-neutral-100);
+  color: var(--color-neutral-900);
+}
+
+/* Gradient marks */
+.logo__mark--gradient-primary {
+  background: linear-gradient(135deg, var(--color-primary-400), var(--color-primary-600));
+  color: white;
+}
+
+.logo__mark--gradient-sunset {
+  background: linear-gradient(135deg, var(--color-warning-400), var(--color-danger-500));
+  color: white;
+}
+
+.logo__mark--gradient-ocean {
+  background: linear-gradient(135deg, var(--color-secondary-400), var(--color-primary-600));
+  color: white;
+}
+
+.logo__mark--gradient-forest {
+  background: linear-gradient(135deg, var(--color-success-400), var(--color-primary-600));
+  color: white;
+}
+
+/* ===================
+   Text Variants
+   =================== */
+
+.logo__text--light {
+  color: white;
+}
+
+.logo__text--dark {
+  color: var(--color-neutral-900);
+}
+
+.logo__text--primary {
+  color: var(--color-primary-600);
+}
+
+/* ===================
+   Layout Variants
+   =================== */
+
+/* Stacked layout (mark on top, text below) */
+.logo--stacked {
+  flex-direction: column;
+  gap: var(--space-2);
+  text-align: center;
+}
+
+.logo--stacked .logo__text {
+  font-size: var(--font-size-sm);
+}
+
+/* Mark only (no text) */
+.logo--mark-only .logo__text {
+  display: none;
+}
+
+/* Text only (no mark) */
+.logo--text-only .logo__mark {
+  display: none;
+}
+
+/* ===================
+   Interactive Logo
+   =================== */
+
+a.logo:hover .logo__mark {
+  transform: scale(1.05);
+  transition: transform var(--duration-fast) var(--easing-default);
+}
+
+a.logo:hover .logo__text {
+  color: var(--color-primary-600);
+}
+
+/* ===================
+   Premade Logo Marks
+   =================== */
+
+/* Diamond mark */
+.logo__mark--diamond {
+  background-color: var(--color-primary-500);
+  position: relative;
+}
+
+.logo__mark--diamond::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  transform: rotate(45deg);
+}
+
+/* Bars mark */
+.logo__mark--bars {
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+}
+
+.logo__mark--bars span {
+  display: block;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.logo__mark--bars span:nth-child(1) { width: 100%; }
+.logo__mark--bars span:nth-child(2) { width: 70%; }
+.logo__mark--bars span:nth-child(3) { width: 85%; }
+
+/* Dots mark */
+.logo__mark--dots {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px;
+  padding: 8px;
+}
+
+.logo__mark--dots span {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: var(--radius-full);
+}
+
+/* Layers mark */
+.logo__mark--layers {
+  position: relative;
+}
+
+.logo__mark--layers span {
+  position: absolute;
+  width: 60%;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.logo__mark--layers span:nth-child(1) { top: 30%; }
+.logo__mark--layers span:nth-child(2) { top: 45%; }
+.logo__mark--layers span:nth-child(3) { top: 60%; }
+
+/* ===================
+   Responsive
+   =================== */
+
+@media (max-width: 480px) {
+  .logo--responsive .logo__text {
+    display: none;
+  }
+}

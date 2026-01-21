@@ -1,0 +1,216 @@
+/**
+ * Accordion Component
+ *
+ * Usage:
+ * <div class="accordion">
+ *   <div class="accordion__item">
+ *     <button class="accordion__header">Title</button>
+ *     <div class="accordion__content">Content</div>
+ *   </div>
+ * </div>
+ */
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  border: var(--border-width-thin) solid var(--border-default);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.accordion__item {
+  border-bottom: var(--border-width-thin) solid var(--border-default);
+}
+
+.accordion__item:last-child {
+  border-bottom: none;
+}
+
+/* Header/Trigger */
+.accordion__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--space-4) var(--space-5);
+
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+  text-align: left;
+
+  background-color: var(--bg-primary);
+  border: none;
+  cursor: pointer;
+
+  transition: background-color var(--duration-fast) var(--easing-default);
+}
+
+.accordion__header:hover {
+  background-color: var(--bg-secondary);
+}
+
+.accordion__header:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 2px var(--color-primary-500);
+}
+
+/* Header icon */
+.accordion__icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: var(--text-secondary);
+  transition: transform var(--duration-normal) var(--easing-default);
+}
+
+.accordion__item.is-open .accordion__icon {
+  transform: rotate(180deg);
+}
+
+/* Content panel */
+.accordion__content {
+  display: none;
+  padding: 0 var(--space-5) var(--space-4);
+
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+.accordion__item.is-open .accordion__content {
+  display: block;
+}
+
+/* Content inner wrapper for animations */
+.accordion__body {
+  padding-top: var(--space-2);
+}
+
+/* ===================
+   Variants
+   =================== */
+
+/* Flush (no outer border) */
+.accordion--flush {
+  border: none;
+  border-radius: 0;
+}
+
+.accordion--flush .accordion__item {
+  border-bottom: var(--border-width-thin) solid var(--border-default);
+}
+
+.accordion--flush .accordion__item:last-child {
+  border-bottom: var(--border-width-thin) solid var(--border-default);
+}
+
+/* Separated items */
+.accordion--separated {
+  border: none;
+  gap: var(--space-3);
+}
+
+.accordion--separated .accordion__item {
+  border: var(--border-width-thin) solid var(--border-default);
+  border-radius: var(--radius-md);
+}
+
+/* Elevated items */
+.accordion--elevated {
+  border: none;
+  gap: var(--space-3);
+}
+
+.accordion--elevated .accordion__item {
+  border: none;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.accordion--elevated .accordion__item.is-open {
+  box-shadow: var(--shadow-md);
+}
+
+/* Compact */
+.accordion--compact .accordion__header {
+  padding: var(--space-3) var(--space-4);
+}
+
+.accordion--compact .accordion__content {
+  padding: 0 var(--space-4) var(--space-3);
+}
+
+/* Large */
+.accordion--lg .accordion__header {
+  padding: var(--space-5) var(--space-6);
+  font-size: var(--font-size-md);
+}
+
+.accordion--lg .accordion__content {
+  padding: 0 var(--space-6) var(--space-5);
+}
+
+/* With icon on left */
+.accordion--icon-left .accordion__header {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: var(--space-3);
+}
+
+/* Filled header when open */
+.accordion--filled .accordion__item.is-open .accordion__header {
+  background-color: var(--color-primary-50);
+  color: var(--color-primary-700);
+}
+
+.accordion--filled .accordion__item.is-open .accordion__icon {
+  color: var(--color-primary-500);
+}
+
+/* With left border indicator */
+.accordion--bordered .accordion__item.is-open {
+  border-left: 3px solid var(--color-primary-500);
+}
+
+.accordion--bordered .accordion__item.is-open .accordion__header {
+  padding-left: calc(var(--space-5) - 3px);
+}
+
+/* ===================
+   FAQ Specific Styling
+   =================== */
+
+.accordion--faq {
+  border: none;
+}
+
+.accordion--faq .accordion__item {
+  border: none;
+  border-bottom: var(--border-width-thin) solid var(--border-default);
+}
+
+.accordion--faq .accordion__header {
+  padding: var(--space-5) 0;
+  background: none;
+  font-size: var(--font-size-md);
+}
+
+.accordion--faq .accordion__header:hover {
+  background: none;
+  color: var(--color-primary-500);
+}
+
+.accordion--faq .accordion__content {
+  padding: 0 0 var(--space-5);
+}
+
+/* ===================
+   Nested Accordion
+   =================== */
+
+.accordion__content .accordion {
+  margin-top: var(--space-3);
+}

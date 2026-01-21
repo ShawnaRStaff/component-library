@@ -1,0 +1,282 @@
+/**
+ * Tag/Chip Component
+ *
+ * Usage:
+ * <span class="tag">Label</span>
+ * <span class="tag tag--primary">Primary</span>
+ * <button class="tag tag--removable">Label <span class="tag__remove">&times;</span></button>
+ */
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-3);
+
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.4;
+  color: var(--text-primary);
+  text-decoration: none;
+  white-space: nowrap;
+
+  background-color: var(--bg-tertiary);
+  border: var(--border-width-thin) solid transparent;
+  border-radius: var(--radius-full);
+
+  transition: all var(--duration-fast) var(--easing-default);
+}
+
+/* Sizes */
+.tag--sm {
+  padding: 2px var(--space-2);
+  font-size: 10px;
+}
+
+.tag--lg {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--font-size-sm);
+}
+
+/* Colors */
+.tag--primary {
+  background-color: var(--color-primary-100);
+  color: var(--color-primary-700);
+}
+
+.tag--secondary {
+  background-color: var(--color-secondary-100);
+  color: var(--color-secondary-700);
+}
+
+.tag--success {
+  background-color: var(--color-success-100);
+  color: var(--color-success-700);
+}
+
+.tag--warning {
+  background-color: var(--color-warning-100);
+  color: var(--color-warning-700);
+}
+
+.tag--danger {
+  background-color: var(--color-danger-100);
+  color: var(--color-danger-700);
+}
+
+/* Solid variants */
+.tag--solid {
+  background-color: var(--color-neutral-600);
+  color: white;
+}
+
+.tag--solid.tag--primary {
+  background-color: var(--color-primary-500);
+  color: white;
+}
+
+.tag--solid.tag--secondary {
+  background-color: var(--color-secondary-500);
+  color: white;
+}
+
+.tag--solid.tag--success {
+  background-color: var(--color-success-500);
+  color: white;
+}
+
+.tag--solid.tag--warning {
+  background-color: var(--color-warning-500);
+  color: var(--color-neutral-900);
+}
+
+.tag--solid.tag--danger {
+  background-color: var(--color-danger-500);
+  color: white;
+}
+
+/* Outline variants */
+.tag--outline {
+  background-color: transparent;
+  border-color: var(--border-default);
+}
+
+.tag--outline.tag--primary {
+  border-color: var(--color-primary-300);
+  color: var(--color-primary-600);
+}
+
+.tag--outline.tag--secondary {
+  border-color: var(--color-secondary-300);
+  color: var(--color-secondary-600);
+}
+
+.tag--outline.tag--success {
+  border-color: var(--color-success-300);
+  color: var(--color-success-600);
+}
+
+.tag--outline.tag--warning {
+  border-color: var(--color-warning-300);
+  color: var(--color-warning-600);
+}
+
+.tag--outline.tag--danger {
+  border-color: var(--color-danger-300);
+  color: var(--color-danger-600);
+}
+
+/* Shapes */
+.tag--square {
+  border-radius: var(--radius-md);
+}
+
+/* Interactive/Clickable */
+.tag--clickable {
+  cursor: pointer;
+}
+
+.tag--clickable:hover {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-default);
+}
+
+.tag--clickable.tag--primary:hover {
+  background-color: var(--color-primary-200);
+}
+
+.tag--clickable.tag--success:hover {
+  background-color: var(--color-success-200);
+}
+
+.tag--clickable.tag--danger:hover {
+  background-color: var(--color-danger-200);
+}
+
+/* Removable */
+.tag--removable {
+  padding-right: var(--space-2);
+  cursor: default;
+  border: none;
+  background-color: var(--bg-tertiary);
+}
+
+.tag__remove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  margin-left: var(--space-1);
+
+  font-size: 14px;
+  line-height: 1;
+  color: var(--text-secondary);
+
+  background-color: transparent;
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+
+  transition: all var(--duration-fast) var(--easing-default);
+}
+
+.tag__remove:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--text-primary);
+}
+
+.tag--primary .tag__remove:hover {
+  background-color: var(--color-primary-200);
+  color: var(--color-primary-800);
+}
+
+.tag--danger .tag__remove:hover {
+  background-color: var(--color-danger-200);
+  color: var(--color-danger-800);
+}
+
+/* With icon */
+.tag__icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.tag--lg .tag__icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* With avatar/dot */
+.tag__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background-color: currentColor;
+}
+
+.tag__avatar {
+  width: 18px;
+  height: 18px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  margin-left: -4px;
+}
+
+/* Tag group */
+.tag-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+/* Tag input (for multi-select) */
+.tag-input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding: var(--space-2);
+  min-height: var(--size-md);
+
+  background-color: var(--bg-primary);
+  border: var(--border-width-thin) solid var(--border-default);
+  border-radius: var(--radius-md);
+
+  cursor: text;
+}
+
+.tag-input:focus-within {
+  border-color: var(--color-primary-500);
+  box-shadow: var(--shadow-focus);
+}
+
+.tag-input__input {
+  flex: 1;
+  min-width: 120px;
+  padding: var(--space-1);
+
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-sm);
+  color: var(--text-primary);
+
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.tag-input__input::placeholder {
+  color: var(--text-tertiary);
+}
+
+/* Selected state */
+.tag.is-selected {
+  background-color: var(--color-primary-500);
+  color: white;
+}
+
+.tag.is-selected .tag__remove:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}

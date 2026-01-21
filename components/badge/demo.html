@@ -1,0 +1,168 @@
+<!-- Badge Component Demo -->
+
+<section class="demo-section">
+  <h3>Default Badges</h3>
+  <div class="demo-row">
+    <span class="badge">Default</span>
+    <span class="badge badge--primary">Primary</span>
+    <span class="badge badge--success">Success</span>
+    <span class="badge badge--warning">Warning</span>
+    <span class="badge badge--danger">Danger</span>
+    <span class="badge badge--info">Info</span>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Solid Badges</h3>
+  <div class="demo-row">
+    <span class="badge badge--primary-solid">Primary</span>
+    <span class="badge badge--success-solid">Success</span>
+    <span class="badge badge--warning-solid">Warning</span>
+    <span class="badge badge--danger-solid">Danger</span>
+    <span class="badge badge--info-solid">Info</span>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Outline Badges</h3>
+  <div class="demo-row">
+    <span class="badge badge--outline">Default</span>
+    <span class="badge badge--outline-primary">Primary</span>
+    <span class="badge badge--outline-success">Success</span>
+    <span class="badge badge--outline-danger">Danger</span>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Pill Badges</h3>
+  <div class="demo-row">
+    <span class="badge badge--pill">Default</span>
+    <span class="badge badge--pill badge--primary">Primary</span>
+    <span class="badge badge--pill badge--success">Success</span>
+    <span class="badge badge--pill badge--danger">Danger</span>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Sizes</h3>
+  <div class="demo-row">
+    <span class="badge badge--primary badge--sm">Small</span>
+    <span class="badge badge--primary">Medium</span>
+    <span class="badge badge--primary badge--lg">Large</span>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Dot Badges</h3>
+  <div class="demo-row">
+    <span class="badge badge--dot badge--primary-solid badge--sm"></span>
+    <span class="badge badge--dot badge--success-solid"></span>
+    <span class="badge badge--dot badge--danger-solid badge--lg"></span>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Icons</h3>
+  <div class="demo-row">
+    <span class="badge badge--success">
+      <svg class="badge__icon" viewBox="0 0 12 12" fill="currentColor">
+        <path d="M10 3L4.5 8.5 2 6" stroke="currentColor" stroke-width="2" fill="none"/>
+      </svg>
+      Verified
+    </span>
+    <span class="badge badge--warning">
+      <svg class="badge__icon" viewBox="0 0 12 12" fill="currentColor">
+        <path d="M6 1v6M6 9v1"/>
+      </svg>
+      Pending
+    </span>
+    <span class="badge badge--danger">
+      <svg class="badge__icon" viewBox="0 0 12 12" fill="currentColor">
+        <circle cx="6" cy="6" r="5" stroke="currentColor" fill="none"/>
+        <path d="M4 4l4 4M8 4l-4 4" stroke="currentColor"/>
+      </svg>
+      Error
+    </span>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Removable Badges</h3>
+  <div class="demo-row">
+    <span class="badge badge--primary badge--removable">
+      React
+      <button class="badge__remove" aria-label="Remove">
+        <svg viewBox="0 0 12 12" fill="currentColor">
+          <path d="M3 3l6 6M9 3l-6 6" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+      </button>
+    </span>
+    <span class="badge badge--success badge--removable">
+      Vue
+      <button class="badge__remove" aria-label="Remove">
+        <svg viewBox="0 0 12 12" fill="currentColor">
+          <path d="M3 3l6 6M9 3l-6 6" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+      </button>
+    </span>
+    <span class="badge badge--info badge--removable">
+      Svelte
+      <button class="badge__remove" aria-label="Remove">
+        <svg viewBox="0 0 12 12" fill="currentColor">
+          <path d="M3 3l6 6M9 3l-6 6" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+      </button>
+    </span>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Status Badges</h3>
+  <div class="demo-row">
+    <span class="badge badge--status badge--status-online">Online</span>
+    <span class="badge badge--status badge--status-away">Away</span>
+    <span class="badge badge--status badge--status-busy">Busy</span>
+    <span class="badge badge--status badge--status-offline">Offline</span>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Notification Badges</h3>
+  <div class="demo-row" style="gap: 24px;">
+    <div class="badge-wrapper">
+      <button class="btn btn--secondary btn--icon">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a2 2 0 01-2-2h4a2 2 0 01-2 2z"/>
+        </svg>
+      </button>
+      <span class="badge badge--notification">3</span>
+    </div>
+    <div class="badge-wrapper">
+      <button class="btn btn--secondary btn--icon">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884zM18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+        </svg>
+      </button>
+      <span class="badge badge--notification">99+</span>
+    </div>
+    <div class="badge-wrapper">
+      <button class="btn btn--secondary btn--icon">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12z"/>
+        </svg>
+      </button>
+      <span class="badge badge--notification"></span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Badge Group</h3>
+  <div class="badge-group">
+    <span class="badge badge--primary badge--pill">JavaScript</span>
+    <span class="badge badge--primary badge--pill">TypeScript</span>
+    <span class="badge badge--primary badge--pill">Python</span>
+    <span class="badge badge--primary badge--pill">Go</span>
+    <span class="badge badge--primary badge--pill">Rust</span>
+  </div>
+</section>

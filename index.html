@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Component Library</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="preview.css">
+</head>
+<body>
+  <div class="preview-layout">
+    <aside class="preview-sidebar">
+      <div class="preview-header">
+        <h1>Components</h1>
+      </div>
+      <div class="preview-search">
+        <input
+          type="search"
+          id="component-search"
+          class="preview-search-input"
+          placeholder="Search components..."
+          autocomplete="off"
+        >
+      </div>
+      <nav class="preview-nav">
+        <ul id="component-list">
+          <!-- Populated by preview.js -->
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="preview-main">
+      <header class="preview-toolbar">
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle" type="button" aria-label="Toggle navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 6h18M3 12h18M3 18h18"/>
+          </svg>
+        </button>
+        <h2 id="component-title">Select a component</h2>
+        <div class="preview-actions">
+          <button id="code-toggle" type="button">
+            <span>View </span>Code
+          </button>
+          <button id="copy-html" type="button">
+            <span>Copy </span>Code
+          </button>
+          <button id="theme-toggle" type="button">
+            <span>Toggle </span>Theme
+          </button>
+        </div>
+      </header>
+
+      <div class="preview-content">
+        <div id="component-preview" class="preview-frame">
+          <p class="preview-empty">Select a component from the sidebar to preview</p>
+        </div>
+
+        <div id="code-panel" class="code-panel is-hidden">
+          <div class="code-panel-tabs">
+            <button class="code-panel-tab is-active" data-tab="html">HTML</button>
+            <button class="code-panel-tab" data-tab="css">CSS</button>
+            <button class="code-panel-tab" data-tab="js">JS</button>
+            <button class="code-panel-copy" id="copy-code">Copy</button>
+          </div>
+          <div id="code-content" class="code-panel-content">
+            <div class="code-tab-content is-active" data-content="html"></div>
+            <div class="code-tab-content" data-content="css"></div>
+            <div class="code-tab-content" data-content="js"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Core component utilities (must load before component JS) -->
+  <script src="components/_core/event-manager.js"></script>
+  <script src="components/_core/base-component.js"></script>
+  <script src="components/_core/focus-utils.js"></script>
+  <script src="components/_core/keyboard-nav.js"></script>
+  <script src="components/_core/index.js"></script>
+
+  <script src="preview.js"></script>
+</body>
+</html>

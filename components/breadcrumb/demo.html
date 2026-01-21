@@ -1,0 +1,155 @@
+<!-- Breadcrumb Component Demo -->
+
+<section class="demo-section">
+  <h3>Default Breadcrumb</h3>
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol class="breadcrumb__list">
+      <li class="breadcrumb__item"><a href="#">Home</a></li>
+      <li class="breadcrumb__item"><a href="#">Products</a></li>
+      <li class="breadcrumb__item"><a href="#">Electronics</a></li>
+      <li class="breadcrumb__item breadcrumb__item--active" aria-current="page">Laptops</li>
+    </ol>
+  </nav>
+</section>
+
+<section class="demo-section">
+  <h3>Separator Variants</h3>
+  <div style="display: flex; flex-direction: column; gap: 16px;">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol class="breadcrumb__list">
+        <li class="breadcrumb__item"><a href="#">Home</a></li>
+        <li class="breadcrumb__item"><a href="#">Category</a></li>
+        <li class="breadcrumb__item breadcrumb__item--active">Page</li>
+      </ol>
+    </nav>
+    <p style="font-size: 12px; color: var(--text-tertiary);">Slash (default)</p>
+
+    <nav class="breadcrumb breadcrumb--arrows" aria-label="Breadcrumb">
+      <ol class="breadcrumb__list">
+        <li class="breadcrumb__item"><a href="#">Home</a></li>
+        <li class="breadcrumb__item"><a href="#">Category</a></li>
+        <li class="breadcrumb__item breadcrumb__item--active">Page</li>
+      </ol>
+    </nav>
+    <p style="font-size: 12px; color: var(--text-tertiary);">Arrows</p>
+
+    <nav class="breadcrumb breadcrumb--chevrons" aria-label="Breadcrumb">
+      <ol class="breadcrumb__list">
+        <li class="breadcrumb__item"><a href="#">Home</a></li>
+        <li class="breadcrumb__item"><a href="#">Category</a></li>
+        <li class="breadcrumb__item breadcrumb__item--active">Page</li>
+      </ol>
+    </nav>
+    <p style="font-size: 12px; color: var(--text-tertiary);">Chevrons</p>
+
+    <nav class="breadcrumb breadcrumb--dots" aria-label="Breadcrumb">
+      <ol class="breadcrumb__list">
+        <li class="breadcrumb__item"><a href="#">Home</a></li>
+        <li class="breadcrumb__item"><a href="#">Category</a></li>
+        <li class="breadcrumb__item breadcrumb__item--active">Page</li>
+      </ol>
+    </nav>
+    <p style="font-size: 12px; color: var(--text-tertiary);">Dots</p>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Icons</h3>
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol class="breadcrumb__list">
+      <li class="breadcrumb__item">
+        <a href="#" style="display: flex; align-items: center; gap: 4px;">
+          <svg class="breadcrumb__icon" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 1l7 7-1.5 1.5L8 4l-5.5 5.5L1 8l7-7zm0 4l5 5v5H3v-5l5-5z"/>
+          </svg>
+          Home
+        </a>
+      </li>
+      <li class="breadcrumb__item"><a href="#">Settings</a></li>
+      <li class="breadcrumb__item breadcrumb__item--active">Profile</li>
+    </ol>
+  </nav>
+</section>
+
+<section class="demo-section">
+  <h3>Sizes</h3>
+  <div style="display: flex; flex-direction: column; gap: 16px;">
+    <nav class="breadcrumb breadcrumb--sm" aria-label="Breadcrumb">
+      <ol class="breadcrumb__list">
+        <li class="breadcrumb__item"><a href="#">Home</a></li>
+        <li class="breadcrumb__item"><a href="#">Category</a></li>
+        <li class="breadcrumb__item breadcrumb__item--active">Small</li>
+      </ol>
+    </nav>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol class="breadcrumb__list">
+        <li class="breadcrumb__item"><a href="#">Home</a></li>
+        <li class="breadcrumb__item"><a href="#">Category</a></li>
+        <li class="breadcrumb__item breadcrumb__item--active">Default</li>
+      </ol>
+    </nav>
+
+    <nav class="breadcrumb breadcrumb--lg" aria-label="Breadcrumb">
+      <ol class="breadcrumb__list">
+        <li class="breadcrumb__item"><a href="#">Home</a></li>
+        <li class="breadcrumb__item"><a href="#">Category</a></li>
+        <li class="breadcrumb__item breadcrumb__item--active">Large</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Contained</h3>
+  <nav class="breadcrumb breadcrumb--contained" aria-label="Breadcrumb">
+    <ol class="breadcrumb__list">
+      <li class="breadcrumb__item"><a href="#">Dashboard</a></li>
+      <li class="breadcrumb__item"><a href="#">Projects</a></li>
+      <li class="breadcrumb__item"><a href="#">Website Redesign</a></li>
+      <li class="breadcrumb__item breadcrumb__item--active">Tasks</li>
+    </ol>
+  </nav>
+</section>
+
+<section class="demo-section">
+  <h3>Collapsed Breadcrumb</h3>
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol class="breadcrumb__list">
+      <li class="breadcrumb__item"><a href="#">Home</a></li>
+      <li class="breadcrumb__item">
+        <button class="breadcrumb__collapse-trigger" aria-label="Show hidden items">...</button>
+      </li>
+      <li class="breadcrumb__item breadcrumb__item--collapsed"><a href="#">Documents</a></li>
+      <li class="breadcrumb__item breadcrumb__item--collapsed"><a href="#">2024</a></li>
+      <li class="breadcrumb__item breadcrumb__item--collapsed"><a href="#">Projects</a></li>
+      <li class="breadcrumb__item"><a href="#">Reports</a></li>
+      <li class="breadcrumb__item breadcrumb__item--active">Q4 Summary</li>
+    </ol>
+  </nav>
+  <p style="margin-top: 8px; font-size: 12px; color: var(--text-secondary);">Click "..." to expand hidden items</p>
+</section>
+
+<section class="demo-section">
+  <h3>Long Path</h3>
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol class="breadcrumb__list">
+      <li class="breadcrumb__item"><a href="#">Organization</a></li>
+      <li class="breadcrumb__item"><a href="#">Engineering</a></li>
+      <li class="breadcrumb__item"><a href="#">Frontend</a></li>
+      <li class="breadcrumb__item"><a href="#">Components</a></li>
+      <li class="breadcrumb__item"><a href="#">UI Library</a></li>
+      <li class="breadcrumb__item breadcrumb__item--active">Breadcrumb</li>
+    </ol>
+  </nav>
+</section>
+
+<section class="demo-section">
+  <h3>Two Items Only</h3>
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol class="breadcrumb__list">
+      <li class="breadcrumb__item"><a href="#">Back to Dashboard</a></li>
+      <li class="breadcrumb__item breadcrumb__item--active">Settings</li>
+    </ol>
+  </nav>
+</section>
