@@ -1,0 +1,6 @@
+{
+  "name": "logo",
+  "label": "Logo",
+  "category": "atoms",
+  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+}

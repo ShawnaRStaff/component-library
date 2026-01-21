@@ -1,0 +1,9 @@
+{
+  "name": "tooltip",
+  "label": "Tooltip",
+  "category": "atoms",
+  "description": "Informational tooltips that appear on hover",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" }
+  ]
+}

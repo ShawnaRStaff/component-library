@@ -1,0 +1,6 @@
+{
+  "name": "navbar",
+  "label": "Navbar",
+  "category": "organisms",
+  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+}

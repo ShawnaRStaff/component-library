@@ -1,0 +1,9 @@
+{
+  "name": "table",
+  "label": "Table",
+  "category": "molecules",
+  "description": "Data tables with sorting and selection",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "textarea",
+  "label": "Textarea",
+  "category": "atoms",
+  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "kbd",
+  "label": "Kbd",
+  "category": "atoms",
+  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "footer",
+  "label": "Footer",
+  "category": "organisms",
+  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+}

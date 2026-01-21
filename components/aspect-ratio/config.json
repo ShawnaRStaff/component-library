@@ -1,0 +1,6 @@
+{
+  "name": "aspect-ratio",
+  "label": "Aspect Ratio",
+  "category": "layout",
+  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+}

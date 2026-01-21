@@ -1,0 +1,6 @@
+{
+  "name": "file-upload",
+  "label": "File Upload",
+  "category": "molecules",
+  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+}

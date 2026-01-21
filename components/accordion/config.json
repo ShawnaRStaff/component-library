@@ -1,0 +1,9 @@
+{
+  "name": "accordion",
+  "label": "Accordion",
+  "category": "molecules",
+  "description": "Collapsible content sections",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" }
+  ]
+}

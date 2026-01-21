@@ -1,0 +1,15 @@
+{
+  "name": "avatar",
+  "label": "Avatar",
+  "category": "atoms",
+  "description": "User profile images with fallback support, status indicators, and grouping",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "with-image", "label": "With Image", "file": "variants/with-image.html" },
+    { "id": "initials", "label": "Initials", "file": "variants/initials.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "shapes", "label": "Shapes", "file": "variants/shapes.html" },
+    { "id": "status", "label": "With Status", "file": "variants/status.html" },
+    { "id": "group", "label": "Avatar Group", "file": "variants/group.html" }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "sidebar",
+  "label": "Sidebar",
+  "category": "organisms",
+  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+}

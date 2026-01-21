@@ -1,0 +1,6 @@
+{
+  "name": "radio",
+  "label": "Radio",
+  "category": "atoms",
+  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+}

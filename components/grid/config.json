@@ -1,0 +1,6 @@
+{
+  "name": "grid",
+  "label": "Grid",
+  "category": "layout",
+  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+}

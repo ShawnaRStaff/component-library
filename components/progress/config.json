@@ -1,0 +1,6 @@
+{
+  "name": "progress",
+  "label": "Progress",
+  "category": "molecules",
+  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+}

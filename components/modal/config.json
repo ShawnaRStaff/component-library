@@ -1,0 +1,15 @@
+{
+  "name": "modal",
+  "label": "Modal",
+  "category": "molecules",
+  "description": "Dialog overlays with focus trapping and keyboard navigation",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic", "file": "variants/basic.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "confirmation", "label": "Confirmation", "file": "variants/confirmation.html" },
+    { "id": "success", "label": "Success", "file": "variants/success.html" },
+    { "id": "form", "label": "Form Modal", "file": "variants/form.html" },
+    { "id": "scrollable", "label": "Scrollable", "file": "variants/scrollable.html" }
+  ]
+}

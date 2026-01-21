@@ -1,0 +1,9 @@
+{
+  "name": "input",
+  "label": "Input",
+  "category": "atoms",
+  "description": "Text input fields with validation states and addons",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" }
+  ]
+}

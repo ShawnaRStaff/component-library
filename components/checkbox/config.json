@@ -1,0 +1,9 @@
+{
+  "name": "checkbox",
+  "label": "Checkbox",
+  "category": "atoms",
+  "description": "Selectable checkboxes with various states",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" }
+  ]
+}

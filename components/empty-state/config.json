@@ -1,0 +1,6 @@
+{
+  "name": "empty-state",
+  "label": "Empty State",
+  "category": "molecules",
+  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+}

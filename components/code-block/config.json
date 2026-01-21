@@ -1,0 +1,6 @@
+{
+  "name": "code-block",
+  "label": "Code Block",
+  "category": "molecules",
+  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+}

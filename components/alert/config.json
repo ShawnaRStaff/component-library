@@ -1,0 +1,9 @@
+{
+  "name": "alert",
+  "label": "Alert",
+  "category": "molecules",
+  "description": "Notification messages with different severity levels",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" }
+  ]
+}

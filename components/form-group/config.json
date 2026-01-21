@@ -1,0 +1,6 @@
+{
+  "name": "form-group",
+  "label": "Form Group",
+  "category": "molecules",
+  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "spinner",
+  "label": "Spinner",
+  "category": "atoms",
+  "description": "Loading spinner indicators",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" }
+  ]
+}

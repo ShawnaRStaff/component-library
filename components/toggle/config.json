@@ -1,0 +1,9 @@
+{
+  "name": "toggle",
+  "label": "Toggle",
+  "category": "atoms",
+  "description": "Switch component for boolean settings",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "skeleton",
+  "label": "Skeleton",
+  "category": "molecules",
+  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+}

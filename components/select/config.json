@@ -1,0 +1,9 @@
+{
+  "name": "select",
+  "label": "Select",
+  "category": "molecules",
+  "description": "Dropdown select menus with search support",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "tabs",
+  "label": "Tabs",
+  "category": "molecules",
+  "description": "Tabbed navigation with keyboard support",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" }
+  ]
+}

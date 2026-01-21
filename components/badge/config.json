@@ -1,0 +1,9 @@
+{
+  "name": "badge",
+  "label": "Badge",
+  "category": "atoms",
+  "description": "Small status descriptors for UI elements",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" }
+  ]
+}

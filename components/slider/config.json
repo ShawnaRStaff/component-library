@@ -1,0 +1,6 @@
+{
+  "name": "slider",
+  "label": "Slider",
+  "category": "atoms",
+  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+}

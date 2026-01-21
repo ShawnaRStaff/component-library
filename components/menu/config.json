@@ -1,0 +1,6 @@
+{
+  "name": "menu",
+  "label": "Menu",
+  "category": "molecules",
+  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+}

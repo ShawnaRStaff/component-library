@@ -1,0 +1,6 @@
+{
+  "name": "stack",
+  "label": "Stack",
+  "category": "layout",
+  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+}

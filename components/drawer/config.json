@@ -1,0 +1,13 @@
+{
+  "name": "drawer",
+  "label": "Drawer",
+  "category": "organisms",
+  "description": "Slide-out panel with focus trapping and keyboard navigation",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "left", "label": "Left Position", "file": "variants/left.html" },
+    { "id": "right", "label": "Right Position", "file": "variants/right.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "with-form", "label": "With Form", "file": "variants/with-form.html" }
+  ]
+}

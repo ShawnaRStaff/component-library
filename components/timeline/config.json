@@ -1,0 +1,6 @@
+{
+  "name": "timeline",
+  "label": "Timeline",
+  "category": "molecules",
+  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+}

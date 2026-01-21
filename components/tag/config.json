@@ -1,0 +1,9 @@
+{
+  "name": "tag",
+  "label": "Tag",
+  "category": "atoms",
+  "description": "Label tags for categorization",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" }
+  ]
+}

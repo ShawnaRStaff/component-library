@@ -1,0 +1,6 @@
+{
+  "name": "stat",
+  "label": "Stat",
+  "category": "molecules",
+  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "tree-view",
+  "label": "Tree View",
+  "category": "molecules",
+  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+}

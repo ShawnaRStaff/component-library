@@ -1,0 +1,6 @@
+{
+  "name": "divider",
+  "label": "Divider",
+  "category": "atoms",
+  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+}

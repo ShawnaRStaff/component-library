@@ -1,0 +1,6 @@
+{
+  "name": "container",
+  "label": "Container",
+  "category": "layout",
+  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+}
