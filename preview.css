@@ -79,7 +79,7 @@ body {
 .sidebar-nav {
   flex: 1;
   overflow-y: auto;
-  padding: var(--space-2) 0;
+  padding: var(--space-4) 0;
 }
 
 /* Component Tree */
@@ -90,29 +90,35 @@ body {
 }
 
 .tree-category {
-  padding: var(--space-2) var(--space-4);
+  padding: var(--space-3) var(--space-5);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-semibold);
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing-wide);
   color: var(--text-tertiary);
-  margin-top: var(--space-2);
+  margin-top: var(--space-4);
+  border-top: 1px solid var(--border-subtle);
 }
 
 .tree-category:first-child {
   margin-top: 0;
+  border-top: none;
 }
 
 .tree-item {
   position: relative;
 }
 
+.tree-item + .tree-item {
+  margin-top: var(--space-1);
+}
+
 .tree-toggle {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: var(--space-2) var(--space-4);
-  padding-left: var(--space-3);
+  padding: var(--space-3) var(--space-5);
+  padding-left: var(--space-4);
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-medium);
   color: var(--text-primary);
@@ -121,7 +127,10 @@ body {
   cursor: pointer;
   text-align: left;
   transition: var(--transition-colors);
-  gap: var(--space-2);
+  gap: var(--space-3);
+  border-radius: var(--radius-md);
+  margin: 0 var(--space-2);
+  width: calc(100% - var(--space-4));
 }
 
 .tree-toggle:hover {
@@ -147,7 +156,8 @@ body {
 .tree-variants {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: var(--space-2) 0;
+  padding-left: var(--space-2);
   display: none;
 }
 
@@ -158,12 +168,14 @@ body {
 .tree-variant {
   display: block;
   padding: var(--space-2) var(--space-4);
-  padding-left: calc(var(--space-4) + 24px);
+  padding-left: calc(var(--space-5) + 20px);
   font-size: var(--font-size-sm);
   color: var(--text-secondary);
   text-decoration: none;
   cursor: pointer;
   transition: var(--transition-colors);
+  border-radius: var(--radius-md);
+  margin: var(--space-1) var(--space-2);
 }
 
 .tree-variant:hover {
@@ -287,13 +299,47 @@ body {
   flex-wrap: wrap;
   align-items: center;
   gap: var(--space-4);
-  padding: var(--space-4);
+  padding: var(--space-6);
   background: var(--bg-secondary);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
 }
 
 .demo-showcase + .demo-showcase {
-  margin-top: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+/* Full-width showcase for navbars, footers, etc. */
+.demo-showcase--full {
+  display: block;
+  padding: var(--space-6);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+}
+
+.demo-showcase--full > * {
+  width: 100%;
+}
+
+/* Stacked showcase for vertical lists of items */
+.demo-showcase--stack {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--space-4);
+  padding: var(--space-6);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+}
+
+/* Centered showcase for single items */
+.demo-showcase--center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-8);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  min-height: 200px;
 }
 
 /* Legacy demo section support */
