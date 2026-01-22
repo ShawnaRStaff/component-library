@@ -1,0 +1,187 @@
+/**
+ * Textarea Component
+ *
+ * Enhanced textarea with auto-grow and character count.
+ *
+ * Usage:
+ * <textarea class="textarea"></textarea>
+ */
+
+.textarea {
+  display: block;
+  width: 100%;
+  min-height: 100px;
+  padding: var(--space-3);
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  border: var(--border-width-thin) solid var(--border-default);
+  border-radius: var(--radius-md);
+  resize: vertical;
+  transition: border-color var(--duration-fast) var(--easing-default),
+              box-shadow var(--duration-fast) var(--easing-default);
+}
+
+.textarea::placeholder {
+  color: var(--text-tertiary);
+}
+
+.textarea:hover:not(:disabled) {
+  border-color: var(--color-neutral-400);
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--color-primary-500);
+  box-shadow: 0 0 0 3px var(--color-primary-100);
+}
+
+/* ===================
+   Size Variants
+   =================== */
+
+.textarea--sm {
+  min-height: 60px;
+  padding: var(--space-2);
+  font-size: var(--font-size-sm);
+}
+
+.textarea--lg {
+  min-height: 150px;
+  padding: var(--space-4);
+  font-size: var(--font-size-lg);
+}
+
+/* ===================
+   States
+   =================== */
+
+.textarea:disabled {
+  background-color: var(--bg-secondary);
+  color: var(--text-tertiary);
+  cursor: not-allowed;
+  resize: none;
+}
+
+.textarea--error {
+  border-color: var(--color-danger-500);
+}
+
+.textarea--error:focus {
+  border-color: var(--color-danger-500);
+  box-shadow: 0 0 0 3px var(--color-danger-100);
+}
+
+.textarea--success {
+  border-color: var(--color-success-500);
+}
+
+.textarea--success:focus {
+  border-color: var(--color-success-500);
+  box-shadow: 0 0 0 3px var(--color-success-100);
+}
+
+/* ===================
+   Resize Options
+   =================== */
+
+.textarea--resize-none {
+  resize: none;
+}
+
+.textarea--resize-horizontal {
+  resize: horizontal;
+}
+
+.textarea--resize-both {
+  resize: both;
+}
+
+/* ===================
+   Auto-grow
+   =================== */
+
+.textarea--auto-grow {
+  resize: none;
+  overflow: hidden;
+}
+
+/* ===================
+   Textarea Wrapper
+   =================== */
+
+.textarea-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.textarea-wrapper__counter {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+  text-align: right;
+}
+
+.textarea-wrapper__counter--warning {
+  color: var(--color-warning-600);
+}
+
+.textarea-wrapper__counter--error {
+  color: var(--color-danger-600);
+}
+
+/* ===================
+   Code Textarea
+   =================== */
+
+.textarea--code {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+  tab-size: 2;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+/* ===================
+   With Border Highlight
+   =================== */
+
+.textarea--bordered {
+  border-width: 2px;
+}
+
+/* ===================
+   Floating Label
+   =================== */
+
+.textarea-float {
+  position: relative;
+}
+
+.textarea-float .textarea {
+  padding-top: var(--space-6);
+}
+
+.textarea-float__label {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-3);
+  font-size: var(--font-size-sm);
+  color: var(--text-tertiary);
+  pointer-events: none;
+  transition: all var(--duration-fast) var(--easing-default);
+  background-color: var(--bg-primary);
+  padding: 0 var(--space-1);
+}
+
+.textarea-float .textarea:focus ~ .textarea-float__label,
+.textarea-float .textarea:not(:placeholder-shown) ~ .textarea-float__label {
+  top: -8px;
+  left: var(--space-2);
+  font-size: var(--font-size-xs);
+  color: var(--color-primary-600);
+}

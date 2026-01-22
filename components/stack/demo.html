@@ -1,0 +1,177 @@
+<!-- Stack Component Demo -->
+
+<section class="demo-section">
+  <h3>Vertical Stack (default)</h3>
+  <div class="stack" style="max-width: 300px;">
+    <div style="background: var(--color-primary-100); padding: 16px; border-radius: 4px;">Item 1</div>
+    <div style="background: var(--color-primary-100); padding: 16px; border-radius: 4px;">Item 2</div>
+    <div style="background: var(--color-primary-100); padding: 16px; border-radius: 4px;">Item 3</div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Horizontal Stack (HStack)</h3>
+  <div class="hstack">
+    <div style="background: var(--color-success-100); padding: 16px; border-radius: 4px;">Item 1</div>
+    <div style="background: var(--color-success-100); padding: 16px; border-radius: 4px;">Item 2</div>
+    <div style="background: var(--color-success-100); padding: 16px; border-radius: 4px;">Item 3</div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Gap Variants</h3>
+  <div class="hstack hstack--gap-1" style="margin-bottom: 12px;">
+    <div style="background: var(--color-warning-100); padding: 12px; border-radius: 4px; font-size: 12px;">gap-1</div>
+    <div style="background: var(--color-warning-100); padding: 12px; border-radius: 4px; font-size: 12px;">gap-1</div>
+    <div style="background: var(--color-warning-100); padding: 12px; border-radius: 4px; font-size: 12px;">gap-1</div>
+  </div>
+  <div class="hstack hstack--gap-4" style="margin-bottom: 12px;">
+    <div style="background: var(--color-warning-100); padding: 12px; border-radius: 4px; font-size: 12px;">gap-4</div>
+    <div style="background: var(--color-warning-100); padding: 12px; border-radius: 4px; font-size: 12px;">gap-4</div>
+    <div style="background: var(--color-warning-100); padding: 12px; border-radius: 4px; font-size: 12px;">gap-4</div>
+  </div>
+  <div class="hstack hstack--gap-8">
+    <div style="background: var(--color-warning-100); padding: 12px; border-radius: 4px; font-size: 12px;">gap-8</div>
+    <div style="background: var(--color-warning-100); padding: 12px; border-radius: 4px; font-size: 12px;">gap-8</div>
+    <div style="background: var(--color-warning-100); padding: 12px; border-radius: 4px; font-size: 12px;">gap-8</div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Justify Content</h3>
+  <div class="hstack hstack--justify-start" style="background: var(--bg-secondary); padding: 12px; border-radius: 4px; margin-bottom: 8px;">
+    <div style="background: var(--color-primary-500); color: white; padding: 8px 16px; border-radius: 4px; font-size: 12px;">justify-start</div>
+    <div style="background: var(--color-primary-500); color: white; padding: 8px 16px; border-radius: 4px; font-size: 12px;">items</div>
+  </div>
+  <div class="hstack hstack--justify-center" style="background: var(--bg-secondary); padding: 12px; border-radius: 4px; margin-bottom: 8px;">
+    <div style="background: var(--color-primary-500); color: white; padding: 8px 16px; border-radius: 4px; font-size: 12px;">justify-center</div>
+    <div style="background: var(--color-primary-500); color: white; padding: 8px 16px; border-radius: 4px; font-size: 12px;">items</div>
+  </div>
+  <div class="hstack hstack--justify-end" style="background: var(--bg-secondary); padding: 12px; border-radius: 4px; margin-bottom: 8px;">
+    <div style="background: var(--color-primary-500); color: white; padding: 8px 16px; border-radius: 4px; font-size: 12px;">justify-end</div>
+    <div style="background: var(--color-primary-500); color: white; padding: 8px 16px; border-radius: 4px; font-size: 12px;">items</div>
+  </div>
+  <div class="hstack hstack--justify-between" style="background: var(--bg-secondary); padding: 12px; border-radius: 4px;">
+    <div style="background: var(--color-primary-500); color: white; padding: 8px 16px; border-radius: 4px; font-size: 12px;">justify-between</div>
+    <div style="background: var(--color-primary-500); color: white; padding: 8px 16px; border-radius: 4px; font-size: 12px;">items</div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Align Items</h3>
+  <div class="hstack hstack--align-start" style="background: var(--bg-secondary); padding: 12px; border-radius: 4px; min-height: 100px; margin-bottom: 8px;">
+    <div style="background: var(--color-success-500); color: white; padding: 8px 16px; border-radius: 4px; font-size: 12px;">align-start</div>
+    <div style="background: var(--color-success-500); color: white; padding: 24px 16px; border-radius: 4px; font-size: 12px;">taller</div>
+  </div>
+  <div class="hstack hstack--align-center" style="background: var(--bg-secondary); padding: 12px; border-radius: 4px; min-height: 100px; margin-bottom: 8px;">
+    <div style="background: var(--color-success-500); color: white; padding: 8px 16px; border-radius: 4px; font-size: 12px;">align-center</div>
+    <div style="background: var(--color-success-500); color: white; padding: 24px 16px; border-radius: 4px; font-size: 12px;">taller</div>
+  </div>
+  <div class="hstack hstack--align-end" style="background: var(--bg-secondary); padding: 12px; border-radius: 4px; min-height: 100px;">
+    <div style="background: var(--color-success-500); color: white; padding: 8px 16px; border-radius: 4px; font-size: 12px;">align-end</div>
+    <div style="background: var(--color-success-500); color: white; padding: 24px 16px; border-radius: 4px; font-size: 12px;">taller</div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Spacer</h3>
+  <div class="hstack" style="background: var(--bg-secondary); padding: 12px; border-radius: 4px;">
+    <div style="background: var(--color-primary-500); color: white; padding: 8px 16px; border-radius: 4px;">Logo</div>
+    <div class="spacer"></div>
+    <div style="background: var(--color-neutral-200); padding: 8px 16px; border-radius: 4px;">Nav 1</div>
+    <div style="background: var(--color-neutral-200); padding: 8px 16px; border-radius: 4px;">Nav 2</div>
+  </div>
+  <p style="margin-top: 8px; font-size: 12px; color: var(--text-secondary);">Spacer pushes items apart</p>
+</section>
+
+<section class="demo-section">
+  <h3>Divided Stack</h3>
+  <div class="stack stack--divided stack--gap-0" style="max-width: 300px; background: var(--bg-secondary); padding: 0 16px; border-radius: 8px;">
+    <div style="padding: 16px 0;">List item 1</div>
+    <div style="padding: 16px 0;">List item 2</div>
+    <div style="padding: 16px 0;">List item 3</div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Divided HStack</h3>
+  <div class="hstack hstack--divided hstack--gap-0" style="background: var(--bg-secondary); padding: 16px 0; border-radius: 8px;">
+    <div style="padding: 0 16px;">Tab 1</div>
+    <div style="padding: 0 16px;">Tab 2</div>
+    <div style="padding: 0 16px;">Tab 3</div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Wrapping HStack</h3>
+  <div class="hstack hstack--wrap hstack--gap-2" style="max-width: 400px;">
+    <span style="background: var(--color-primary-100); padding: 4px 12px; border-radius: 999px; font-size: 14px;">Tag 1</span>
+    <span style="background: var(--color-primary-100); padding: 4px 12px; border-radius: 999px; font-size: 14px;">Tag 2</span>
+    <span style="background: var(--color-primary-100); padding: 4px 12px; border-radius: 999px; font-size: 14px;">Tag 3</span>
+    <span style="background: var(--color-primary-100); padding: 4px 12px; border-radius: 999px; font-size: 14px;">Tag 4</span>
+    <span style="background: var(--color-primary-100); padding: 4px 12px; border-radius: 999px; font-size: 14px;">Tag 5</span>
+    <span style="background: var(--color-primary-100); padding: 4px 12px; border-radius: 999px; font-size: 14px;">Tag 6</span>
+    <span style="background: var(--color-primary-100); padding: 4px 12px; border-radius: 999px; font-size: 14px;">Tag 7</span>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Responsive Stack (stack--row-md)</h3>
+  <div class="stack stack--row-md" style="background: var(--bg-secondary); padding: 16px; border-radius: 8px;">
+    <div style="background: var(--color-danger-100); padding: 16px; border-radius: 4px; flex: 1;">Stacks on mobile</div>
+    <div style="background: var(--color-danger-100); padding: 16px; border-radius: 4px; flex: 1;">Row on md+</div>
+    <div style="background: var(--color-danger-100); padding: 16px; border-radius: 4px; flex: 1;">Resize to see</div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Center Stack</h3>
+  <div class="center-stack" style="background: var(--bg-secondary); padding: 48px; border-radius: 8px;">
+    <div style="width: 64px; height: 64px; background: var(--color-primary-500); border-radius: 50%;"></div>
+    <h4 style="margin: 0;">Centered Content</h4>
+    <p style="margin: 0; color: var(--text-secondary);">Everything is centered both ways</p>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Practical Example: Card with Stack</h3>
+  <div style="max-width: 350px; background: var(--bg-primary); border: 1px solid var(--border-default); border-radius: 12px; overflow: hidden;">
+    <div style="height: 150px; background: linear-gradient(135deg, var(--color-primary-500), var(--color-primary-700));"></div>
+    <div class="stack stack--gap-3" style="padding: 20px;">
+      <div class="hstack hstack--justify-between">
+        <h4 style="margin: 0;">Product Name</h4>
+        <span style="font-weight: 600; color: var(--color-primary-600);">$99</span>
+      </div>
+      <p style="margin: 0; color: var(--text-secondary); font-size: 14px;">
+        A short description of the product goes here.
+      </p>
+      <div class="hstack hstack--gap-2">
+        <button class="btn btn--primary" style="flex: 1;">Add to Cart</button>
+        <button class="btn btn--secondary btn--icon" aria-label="Add to favorites">♡</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Practical Example: Form Layout</h3>
+  <div class="stack stack--gap-4" style="max-width: 400px;">
+    <div class="form-group">
+      <label class="form-group__label">Email</label>
+      <input type="email" class="input" placeholder="you@example.com">
+    </div>
+    <div class="form-group">
+      <label class="form-group__label">Password</label>
+      <input type="password" class="input" placeholder="••••••••">
+    </div>
+    <div class="hstack hstack--justify-between">
+      <label class="checkbox">
+        <input type="checkbox" class="checkbox__input">
+        <span class="checkbox__box"></span>
+        <span class="checkbox__label">Remember me</span>
+      </label>
+      <a href="#" style="font-size: 14px; color: var(--color-primary-600);">Forgot password?</a>
+    </div>
+    <button class="btn btn--primary btn--block">Sign In</button>
+  </div>
+</section>

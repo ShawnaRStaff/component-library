@@ -1,0 +1,161 @@
+/**
+ * Container Component
+ *
+ * Responsive max-width containers for page layouts.
+ *
+ * Usage:
+ * <div class="container">Content here</div>
+ */
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+
+/* Size variants */
+.container--sm {
+  max-width: 640px;
+}
+
+.container--md {
+  max-width: 768px;
+}
+
+.container--lg {
+  max-width: 1024px;
+}
+
+.container--xl {
+  max-width: 1280px;
+}
+
+.container--2xl {
+  max-width: 1536px;
+}
+
+/* Default container (responsive max-width) */
+.container:not([class*="container--"]) {
+  max-width: 1280px;
+}
+
+/* Full width (no max-width) */
+.container--fluid {
+  max-width: none;
+}
+
+/* Padding variants */
+.container--px-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.container--px-sm {
+  padding-left: var(--space-2);
+  padding-right: var(--space-2);
+}
+
+.container--px-lg {
+  padding-left: var(--space-6);
+  padding-right: var(--space-6);
+}
+
+.container--px-xl {
+  padding-left: var(--space-8);
+  padding-right: var(--space-8);
+}
+
+/* Centered content */
+.container--center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Responsive padding */
+@media (min-width: 640px) {
+  .container {
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+
+  .container--px-sm {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: var(--space-8);
+    padding-right: var(--space-8);
+  }
+}
+
+/* ===================
+   Section Container
+   =================== */
+
+.section {
+  padding-top: var(--space-12);
+  padding-bottom: var(--space-12);
+}
+
+.section--sm {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-8);
+}
+
+.section--lg {
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
+}
+
+.section--xl {
+  padding-top: var(--space-20);
+  padding-bottom: var(--space-20);
+}
+
+/* Section backgrounds */
+.section--muted {
+  background-color: var(--bg-secondary);
+}
+
+.section--dark {
+  background-color: var(--color-neutral-900);
+  color: var(--color-neutral-0);
+}
+
+.section--primary {
+  background-color: var(--color-primary-600);
+  color: var(--color-neutral-0);
+}
+
+/* ===================
+   Prose Container
+   =================== */
+
+.prose {
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prose--sm {
+  max-width: 45ch;
+}
+
+.prose--lg {
+  max-width: 80ch;
+}
+
+.prose--left {
+  margin-left: 0;
+}
+
+.prose--right {
+  margin-right: 0;
+}

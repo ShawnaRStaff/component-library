@@ -1,0 +1,222 @@
+<!-- Pagination Component Demo -->
+
+<section class="demo-section">
+  <h3>Default Pagination</h3>
+  <nav class="pagination" aria-label="Pagination">
+    <button class="pagination__btn pagination__btn--prev">
+      <svg class="pagination__btn-icon" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M10 12L6 8l4-4"/>
+      </svg>
+      Previous
+    </button>
+    <div class="pagination__pages">
+      <button class="pagination__page is-active">1</button>
+      <button class="pagination__page">2</button>
+      <button class="pagination__page">3</button>
+      <button class="pagination__page">4</button>
+      <button class="pagination__page">5</button>
+    </div>
+    <button class="pagination__btn pagination__btn--next">
+      Next
+      <svg class="pagination__btn-icon" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M6 4l4 4-4 4"/>
+      </svg>
+    </button>
+  </nav>
+</section>
+
+<section class="demo-section">
+  <h3>With Ellipsis</h3>
+  <nav class="pagination" aria-label="Pagination">
+    <button class="pagination__btn pagination__btn--prev">
+      <svg class="pagination__btn-icon" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M10 12L6 8l4-4"/>
+      </svg>
+      Previous
+    </button>
+    <div class="pagination__pages">
+      <button class="pagination__page">1</button>
+      <span class="pagination__ellipsis">...</span>
+      <button class="pagination__page">4</button>
+      <button class="pagination__page is-active">5</button>
+      <button class="pagination__page">6</button>
+      <span class="pagination__ellipsis">...</span>
+      <button class="pagination__page">10</button>
+    </div>
+    <button class="pagination__btn pagination__btn--next">
+      Next
+      <svg class="pagination__btn-icon" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M6 4l4 4-4 4"/>
+      </svg>
+    </button>
+  </nav>
+</section>
+
+<section class="demo-section">
+  <h3>Outlined Style</h3>
+  <nav class="pagination pagination--outlined" aria-label="Pagination">
+    <button class="pagination__btn pagination__btn--prev" disabled>
+      <svg class="pagination__btn-icon" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M10 12L6 8l4-4"/>
+      </svg>
+      Previous
+    </button>
+    <div class="pagination__pages">
+      <button class="pagination__page is-active">1</button>
+      <button class="pagination__page">2</button>
+      <button class="pagination__page">3</button>
+      <button class="pagination__page">4</button>
+      <button class="pagination__page">5</button>
+    </div>
+    <button class="pagination__btn pagination__btn--next">
+      Next
+      <svg class="pagination__btn-icon" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M6 4l4 4-4 4"/>
+      </svg>
+    </button>
+  </nav>
+</section>
+
+<section class="demo-section">
+  <h3>Rounded Style</h3>
+  <nav class="pagination pagination--rounded" aria-label="Pagination">
+    <button class="pagination__btn pagination__btn--prev">
+      <svg class="pagination__btn-icon" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M10 12L6 8l4-4"/>
+      </svg>
+    </button>
+    <div class="pagination__pages">
+      <button class="pagination__page is-active">1</button>
+      <button class="pagination__page">2</button>
+      <button class="pagination__page">3</button>
+    </div>
+    <button class="pagination__btn pagination__btn--next">
+      <svg class="pagination__btn-icon" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M6 4l4 4-4 4"/>
+      </svg>
+    </button>
+  </nav>
+</section>
+
+<section class="demo-section">
+  <h3>Sizes</h3>
+  <div style="display: flex; flex-direction: column; gap: 24px;">
+    <nav class="pagination pagination--compact" aria-label="Pagination">
+      <button class="pagination__btn pagination__btn--prev">Prev</button>
+      <div class="pagination__pages">
+        <button class="pagination__page is-active">1</button>
+        <button class="pagination__page">2</button>
+        <button class="pagination__page">3</button>
+      </div>
+      <button class="pagination__btn pagination__btn--next">Next</button>
+    </nav>
+    <p style="font-size: 12px; color: var(--text-tertiary);">Compact</p>
+
+    <nav class="pagination" aria-label="Pagination">
+      <button class="pagination__btn pagination__btn--prev">Previous</button>
+      <div class="pagination__pages">
+        <button class="pagination__page is-active">1</button>
+        <button class="pagination__page">2</button>
+        <button class="pagination__page">3</button>
+      </div>
+      <button class="pagination__btn pagination__btn--next">Next</button>
+    </nav>
+    <p style="font-size: 12px; color: var(--text-tertiary);">Default</p>
+
+    <nav class="pagination pagination--lg" aria-label="Pagination">
+      <button class="pagination__btn pagination__btn--prev">Previous</button>
+      <div class="pagination__pages">
+        <button class="pagination__page is-active">1</button>
+        <button class="pagination__page">2</button>
+        <button class="pagination__page">3</button>
+      </div>
+      <button class="pagination__btn pagination__btn--next">Next</button>
+    </nav>
+    <p style="font-size: 12px; color: var(--text-tertiary);">Large</p>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Simple Pagination</h3>
+  <nav class="pagination pagination--simple pagination--between" aria-label="Pagination">
+    <button class="pagination__btn pagination__btn--prev">
+      <svg class="pagination__btn-icon" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M10 12L6 8l4-4"/>
+      </svg>
+      Previous
+    </button>
+    <span class="pagination__info">Page 3 of 10</span>
+    <button class="pagination__btn pagination__btn--next">
+      Next
+      <svg class="pagination__btn-icon" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M6 4l4 4-4 4"/>
+      </svg>
+    </button>
+  </nav>
+</section>
+
+<section class="demo-section">
+  <h3>Icon Only</h3>
+  <nav class="pagination pagination--icons-only pagination--centered" aria-label="Pagination">
+    <button class="pagination__btn pagination__btn--prev" aria-label="Previous page">
+      <svg class="pagination__btn-icon" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M10 12L6 8l4-4"/>
+      </svg>
+    </button>
+    <div class="pagination__pages">
+      <button class="pagination__page is-active">1</button>
+      <button class="pagination__page">2</button>
+      <button class="pagination__page">3</button>
+      <button class="pagination__page">4</button>
+      <button class="pagination__page">5</button>
+    </div>
+    <button class="pagination__btn pagination__btn--next" aria-label="Next page">
+      <svg class="pagination__btn-icon" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M6 4l4 4-4 4"/>
+      </svg>
+    </button>
+  </nav>
+</section>
+
+<section class="demo-section">
+  <h3>Mini Pagination (Mobile)</h3>
+  <nav class="pagination pagination--mini pagination--between" aria-label="Pagination">
+    <button class="pagination__btn pagination__btn--prev">
+      <svg class="pagination__btn-icon" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M10 12L6 8l4-4"/>
+      </svg>
+      Prev
+    </button>
+    <span class="pagination__info">5 of 20</span>
+    <button class="pagination__btn pagination__btn--next">
+      Next
+      <svg class="pagination__btn-icon" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M6 4l4 4-4 4"/>
+      </svg>
+    </button>
+  </nav>
+</section>
+
+<section class="demo-section">
+  <h3>Disabled State</h3>
+  <nav class="pagination" aria-label="Pagination">
+    <button class="pagination__btn pagination__btn--prev" disabled>
+      <svg class="pagination__btn-icon" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M10 12L6 8l4-4"/>
+      </svg>
+      Previous
+    </button>
+    <div class="pagination__pages">
+      <button class="pagination__page is-active">1</button>
+      <button class="pagination__page">2</button>
+      <button class="pagination__page">3</button>
+    </div>
+    <button class="pagination__btn pagination__btn--next">
+      Next
+      <svg class="pagination__btn-icon" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M6 4l4 4-4 4"/>
+      </svg>
+    </button>
+  </nav>
+  <p style="margin-top: 8px; font-size: 12px; color: var(--text-secondary);">Previous button disabled on first page</p>
+</section>

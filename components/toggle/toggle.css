@@ -1,0 +1,246 @@
+/**
+ * Toggle/Switch Component
+ *
+ * Usage:
+ * <label class="toggle">
+ *   <input type="checkbox" class="toggle__input">
+ *   <span class="toggle__track"></span>
+ *   <span class="toggle__label">Label text</span>
+ * </label>
+ */
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Hide native checkbox */
+.toggle__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+/* Track (the pill shape) */
+.toggle__track {
+  --toggle-width: 44px;
+  --toggle-height: 24px;
+  --toggle-thumb-size: 18px;
+  --toggle-thumb-offset: 3px;
+
+  position: relative;
+  flex-shrink: 0;
+  width: var(--toggle-width);
+  height: var(--toggle-height);
+
+  background-color: var(--color-neutral-300);
+  border-radius: var(--radius-full);
+
+  transition: background-color var(--duration-normal) var(--easing-default);
+}
+
+/* Thumb (the circle) */
+.toggle__track::after {
+  content: "";
+  position: absolute;
+  top: var(--toggle-thumb-offset);
+  left: var(--toggle-thumb-offset);
+  width: var(--toggle-thumb-size);
+  height: var(--toggle-thumb-size);
+
+  background-color: var(--color-neutral-0);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+
+  transition: transform var(--duration-normal) var(--easing-default);
+}
+
+/* Label text */
+.toggle__label {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+  color: var(--text-primary);
+}
+
+/* Hover state */
+.toggle:hover .toggle__track {
+  background-color: var(--color-neutral-400);
+}
+
+/* Focus state */
+.toggle__input:focus-visible + .toggle__track {
+  outline: none;
+  box-shadow: var(--shadow-focus);
+}
+
+/* Checked state */
+.toggle__input:checked + .toggle__track {
+  background-color: var(--color-primary-500);
+}
+
+.toggle__input:checked + .toggle__track::after {
+  transform: translateX(calc(var(--toggle-width) - var(--toggle-thumb-size) - var(--toggle-thumb-offset) * 2));
+}
+
+.toggle:hover .toggle__input:checked + .toggle__track {
+  background-color: var(--color-primary-600);
+}
+
+/* Disabled state */
+.toggle--disabled,
+.toggle:has(.toggle__input:disabled) {
+  cursor: not-allowed;
+}
+
+.toggle__input:disabled + .toggle__track {
+  background-color: var(--color-neutral-200);
+  opacity: var(--opacity-disabled);
+}
+
+.toggle__input:disabled + .toggle__track + .toggle__label {
+  color: var(--text-disabled);
+}
+
+.toggle__input:disabled:checked + .toggle__track {
+  background-color: var(--color-primary-300);
+}
+
+/* Sizes */
+.toggle--sm .toggle__track {
+  --toggle-width: 36px;
+  --toggle-height: 20px;
+  --toggle-thumb-size: 14px;
+  --toggle-thumb-offset: 3px;
+}
+
+.toggle--sm .toggle__label {
+  font-size: var(--font-size-xs);
+}
+
+.toggle--lg .toggle__track {
+  --toggle-width: 56px;
+  --toggle-height: 30px;
+  --toggle-thumb-size: 24px;
+  --toggle-thumb-offset: 3px;
+}
+
+.toggle--lg .toggle__label {
+  font-size: var(--font-size-md);
+}
+
+/* Color variants */
+.toggle--success .toggle__input:checked + .toggle__track {
+  background-color: var(--color-success-500);
+}
+
+.toggle--success:hover .toggle__input:checked + .toggle__track {
+  background-color: var(--color-success-600);
+}
+
+.toggle--danger .toggle__input:checked + .toggle__track {
+  background-color: var(--color-danger-500);
+}
+
+.toggle--danger:hover .toggle__input:checked + .toggle__track {
+  background-color: var(--color-danger-600);
+}
+
+/* With icons inside */
+.toggle--with-icons .toggle__track {
+  --toggle-width: 52px;
+}
+
+.toggle--with-icons .toggle__track::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  opacity: 0.7;
+}
+
+/* On icon (checkmark) - shown when checked */
+.toggle--with-icons .toggle__track::before {
+  left: 8px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='white'%3E%3Cpath d='M10 3L4.5 8.5 2 6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+  transition: opacity var(--duration-fast) var(--easing-default);
+}
+
+.toggle--with-icons .toggle__input:checked + .toggle__track::before {
+  opacity: 1;
+}
+
+/* Label position */
+.toggle--label-left {
+  flex-direction: row-reverse;
+}
+
+/* Toggle group */
+.toggle-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+/* Toggle with description */
+.toggle-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.toggle-item__content {
+  flex: 1;
+  padding-top: 2px;
+}
+
+.toggle-item__title {
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.toggle-item__description {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Toggle in settings row */
+.toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) 0;
+  border-bottom: var(--border-width-thin) solid var(--border-subtle);
+}
+
+.toggle-row:last-child {
+  border-bottom: none;
+}
+
+.toggle-row__content {
+  flex: 1;
+  padding-right: var(--space-4);
+}
+
+.toggle-row__title {
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+}
+
+.toggle-row__description {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  margin-top: var(--space-1);
+}

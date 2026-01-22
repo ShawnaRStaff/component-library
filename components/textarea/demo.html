@@ -1,0 +1,156 @@
+<!-- Textarea Component Demo -->
+
+<section class="demo-section">
+  <h3>Default Textarea</h3>
+  <div style="max-width: 500px;">
+    <textarea class="textarea" placeholder="Enter your message..."></textarea>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Size Variants</h3>
+  <div style="max-width: 500px; display: flex; flex-direction: column; gap: 16px;">
+    <div>
+      <label style="display: block; margin-bottom: 4px; font-size: 14px; font-weight: 500;">Small</label>
+      <textarea class="textarea textarea--sm" placeholder="Small textarea..."></textarea>
+    </div>
+    <div>
+      <label style="display: block; margin-bottom: 4px; font-size: 14px; font-weight: 500;">Default</label>
+      <textarea class="textarea" placeholder="Default textarea..."></textarea>
+    </div>
+    <div>
+      <label style="display: block; margin-bottom: 4px; font-size: 14px; font-weight: 500;">Large</label>
+      <textarea class="textarea textarea--lg" placeholder="Large textarea..."></textarea>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Character Counter</h3>
+  <div style="max-width: 500px;">
+    <div class="textarea-wrapper">
+      <label style="display: block; margin-bottom: 4px; font-size: 14px; font-weight: 500;">Bio</label>
+      <textarea class="textarea" placeholder="Tell us about yourself..." maxlength="200"></textarea>
+      <span class="textarea-wrapper__counter">0/200</span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Auto-grow Textarea</h3>
+  <div style="max-width: 500px;">
+    <label style="display: block; margin-bottom: 4px; font-size: 14px; font-weight: 500;">Auto-expanding</label>
+    <textarea class="textarea textarea--auto-grow" placeholder="Start typing... the textarea will grow as you add more content." style="min-height: 60px;"></textarea>
+    <p style="margin-top: 4px; font-size: 12px; color: var(--text-secondary);">This textarea automatically expands as you type</p>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>States</h3>
+  <div style="max-width: 500px; display: flex; flex-direction: column; gap: 16px;">
+    <div>
+      <label style="display: block; margin-bottom: 4px; font-size: 14px; font-weight: 500;">Disabled</label>
+      <textarea class="textarea" placeholder="Cannot edit this..." disabled>This textarea is disabled and cannot be edited.</textarea>
+    </div>
+    <div>
+      <label style="display: block; margin-bottom: 4px; font-size: 14px; font-weight: 500; color: var(--color-danger-600);">Error</label>
+      <textarea class="textarea textarea--error" placeholder="Something went wrong...">Invalid content here</textarea>
+      <p style="margin-top: 4px; font-size: 12px; color: var(--color-danger-600);">Please enter valid content</p>
+    </div>
+    <div>
+      <label style="display: block; margin-bottom: 4px; font-size: 14px; font-weight: 500; color: var(--color-success-600);">Success</label>
+      <textarea class="textarea textarea--success">Valid content here</textarea>
+      <p style="margin-top: 4px; font-size: 12px; color: var(--color-success-600);">Looks good!</p>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Resize Options</h3>
+  <div style="max-width: 500px; display: flex; flex-direction: column; gap: 16px;">
+    <div>
+      <label style="display: block; margin-bottom: 4px; font-size: 14px; font-weight: 500;">No resize</label>
+      <textarea class="textarea textarea--resize-none textarea--sm" placeholder="Cannot resize this textarea"></textarea>
+    </div>
+    <div>
+      <label style="display: block; margin-bottom: 4px; font-size: 14px; font-weight: 500;">Horizontal resize</label>
+      <textarea class="textarea textarea--resize-horizontal textarea--sm" placeholder="Can resize horizontally"></textarea>
+    </div>
+    <div>
+      <label style="display: block; margin-bottom: 4px; font-size: 14px; font-weight: 500;">Both directions</label>
+      <textarea class="textarea textarea--resize-both textarea--sm" placeholder="Can resize in any direction"></textarea>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Code Textarea</h3>
+  <div style="max-width: 600px;">
+    <label style="display: block; margin-bottom: 4px; font-size: 14px; font-weight: 500;">Code Editor</label>
+    <textarea class="textarea textarea--code" rows="8" spellcheck="false">function greet(name) {
+  console.log(`Hello, ${name}!`);
+  return {
+    message: `Welcome, ${name}`,
+    timestamp: Date.now()
+  };
+}</textarea>
+    <p style="margin-top: 4px; font-size: 12px; color: var(--text-secondary);">Press Tab to indent</p>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Floating Label</h3>
+  <div style="max-width: 500px;">
+    <div class="textarea-float">
+      <textarea class="textarea" placeholder=" "></textarea>
+      <label class="textarea-float__label">Description</label>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Practical Examples</h3>
+  <div style="max-width: 500px; display: flex; flex-direction: column; gap: 24px;">
+    <!-- Comment Box -->
+    <div style="background: var(--bg-secondary); padding: 16px; border-radius: 8px;">
+      <h4 style="margin: 0 0 12px; font-size: 14px;">Leave a Comment</h4>
+      <div class="textarea-wrapper">
+        <textarea class="textarea textarea--auto-grow" placeholder="Write your comment..." style="min-height: 80px;" maxlength="500"></textarea>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span class="textarea-wrapper__counter">0/500</span>
+          <button class="btn btn--primary btn--sm" style="margin-top: 8px;">Post Comment</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Support Ticket -->
+    <div style="background: var(--bg-secondary); padding: 16px; border-radius: 8px;">
+      <h4 style="margin: 0 0 12px; font-size: 14px;">Describe your issue</h4>
+      <textarea class="textarea" placeholder="Please provide as much detail as possible about the issue you're experiencing..." rows="5"></textarea>
+      <div style="display: flex; gap: 8px; margin-top: 12px;">
+        <div class="file-upload file-upload--compact" style="display: inline-flex;">
+          <input type="file" class="file-upload__input">
+          <div class="file-upload__content" style="gap: 4px;">
+            <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z"/>
+            </svg>
+            <span style="font-size: 13px;">Attach</span>
+          </div>
+        </div>
+        <div style="flex: 1;"></div>
+        <button class="btn btn--primary btn--sm">Submit Ticket</button>
+      </div>
+    </div>
+
+    <!-- Notes -->
+    <div style="background: var(--color-warning-50); padding: 16px; border-radius: 8px; border: 1px solid var(--color-warning-200);">
+      <h4 style="margin: 0 0 8px; font-size: 14px; display: flex; align-items: center; gap: 6px;">
+        <svg width="16" height="16" viewBox="0 0 20 20" fill="var(--color-warning-600)">
+          <path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"/>
+        </svg>
+        Internal Notes
+      </h4>
+      <textarea class="textarea textarea--bordered" placeholder="Add internal notes (only visible to team members)..." rows="3" style="border-color: var(--color-warning-300); background: white;"></textarea>
+    </div>
+  </div>
+</section>

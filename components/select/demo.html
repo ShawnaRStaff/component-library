@@ -1,0 +1,311 @@
+<!-- Select/Dropdown Component Demo -->
+
+<section class="demo-section">
+  <h3>Custom Select</h3>
+  <div style="max-width: 300px;">
+    <div class="dropdown dropdown--block">
+      <button class="dropdown__trigger" aria-haspopup="listbox">
+        <span class="select-dropdown__value select-dropdown__placeholder">Select an option...</span>
+        <svg class="dropdown__trigger-icon" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M4 6l4 4 4-4"/>
+        </svg>
+      </button>
+      <div class="dropdown__menu" role="listbox">
+        <button class="dropdown__item" role="option">Option 1</button>
+        <button class="dropdown__item" role="option">Option 2</button>
+        <button class="dropdown__item" role="option">Option 3</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Select Sizes</h3>
+  <div style="display: flex; flex-direction: column; gap: 12px; max-width: 300px;">
+    <div class="dropdown dropdown--block dropdown--sm">
+      <button class="dropdown__trigger dropdown__trigger--sm" aria-haspopup="listbox">
+        <span class="select-dropdown__value">Small select</span>
+        <svg class="dropdown__trigger-icon" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M4 6l4 4 4-4"/>
+        </svg>
+      </button>
+      <div class="dropdown__menu" role="listbox">
+        <button class="dropdown__item" role="option">Option 1</button>
+        <button class="dropdown__item" role="option">Option 2</button>
+      </div>
+    </div>
+    <div class="dropdown dropdown--block">
+      <button class="dropdown__trigger" aria-haspopup="listbox">
+        <span class="select-dropdown__value">Default select</span>
+        <svg class="dropdown__trigger-icon" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M4 6l4 4 4-4"/>
+        </svg>
+      </button>
+      <div class="dropdown__menu" role="listbox">
+        <button class="dropdown__item" role="option">Option 1</button>
+        <button class="dropdown__item" role="option">Option 2</button>
+      </div>
+    </div>
+    <div class="dropdown dropdown--block dropdown--lg">
+      <button class="dropdown__trigger dropdown__trigger--lg" aria-haspopup="listbox">
+        <span class="select-dropdown__value">Large select</span>
+        <svg class="dropdown__trigger-icon" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M4 6l4 4 4-4"/>
+        </svg>
+      </button>
+      <div class="dropdown__menu" role="listbox">
+        <button class="dropdown__item" role="option">Option 1</button>
+        <button class="dropdown__item" role="option">Option 2</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Select States</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px;">
+    <div class="form-group">
+      <label class="form-group__label">Default</label>
+      <div class="dropdown dropdown--block">
+        <button class="dropdown__trigger" aria-haspopup="listbox">
+          <span class="select-dropdown__value select-dropdown__placeholder">Select option</span>
+          <svg class="dropdown__trigger-icon" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M4 6l4 4 4-4"/>
+          </svg>
+        </button>
+        <div class="dropdown__menu" role="listbox">
+          <button class="dropdown__item" role="option">Option 1</button>
+          <button class="dropdown__item" role="option">Option 2</button>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-group__label">Disabled</label>
+      <div class="dropdown dropdown--block dropdown--disabled">
+        <button class="dropdown__trigger" aria-haspopup="listbox" disabled>
+          <span class="select-dropdown__value">Disabled</span>
+          <svg class="dropdown__trigger-icon" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M4 6l4 4 4-4"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="form-group form-group--error">
+      <label class="form-group__label">Error</label>
+      <div class="dropdown dropdown--block dropdown--error">
+        <button class="dropdown__trigger dropdown__trigger--error" aria-haspopup="listbox">
+          <span class="select-dropdown__value select-dropdown__placeholder">Select option</span>
+          <svg class="dropdown__trigger-icon" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M4 6l4 4 4-4"/>
+          </svg>
+        </button>
+        <div class="dropdown__menu" role="listbox">
+          <button class="dropdown__item" role="option">Option 1</button>
+          <button class="dropdown__item" role="option">Option 2</button>
+        </div>
+      </div>
+      <span class="form-group__error">Please select an option</span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Select with Icons</h3>
+  <div style="max-width: 300px;">
+    <div class="dropdown dropdown--block">
+      <button class="dropdown__trigger" aria-haspopup="listbox">
+        <span class="select-dropdown__value select-dropdown__placeholder">Select a country...</span>
+        <svg class="dropdown__trigger-icon" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M4 6l4 4 4-4"/>
+        </svg>
+      </button>
+      <div class="dropdown__menu" role="listbox">
+        <button class="dropdown__item" role="option">
+          <span style="font-size: 18px; line-height: 1;">🇺🇸</span>
+          United States
+        </button>
+        <button class="dropdown__item" role="option">
+          <span style="font-size: 18px; line-height: 1;">🇬🇧</span>
+          United Kingdom
+        </button>
+        <button class="dropdown__item" role="option">
+          <span style="font-size: 18px; line-height: 1;">🇨🇦</span>
+          Canada
+        </button>
+        <button class="dropdown__item" role="option">
+          <span style="font-size: 18px; line-height: 1;">🇦🇺</span>
+          Australia
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Select with Checkmark</h3>
+  <div style="max-width: 300px;">
+    <div class="dropdown dropdown--block">
+      <button class="dropdown__trigger" aria-haspopup="listbox">
+        <span class="select-dropdown__value">Newest first</span>
+        <svg class="dropdown__trigger-icon" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M4 6l4 4 4-4"/>
+        </svg>
+      </button>
+      <div class="dropdown__menu" role="listbox">
+        <button class="dropdown__item dropdown__item--selected" role="option">
+          Newest first
+          <svg class="dropdown__item-check" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M13 4L6 11 3 8" stroke="currentColor" stroke-width="2" fill="none"/>
+          </svg>
+        </button>
+        <button class="dropdown__item" role="option">
+          Oldest first
+          <svg class="dropdown__item-check" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M13 4L6 11 3 8" stroke="currentColor" stroke-width="2" fill="none"/>
+          </svg>
+        </button>
+        <button class="dropdown__item" role="option">
+          Name A-Z
+          <svg class="dropdown__item-check" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M13 4L6 11 3 8" stroke="currentColor" stroke-width="2" fill="none"/>
+          </svg>
+        </button>
+        <button class="dropdown__item" role="option">
+          Name Z-A
+          <svg class="dropdown__item-check" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M13 4L6 11 3 8" stroke="currentColor" stroke-width="2" fill="none"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Select with Groups</h3>
+  <div style="max-width: 300px;">
+    <div class="dropdown dropdown--block">
+      <button class="dropdown__trigger" aria-haspopup="listbox">
+        <span class="select-dropdown__value select-dropdown__placeholder">Select a fruit...</span>
+        <svg class="dropdown__trigger-icon" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M4 6l4 4 4-4"/>
+        </svg>
+      </button>
+      <div class="dropdown__menu" role="listbox">
+        <div class="dropdown__header">Citrus</div>
+        <button class="dropdown__item" role="option">Orange</button>
+        <button class="dropdown__item" role="option">Lemon</button>
+        <button class="dropdown__item" role="option">Grapefruit</button>
+        <div class="dropdown__divider"></div>
+        <div class="dropdown__header">Berries</div>
+        <button class="dropdown__item" role="option">Strawberry</button>
+        <button class="dropdown__item" role="option">Blueberry</button>
+        <button class="dropdown__item" role="option">Raspberry</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Action Dropdown</h3>
+  <div class="demo-row">
+    <div class="dropdown">
+      <button class="dropdown__trigger">
+        <span>Actions</span>
+        <svg class="dropdown__trigger-icon" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M4 6l4 4 4-4"/>
+        </svg>
+      </button>
+      <div class="dropdown__menu">
+        <button class="dropdown__item">
+          <svg class="dropdown__item-icon" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M12.1 1.9a1.5 1.5 0 012.1 2.1l-9 9-3 1 1-3 9-9z"/>
+          </svg>
+          Edit
+        </button>
+        <button class="dropdown__item">
+          <svg class="dropdown__item-icon" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M4 4v10h8V4H4zM3 2h10v12H3V2z"/>
+          </svg>
+          Duplicate
+        </button>
+        <button class="dropdown__item">
+          <svg class="dropdown__item-icon" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M2 4h12v9H2V4zm1 1v7h10V5H3z"/>
+          </svg>
+          Archive
+        </button>
+        <div class="dropdown__divider"></div>
+        <button class="dropdown__item dropdown__item--danger">
+          <svg class="dropdown__item-icon" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M5.5 5.5v6m2.5-6v6m2.5-6v6M3 3.5h10l-.5 10a1 1 0 01-1 1H4.5a1 1 0 01-1-1L3 3.5z"/>
+          </svg>
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Dropdown Alignment</h3>
+  <div class="demo-row" style="justify-content: space-between;">
+    <div class="dropdown">
+      <button class="dropdown__trigger">
+        Left aligned
+        <svg class="dropdown__trigger-icon" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M4 6l4 4 4-4"/>
+        </svg>
+      </button>
+      <div class="dropdown__menu">
+        <button class="dropdown__item">Option 1</button>
+        <button class="dropdown__item">Option 2</button>
+      </div>
+    </div>
+    <div class="dropdown dropdown--right">
+      <button class="dropdown__trigger">
+        Right aligned
+        <svg class="dropdown__trigger-icon" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M4 6l4 4 4-4"/>
+        </svg>
+      </button>
+      <div class="dropdown__menu">
+        <button class="dropdown__item">Option 1</button>
+        <button class="dropdown__item">Option 2</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Disabled Items</h3>
+  <div class="demo-row">
+    <div class="dropdown">
+      <button class="dropdown__trigger">
+        Mixed states
+        <svg class="dropdown__trigger-icon" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M4 6l4 4 4-4"/>
+        </svg>
+      </button>
+      <div class="dropdown__menu">
+        <button class="dropdown__item">Available option</button>
+        <button class="dropdown__item dropdown__item--disabled" disabled>Disabled option</button>
+        <button class="dropdown__item">Another available</button>
+        <button class="dropdown__item dropdown__item--disabled" disabled>Also disabled</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Native Select (Simple/Accessible)</h3>
+  <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;">For simple use cases, native select provides better accessibility and mobile experience. Note: dropdown options use browser default styling.</p>
+  <div style="max-width: 300px;">
+    <select class="select">
+      <option value="">Select an option...</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+  </div>
+</section>

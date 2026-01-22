@@ -1,0 +1,236 @@
+<!-- Progress Component Demo -->
+
+<section class="demo-section">
+  <h3>Default Progress</h3>
+  <div class="progress">
+    <div class="progress__bar" style="width: 60%"></div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Sizes</h3>
+  <div style="display: flex; flex-direction: column; gap: 16px;">
+    <div>
+      <p style="font-size: 12px; color: var(--text-secondary); margin-bottom: 4px;">Extra Small</p>
+      <div class="progress progress--xs">
+        <div class="progress__bar" style="width: 40%"></div>
+      </div>
+    </div>
+    <div>
+      <p style="font-size: 12px; color: var(--text-secondary); margin-bottom: 4px;">Small</p>
+      <div class="progress progress--sm">
+        <div class="progress__bar" style="width: 50%"></div>
+      </div>
+    </div>
+    <div>
+      <p style="font-size: 12px; color: var(--text-secondary); margin-bottom: 4px;">Medium (Default)</p>
+      <div class="progress progress--md">
+        <div class="progress__bar" style="width: 60%"></div>
+      </div>
+    </div>
+    <div>
+      <p style="font-size: 12px; color: var(--text-secondary); margin-bottom: 4px;">Large</p>
+      <div class="progress progress--lg">
+        <div class="progress__bar" style="width: 70%"></div>
+      </div>
+    </div>
+    <div>
+      <p style="font-size: 12px; color: var(--text-secondary); margin-bottom: 4px;">Extra Large</p>
+      <div class="progress progress--xl">
+        <div class="progress__bar" style="width: 80%"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Colors</h3>
+  <div style="display: flex; flex-direction: column; gap: 12px;">
+    <div class="progress">
+      <div class="progress__bar" style="width: 60%"></div>
+    </div>
+    <div class="progress progress--success">
+      <div class="progress__bar" style="width: 80%"></div>
+    </div>
+    <div class="progress progress--warning">
+      <div class="progress__bar" style="width: 50%"></div>
+    </div>
+    <div class="progress progress--danger">
+      <div class="progress__bar" style="width: 30%"></div>
+    </div>
+    <div class="progress progress--info">
+      <div class="progress__bar" style="width: 70%"></div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Striped & Animated</h3>
+  <div style="display: flex; flex-direction: column; gap: 12px;">
+    <div class="progress progress--striped">
+      <div class="progress__bar" style="width: 60%"></div>
+    </div>
+    <div class="progress progress--striped progress--animated">
+      <div class="progress__bar" style="width: 75%"></div>
+    </div>
+    <div class="progress progress--striped progress--animated progress--success">
+      <div class="progress__bar" style="width: 90%"></div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Indeterminate</h3>
+  <div class="progress progress--indeterminate">
+    <div class="progress__bar"></div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Gradient</h3>
+  <div class="progress progress--lg progress--gradient">
+    <div class="progress__bar" style="width: 65%"></div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Label</h3>
+  <div class="progress-wrapper" style="max-width: 400px;">
+    <div class="progress__label">
+      <span class="progress__label-text">Uploading files...</span>
+      <span class="progress__label-value">65%</span>
+    </div>
+    <div class="progress">
+      <div class="progress__bar" style="width: 65%"></div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Inline Label</h3>
+  <div class="progress-wrapper progress-wrapper--inline" style="max-width: 400px;">
+    <span style="font-size: 14px; color: var(--text-secondary); white-space: nowrap;">Storage used</span>
+    <div class="progress">
+      <div class="progress__bar" style="width: 42%"></div>
+    </div>
+    <span style="font-size: 14px; font-weight: 500;">42%</span>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Value Inside Bar</h3>
+  <div class="progress progress--with-value progress--lg">
+    <div class="progress__bar" style="width: 75%">
+      <span class="progress__value">75%</span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Circular Progress</h3>
+  <div class="demo-row" style="gap: 32px;">
+    <div class="progress-circle progress-circle--sm" data-value="25">
+      <svg class="progress-circle__svg" viewBox="0 0 48 48">
+        <circle class="progress-circle__track" cx="24" cy="24" r="20"/>
+        <circle class="progress-circle__fill" cx="24" cy="24" r="20"/>
+      </svg>
+      <div class="progress-circle__content">
+        <span class="progress-circle__value">25%</span>
+      </div>
+    </div>
+
+    <div class="progress-circle" data-value="60">
+      <svg class="progress-circle__svg" viewBox="0 0 80 80">
+        <circle class="progress-circle__track" cx="40" cy="40" r="36"/>
+        <circle class="progress-circle__fill" cx="40" cy="40" r="36"/>
+      </svg>
+      <div class="progress-circle__content">
+        <span class="progress-circle__value">60%</span>
+        <span class="progress-circle__label">Complete</span>
+      </div>
+    </div>
+
+    <div class="progress-circle progress-circle--lg progress-circle--success" data-value="85">
+      <svg class="progress-circle__svg" viewBox="0 0 120 120">
+        <circle class="progress-circle__track" cx="60" cy="60" r="55"/>
+        <circle class="progress-circle__fill" cx="60" cy="60" r="55"/>
+      </svg>
+      <div class="progress-circle__content">
+        <span class="progress-circle__value">85%</span>
+        <span class="progress-circle__label">Score</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Steps Progress</h3>
+  <div class="progress-steps" style="max-width: 600px;">
+    <div class="progress-step is-complete">
+      <div class="progress-step__indicator">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+          <path d="M11.5 4L5.5 10 2.5 7" stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+      <span class="progress-step__label">Account</span>
+    </div>
+    <div class="progress-step is-complete">
+      <div class="progress-step__indicator">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+          <path d="M11.5 4L5.5 10 2.5 7" stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+      <span class="progress-step__label">Profile</span>
+    </div>
+    <div class="progress-step is-active">
+      <div class="progress-step__indicator">3</div>
+      <span class="progress-step__label">Payment</span>
+    </div>
+    <div class="progress-step">
+      <div class="progress-step__indicator">4</div>
+      <span class="progress-step__label">Confirm</span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Multiple Progress Bars</h3>
+  <div style="display: flex; flex-direction: column; gap: 16px; max-width: 400px;">
+    <div class="progress-wrapper">
+      <div class="progress__label">
+        <span class="progress__label-text">HTML</span>
+        <span class="progress__label-value">90%</span>
+      </div>
+      <div class="progress progress--success">
+        <div class="progress__bar" style="width: 90%"></div>
+      </div>
+    </div>
+    <div class="progress-wrapper">
+      <div class="progress__label">
+        <span class="progress__label-text">CSS</span>
+        <span class="progress__label-value">85%</span>
+      </div>
+      <div class="progress">
+        <div class="progress__bar" style="width: 85%"></div>
+      </div>
+    </div>
+    <div class="progress-wrapper">
+      <div class="progress__label">
+        <span class="progress__label-text">JavaScript</span>
+        <span class="progress__label-value">75%</span>
+      </div>
+      <div class="progress progress--warning">
+        <div class="progress__bar" style="width: 75%"></div>
+      </div>
+    </div>
+    <div class="progress-wrapper">
+      <div class="progress__label">
+        <span class="progress__label-text">React</span>
+        <span class="progress__label-value">60%</span>
+      </div>
+      <div class="progress progress--info">
+        <div class="progress__bar" style="width: 60%"></div>
+      </div>
+    </div>
+  </div>
+</section>

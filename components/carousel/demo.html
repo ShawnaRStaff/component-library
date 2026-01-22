@@ -1,0 +1,422 @@
+<!-- Carousel Component Demo -->
+
+<section class="demo-section">
+  <h3>Basic Carousel</h3>
+  <div class="carousel" data-carousel style="max-width: 600px;">
+    <div class="carousel__track">
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--16-9">
+          <img src="https://picsum.photos/800/450?random=1" alt="Slide 1">
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--16-9">
+          <img src="https://picsum.photos/800/450?random=2" alt="Slide 2">
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--16-9">
+          <img src="https://picsum.photos/800/450?random=3" alt="Slide 3">
+        </div>
+      </div>
+    </div>
+    <button class="carousel__nav carousel__nav--prev" aria-label="Previous">
+      <svg viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"/>
+      </svg>
+    </button>
+    <button class="carousel__nav carousel__nav--next" aria-label="Next">
+      <svg viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>
+      </svg>
+    </button>
+    <div class="carousel__indicators">
+      <button class="carousel__indicator is-active" aria-label="Go to slide 1"></button>
+      <button class="carousel__indicator" aria-label="Go to slide 2"></button>
+      <button class="carousel__indicator" aria-label="Go to slide 3"></button>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Autoplay & Progress</h3>
+  <div class="carousel carousel--indicators-inside" data-carousel data-autoplay data-interval="4000" data-loop style="max-width: 600px;">
+    <div class="carousel__track">
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--16-9">
+          <img src="https://picsum.photos/800/450?random=4" alt="Slide 1">
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--16-9">
+          <img src="https://picsum.photos/800/450?random=5" alt="Slide 2">
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--16-9">
+          <img src="https://picsum.photos/800/450?random=6" alt="Slide 3">
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--16-9">
+          <img src="https://picsum.photos/800/450?random=7" alt="Slide 4">
+        </div>
+      </div>
+    </div>
+    <button class="carousel__nav carousel__nav--prev" aria-label="Previous">
+      <svg viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"/>
+      </svg>
+    </button>
+    <button class="carousel__nav carousel__nav--next" aria-label="Next">
+      <svg viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>
+      </svg>
+    </button>
+    <div class="carousel__indicators">
+      <button class="carousel__indicator is-active"></button>
+      <button class="carousel__indicator"></button>
+      <button class="carousel__indicator"></button>
+      <button class="carousel__indicator"></button>
+    </div>
+    <div class="carousel__progress">
+      <div class="carousel__progress-bar"></div>
+    </div>
+  </div>
+  <p style="margin-top: 8px; font-size: 12px; color: var(--text-tertiary);">Hover to pause autoplay</p>
+</section>
+
+<section class="demo-section">
+  <h3>Multiple Slides View</h3>
+  <div class="carousel carousel--3-slides carousel--gap" data-carousel data-loop style="max-width: 900px;">
+    <div class="carousel__track">
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--4-3 aspect-ratio--rounded">
+          <img src="https://picsum.photos/400/300?random=10" alt="">
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--4-3 aspect-ratio--rounded">
+          <img src="https://picsum.photos/400/300?random=11" alt="">
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--4-3 aspect-ratio--rounded">
+          <img src="https://picsum.photos/400/300?random=12" alt="">
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--4-3 aspect-ratio--rounded">
+          <img src="https://picsum.photos/400/300?random=13" alt="">
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--4-3 aspect-ratio--rounded">
+          <img src="https://picsum.photos/400/300?random=14" alt="">
+        </div>
+      </div>
+    </div>
+    <button class="carousel__nav carousel__nav--prev" aria-label="Previous">
+      <svg viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"/>
+      </svg>
+    </button>
+    <button class="carousel__nav carousel__nav--next" aria-label="Next">
+      <svg viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>
+      </svg>
+    </button>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Card Carousel</h3>
+  <div class="carousel carousel--3-slides carousel--gap carousel--cards carousel--nav-outside" data-carousel style="max-width: 1000px;">
+    <div class="carousel__track">
+      <div class="carousel__slide">
+        <div style="background: var(--bg-primary); border: 1px solid var(--border-default); border-radius: var(--radius-lg); overflow: hidden;">
+          <div class="aspect-ratio aspect-ratio--16-9">
+            <img src="https://picsum.photos/400/225?random=20" alt="">
+          </div>
+          <div style="padding: 16px;">
+            <h4 style="margin: 0 0 8px;">Product One</h4>
+            <p style="margin: 0; font-size: 14px; color: var(--text-secondary);">$29.99</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div style="background: var(--bg-primary); border: 1px solid var(--border-default); border-radius: var(--radius-lg); overflow: hidden;">
+          <div class="aspect-ratio aspect-ratio--16-9">
+            <img src="https://picsum.photos/400/225?random=21" alt="">
+          </div>
+          <div style="padding: 16px;">
+            <h4 style="margin: 0 0 8px;">Product Two</h4>
+            <p style="margin: 0; font-size: 14px; color: var(--text-secondary);">$39.99</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div style="background: var(--bg-primary); border: 1px solid var(--border-default); border-radius: var(--radius-lg); overflow: hidden;">
+          <div class="aspect-ratio aspect-ratio--16-9">
+            <img src="https://picsum.photos/400/225?random=22" alt="">
+          </div>
+          <div style="padding: 16px;">
+            <h4 style="margin: 0 0 8px;">Product Three</h4>
+            <p style="margin: 0; font-size: 14px; color: var(--text-secondary);">$49.99</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div style="background: var(--bg-primary); border: 1px solid var(--border-default); border-radius: var(--radius-lg); overflow: hidden;">
+          <div class="aspect-ratio aspect-ratio--16-9">
+            <img src="https://picsum.photos/400/225?random=23" alt="">
+          </div>
+          <div style="padding: 16px;">
+            <h4 style="margin: 0 0 8px;">Product Four</h4>
+            <p style="margin: 0; font-size: 14px; color: var(--text-secondary);">$59.99</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div style="background: var(--bg-primary); border: 1px solid var(--border-default); border-radius: var(--radius-lg); overflow: hidden;">
+          <div class="aspect-ratio aspect-ratio--16-9">
+            <img src="https://picsum.photos/400/225?random=24" alt="">
+          </div>
+          <div style="padding: 16px;">
+            <h4 style="margin: 0 0 8px;">Product Five</h4>
+            <p style="margin: 0; font-size: 14px; color: var(--text-secondary);">$69.99</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel__nav carousel__nav--prev" aria-label="Previous">
+      <svg viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"/>
+      </svg>
+    </button>
+    <button class="carousel__nav carousel__nav--next" aria-label="Next">
+      <svg viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>
+      </svg>
+    </button>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Thumbnails</h3>
+  <div style="max-width: 600px;">
+    <div class="carousel" data-carousel>
+      <div class="carousel__track">
+        <div class="carousel__slide">
+          <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+            <img src="https://picsum.photos/800/450?random=30" alt="Slide 1">
+          </div>
+        </div>
+        <div class="carousel__slide">
+          <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+            <img src="https://picsum.photos/800/450?random=31" alt="Slide 2">
+          </div>
+        </div>
+        <div class="carousel__slide">
+          <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+            <img src="https://picsum.photos/800/450?random=32" alt="Slide 3">
+          </div>
+        </div>
+        <div class="carousel__slide">
+          <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+            <img src="https://picsum.photos/800/450?random=33" alt="Slide 4">
+          </div>
+        </div>
+        <div class="carousel__slide">
+          <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+            <img src="https://picsum.photos/800/450?random=34" alt="Slide 5">
+          </div>
+        </div>
+      </div>
+      <button class="carousel__nav carousel__nav--prev" aria-label="Previous">
+        <svg viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"/>
+        </svg>
+      </button>
+      <button class="carousel__nav carousel__nav--next" aria-label="Next">
+        <svg viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>
+        </svg>
+      </button>
+      <div class="carousel__thumbnails">
+        <button class="carousel__thumbnail is-active">
+          <img src="https://picsum.photos/100/75?random=30" alt="Thumbnail 1">
+        </button>
+        <button class="carousel__thumbnail">
+          <img src="https://picsum.photos/100/75?random=31" alt="Thumbnail 2">
+        </button>
+        <button class="carousel__thumbnail">
+          <img src="https://picsum.photos/100/75?random=32" alt="Thumbnail 3">
+        </button>
+        <button class="carousel__thumbnail">
+          <img src="https://picsum.photos/100/75?random=33" alt="Thumbnail 4">
+        </button>
+        <button class="carousel__thumbnail">
+          <img src="https://picsum.photos/100/75?random=34" alt="Thumbnail 5">
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Fade Effect</h3>
+  <div class="carousel carousel--fade" data-carousel data-loop style="max-width: 600px;">
+    <div class="carousel__track">
+      <div class="carousel__slide is-active">
+        <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+          <img src="https://picsum.photos/800/450?random=40" alt="Slide 1">
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+          <img src="https://picsum.photos/800/450?random=41" alt="Slide 2">
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+          <img src="https://picsum.photos/800/450?random=42" alt="Slide 3">
+        </div>
+      </div>
+    </div>
+    <button class="carousel__nav carousel__nav--prev" aria-label="Previous">
+      <svg viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"/>
+      </svg>
+    </button>
+    <button class="carousel__nav carousel__nav--next" aria-label="Next">
+      <svg viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>
+      </svg>
+    </button>
+    <div class="carousel__indicators">
+      <button class="carousel__indicator is-active"></button>
+      <button class="carousel__indicator"></button>
+      <button class="carousel__indicator"></button>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Counter</h3>
+  <div class="carousel" data-carousel style="max-width: 600px;">
+    <div class="carousel__track">
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+          <img src="https://picsum.photos/800/450?random=50" alt="Slide 1">
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+          <img src="https://picsum.photos/800/450?random=51" alt="Slide 2">
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+          <img src="https://picsum.photos/800/450?random=52" alt="Slide 3">
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+          <img src="https://picsum.photos/800/450?random=53" alt="Slide 4">
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+          <img src="https://picsum.photos/800/450?random=54" alt="Slide 5">
+        </div>
+      </div>
+    </div>
+    <button class="carousel__nav carousel__nav--prev" aria-label="Previous">
+      <svg viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"/>
+      </svg>
+    </button>
+    <button class="carousel__nav carousel__nav--next" aria-label="Next">
+      <svg viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>
+      </svg>
+    </button>
+    <div class="carousel__counter">1 / 5</div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Pill Indicators</h3>
+  <div class="carousel carousel--indicators-pill" data-carousel data-loop style="max-width: 600px;">
+    <div class="carousel__track">
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+          <img src="https://picsum.photos/800/450?random=60" alt="Slide 1">
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+          <img src="https://picsum.photos/800/450?random=61" alt="Slide 2">
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+          <img src="https://picsum.photos/800/450?random=62" alt="Slide 3">
+        </div>
+      </div>
+    </div>
+    <button class="carousel__nav carousel__nav--prev" aria-label="Previous">
+      <svg viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"/>
+      </svg>
+    </button>
+    <button class="carousel__nav carousel__nav--next" aria-label="Next">
+      <svg viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>
+      </svg>
+    </button>
+    <div class="carousel__indicators">
+      <button class="carousel__indicator is-active"></button>
+      <button class="carousel__indicator"></button>
+      <button class="carousel__indicator"></button>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Testimonial Carousel</h3>
+  <div class="carousel carousel--fade" data-carousel data-autoplay data-interval="6000" data-loop style="max-width: 600px; text-align: center;">
+    <div class="carousel__track">
+      <div class="carousel__slide is-active">
+        <div style="padding: 32px;">
+          <img src="https://i.pravatar.cc/80?img=1" alt="" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 16px;">
+          <p style="font-size: 18px; line-height: 1.6; color: var(--text-secondary); margin-bottom: 16px; font-style: italic;">"This component library has saved us countless hours. The quality and consistency are outstanding."</p>
+          <div style="font-weight: 600;">Sarah Johnson</div>
+          <div style="font-size: 14px; color: var(--text-tertiary);">CEO, TechCorp</div>
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div style="padding: 32px;">
+          <img src="https://i.pravatar.cc/80?img=2" alt="" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 16px;">
+          <p style="font-size: 18px; line-height: 1.6; color: var(--text-secondary); margin-bottom: 16px; font-style: italic;">"The best vanilla CSS framework I've ever used. No dependencies, just pure clean code."</p>
+          <div style="font-weight: 600;">Michael Chen</div>
+          <div style="font-size: 14px; color: var(--text-tertiary);">Lead Developer, StartupXYZ</div>
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div style="padding: 32px;">
+          <img src="https://i.pravatar.cc/80?img=3" alt="" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 16px;">
+          <p style="font-size: 18px; line-height: 1.6; color: var(--text-secondary); margin-bottom: 16px; font-style: italic;">"Finally, a component library that just works. Copy, paste, and customize. It's that simple."</p>
+          <div style="font-weight: 600;">Emily Davis</div>
+          <div style="font-size: 14px; color: var(--text-tertiary);">Designer, CreativeAgency</div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel__indicators">
+      <button class="carousel__indicator is-active"></button>
+      <button class="carousel__indicator"></button>
+      <button class="carousel__indicator"></button>
+    </div>
+  </div>
+</section>

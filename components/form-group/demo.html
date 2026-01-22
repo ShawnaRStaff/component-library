@@ -1,0 +1,256 @@
+<!-- Form Group Component Demo -->
+
+<section class="demo-section">
+  <h3>Basic Form Group</h3>
+  <div style="max-width: 400px;">
+    <div class="form-group">
+      <label class="form-group__label">Email Address</label>
+      <input class="input" type="email" placeholder="you@example.com">
+      <span class="form-group__helper">We'll never share your email with anyone.</span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Required Field</h3>
+  <div style="max-width: 400px;">
+    <div class="form-group">
+      <label class="form-group__label form-group__label--required">Full Name</label>
+      <input class="input" type="text" placeholder="John Doe" required>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Optional Field</h3>
+  <div style="max-width: 400px;">
+    <div class="form-group">
+      <label class="form-group__label">
+        Phone Number
+        <span class="form-group__optional">(optional)</span>
+      </label>
+      <input class="input" type="tel" placeholder="+1 (555) 000-0000">
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Error State</h3>
+  <div style="max-width: 400px;">
+    <div class="form-group form-group--error">
+      <label class="form-group__label form-group__label--required">Password</label>
+      <input class="input" type="password" value="123">
+      <span class="form-group__error">
+        <svg class="form-group__error-icon" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"/>
+        </svg>
+        Password must be at least 8 characters long.
+      </span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Success State</h3>
+  <div style="max-width: 400px;">
+    <div class="form-group form-group--success">
+      <label class="form-group__label">Username</label>
+      <input class="input" type="text" value="johndoe">
+      <span class="form-group__success">
+        <svg class="form-group__error-icon" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+        </svg>
+        Username is available!
+      </span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Disabled State</h3>
+  <div style="max-width: 400px;">
+    <div class="form-group form-group--disabled">
+      <label class="form-group__label">Account ID</label>
+      <input class="input" type="text" value="ACC-12345" disabled>
+      <span class="form-group__helper">This field cannot be edited.</span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Input with Addons</h3>
+  <div style="max-width: 400px;">
+    <div class="form-group">
+      <label class="form-group__label">Website</label>
+      <div class="form-group__input-group">
+        <span class="form-group__addon form-group__addon--start">https://</span>
+        <input class="input" type="text" placeholder="example.com">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="form-group__label">Price</label>
+      <div class="form-group__input-group">
+        <span class="form-group__addon form-group__addon--start">$</span>
+        <input class="input" type="number" placeholder="0.00">
+        <span class="form-group__addon form-group__addon--end">USD</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Character Counter</h3>
+  <div style="max-width: 400px;">
+    <div class="form-group">
+      <label class="form-group__label">Bio</label>
+      <textarea class="input" rows="3" data-counter="150" placeholder="Tell us about yourself..."></textarea>
+      <span class="form-group__counter">0/150</span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Inline Layout</h3>
+  <div style="max-width: 500px;">
+    <div class="form-group form-group--inline">
+      <label class="form-group__label">First Name</label>
+      <input class="input" type="text" placeholder="John">
+    </div>
+    <div class="form-group form-group--inline">
+      <label class="form-group__label">Last Name</label>
+      <input class="input" type="text" placeholder="Doe">
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Horizontal Layout</h3>
+  <div style="max-width: 600px;">
+    <div class="form-group form-group--horizontal">
+      <label class="form-group__label form-group__label--required">Email</label>
+      <div class="form-group__content">
+        <input class="input" type="email" placeholder="you@example.com">
+        <span class="form-group__helper">Your primary email address.</span>
+      </div>
+    </div>
+    <div class="form-group form-group--horizontal">
+      <label class="form-group__label">Notification</label>
+      <div class="form-group__content">
+        <label class="checkbox">
+          <input type="checkbox" class="checkbox__input">
+          <span class="checkbox__box"></span>
+          <span class="checkbox__label">Send me marketing emails</span>
+        </label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Form Row (Multiple Fields)</h3>
+  <div style="max-width: 600px;">
+    <div class="form-row form-row--2">
+      <div class="form-group">
+        <label class="form-group__label">First Name</label>
+        <input class="input" type="text" placeholder="John">
+      </div>
+      <div class="form-group">
+        <label class="form-group__label">Last Name</label>
+        <input class="input" type="text" placeholder="Doe">
+      </div>
+    </div>
+
+    <div class="form-row form-row--3" style="margin-top: 16px;">
+      <div class="form-group">
+        <label class="form-group__label">City</label>
+        <input class="input" type="text" placeholder="New York">
+      </div>
+      <div class="form-group">
+        <label class="form-group__label">State</label>
+        <select class="select">
+          <option>Select...</option>
+          <option>California</option>
+          <option>New York</option>
+          <option>Texas</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-group__label">ZIP</label>
+        <input class="input" type="text" placeholder="10001">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Fieldset</h3>
+  <div style="max-width: 500px;">
+    <fieldset class="fieldset">
+      <legend class="fieldset__legend">Personal Information</legend>
+      <p class="fieldset__description">Please provide your personal details below.</p>
+
+      <div class="form-group">
+        <label class="form-group__label form-group__label--required">Full Name</label>
+        <input class="input" type="text" placeholder="John Doe">
+      </div>
+
+      <div class="form-group">
+        <label class="form-group__label form-group__label--required">Email</label>
+        <input class="input" type="email" placeholder="john@example.com">
+      </div>
+
+      <div class="form-group">
+        <label class="form-group__label">Date of Birth</label>
+        <input class="input" type="date">
+      </div>
+    </fieldset>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Complete Form Example</h3>
+  <form style="max-width: 500px; background: var(--bg-secondary); padding: 24px; border-radius: 12px;">
+    <h4 style="margin: 0 0 20px; font-size: 18px;">Create Account</h4>
+
+    <div class="form-row form-row--2">
+      <div class="form-group">
+        <label class="form-group__label form-group__label--required">First Name</label>
+        <input class="input" type="text" placeholder="John">
+      </div>
+      <div class="form-group">
+        <label class="form-group__label form-group__label--required">Last Name</label>
+        <input class="input" type="text" placeholder="Doe">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="form-group__label form-group__label--required">Email</label>
+      <input class="input" type="email" placeholder="you@example.com" data-validate>
+    </div>
+
+    <div class="form-group">
+      <label class="form-group__label form-group__label--required">Password</label>
+      <input class="input" type="password" placeholder="Create a strong password">
+      <span class="form-group__helper">Must be at least 8 characters with a number and symbol.</span>
+    </div>
+
+    <div class="form-group">
+      <label class="form-group__label">
+        Company
+        <span class="form-group__optional">(optional)</span>
+      </label>
+      <input class="input" type="text" placeholder="Acme Inc">
+    </div>
+
+    <div class="form-group" style="margin-top: 20px;">
+      <label class="checkbox">
+        <input type="checkbox" class="checkbox__input">
+        <span class="checkbox__box"></span>
+        <span class="checkbox__label">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
+      </label>
+    </div>
+
+    <button type="submit" class="btn btn--primary" style="width: 100%; margin-top: 20px;">Create Account</button>
+  </form>
+</section>

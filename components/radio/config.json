@@ -1,0 +1,16 @@
+{
+  "name": "radio",
+  "label": "Radio",
+  "category": "atoms",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic", "file": "variants/basic.html" },
+    { "id": "states", "label": "States", "file": "variants/states.html" },
+    { "id": "error", "label": "Error State", "file": "variants/error.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "group-vertical", "label": "Group (Vertical)", "file": "variants/group-vertical.html" },
+    { "id": "group-horizontal", "label": "Group (Horizontal)", "file": "variants/group-horizontal.html" },
+    { "id": "cards", "label": "Radio Cards", "file": "variants/cards.html" },
+    { "id": "without-label", "label": "Without Label", "file": "variants/without-label.html" }
+  ]
+}

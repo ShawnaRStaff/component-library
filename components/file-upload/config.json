@@ -1,0 +1,15 @@
+{
+  "name": "file-upload",
+  "label": "File Upload",
+  "category": "molecules",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic", "file": "variants/basic.html" },
+    { "id": "small", "label": "Small", "file": "variants/small.html" },
+    { "id": "large", "label": "Large", "file": "variants/large.html" },
+    { "id": "compact", "label": "Compact (Button)", "file": "variants/compact.html" },
+    { "id": "avatar", "label": "Avatar Upload", "file": "variants/avatar.html" },
+    { "id": "with-files", "label": "With Files", "file": "variants/with-files.html" },
+    { "id": "states", "label": "States", "file": "variants/states.html" }
+  ]
+}

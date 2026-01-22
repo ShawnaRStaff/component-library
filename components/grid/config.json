@@ -1,0 +1,19 @@
+{
+  "name": "grid",
+  "label": "Grid",
+  "category": "layout",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic-12-column", "label": "Basic 12-Column", "file": "variants/basic-12-column.html" },
+    { "id": "mixed-column-widths", "label": "Mixed Column Widths", "file": "variants/mixed-column-widths.html" },
+    { "id": "responsive-grid", "label": "Responsive Grid", "file": "variants/responsive-grid.html" },
+    { "id": "auto-fit-grid", "label": "Auto-fit Grid", "file": "variants/auto-fit-grid.html" },
+    { "id": "gap-variants", "label": "Gap Variants", "file": "variants/gap-variants.html" },
+    { "id": "column-offset", "label": "Column Offset", "file": "variants/column-offset.html" },
+    { "id": "alignment", "label": "Alignment", "file": "variants/alignment.html" },
+    { "id": "dashboard-layout", "label": "Dashboard Layout", "file": "variants/dashboard-layout.html" },
+    { "id": "holy-grail-layout", "label": "Holy Grail Layout", "file": "variants/holy-grail-layout.html" },
+    { "id": "magazine-layout", "label": "Magazine Layout", "file": "variants/magazine-layout.html" },
+    { "id": "page-layout-sidebar", "label": "Page Layout with Sidebar", "file": "variants/page-layout-sidebar.html" }
+  ]
+}

@@ -1,0 +1,291 @@
+/**
+ * Steps/Stepper Component
+ *
+ * Multi-step navigation and progress indicators.
+ *
+ * Usage:
+ * <div class="steps">
+ *   <div class="steps__item is-complete">...</div>
+ *   <div class="steps__item is-active">...</div>
+ *   <div class="steps__item">...</div>
+ * </div>
+ */
+
+.steps {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  width: 100%;
+}
+
+/* ===================
+   Step Item
+   =================== */
+
+.steps__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+
+/* Connector line */
+.steps__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: calc(50% + 20px);
+  width: calc(100% - 40px);
+  height: 2px;
+  background-color: var(--color-neutral-200);
+}
+
+.steps__item.is-complete::after {
+  background-color: var(--color-primary-500);
+}
+
+/* ===================
+   Step Indicator
+   =================== */
+
+.steps__indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-neutral-100);
+  border: 2px solid var(--color-neutral-300);
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  position: relative;
+  z-index: 1;
+  transition: all var(--duration-fast) var(--easing-default);
+}
+
+.steps__item.is-active .steps__indicator {
+  background-color: var(--color-primary-500);
+  border-color: var(--color-primary-500);
+  color: var(--color-neutral-0);
+}
+
+.steps__item.is-complete .steps__indicator {
+  background-color: var(--color-primary-500);
+  border-color: var(--color-primary-500);
+  color: var(--color-neutral-0);
+}
+
+/* Check icon for completed */
+.steps__check {
+  display: none;
+}
+
+.steps__item.is-complete .steps__number {
+  display: none;
+}
+
+.steps__item.is-complete .steps__check {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+/* ===================
+   Step Content
+   =================== */
+
+.steps__content {
+  margin-top: var(--space-2);
+  text-align: center;
+}
+
+.steps__title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.steps__item.is-active .steps__title,
+.steps__item.is-complete .steps__title {
+  color: var(--text-primary);
+}
+
+.steps__description {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+  margin: var(--space-1) 0 0;
+}
+
+/* ===================
+   Size Variants
+   =================== */
+
+.steps--sm .steps__indicator {
+  width: 24px;
+  height: 24px;
+  font-size: var(--font-size-xs);
+}
+
+.steps--sm .steps__item:not(:last-child)::after {
+  top: 12px;
+  left: calc(50% + 16px);
+  width: calc(100% - 32px);
+}
+
+.steps--sm .steps__check {
+  width: 12px;
+  height: 12px;
+}
+
+.steps--lg .steps__indicator {
+  width: 40px;
+  height: 40px;
+  font-size: var(--font-size-base);
+}
+
+.steps--lg .steps__item:not(:last-child)::after {
+  top: 20px;
+  left: calc(50% + 24px);
+  width: calc(100% - 48px);
+}
+
+/* ===================
+   Vertical Steps
+   =================== */
+
+.steps--vertical {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.steps--vertical .steps__item {
+  flex-direction: row;
+  align-items: flex-start;
+  flex: none;
+  min-height: 80px;
+}
+
+.steps--vertical .steps__item:last-child {
+  min-height: auto;
+}
+
+.steps--vertical .steps__item:not(:last-child)::after {
+  top: 36px;
+  left: 15px;
+  width: 2px;
+  height: calc(100% - 36px);
+}
+
+.steps--vertical .steps__content {
+  margin-top: 0;
+  margin-left: var(--space-4);
+  text-align: left;
+  padding-top: var(--space-1);
+}
+
+/* ===================
+   Dot Style
+   =================== */
+
+.steps--dots .steps__indicator {
+  width: 12px;
+  height: 12px;
+  border-width: 0;
+  background-color: var(--color-neutral-300);
+}
+
+.steps--dots .steps__indicator .steps__number,
+.steps--dots .steps__indicator .steps__check {
+  display: none;
+}
+
+.steps--dots .steps__item.is-active .steps__indicator {
+  background-color: var(--color-primary-500);
+  box-shadow: 0 0 0 4px var(--color-primary-100);
+}
+
+.steps--dots .steps__item.is-complete .steps__indicator {
+  background-color: var(--color-primary-500);
+}
+
+.steps--dots .steps__item:not(:last-child)::after {
+  top: 5px;
+  left: calc(50% + 10px);
+  width: calc(100% - 20px);
+}
+
+/* ===================
+   Clickable Steps
+   =================== */
+
+.steps--clickable .steps__item {
+  cursor: pointer;
+}
+
+.steps--clickable .steps__item:hover .steps__indicator {
+  border-color: var(--color-primary-400);
+}
+
+.steps--clickable .steps__item.is-complete:hover .steps__indicator,
+.steps--clickable .steps__item.is-active:hover .steps__indicator {
+  transform: scale(1.1);
+}
+
+/* ===================
+   Progress Bar Style
+   =================== */
+
+.steps-progress {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.steps-progress__bar {
+  height: 4px;
+  background-color: var(--color-neutral-200);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.steps-progress__fill {
+  height: 100%;
+  background-color: var(--color-primary-500);
+  border-radius: var(--radius-full);
+  transition: width var(--duration-normal) var(--easing-default);
+}
+
+.steps-progress__labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.steps-progress__label {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+.steps-progress__label.is-active {
+  color: var(--color-primary-600);
+  font-weight: var(--font-weight-medium);
+}
+
+/* ===================
+   Responsive
+   =================== */
+
+@media (max-width: 640px) {
+  .steps:not(.steps--vertical) .steps__content {
+    display: none;
+  }
+
+  .steps:not(.steps--vertical) .steps__item:not(:last-child)::after {
+    left: calc(50% + 16px);
+    width: calc(100% - 32px);
+  }
+}

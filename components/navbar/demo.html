@@ -1,0 +1,302 @@
+<!-- Navbar Component Demo -->
+
+<section class="demo-section">
+  <h3>Default Navbar</h3>
+  <nav class="navbar" style="position: relative;">
+    <a href="#" class="logo">
+      <div class="logo__mark logo__mark--primary">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2l8 4.5v7c0 4-3.5 7.5-8 8.5-4.5-1-8-4.5-8-8.5v-7L12 2z"/>
+        </svg>
+      </div>
+      <span class="logo__text">Brand</span>
+    </a>
+    <div class="navbar__menu">
+      <a href="#" class="navbar__link is-active">Home</a>
+      <a href="#" class="navbar__link">Products</a>
+      <a href="#" class="navbar__link">Pricing</a>
+      <a href="#" class="navbar__link">About</a>
+    </div>
+    <div class="navbar__actions">
+      <button class="btn btn--ghost btn--sm">Sign In</button>
+      <button class="btn btn--primary btn--sm">Get Started</button>
+    </div>
+    <button class="navbar__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span class="navbar__toggle-line"></span>
+      <span class="navbar__toggle-line"></span>
+      <span class="navbar__toggle-line"></span>
+    </button>
+    <div class="navbar__overlay"></div>
+  </nav>
+  <p style="margin-top: 8px; font-size: 12px; color: var(--text-tertiary);">Resize window or use mobile view to see the slide-out drawer</p>
+</section>
+
+<section class="demo-section">
+  <h3>With Search & Avatar</h3>
+  <nav class="navbar" style="position: relative;">
+    <a href="#" class="logo">
+      <div class="logo__mark logo__mark--success logo__mark--circle">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+      </div>
+      <span class="logo__text">Dashboard</span>
+    </a>
+    <div class="navbar__menu">
+      <a href="#" class="navbar__link is-active">Overview</a>
+      <a href="#" class="navbar__link">Analytics</a>
+      <a href="#" class="navbar__link">Reports</a>
+    </div>
+    <div class="navbar__actions">
+      <div class="navbar__search">
+        <svg class="navbar__search-icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"/>
+        </svg>
+        <input type="search" class="input" placeholder="Search...">
+      </div>
+      <button class="btn btn--ghost btn--icon btn--sm">
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6z"/>
+        </svg>
+      </button>
+      <img src="https://i.pravatar.cc/32?img=5" alt="User" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover;">
+    </div>
+    <button class="navbar__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span class="navbar__toggle-line"></span>
+      <span class="navbar__toggle-line"></span>
+      <span class="navbar__toggle-line"></span>
+    </button>
+    <div class="navbar__overlay"></div>
+  </nav>
+</section>
+
+<section class="demo-section">
+  <h3>Dark Navbar with Colorful Actions</h3>
+  <nav class="navbar navbar--dark" style="position: relative;">
+    <a href="#" class="logo">
+      <div class="logo__mark logo__mark--warning">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 8v4l3 1.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+      </div>
+      <span class="logo__text logo__text--light">NightOwl</span>
+    </a>
+    <div class="navbar__menu">
+      <a href="#" class="navbar__link is-active">Home</a>
+      <a href="#" class="navbar__link">Features</a>
+      <a href="#" class="navbar__link">Pricing</a>
+      <a href="#" class="navbar__link">Contact</a>
+    </div>
+    <div class="navbar__actions">
+      <button class="btn btn--warning btn--sm">Upgrade</button>
+      <button class="btn btn--ghost btn--sm" style="color: white;">Login</button>
+    </div>
+    <button class="navbar__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span class="navbar__toggle-line"></span>
+      <span class="navbar__toggle-line"></span>
+      <span class="navbar__toggle-line"></span>
+    </button>
+    <div class="navbar__overlay"></div>
+  </nav>
+</section>
+
+<section class="demo-section">
+  <h3>With Icons & Badge</h3>
+  <nav class="navbar navbar--elevated" style="position: relative;">
+    <a href="#" class="logo">
+      <div class="logo__mark logo__mark--danger">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+        </svg>
+      </div>
+      <span class="logo__text">AppStore</span>
+    </a>
+    <div class="navbar__menu">
+      <a href="#" class="navbar__link is-active">
+        <svg class="navbar__link-icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+        </svg>
+        Home
+      </a>
+      <a href="#" class="navbar__link">
+        <svg class="navbar__link-icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
+        </svg>
+        Browse
+      </a>
+      <a href="#" class="navbar__link">
+        <svg class="navbar__link-icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3z"/>
+        </svg>
+        Cart
+        <span class="badge badge--danger badge--sm" style="margin-left: 4px;">3</span>
+      </a>
+    </div>
+    <div class="navbar__actions">
+      <button class="btn btn--success btn--sm">Download App</button>
+    </div>
+    <button class="navbar__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span class="navbar__toggle-line"></span>
+      <span class="navbar__toggle-line"></span>
+      <span class="navbar__toggle-line"></span>
+    </button>
+    <div class="navbar__overlay"></div>
+  </nav>
+</section>
+
+<section class="demo-section">
+  <h3>Mobile-First Drawer with Actions</h3>
+  <nav class="navbar" style="position: relative;">
+    <a href="#" class="logo">
+      <div class="logo__mark logo__mark--primary logo__mark--circle">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+        </svg>
+      </div>
+      <span class="logo__text">Taskify</span>
+    </a>
+    <div class="navbar__menu">
+      <a href="#" class="navbar__link is-active">Tasks</a>
+      <a href="#" class="navbar__link">Projects</a>
+      <a href="#" class="navbar__link">Calendar</a>
+      <a href="#" class="navbar__link">Team</a>
+      <div class="navbar__menu-divider"></div>
+      <div class="navbar__menu-header">Account</div>
+      <a href="#" class="navbar__link">Settings</a>
+      <a href="#" class="navbar__link">Help</a>
+      <div class="navbar__mobile-actions">
+        <button class="btn btn--secondary">Sign Out</button>
+        <button class="btn btn--danger">Delete Account</button>
+      </div>
+    </div>
+    <div class="navbar__actions navbar__actions--desktop">
+      <button class="btn btn--ghost btn--sm">Help</button>
+      <button class="btn btn--primary btn--sm">New Task</button>
+    </div>
+    <button class="navbar__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span class="navbar__toggle-line"></span>
+      <span class="navbar__toggle-line"></span>
+      <span class="navbar__toggle-line"></span>
+    </button>
+    <div class="navbar__overlay"></div>
+  </nav>
+</section>
+
+<section class="demo-section">
+  <h3>E-Commerce Style</h3>
+  <nav class="navbar" style="position: relative;">
+    <a href="#" class="logo">
+      <div class="logo__mark logo__mark--dark logo__mark--square">S</div>
+      <span class="logo__text">ShopNow</span>
+    </a>
+    <div class="navbar__menu">
+      <a href="#" class="navbar__link">Women</a>
+      <a href="#" class="navbar__link">Men</a>
+      <a href="#" class="navbar__link">Kids</a>
+      <a href="#" class="navbar__link" style="color: var(--color-danger-500);">
+        Sale
+        <span class="badge badge--danger badge--sm">50%</span>
+      </a>
+    </div>
+    <div class="navbar__actions">
+      <button class="btn btn--ghost btn--icon btn--sm">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"/>
+        </svg>
+      </button>
+      <button class="btn btn--ghost btn--icon btn--sm">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
+        </svg>
+      </button>
+      <button class="btn btn--ghost btn--icon btn--sm" style="position: relative;">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3z"/>
+        </svg>
+        <span class="badge badge--success badge--sm" style="position: absolute; top: -4px; right: -4px; min-width: 18px; height: 18px;">2</span>
+      </button>
+    </div>
+    <button class="navbar__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span class="navbar__toggle-line"></span>
+      <span class="navbar__toggle-line"></span>
+      <span class="navbar__toggle-line"></span>
+    </button>
+    <div class="navbar__overlay"></div>
+  </nav>
+</section>
+
+<section class="demo-section">
+  <h3>Bottom Navigation (Mobile App Style)</h3>
+  <div style="position: relative; height: 80px; border: 1px solid var(--border-default); border-radius: var(--radius-lg); overflow: hidden;">
+    <nav class="navbar navbar--bottom" style="position: absolute;">
+      <div class="navbar__menu" style="display: flex;">
+        <a href="#" class="navbar__link is-active">
+          <svg class="navbar__link-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+          </svg>
+          Home
+        </a>
+        <a href="#" class="navbar__link">
+          <svg class="navbar__link-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"/>
+          </svg>
+          Search
+        </a>
+        <a href="#" class="navbar__link">
+          <svg class="navbar__link-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"/>
+          </svg>
+          Create
+        </a>
+        <a href="#" class="navbar__link">
+          <svg class="navbar__link-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6z"/>
+          </svg>
+          Alerts
+        </a>
+        <a href="#" class="navbar__link">
+          <svg class="navbar__link-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/>
+          </svg>
+          Profile
+        </a>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Compact with Multiple Actions</h3>
+  <nav class="navbar navbar--compact navbar--elevated" style="position: relative;">
+    <a href="#" class="logo logo--sm">
+      <div class="logo__mark logo__mark--gradient-ocean logo__mark--circle">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+        </svg>
+      </div>
+      <span class="logo__text">DevTools</span>
+    </a>
+    <div class="navbar__menu">
+      <a href="#" class="navbar__link is-active">Docs</a>
+      <a href="#" class="navbar__link">API</a>
+      <a href="#" class="navbar__link">Examples</a>
+      <a href="#" class="navbar__link">Blog</a>
+    </div>
+    <div class="navbar__actions">
+      <button class="btn btn--ghost btn--sm btn--icon" style="padding: var(--space-1);">
+        <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+        </svg>
+      </button>
+      <a href="#" class="btn btn--ghost btn--sm" style="padding: var(--space-1) var(--space-2); font-size: var(--font-size-xs);">
+        <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" style="margin-right: 4px;">
+          <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0110 4.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.163 20 14.418 20 10c0-5.523-4.477-10-10-10z"/>
+        </svg>
+        GitHub
+      </a>
+      <button class="btn btn--success btn--sm" style="padding: var(--space-1) var(--space-3); font-size: var(--font-size-xs);">
+        v2.0
+      </button>
+    </div>
+  </nav>
+</section>

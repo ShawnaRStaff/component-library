@@ -1,0 +1,47 @@
+<!-- Carousel - With Autoplay & Progress Variant -->
+<div class="demo-showcase">
+  <div class="carousel carousel--indicators-inside" data-carousel data-autoplay data-interval="4000" data-loop style="max-width: 600px;">
+    <div class="carousel__track">
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--16-9">
+          <img src="https://picsum.photos/800/450?random=4" alt="Slide 1">
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--16-9">
+          <img src="https://picsum.photos/800/450?random=5" alt="Slide 2">
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--16-9">
+          <img src="https://picsum.photos/800/450?random=6" alt="Slide 3">
+        </div>
+      </div>
+      <div class="carousel__slide">
+        <div class="aspect-ratio aspect-ratio--16-9">
+          <img src="https://picsum.photos/800/450?random=7" alt="Slide 4">
+        </div>
+      </div>
+    </div>
+    <button class="carousel__nav carousel__nav--prev" aria-label="Previous">
+      <svg viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"/>
+      </svg>
+    </button>
+    <button class="carousel__nav carousel__nav--next" aria-label="Next">
+      <svg viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>
+      </svg>
+    </button>
+    <div class="carousel__indicators">
+      <button class="carousel__indicator is-active"></button>
+      <button class="carousel__indicator"></button>
+      <button class="carousel__indicator"></button>
+      <button class="carousel__indicator"></button>
+    </div>
+    <div class="carousel__progress">
+      <div class="carousel__progress-bar"></div>
+    </div>
+  </div>
+  <p style="margin-top: 8px; font-size: 12px; color: var(--text-tertiary);">Hover to pause autoplay</p>
+</div>

@@ -1,0 +1,318 @@
+<!-- Logo Component Demo -->
+
+<section class="demo-section">
+  <h3>Basic Logo</h3>
+  <div class="demo-row">
+    <a href="#" class="logo">
+      <div class="logo__mark">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <span class="logo__text">Acme Inc</span>
+    </a>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Logo Sizes</h3>
+  <div style="display: flex; flex-direction: column; gap: 24px; align-items: flex-start;">
+    <div class="logo logo--xs">
+      <div class="logo__mark">A</div>
+      <span class="logo__text">Extra Small</span>
+    </div>
+    <div class="logo logo--sm">
+      <div class="logo__mark">A</div>
+      <span class="logo__text">Small</span>
+    </div>
+    <div class="logo logo--md">
+      <div class="logo__mark">A</div>
+      <span class="logo__text">Medium</span>
+    </div>
+    <div class="logo logo--lg">
+      <div class="logo__mark">A</div>
+      <span class="logo__text">Large</span>
+    </div>
+    <div class="logo logo--xl">
+      <div class="logo__mark">A</div>
+      <span class="logo__text">Extra Large</span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Mark Shapes</h3>
+  <div class="demo-row" style="gap: 32px;">
+    <div class="logo">
+      <div class="logo__mark logo__mark--rounded">R</div>
+      <span class="logo__text">Rounded</span>
+    </div>
+    <div class="logo">
+      <div class="logo__mark logo__mark--circle">C</div>
+      <span class="logo__text">Circle</span>
+    </div>
+    <div class="logo">
+      <div class="logo__mark logo__mark--square">S</div>
+      <span class="logo__text">Square</span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Mark Colors</h3>
+  <div class="demo-row" style="flex-wrap: wrap; gap: 24px;">
+    <div class="logo">
+      <div class="logo__mark logo__mark--primary">P</div>
+      <span class="logo__text">Primary</span>
+    </div>
+    <div class="logo">
+      <div class="logo__mark logo__mark--secondary">S</div>
+      <span class="logo__text">Secondary</span>
+    </div>
+    <div class="logo">
+      <div class="logo__mark logo__mark--success">S</div>
+      <span class="logo__text">Success</span>
+    </div>
+    <div class="logo">
+      <div class="logo__mark logo__mark--warning">W</div>
+      <span class="logo__text">Warning</span>
+    </div>
+    <div class="logo">
+      <div class="logo__mark logo__mark--danger">D</div>
+      <span class="logo__text">Danger</span>
+    </div>
+    <div class="logo">
+      <div class="logo__mark logo__mark--dark">D</div>
+      <span class="logo__text">Dark</span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Gradient Marks</h3>
+  <div class="demo-row" style="flex-wrap: wrap; gap: 24px;">
+    <div class="logo">
+      <div class="logo__mark logo__mark--gradient-primary">G</div>
+      <span class="logo__text">Primary</span>
+    </div>
+    <div class="logo">
+      <div class="logo__mark logo__mark--gradient-sunset">S</div>
+      <span class="logo__text">Sunset</span>
+    </div>
+    <div class="logo">
+      <div class="logo__mark logo__mark--gradient-ocean">O</div>
+      <span class="logo__text">Ocean</span>
+    </div>
+    <div class="logo">
+      <div class="logo__mark logo__mark--gradient-forest">F</div>
+      <span class="logo__text">Forest</span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Icons</h3>
+  <div class="demo-row" style="flex-wrap: wrap; gap: 32px;">
+    <a href="#" class="logo">
+      <div class="logo__mark logo__mark--circle logo__mark--gradient-ocean">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <span class="logo__text">Layers</span>
+    </a>
+    <a href="#" class="logo">
+      <div class="logo__mark logo__mark--success">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+      </div>
+      <span class="logo__text">Verified</span>
+    </a>
+    <a href="#" class="logo">
+      <div class="logo__mark logo__mark--circle logo__mark--warning">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+        </svg>
+      </div>
+      <span class="logo__text">Flash</span>
+    </a>
+    <a href="#" class="logo">
+      <div class="logo__mark logo__mark--danger">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+        </svg>
+      </div>
+      <span class="logo__text">Heartly</span>
+    </a>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Stacked Layout</h3>
+  <div class="demo-row" style="gap: 48px;">
+    <div class="logo logo--stacked">
+      <div class="logo__mark logo__mark--lg logo__mark--gradient-primary">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <span class="logo__text">StackCo</span>
+    </div>
+    <div class="logo logo--stacked logo--lg">
+      <div class="logo__mark logo__mark--circle logo__mark--dark">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+        </svg>
+      </div>
+      <span class="logo__text">Cube Labs</span>
+    </div>
+    <div class="logo logo--stacked">
+      <div class="logo__mark logo__mark--gradient-sunset">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+        </svg>
+      </div>
+      <span class="logo__text">Sunburst</span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Tagline</h3>
+  <div class="demo-row" style="gap: 48px;">
+    <a href="#" class="logo logo--lg">
+      <div class="logo__mark logo__mark--gradient-ocean">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+        </svg>
+      </div>
+      <div>
+        <span class="logo__text">ScienceLab</span>
+        <p class="logo__tagline">Research & Innovation</p>
+      </div>
+    </a>
+    <a href="#" class="logo logo--lg">
+      <div class="logo__mark logo__mark--dark logo__mark--circle">N</div>
+      <div>
+        <span class="logo__text">Nexus</span>
+        <p class="logo__tagline">Connect Everything</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Mark Only</h3>
+  <div class="demo-row" style="gap: 16px;">
+    <div class="logo logo--mark-only logo--sm">
+      <div class="logo__mark logo__mark--primary logo__mark--circle">A</div>
+    </div>
+    <div class="logo logo--mark-only logo--sm">
+      <div class="logo__mark logo__mark--secondary">B</div>
+    </div>
+    <div class="logo logo--mark-only logo--sm">
+      <div class="logo__mark logo__mark--success logo__mark--circle">C</div>
+    </div>
+    <div class="logo logo--mark-only logo--sm">
+      <div class="logo__mark logo__mark--warning">D</div>
+    </div>
+    <div class="logo logo--mark-only logo--sm">
+      <div class="logo__mark logo__mark--danger logo__mark--circle">E</div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Text Only</h3>
+  <div class="demo-row" style="gap: 32px;">
+    <div class="logo logo--text-only">
+      <span class="logo__text" style="font-weight: 800;">BOLDTYPE</span>
+    </div>
+    <div class="logo logo--text-only">
+      <span class="logo__text logo__text--primary">Colorful</span>
+    </div>
+    <div class="logo logo--text-only">
+      <span class="logo__text" style="font-style: italic;">Elegance</span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Real-World Examples</h3>
+  <div style="display: flex; flex-direction: column; gap: 24px;">
+    <!-- Tech Startup -->
+    <div style="padding: 20px; background: var(--bg-secondary); border-radius: var(--radius-lg);">
+      <a href="#" class="logo">
+        <div class="logo__mark logo__mark--gradient-primary logo__mark--circle">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+          </svg>
+        </div>
+        <span class="logo__text">Voltaic</span>
+      </a>
+    </div>
+
+    <!-- Finance App -->
+    <div style="padding: 20px; background: var(--color-neutral-900); border-radius: var(--radius-lg);">
+      <a href="#" class="logo">
+        <div class="logo__mark logo__mark--success logo__mark--circle">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <span class="logo__text logo__text--light">CashFlow</span>
+      </a>
+    </div>
+
+    <!-- Creative Agency -->
+    <div style="padding: 20px; background: linear-gradient(135deg, #fef3c7, #fde68a); border-radius: var(--radius-lg);">
+      <a href="#" class="logo">
+        <div class="logo__mark logo__mark--dark">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+          </svg>
+        </div>
+        <span class="logo__text logo__text--dark">Palette Studio</span>
+      </a>
+    </div>
+
+    <!-- Health & Fitness -->
+    <div style="padding: 20px; background: var(--bg-secondary); border-radius: var(--radius-lg);">
+      <a href="#" class="logo">
+        <div class="logo__mark logo__mark--danger logo__mark--circle">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+          </svg>
+        </div>
+        <span class="logo__text">VitalPulse</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>For Dark Backgrounds</h3>
+  <div style="padding: 32px; background: var(--color-neutral-900); border-radius: var(--radius-lg); display: flex; gap: 48px; flex-wrap: wrap;">
+    <a href="#" class="logo">
+      <div class="logo__mark logo__mark--light">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <span class="logo__text logo__text--light">LightMark</span>
+    </a>
+    <a href="#" class="logo">
+      <div class="logo__mark logo__mark--gradient-sunset logo__mark--circle">F</div>
+      <span class="logo__text logo__text--light">Flame</span>
+    </a>
+    <a href="#" class="logo">
+      <div class="logo__mark logo__mark--primary">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+        </svg>
+      </div>
+      <span class="logo__text logo__text--light">Sparkle</span>
+    </a>
+  </div>
+</section>

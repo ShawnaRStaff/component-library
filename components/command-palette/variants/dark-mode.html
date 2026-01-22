@@ -1,0 +1,58 @@
+<!-- Command Palette - Dark Mode Variant -->
+<div class="demo-showcase">
+  <button class="btn btn--outline" onclick="document.getElementById('demo-palette-4').classList.add('is-open')">
+    Open Dark Palette
+  </button>
+
+  <div class="command-palette-overlay" id="demo-palette-4" onclick="if(event.target === this) this.classList.remove('is-open')">
+    <div class="command-palette command-palette--dark">
+      <div class="command-palette__header">
+        <svg class="command-palette__icon" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"/>
+        </svg>
+        <input type="text" class="command-palette__input" placeholder="Type a command or search...">
+        <div class="command-palette__shortcut">
+          <kbd class="kbd kbd--sm" style="background: var(--color-neutral-700); border-color: var(--color-neutral-600); color: white;">Esc</kbd>
+        </div>
+      </div>
+
+      <div class="command-palette__results">
+        <div class="command-palette__group">
+          <div class="command-palette__group-title">Commands</div>
+          <a href="#" class="command-palette__item is-highlighted">
+            <svg class="command-palette__item-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"/>
+            </svg>
+            <div class="command-palette__item-content">
+              <div class="command-palette__item-title">Create New Document</div>
+            </div>
+          </a>
+          <a href="#" class="command-palette__item">
+            <svg class="command-palette__item-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+            </svg>
+            <div class="command-palette__item-content">
+              <div class="command-palette__item-title">Change Layout</div>
+            </div>
+          </a>
+          <a href="#" class="command-palette__item">
+            <svg class="command-palette__item-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z"/>
+            </svg>
+            <div class="command-palette__item-content">
+              <div class="command-palette__item-title">Toggle Bookmark</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="command-palette__footer">
+        <div class="command-palette__footer-hints">
+          <div class="command-palette__footer-hint">
+            <kbd class="kbd kbd--sm" style="background: var(--color-neutral-700); border-color: var(--color-neutral-600); color: white;">↵</kbd> Run
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

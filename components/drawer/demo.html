@@ -1,0 +1,234 @@
+<!-- Drawer Component Demo -->
+
+<section class="demo-section">
+  <h3>Right Drawer (Default)</h3>
+  <button class="btn btn--primary" data-drawer-trigger="drawer-right">Open Right Drawer</button>
+
+  <div class="drawer-overlay" data-drawer-overlay="drawer-right"></div>
+  <div class="drawer drawer--right" id="drawer-right">
+    <div class="drawer__header">
+      <h3 class="drawer__title">Right Drawer</h3>
+      <button class="drawer__close" data-drawer-close aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="drawer__body">
+      <p>This is a right-side drawer. It slides in from the right edge of the screen.</p>
+      <p style="margin-top: 16px;">Click the overlay or press Escape to close.</p>
+    </div>
+    <div class="drawer__footer">
+      <button class="btn btn--secondary" data-drawer-close>Cancel</button>
+      <button class="btn btn--primary">Save Changes</button>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Left Drawer</h3>
+  <button class="btn btn--secondary" data-drawer-trigger="drawer-left">Open Left Drawer</button>
+
+  <div class="drawer-overlay" data-drawer-overlay="drawer-left"></div>
+  <div class="drawer drawer--left" id="drawer-left">
+    <div class="drawer__header">
+      <h3 class="drawer__title">Navigation</h3>
+      <button class="drawer__close" data-drawer-close aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="drawer__body">
+      <nav style="display: flex; flex-direction: column; gap: 4px;">
+        <a href="#" style="display: block; padding: 12px 16px; border-radius: 8px; color: var(--text-primary); text-decoration: none; background: var(--color-primary-50);">Dashboard</a>
+        <a href="#" style="display: block; padding: 12px 16px; border-radius: 8px; color: var(--text-secondary); text-decoration: none;">Projects</a>
+        <a href="#" style="display: block; padding: 12px 16px; border-radius: 8px; color: var(--text-secondary); text-decoration: none;">Team</a>
+        <a href="#" style="display: block; padding: 12px 16px; border-radius: 8px; color: var(--text-secondary); text-decoration: none;">Settings</a>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Bottom Sheet</h3>
+  <button class="btn btn--secondary" data-drawer-trigger="drawer-bottom">Open Bottom Sheet</button>
+
+  <div class="drawer-overlay" data-drawer-overlay="drawer-bottom"></div>
+  <div class="drawer drawer--bottom" id="drawer-bottom">
+    <div class="drawer__handle"></div>
+    <div class="drawer__header">
+      <h3 class="drawer__title">Share</h3>
+      <button class="drawer__close" data-drawer-close aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="drawer__body">
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; text-align: center;">
+        <div>
+          <div style="width: 48px; height: 48px; margin: 0 auto 8px; background: #1DA1F2; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">T</div>
+          <span style="font-size: 12px;">Twitter</span>
+        </div>
+        <div>
+          <div style="width: 48px; height: 48px; margin: 0 auto 8px; background: #4267B2; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">F</div>
+          <span style="font-size: 12px;">Facebook</span>
+        </div>
+        <div>
+          <div style="width: 48px; height: 48px; margin: 0 auto 8px; background: #0A66C2; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">L</div>
+          <span style="font-size: 12px;">LinkedIn</span>
+        </div>
+        <div>
+          <div style="width: 48px; height: 48px; margin: 0 auto 8px; background: var(--color-neutral-200); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"/></svg>
+          </div>
+          <span style="font-size: 12px;">Copy Link</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Size Variants</h3>
+  <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+    <button class="btn btn--secondary btn--sm" data-drawer-trigger="drawer-sm">Small (320px)</button>
+    <button class="btn btn--secondary btn--sm" data-drawer-trigger="drawer-lg">Large (560px)</button>
+    <button class="btn btn--secondary btn--sm" data-drawer-trigger="drawer-xl">XL (720px)</button>
+  </div>
+
+  <div class="drawer-overlay" data-drawer-overlay="drawer-sm"></div>
+  <div class="drawer drawer--sm" id="drawer-sm">
+    <div class="drawer__header">
+      <h3 class="drawer__title">Small Drawer</h3>
+      <button class="drawer__close" data-drawer-close aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="drawer__body">
+      <p>A compact 320px drawer for simple content.</p>
+    </div>
+  </div>
+
+  <div class="drawer-overlay" data-drawer-overlay="drawer-lg"></div>
+  <div class="drawer drawer--lg" id="drawer-lg">
+    <div class="drawer__header">
+      <h3 class="drawer__title">Large Drawer</h3>
+      <button class="drawer__close" data-drawer-close aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="drawer__body">
+      <p>A larger 560px drawer for forms or detailed content.</p>
+    </div>
+  </div>
+
+  <div class="drawer-overlay" data-drawer-overlay="drawer-xl"></div>
+  <div class="drawer drawer--xl" id="drawer-xl">
+    <div class="drawer__header">
+      <h3 class="drawer__title">Extra Large Drawer</h3>
+      <button class="drawer__close" data-drawer-close aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="drawer__body">
+      <p>An extra large 720px drawer for complex interfaces.</p>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Drawer with Form</h3>
+  <button class="btn btn--primary" data-drawer-trigger="drawer-form">Edit Profile</button>
+
+  <div class="drawer-overlay" data-drawer-overlay="drawer-form"></div>
+  <div class="drawer" id="drawer-form">
+    <div class="drawer__header">
+      <h3 class="drawer__title">Edit Profile</h3>
+      <button class="drawer__close" data-drawer-close aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="drawer__body">
+      <form style="display: flex; flex-direction: column; gap: 20px;">
+        <div class="form-group">
+          <label class="form-group__label">Full Name</label>
+          <input type="text" class="input" value="John Doe">
+        </div>
+        <div class="form-group">
+          <label class="form-group__label">Email</label>
+          <input type="email" class="input" value="john@example.com">
+        </div>
+        <div class="form-group">
+          <label class="form-group__label">Bio</label>
+          <textarea class="input" rows="3" placeholder="Tell us about yourself..."></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-group__label">Notifications</label>
+          <div class="checkbox-group">
+            <label class="checkbox">
+              <input type="checkbox" class="checkbox__input" checked>
+              <span class="checkbox__box"></span>
+              <span class="checkbox__label">Email notifications</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" class="checkbox__input">
+              <span class="checkbox__box"></span>
+              <span class="checkbox__label">SMS notifications</span>
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="drawer__footer">
+      <button class="btn btn--secondary" data-drawer-close>Cancel</button>
+      <button class="btn btn--primary">Save Changes</button>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Top Drawer</h3>
+  <button class="btn btn--secondary" data-drawer-trigger="drawer-top">Open Top Drawer</button>
+
+  <div class="drawer-overlay" data-drawer-overlay="drawer-top"></div>
+  <div class="drawer drawer--top" id="drawer-top">
+    <div class="drawer__header">
+      <h3 class="drawer__title">Notifications</h3>
+      <button class="drawer__close" data-drawer-close aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="drawer__body">
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="display: flex; gap: 12px; padding: 12px; background: var(--color-primary-50); border-radius: 8px;">
+          <div style="width: 40px; height: 40px; background: var(--color-primary-500); border-radius: 50%; flex-shrink: 0;"></div>
+          <div>
+            <p style="margin: 0; font-weight: 500;">New message from Sarah</p>
+            <p style="margin: 4px 0 0; font-size: 14px; color: var(--text-secondary);">Hey, are you available for a quick call?</p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 12px; padding: 12px; border-radius: 8px;">
+          <div style="width: 40px; height: 40px; background: var(--color-neutral-200); border-radius: 50%; flex-shrink: 0;"></div>
+          <div>
+            <p style="margin: 0; font-weight: 500;">Project update</p>
+            <p style="margin: 4px 0 0; font-size: 14px; color: var(--text-secondary);">The design review is scheduled for tomorrow.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="drawer__handle"></div>
+  </div>
+</section>
+<!-- END_OF_DRAWER_DEMO -->

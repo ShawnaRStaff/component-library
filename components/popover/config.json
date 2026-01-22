@@ -1,0 +1,17 @@
+{
+  "name": "popover",
+  "label": "Popover",
+  "category": "molecules",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic", "file": "variants/basic.html" },
+    { "id": "placement", "label": "Placement", "file": "variants/placement.html" },
+    { "id": "hover", "label": "Hover Trigger", "file": "variants/hover.html" },
+    { "id": "with-actions", "label": "With Actions", "file": "variants/with-actions.html" },
+    { "id": "menu", "label": "Menu Style", "file": "variants/menu.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "dark", "label": "Dark Theme", "file": "variants/dark.html" },
+    { "id": "no-arrow", "label": "No Arrow", "file": "variants/no-arrow.html" },
+    { "id": "rich-content", "label": "Rich Content", "file": "variants/rich-content.html" }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "breadcrumb",
+  "label": "Breadcrumb",
+  "category": "molecules",
+  "description": "Navigation path showing hierarchy",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "separators", "label": "Separator Variants", "file": "variants/separators.html" },
+    { "id": "with-icons", "label": "With Icons", "file": "variants/with-icons.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "contained", "label": "Contained", "file": "variants/contained.html" },
+    { "id": "collapsed", "label": "Collapsed", "file": "variants/collapsed.html" },
+    { "id": "long-path", "label": "Long Path", "file": "variants/long-path.html" },
+    { "id": "two-items", "label": "Two Items Only", "file": "variants/two-items.html" }
+  ]
+}

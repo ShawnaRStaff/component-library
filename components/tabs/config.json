@@ -1,0 +1,19 @@
+{
+  "name": "tabs",
+  "label": "Tabs",
+  "category": "molecules",
+  "description": "Tabbed navigation with keyboard support",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "boxed", "label": "Boxed", "file": "variants/boxed.html" },
+    { "id": "pill", "label": "Pill", "file": "variants/pill.html" },
+    { "id": "bordered", "label": "Bordered", "file": "variants/bordered.html" },
+    { "id": "with-icons", "label": "With Icons", "file": "variants/with-icons.html" },
+    { "id": "with-badges", "label": "With Badges", "file": "variants/with-badges.html" },
+    { "id": "vertical", "label": "Vertical", "file": "variants/vertical.html" },
+    { "id": "full-width", "label": "Full Width", "file": "variants/full-width.html" },
+    { "id": "centered", "label": "Centered", "file": "variants/centered.html" },
+    { "id": "with-disabled", "label": "With Disabled", "file": "variants/with-disabled.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" }
+  ]
+}

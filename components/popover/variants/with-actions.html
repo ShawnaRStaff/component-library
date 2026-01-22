@@ -1,0 +1,60 @@
+<!-- Popover: With Actions -->
+<div class="demo-showcase">
+  <div style="display: flex; gap: 24px; flex-wrap: wrap;">
+    <div class="popover-trigger">
+      <button class="btn btn--secondary" data-popover-trigger="with-actions">Settings</button>
+      <div class="popover popover--bottom popover--lg" data-popover="with-actions" aria-hidden="true">
+        <div class="popover__arrow"></div>
+        <div class="popover__content">
+          <div class="popover__header">
+            <h4 class="popover__title">Quick Settings</h4>
+            <button class="popover__close" aria-label="Close">
+              <svg viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+              </svg>
+            </button>
+          </div>
+          <div class="popover__body">
+            <div class="checkbox-group">
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__input" checked>
+                <span class="checkbox__box"></span>
+                <span class="checkbox__label">Enable notifications</span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__input">
+                <span class="checkbox__box"></span>
+                <span class="checkbox__label">Dark mode</span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__input" checked>
+                <span class="checkbox__box"></span>
+                <span class="checkbox__label">Auto-save</span>
+              </label>
+            </div>
+          </div>
+          <div class="popover__footer">
+            <button class="btn btn--ghost btn--sm">Reset</button>
+            <button class="btn btn--primary btn--sm">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popover-trigger">
+      <button class="btn btn--danger" data-popover-trigger="confirm">Delete Item</button>
+      <div class="popover popover--bottom popover--confirm" data-popover="confirm" aria-hidden="true">
+        <div class="popover__arrow"></div>
+        <div class="popover__content">
+          <div class="popover__body">
+            Are you sure you want to delete this item? This action cannot be undone.
+          </div>
+          <div class="popover__footer">
+            <button class="btn btn--ghost btn--sm">Cancel</button>
+            <button class="btn btn--danger btn--sm">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

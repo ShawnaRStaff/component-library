@@ -1,0 +1,23 @@
+<!-- Aspect Ratio: Object Fit Options -->
+<div class="demo-showcase">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px;">
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">Cover (default)</p>
+      <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded aspect-ratio--bg-secondary">
+        <img src="https://picsum.photos/600/300?random=8" alt="Cover fit">
+      </div>
+    </div>
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">Contain</p>
+      <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--contain aspect-ratio--rounded aspect-ratio--bg-secondary">
+        <img src="https://picsum.photos/300/300?random=9" alt="Contain fit">
+      </div>
+    </div>
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">Scale Down</p>
+      <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--scale-down aspect-ratio--rounded aspect-ratio--bg-secondary">
+        <img src="https://picsum.photos/150/100?random=10" alt="Scale down fit">
+      </div>
+    </div>
+  </div>
+</div>

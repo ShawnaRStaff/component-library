@@ -1,0 +1,17 @@
+{
+  "name": "toast",
+  "label": "Toast",
+  "category": "molecules",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "variants", "label": "Variants", "file": "variants/variants.html" },
+    { "id": "with-title", "label": "With Title", "file": "variants/with-title.html" },
+    { "id": "with-actions", "label": "With Actions", "file": "variants/with-actions.html" },
+    { "id": "dark", "label": "Dark", "file": "variants/dark.html" },
+    { "id": "compact-snackbar", "label": "Compact (Snackbar)", "file": "variants/compact-snackbar.html" },
+    { "id": "loading", "label": "Loading State", "file": "variants/loading.html" },
+    { "id": "with-progress", "label": "With Progress", "file": "variants/with-progress.html" },
+    { "id": "positions", "label": "Positions", "file": "variants/positions.html" },
+    { "id": "stacked", "label": "Stacked", "file": "variants/stacked.html" }
+  ]
+}

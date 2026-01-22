@@ -1,0 +1,36 @@
+<!-- Popover: Basic (Click Trigger) -->
+<div class="demo-showcase">
+  <div style="display: flex; gap: 24px; flex-wrap: wrap;">
+    <div class="popover-trigger">
+      <button class="btn btn--secondary" data-popover-trigger="basic">Click for Info</button>
+      <div class="popover popover--bottom" data-popover="basic" aria-hidden="true">
+        <div class="popover__arrow"></div>
+        <div class="popover__content">
+          <div class="popover__body">
+            This is a basic popover with some helpful information. Click outside to close.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popover-trigger">
+      <button class="btn btn--primary" data-popover-trigger="with-header">With Header</button>
+      <div class="popover popover--bottom" data-popover="with-header" aria-hidden="true">
+        <div class="popover__arrow"></div>
+        <div class="popover__content">
+          <div class="popover__header">
+            <h4 class="popover__title">More Information</h4>
+            <button class="popover__close" aria-label="Close">
+              <svg viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+              </svg>
+            </button>
+          </div>
+          <div class="popover__body">
+            This popover has a header with a title and close button for better organization.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

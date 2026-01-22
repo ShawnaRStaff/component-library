@@ -1,0 +1,273 @@
+/**
+ * Card Component
+ *
+ * Usage:
+ * <div class="card">
+ *   <div class="card__header">...</div>
+ *   <div class="card__body">...</div>
+ *   <div class="card__footer">...</div>
+ * </div>
+ */
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--bg-primary);
+  border: var(--border-width-thin) solid var(--border-default);
+  border-radius: var(--radius-lg);
+
+  overflow: hidden;
+}
+
+/* Elevated card */
+.card--elevated {
+  border: none;
+  box-shadow: var(--shadow-md);
+}
+
+.card--elevated:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+/* Flat card (no border) */
+.card--flat {
+  border: none;
+  background-color: var(--bg-secondary);
+}
+
+/* Outline card */
+.card--outline {
+  background-color: transparent;
+}
+
+/* Card header */
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-5);
+  border-bottom: var(--border-width-thin) solid var(--border-default);
+}
+
+.card__title {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.card__subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  margin-top: var(--space-1);
+}
+
+.card__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+/* Card body */
+.card__body {
+  flex: 1;
+  padding: var(--space-5);
+}
+
+.card__body p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+.card__body p + p {
+  margin-top: var(--space-3);
+}
+
+/* Card footer */
+.card__footer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  border-top: var(--border-width-thin) solid var(--border-default);
+}
+
+.card__footer--right {
+  justify-content: flex-end;
+}
+
+.card__footer--between {
+  justify-content: space-between;
+}
+
+/* Card image */
+.card__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card__image--cover {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card__image--top {
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+/* Compact card */
+.card--compact .card__header,
+.card--compact .card__body,
+.card--compact .card__footer {
+  padding: var(--space-3) var(--space-4);
+}
+
+/* No padding */
+.card--no-padding .card__body {
+  padding: 0;
+}
+
+/* Clickable card */
+.card--clickable {
+  cursor: pointer;
+  transition: var(--transition-shadow), transform var(--duration-fast) var(--easing-default);
+}
+
+.card--clickable:hover {
+  border-color: var(--border-strong);
+}
+
+.card--clickable:active {
+  transform: scale(0.99);
+}
+
+.card--clickable.card--elevated:hover {
+  transform: translateY(-2px);
+}
+
+/* Selectable card */
+.card--selectable {
+  cursor: pointer;
+  transition: var(--transition-colors);
+}
+
+.card--selectable:hover {
+  background-color: var(--bg-secondary);
+}
+
+.card--selectable.is-selected {
+  border-color: var(--color-primary-500);
+  background-color: var(--color-primary-50);
+}
+
+/* Card with status indicator */
+.card--status-success {
+  border-left: 3px solid var(--color-success-500);
+}
+
+.card--status-warning {
+  border-left: 3px solid var(--color-warning-500);
+}
+
+.card--status-danger {
+  border-left: 3px solid var(--color-danger-500);
+}
+
+.card--status-info {
+  border-left: 3px solid var(--color-info-500);
+}
+
+/* Horizontal card */
+.card--horizontal {
+  flex-direction: row;
+}
+
+.card--horizontal .card__image {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+}
+
+.card--horizontal .card__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-6);
+}
+
+/* Card list */
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+/* Profile card */
+.card--profile {
+  text-align: center;
+}
+
+.card--profile .card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Stat card */
+.card--stat .card__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.card__stat-value {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.card__stat-label {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+.card__stat-change {
+  font-size: var(--font-size-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.card__stat-change--up {
+  color: var(--color-success-500);
+}
+
+.card__stat-change--down {
+  color: var(--color-danger-500);
+}
+
+/* Empty state card */
+.card--empty {
+  text-align: center;
+  padding: var(--space-10);
+}
+
+.card--empty .card__icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--space-4);
+  color: var(--text-tertiary);
+}

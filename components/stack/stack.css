@@ -1,0 +1,195 @@
+/**
+ * Stack Component
+ *
+ * Flexbox-based layout utilities for spacing elements.
+ *
+ * Usage:
+ * <div class="stack">
+ *   <div>Item 1</div>
+ *   <div>Item 2</div>
+ * </div>
+ */
+
+/* ===================
+   Vertical Stack (default)
+   =================== */
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+/* Stack gap variants */
+.stack--gap-0 { gap: 0; }
+.stack--gap-1 { gap: var(--space-1); }
+.stack--gap-2 { gap: var(--space-2); }
+.stack--gap-3 { gap: var(--space-3); }
+.stack--gap-4 { gap: var(--space-4); }
+.stack--gap-6 { gap: var(--space-6); }
+.stack--gap-8 { gap: var(--space-8); }
+.stack--gap-10 { gap: var(--space-10); }
+.stack--gap-12 { gap: var(--space-12); }
+
+/* ===================
+   Horizontal Stack (HStack)
+   =================== */
+
+.hstack {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+/* HStack gap variants */
+.hstack--gap-0 { gap: 0; }
+.hstack--gap-1 { gap: var(--space-1); }
+.hstack--gap-2 { gap: var(--space-2); }
+.hstack--gap-3 { gap: var(--space-3); }
+.hstack--gap-4 { gap: var(--space-4); }
+.hstack--gap-6 { gap: var(--space-6); }
+.hstack--gap-8 { gap: var(--space-8); }
+
+/* Wrap on overflow */
+.hstack--wrap {
+  flex-wrap: wrap;
+}
+
+/* ===================
+   Alignment (applies to both)
+   =================== */
+
+/* Cross-axis alignment */
+.stack--align-start,
+.hstack--align-start { align-items: flex-start; }
+
+.stack--align-center,
+.hstack--align-center { align-items: center; }
+
+.stack--align-end,
+.hstack--align-end { align-items: flex-end; }
+
+.stack--align-stretch,
+.hstack--align-stretch { align-items: stretch; }
+
+.stack--align-baseline,
+.hstack--align-baseline { align-items: baseline; }
+
+/* Main-axis alignment */
+.stack--justify-start,
+.hstack--justify-start { justify-content: flex-start; }
+
+.stack--justify-center,
+.hstack--justify-center { justify-content: center; }
+
+.stack--justify-end,
+.hstack--justify-end { justify-content: flex-end; }
+
+.stack--justify-between,
+.hstack--justify-between { justify-content: space-between; }
+
+.stack--justify-around,
+.hstack--justify-around { justify-content: space-around; }
+
+.stack--justify-evenly,
+.hstack--justify-evenly { justify-content: space-evenly; }
+
+/* ===================
+   Spacer
+   =================== */
+
+.spacer {
+  flex: 1;
+}
+
+/* Fixed spacers */
+.spacer--sm { flex: 0 0 var(--space-4); }
+.spacer--md { flex: 0 0 var(--space-8); }
+.spacer--lg { flex: 0 0 var(--space-12); }
+
+/* ===================
+   Divider in Stack
+   =================== */
+
+.stack--divided > * + * {
+  border-top: var(--border-width-thin) solid var(--border-default);
+  padding-top: var(--space-4);
+}
+
+.hstack--divided > * + * {
+  border-left: var(--border-width-thin) solid var(--border-default);
+  padding-left: var(--space-4);
+}
+
+/* ===================
+   Responsive Direction
+   =================== */
+
+/* Stack on mobile, row on larger screens */
+.stack--row-md {
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .stack--row-md {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.stack--row-lg {
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .stack--row-lg {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* Row on mobile, stack on larger screens (reverse) */
+.hstack--col-md {
+  flex-direction: row;
+}
+
+@media (min-width: 768px) {
+  .hstack--col-md {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* ===================
+   Inline Stack
+   =================== */
+
+.inline-stack {
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.inline-hstack {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+/* ===================
+   Center Stack
+   =================== */
+
+.center-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+}
+
+.center-stack--full {
+  min-height: 100vh;
+}

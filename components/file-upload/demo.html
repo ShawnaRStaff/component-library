@@ -1,0 +1,181 @@
+<!-- File Upload Component Demo -->
+
+<section class="demo-section">
+  <h3>Default File Upload</h3>
+  <div style="max-width: 500px;">
+    <div class="file-upload">
+      <input type="file" class="file-upload__input" multiple>
+      <div class="file-upload__content">
+        <svg class="file-upload__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M28 8H12a4 4 0 00-4 4v24a4 4 0 004 4h24a4 4 0 004-4V20L28 8z"/>
+          <path d="M28 8v12h12M24 34v-10M19 29l5-5 5 5"/>
+        </svg>
+        <p class="file-upload__text">
+          <strong>Click to upload</strong> or drag and drop
+        </p>
+        <p class="file-upload__hint">PNG, JPG, PDF up to 10MB</p>
+      </div>
+    </div>
+    <div class="file-upload__list"></div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Small Size</h3>
+  <div style="max-width: 400px;">
+    <div class="file-upload file-upload--sm">
+      <input type="file" class="file-upload__input">
+      <div class="file-upload__content">
+        <svg class="file-upload__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M28 8H12a4 4 0 00-4 4v24a4 4 0 004 4h24a4 4 0 004-4V20L28 8z"/>
+          <path d="M28 8v12h12M24 34v-10M19 29l5-5 5 5"/>
+        </svg>
+        <p class="file-upload__text"><strong>Upload file</strong></p>
+        <p class="file-upload__hint">Max 5MB</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Large Size</h3>
+  <div style="max-width: 600px;">
+    <div class="file-upload file-upload--lg">
+      <input type="file" class="file-upload__input" multiple accept="image/*">
+      <div class="file-upload__content">
+        <svg class="file-upload__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="6" y="10" width="36" height="28" rx="4"/>
+          <circle cx="18" cy="22" r="4"/>
+          <path d="M42 38l-10-10-8 8-6-6-12 12"/>
+        </svg>
+        <p class="file-upload__text">
+          <strong>Drag photos here</strong> or click to browse
+        </p>
+        <p class="file-upload__hint">Upload up to 10 images at once (PNG, JPG, GIF)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Compact (Button Style)</h3>
+  <div class="file-upload file-upload--compact" style="display: inline-flex;">
+    <input type="file" class="file-upload__input">
+    <div class="file-upload__content">
+      <svg class="file-upload__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z"/>
+      </svg>
+      <p class="file-upload__text">Choose file</p>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Avatar Upload</h3>
+  <div style="display: flex; align-items: center; gap: 24px;">
+    <div class="file-upload file-upload--avatar">
+      <input type="file" class="file-upload__input" accept="image/*">
+      <div class="file-upload__content">
+        <svg class="file-upload__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="24" cy="20" r="8"/>
+          <path d="M8 42c0-8.837 7.163-16 16-16s16 7.163 16 16"/>
+        </svg>
+      </div>
+    </div>
+    <div>
+      <p style="margin: 0 0 4px; font-weight: 500;">Profile Photo</p>
+      <p style="margin: 0; font-size: 14px; color: var(--text-secondary);">Click the circle to upload</p>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Pre-existing Files</h3>
+  <div style="max-width: 500px;">
+    <div class="file-upload file-upload--sm">
+      <input type="file" class="file-upload__input" multiple>
+      <div class="file-upload__content">
+        <svg class="file-upload__icon" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z"/>
+        </svg>
+        <p class="file-upload__text"><strong>Add more files</strong></p>
+      </div>
+    </div>
+
+    <div class="file-upload__list">
+      <div class="file-upload__item">
+        <img src="https://via.placeholder.com/48" class="file-upload__preview" alt="Preview">
+        <div class="file-upload__item-info">
+          <p class="file-upload__item-name">photo-vacation.jpg</p>
+          <p class="file-upload__item-size">2.4 MB</p>
+        </div>
+        <button type="button" class="file-upload__item-remove" aria-label="Remove">
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="file-upload__item">
+        <div class="file-upload__item-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"/>
+          </svg>
+        </div>
+        <div class="file-upload__item-info">
+          <p class="file-upload__item-name">document-report-2024.pdf</p>
+          <p class="file-upload__item-size">456 KB</p>
+        </div>
+        <button type="button" class="file-upload__item-remove" aria-label="Remove">
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>States</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+    <div>
+      <p style="margin: 0 0 8px; font-size: 12px; color: var(--text-secondary);">Disabled</p>
+      <div class="file-upload file-upload--sm file-upload--disabled">
+        <input type="file" class="file-upload__input" disabled>
+        <div class="file-upload__content">
+          <svg class="file-upload__icon" viewBox="0 0 20 20" fill="currentColor" style="width: 24px; height: 24px;">
+            <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z"/>
+          </svg>
+          <p class="file-upload__text" style="font-size: 13px;">Upload disabled</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p style="margin: 0 0 8px; font-size: 12px; color: var(--text-secondary);">Error</p>
+      <div class="file-upload file-upload--sm file-upload--error">
+        <input type="file" class="file-upload__input">
+        <div class="file-upload__content">
+          <svg class="file-upload__icon" viewBox="0 0 20 20" fill="var(--color-danger-500)" style="width: 24px; height: 24px;">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"/>
+          </svg>
+          <p class="file-upload__text" style="font-size: 13px; color: var(--color-danger-600);">File too large</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p style="margin: 0 0 8px; font-size: 12px; color: var(--text-secondary);">Success</p>
+      <div class="file-upload file-upload--sm file-upload--success">
+        <input type="file" class="file-upload__input">
+        <div class="file-upload__content">
+          <svg class="file-upload__icon" viewBox="0 0 20 20" fill="var(--color-success-500)" style="width: 24px; height: 24px;">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+          </svg>
+          <p class="file-upload__text" style="font-size: 13px; color: var(--color-success-600);">Upload complete</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

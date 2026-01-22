@@ -1,0 +1,15 @@
+{
+  "name": "input",
+  "label": "Input",
+  "category": "atoms",
+  "description": "Text input fields with validation states and addons",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "states", "label": "States", "file": "variants/states.html" },
+    { "id": "validation", "label": "Validation", "file": "variants/validation.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "with-icon", "label": "With Icon", "file": "variants/with-icon.html" },
+    { "id": "with-addon", "label": "With Addon", "file": "variants/with-addon.html" },
+    { "id": "input-group", "label": "Input Group", "file": "variants/input-group.html" }
+  ]
+}

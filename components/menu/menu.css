@@ -1,0 +1,290 @@
+/**
+ * Dropdown Menu Component
+ *
+ * Action menus triggered by buttons.
+ *
+ * Usage:
+ * <div class="menu">
+ *   <button class="menu__trigger">Actions</button>
+ *   <div class="menu__content">
+ *     <button class="menu__item">Edit</button>
+ *   </div>
+ * </div>
+ */
+
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+/* ===================
+   Trigger Button
+   =================== */
+
+.menu__trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  border: var(--border-width-thin) solid var(--border-default);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition-colors);
+}
+
+.menu__trigger:hover {
+  background-color: var(--bg-secondary);
+}
+
+.menu__trigger-icon {
+  width: 16px;
+  height: 16px;
+  transition: transform var(--duration-fast) var(--easing-default);
+}
+
+.menu.is-open .menu__trigger-icon {
+  transform: rotate(180deg);
+}
+
+/* Icon-only trigger */
+.menu__trigger--icon {
+  padding: var(--space-2);
+}
+
+/* ===================
+   Content/Dropdown
+   =================== */
+
+.menu__content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: var(--z-dropdown);
+  min-width: 180px;
+  margin-top: var(--space-1);
+  padding: var(--space-1);
+  background-color: var(--bg-primary);
+  border: var(--border-width-thin) solid var(--border-default);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity var(--duration-fast) var(--easing-default),
+              visibility var(--duration-fast) var(--easing-default),
+              transform var(--duration-fast) var(--easing-default);
+}
+
+.menu.is-open .menu__content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Alignment variants */
+.menu__content--right {
+  left: auto;
+  right: 0;
+}
+
+.menu__content--center {
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+}
+
+.menu.is-open .menu__content--center {
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Width variants */
+.menu__content--sm {
+  min-width: 140px;
+}
+
+.menu__content--lg {
+  min-width: 240px;
+}
+
+.menu__content--full {
+  min-width: 100%;
+}
+
+/* ===================
+   Menu Items
+   =================== */
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--font-size-sm);
+  color: var(--text-primary);
+  text-align: left;
+  text-decoration: none;
+  background: none;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition-colors);
+}
+
+.menu__item:hover {
+  background-color: var(--bg-secondary);
+}
+
+.menu__item:focus {
+  outline: none;
+  background-color: var(--bg-secondary);
+}
+
+.menu__item:active {
+  background-color: var(--color-neutral-200);
+}
+
+.menu__item-icon {
+  width: 16px;
+  height: 16px;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.menu__item-text {
+  flex: 1;
+}
+
+.menu__item-shortcut {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+  margin-left: auto;
+}
+
+/* Danger item */
+.menu__item--danger {
+  color: var(--color-danger-600);
+}
+
+.menu__item--danger:hover {
+  background-color: var(--color-danger-50);
+}
+
+.menu__item--danger .menu__item-icon {
+  color: var(--color-danger-500);
+}
+
+/* Disabled item */
+.menu__item:disabled,
+.menu__item--disabled {
+  color: var(--text-tertiary);
+  cursor: not-allowed;
+}
+
+.menu__item:disabled:hover,
+.menu__item--disabled:hover {
+  background: none;
+}
+
+/* Active/Selected item */
+.menu__item--active {
+  background-color: var(--color-primary-50);
+  color: var(--color-primary-700);
+}
+
+.menu__item--active .menu__item-icon {
+  color: var(--color-primary-600);
+}
+
+/* ===================
+   Divider
+   =================== */
+
+.menu__divider {
+  height: 1px;
+  margin: var(--space-1) 0;
+  background-color: var(--border-default);
+}
+
+/* ===================
+   Header/Label
+   =================== */
+
+.menu__header {
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ===================
+   Checkbox/Radio Items
+   =================== */
+
+.menu__item--check {
+  padding-left: var(--space-8);
+  position: relative;
+}
+
+.menu__item--check::before {
+  content: "";
+  position: absolute;
+  left: var(--space-3);
+  width: 16px;
+  height: 16px;
+}
+
+.menu__item--check.is-checked::before {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%234F46E5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ===================
+   Submenu
+   =================== */
+
+.menu__submenu {
+  position: relative;
+}
+
+.menu__submenu > .menu__item::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 4l4 4-4 4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+}
+
+.menu__submenu .menu__content {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-top: 0;
+  margin-left: var(--space-1);
+}
+
+.menu__submenu:hover > .menu__content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* ===================
+   Context Menu
+   =================== */
+
+.menu--context .menu__content {
+  position: fixed;
+  top: auto;
+  left: auto;
+}

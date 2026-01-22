@@ -1,0 +1,16 @@
+{
+  "name": "navbar",
+  "label": "Navbar",
+  "category": "organisms",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic Navbar", "file": "variants/basic.html" },
+    { "id": "with-search", "label": "With Search & Avatar", "file": "variants/with-search.html" },
+    { "id": "dark", "label": "Dark Navbar", "file": "variants/dark.html" },
+    { "id": "with-icons", "label": "With Icons & Badge", "file": "variants/with-icons.html" },
+    { "id": "mobile-drawer", "label": "Mobile Drawer", "file": "variants/mobile-drawer.html" },
+    { "id": "ecommerce", "label": "E-Commerce Style", "file": "variants/ecommerce.html" },
+    { "id": "bottom", "label": "Bottom Navigation", "file": "variants/bottom.html" },
+    { "id": "compact", "label": "Compact Navbar", "file": "variants/compact.html" }
+  ]
+}

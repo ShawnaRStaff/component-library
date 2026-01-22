@@ -1,0 +1,219 @@
+<!-- Code Block Component Demo -->
+
+<section class="demo-section">
+  <h3>Inline Code</h3>
+  <p style="font-size: var(--font-size-sm); color: var(--text-secondary);">
+    Use the <code class="code">console.log()</code> function to print output, or access properties like <code class="code">document.body</code> for DOM manipulation.
+  </p>
+</section>
+
+<section class="demo-section">
+  <h3>Basic Code Block</h3>
+  <pre class="code-block"><code>function greet(name) {
+  return `Hello, ${name}!`;
+}
+
+console.log(greet('World'));</code></pre>
+</section>
+
+<section class="demo-section">
+  <h3>With Header</h3>
+  <div class="code-block code-block--with-header">
+    <div class="code-block__header">
+      <div class="code-block__filename">
+        <svg class="code-block__filename-icon" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"/>
+        </svg>
+        utils.js
+      </div>
+      <span class="code-block__language">JavaScript</span>
+    </div>
+    <button class="code-block__copy" aria-label="Copy code">
+      <svg viewBox="0 0 20 20" fill="currentColor">
+        <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"/>
+        <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"/>
+      </svg>
+    </button>
+    <code>export function formatDate(date) {
+  return new Intl.DateTimeFormat('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }).format(date);
+}
+
+export function formatCurrency(amount) {
+  return new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD'
+  }).format(amount);
+}</code>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Line Numbers</h3>
+  <div class="code-block code-block--numbered">
+    <div class="code-block__lines">
+      <div class="code-block__line-numbers">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+      </div>
+      <code class="code-block__code">import React from 'react';
+
+function Button({ children, onClick }) {
+  return (
+    &lt;button onClick={onClick}&gt;
+      {children}
+    &lt;/button&gt;
+  );
+}</code>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Syntax Highlighting</h3>
+  <pre class="code-block"><code><span class="token-keyword">const</span> <span class="token-variable">user</span> <span class="token-operator">=</span> <span class="token-punctuation">{</span>
+  <span class="token-property">name</span><span class="token-punctuation">:</span> <span class="token-string">'John Doe'</span><span class="token-punctuation">,</span>
+  <span class="token-property">age</span><span class="token-punctuation">:</span> <span class="token-number">30</span><span class="token-punctuation">,</span>
+  <span class="token-property">email</span><span class="token-punctuation">:</span> <span class="token-string">'john@example.com'</span>
+<span class="token-punctuation">}</span><span class="token-punctuation">;</span>
+
+<span class="token-comment">// Get user's full info</span>
+<span class="token-keyword">function</span> <span class="token-function">getUserInfo</span><span class="token-punctuation">(</span><span class="token-variable">user</span><span class="token-punctuation">)</span> <span class="token-punctuation">{</span>
+  <span class="token-keyword">return</span> <span class="token-string">`${user.name} (${user.age})`</span><span class="token-punctuation">;</span>
+<span class="token-punctuation">}</span></code></pre>
+</section>
+
+<section class="demo-section">
+  <h3>Line Highlighting</h3>
+  <pre class="code-block"><code><span class="code-block__line">function processData(items) {</span>
+<span class="code-block__line code-block__line--highlighted">  const filtered = items.filter(item => item.active);</span>
+<span class="code-block__line code-block__line--highlighted">  const mapped = filtered.map(item => item.value);</span>
+<span class="code-block__line">  return mapped.reduce((sum, val) => sum + val, 0);</span>
+<span class="code-block__line">}</span></code></pre>
+</section>
+
+<section class="demo-section">
+  <h3>Diff View</h3>
+  <pre class="code-block code-block--diff"><code><span class="code-block__line">  function greet(name) {</span>
+<span class="code-block__line code-block__line--removed"><span class="token-removed">-   return 'Hello, ' + name;</span></span>
+<span class="code-block__line code-block__line--added"><span class="token-added">+   return `Hello, ${name}!`;</span></span>
+<span class="code-block__line">  }</span></code></pre>
+</section>
+
+<section class="demo-section">
+  <h3>Terminal Style</h3>
+  <div class="code-block code-block--terminal">
+    <div class="code-block__header">
+      <div class="code-block__filename" style="color: #888;">Terminal</div>
+    </div>
+    <code><span class="token-prompt">$</span> <span class="token-command">npm install @acme/components</span>
+<span class="token-output">added 42 packages in 3.2s</span>
+
+<span class="token-prompt">$</span> <span class="token-command">npm run build</span>
+<span class="token-output">Building for production...
+✓ Compiled successfully in 2.4s</span>
+
+<span class="token-prompt">$</span> <span class="token-command">npm start</span>
+<span class="token-output">Server running at http://localhost:3000</span></code>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Light Theme</h3>
+  <pre class="code-block code-block--light"><code>// Light theme code block
+const config = {
+  theme: 'light',
+  fontSize: 14,
+  lineNumbers: true
+};</code></pre>
+</section>
+
+<section class="demo-section">
+  <h3>Sizes</h3>
+  <div style="display: flex; flex-direction: column; gap: 16px;">
+    <div>
+      <p style="font-size: var(--font-size-xs); color: var(--text-tertiary); margin-bottom: 8px;">Small</p>
+      <pre class="code-block code-block--sm"><code>const small = 'compact code';</code></pre>
+    </div>
+    <div>
+      <p style="font-size: var(--font-size-xs); color: var(--text-tertiary); margin-bottom: 8px;">Default</p>
+      <pre class="code-block"><code>const normal = 'default size';</code></pre>
+    </div>
+    <div>
+      <p style="font-size: var(--font-size-xs); color: var(--text-tertiary); margin-bottom: 8px;">Large</p>
+      <pre class="code-block code-block--lg"><code>const large = 'bigger text';</code></pre>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Multiple Languages</h3>
+  <div style="display: flex; flex-direction: column; gap: 16px;">
+    <div class="code-block code-block--with-header">
+      <div class="code-block__header">
+        <div class="code-block__filename">styles.css</div>
+        <span class="code-block__language">CSS</span>
+      </div>
+      <code>.button {
+  display: inline-flex;
+  padding: 8px 16px;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 6px;
+}</code>
+    </div>
+
+    <div class="code-block code-block--with-header">
+      <div class="code-block__header">
+        <div class="code-block__filename">index.html</div>
+        <span class="code-block__language">HTML</span>
+      </div>
+      <code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;My App&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id="app"&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+    </div>
+
+    <div class="code-block code-block--with-header">
+      <div class="code-block__header">
+        <div class="code-block__filename">config.json</div>
+        <span class="code-block__language">JSON</span>
+      </div>
+      <code>{
+  "name": "my-project",
+  "version": "1.0.0",
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}</code>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Copy Button</h3>
+  <div class="code-block" style="position: relative;">
+    <button class="code-block__copy" aria-label="Copy code" style="opacity: 1;">
+      <svg viewBox="0 0 20 20" fill="currentColor">
+        <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"/>
+        <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"/>
+      </svg>
+    </button>
+    <code>npm install @acme/components</code>
+  </div>
+</section>

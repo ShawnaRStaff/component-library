@@ -1,0 +1,16 @@
+{
+  "name": "stat",
+  "label": "Stat",
+  "category": "molecules",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic", "file": "variants/basic.html" },
+    { "id": "with-change", "label": "With Change Indicator", "file": "variants/with-change.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "cards", "label": "Stat Cards", "file": "variants/cards.html" },
+    { "id": "with-progress", "label": "With Progress", "file": "variants/with-progress.html" },
+    { "id": "horizontal", "label": "Horizontal Group", "file": "variants/horizontal.html" },
+    { "id": "animated-counter", "label": "Animated Counter", "file": "variants/animated-counter.html" },
+    { "id": "with-footer", "label": "With Footer", "file": "variants/with-footer.html" }
+  ]
+}

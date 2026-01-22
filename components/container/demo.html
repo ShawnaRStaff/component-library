@@ -1,0 +1,124 @@
+<!-- Container Component Demo -->
+
+<section class="demo-section">
+  <h3>Default Container (max-width: 1280px)</h3>
+  <div class="container" style="background: var(--color-primary-100); padding: 24px; border-radius: 8px;">
+    <p style="margin: 0;">This is the default container. It has a max-width of 1280px and auto horizontal margins to center it. Resize the browser to see it respond.</p>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Container Sizes</h3>
+  <div class="container container--sm" style="background: var(--color-success-100); padding: 16px; border-radius: 8px; margin-bottom: 12px;">
+    <p style="margin: 0; font-size: 14px;"><strong>container--sm</strong> (max-width: 640px)</p>
+  </div>
+  <div class="container container--md" style="background: var(--color-success-100); padding: 16px; border-radius: 8px; margin-bottom: 12px;">
+    <p style="margin: 0; font-size: 14px;"><strong>container--md</strong> (max-width: 768px)</p>
+  </div>
+  <div class="container container--lg" style="background: var(--color-success-100); padding: 16px; border-radius: 8px; margin-bottom: 12px;">
+    <p style="margin: 0; font-size: 14px;"><strong>container--lg</strong> (max-width: 1024px)</p>
+  </div>
+  <div class="container container--xl" style="background: var(--color-success-100); padding: 16px; border-radius: 8px; margin-bottom: 12px;">
+    <p style="margin: 0; font-size: 14px;"><strong>container--xl</strong> (max-width: 1280px)</p>
+  </div>
+  <div class="container container--2xl" style="background: var(--color-success-100); padding: 16px; border-radius: 8px;">
+    <p style="margin: 0; font-size: 14px;"><strong>container--2xl</strong> (max-width: 1536px)</p>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Fluid Container</h3>
+  <div class="container container--fluid" style="background: var(--color-warning-100); padding: 24px; border-radius: 8px;">
+    <p style="margin: 0;"><strong>container--fluid</strong> - Full width, no max-width constraint. Still has horizontal padding.</p>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Section Containers</h3>
+  <div class="section section--muted" style="border-radius: 8px; margin-bottom: 12px;">
+    <div class="container">
+      <p style="margin: 0;"><strong>section section--muted</strong> - Adds vertical padding and muted background</p>
+    </div>
+  </div>
+  <div class="section section--dark" style="border-radius: 8px; margin-bottom: 12px;">
+    <div class="container">
+      <p style="margin: 0;"><strong>section section--dark</strong> - Dark background with light text</p>
+    </div>
+  </div>
+  <div class="section section--primary" style="border-radius: 8px;">
+    <div class="container">
+      <p style="margin: 0;"><strong>section section--primary</strong> - Primary color background</p>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Section Sizes</h3>
+  <div class="section section--sm section--muted" style="border-radius: 8px; margin-bottom: 12px;">
+    <div class="container">
+      <p style="margin: 0;"><strong>section--sm</strong> - Smaller vertical padding</p>
+    </div>
+  </div>
+  <div class="section section--lg section--muted" style="border-radius: 8px;">
+    <div class="container">
+      <p style="margin: 0;"><strong>section--lg</strong> - Larger vertical padding</p>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Prose Container (Optimal Reading Width)</h3>
+  <div class="prose" style="background: var(--bg-secondary); padding: 24px; border-radius: 8px;">
+    <h4 style="margin-top: 0;">Article Title</h4>
+    <p>The prose container sets an optimal line length for reading (65 characters). This makes long-form content much easier to read by preventing lines from becoming too long.</p>
+    <p style="margin-bottom: 0;">Studies show that the optimal line length for reading is between 45-75 characters per line. The prose container enforces this by setting a max-width based on character count rather than pixels.</p>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Prose Sizes</h3>
+  <div class="prose prose--sm" style="background: var(--bg-secondary); padding: 16px; border-radius: 8px; margin-bottom: 12px;">
+    <p style="margin: 0;"><strong>prose--sm</strong> (45ch) - For tighter layouts or sidebars</p>
+  </div>
+  <div class="prose prose--lg" style="background: var(--bg-secondary); padding: 16px; border-radius: 8px;">
+    <p style="margin: 0;"><strong>prose--lg</strong> (80ch) - For wider content areas, code blocks, etc.</p>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Centered Container</h3>
+  <div class="container container--sm container--center" style="background: var(--color-primary-100); padding: 32px; border-radius: 8px;">
+    <h4 style="margin: 0 0 8px;">Centered Content</h4>
+    <p style="margin: 0; color: var(--text-secondary);">Using container--center for centered, column-direction flex layout</p>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Practical Example: Page Layout</h3>
+  <div style="border: 1px solid var(--border-default); border-radius: 8px; overflow: hidden;">
+    <!-- Hero Section -->
+    <div class="section section--lg section--primary">
+      <div class="container container--center">
+        <h2 style="margin: 0 0 8px; font-size: 24px;">Welcome to Our App</h2>
+        <p style="margin: 0; opacity: 0.9;">A beautiful landing page hero section</p>
+      </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="section section--muted">
+      <div class="container container--md">
+        <div class="prose">
+          <h3 style="margin-top: 0;">About Us</h3>
+          <p style="margin-bottom: 0;">This section uses a medium container with prose for optimal reading. The container constrains the width while prose ensures comfortable line lengths.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="section section--sm section--dark">
+      <div class="container container--center">
+        <p style="margin: 0;">Ready to get started? <a href="#" style="color: var(--color-primary-300);">Sign up now</a></p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,355 @@
+<!-- Timeline Component Demo -->
+
+<section class="demo-section">
+  <h3>Basic Timeline</h3>
+  <div class="timeline">
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--filled"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Order Placed</div>
+        <div class="timeline__time">January 14, 2024 at 10:30 AM</div>
+        <div class="timeline__description">Your order #12345 has been confirmed and is being processed.</div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--filled"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Payment Confirmed</div>
+        <div class="timeline__time">January 14, 2024 at 10:32 AM</div>
+        <div class="timeline__description">Payment of $129.99 was successfully processed.</div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--filled"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Order Shipped</div>
+        <div class="timeline__time">January 15, 2024 at 2:15 PM</div>
+        <div class="timeline__description">Your package is on its way! Tracking number: 1Z999AA10123456784</div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__marker"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Out for Delivery</div>
+        <div class="timeline__time">Estimated: January 17, 2024</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Status Colors</h3>
+  <div class="timeline">
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--filled timeline__marker--success"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Build Succeeded</div>
+        <div class="timeline__time">2 minutes ago</div>
+        <div class="timeline__description">All tests passed. Deployed to production.</div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--filled timeline__marker--warning"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Warning: High Memory Usage</div>
+        <div class="timeline__time">15 minutes ago</div>
+        <div class="timeline__description">Memory usage exceeded 80% threshold.</div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--filled timeline__marker--danger"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Build Failed</div>
+        <div class="timeline__time">1 hour ago</div>
+        <div class="timeline__description">Error in test suite. Check logs for details.</div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--filled timeline__marker--neutral"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Scheduled Maintenance</div>
+        <div class="timeline__time">Yesterday</div>
+        <div class="timeline__description">Routine database maintenance completed.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Icons</h3>
+  <div class="timeline timeline--lg">
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--icon timeline__marker--success">
+        <svg viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+        </svg>
+      </div>
+      <div class="timeline__content">
+        <div class="timeline__title">Account Created</div>
+        <div class="timeline__time">March 1, 2024</div>
+        <div class="timeline__description">Welcome to the platform! Your account is ready to use.</div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--icon">
+        <svg viewBox="0 0 20 20" fill="currentColor">
+          <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838l-2.727 1.17 1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0z"/>
+        </svg>
+      </div>
+      <div class="timeline__content">
+        <div class="timeline__title">Completed Onboarding</div>
+        <div class="timeline__time">March 2, 2024</div>
+        <div class="timeline__description">Finished all 5 onboarding steps.</div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--icon timeline__marker--warning">
+        <svg viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"/>
+        </svg>
+      </div>
+      <div class="timeline__content">
+        <div class="timeline__title">Subscription Expiring</div>
+        <div class="timeline__time">March 10, 2024</div>
+        <div class="timeline__description">Your subscription will expire in 7 days. Renew now to avoid interruption.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Compact Timeline</h3>
+  <div class="timeline timeline--compact" style="max-width: 400px;">
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--filled"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">File uploaded</div>
+        <div class="timeline__time">Just now</div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--filled"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Comment added</div>
+        <div class="timeline__time">5 min ago</div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--filled"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Task completed</div>
+        <div class="timeline__time">1 hour ago</div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--filled"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Meeting scheduled</div>
+        <div class="timeline__time">3 hours ago</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Content Cards</h3>
+  <div class="timeline" style="max-width: 500px;">
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--filled"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">New Feature Released</div>
+        <div class="timeline__time">January 10, 2024</div>
+        <div class="timeline__card">
+          <div class="timeline__card-title">Dark Mode Support</div>
+          <div class="timeline__card-body">
+            We've added dark mode support across all pages. Toggle it in your settings to reduce eye strain during nighttime usage.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--filled"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Bug Fix</div>
+        <div class="timeline__time">January 8, 2024</div>
+        <div class="timeline__card">
+          <div class="timeline__card-title">Fixed login issues</div>
+          <div class="timeline__card-body">
+            Resolved an issue where some users were unable to log in after password reset.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--filled"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Performance Update</div>
+        <div class="timeline__time">January 5, 2024</div>
+        <div class="timeline__card">
+          <div class="timeline__card-title">50% faster load times</div>
+          <div class="timeline__card-body">
+            Optimized database queries and added caching layer for improved performance.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Activity Feed Style</h3>
+  <div class="timeline timeline--activity" style="max-width: 500px; padding-left: 48px;">
+    <div class="timeline__item">
+      <img src="https://i.pravatar.cc/32?img=1" alt="Sarah" class="timeline__avatar">
+      <div class="timeline__content">
+        <div class="timeline__text">
+          <strong>Sarah Johnson</strong> commented on <a href="#">Project Alpha</a>
+        </div>
+        <div class="timeline__time">2 minutes ago</div>
+        <div class="timeline__card">
+          <div class="timeline__card-body">"This looks great! Ready for review."</div>
+        </div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <img src="https://i.pravatar.cc/32?img=2" alt="Mike" class="timeline__avatar">
+      <div class="timeline__content">
+        <div class="timeline__text">
+          <strong>Mike Chen</strong> uploaded 3 files to <a href="#">Design Assets</a>
+        </div>
+        <div class="timeline__time">15 minutes ago</div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <img src="https://i.pravatar.cc/32?img=3" alt="Emily" class="timeline__avatar">
+      <div class="timeline__content">
+        <div class="timeline__text">
+          <strong>Emily Davis</strong> completed task <a href="#">Update homepage hero section</a>
+        </div>
+        <div class="timeline__time">1 hour ago</div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <img src="https://i.pravatar.cc/32?img=4" alt="Alex" class="timeline__avatar">
+      <div class="timeline__content">
+        <div class="timeline__text">
+          <strong>Alex Kim</strong> joined the <a href="#">Marketing Team</a>
+        </div>
+        <div class="timeline__time">3 hours ago</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Horizontal Timeline</h3>
+  <div class="timeline timeline--horizontal">
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--filled"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Step 1</div>
+        <div class="timeline__description">Planning</div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--filled"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Step 2</div>
+        <div class="timeline__description">Design</div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--filled"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Step 3</div>
+        <div class="timeline__description">Development</div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__marker"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Step 4</div>
+        <div class="timeline__description">Testing</div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__marker"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Step 5</div>
+        <div class="timeline__description">Launch</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Dashed Line Variant</h3>
+  <div class="timeline timeline--dashed" style="max-width: 400px;">
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--filled"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Q1 Goals</div>
+        <div class="timeline__time">January - March</div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--filled"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Q2 Goals</div>
+        <div class="timeline__time">April - June</div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__marker"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Q3 Goals</div>
+        <div class="timeline__time">July - September</div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__marker"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Q4 Goals</div>
+        <div class="timeline__time">October - December</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Gradient Line</h3>
+  <div class="timeline timeline--gradient" style="max-width: 400px;">
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--filled"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Started Journey</div>
+        <div class="timeline__time">2020</div>
+        <div class="timeline__description">Founded the company with a small team.</div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--filled"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">First Milestone</div>
+        <div class="timeline__time">2021</div>
+        <div class="timeline__description">Reached 10,000 users.</div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__marker timeline__marker--filled"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Series A Funding</div>
+        <div class="timeline__time">2022</div>
+        <div class="timeline__description">Raised $5M in funding.</div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__marker"></div>
+      <div class="timeline__content">
+        <div class="timeline__title">Global Expansion</div>
+        <div class="timeline__time">2024</div>
+        <div class="timeline__description">Planning international launch.</div>
+      </div>
+    </div>
+  </div>
+</section>

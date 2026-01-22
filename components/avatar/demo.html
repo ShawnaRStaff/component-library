@@ -1,0 +1,182 @@
+<!-- Avatar Component Demo -->
+
+<section class="demo-section">
+  <h3>With Image</h3>
+  <div class="demo-row">
+    <div class="avatar">
+      <img src="https://i.pravatar.cc/150?img=1" alt="John Doe" class="avatar__image">
+    </div>
+    <div class="avatar">
+      <img src="https://i.pravatar.cc/150?img=2" alt="Jane Smith" class="avatar__image">
+    </div>
+    <div class="avatar">
+      <img src="https://i.pravatar.cc/150?img=3" alt="Bob Wilson" class="avatar__image">
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Initials</h3>
+  <div class="demo-row">
+    <div class="avatar">
+      <span class="avatar__initials">JD</span>
+    </div>
+    <div class="avatar avatar--primary">
+      <span class="avatar__initials">JS</span>
+    </div>
+    <div class="avatar avatar--success">
+      <span class="avatar__initials">BW</span>
+    </div>
+    <div class="avatar avatar--warning">
+      <span class="avatar__initials">AK</span>
+    </div>
+    <div class="avatar avatar--danger">
+      <span class="avatar__initials">MR</span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Icon (Default Fallback)</h3>
+  <div class="demo-row">
+    <div class="avatar">
+      <svg class="avatar__icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Sizes</h3>
+  <div class="demo-row">
+    <div class="avatar avatar--xs">
+      <span class="avatar__initials">XS</span>
+    </div>
+    <div class="avatar avatar--sm">
+      <span class="avatar__initials">SM</span>
+    </div>
+    <div class="avatar avatar--md">
+      <span class="avatar__initials">MD</span>
+    </div>
+    <div class="avatar avatar--lg">
+      <span class="avatar__initials">LG</span>
+    </div>
+    <div class="avatar avatar--xl">
+      <span class="avatar__initials">XL</span>
+    </div>
+    <div class="avatar avatar--2xl">
+      <span class="avatar__initials">2X</span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Shapes</h3>
+  <div class="demo-row">
+    <div class="avatar">
+      <img src="https://i.pravatar.cc/150?img=4" alt="User" class="avatar__image">
+    </div>
+    <div class="avatar avatar--rounded">
+      <img src="https://i.pravatar.cc/150?img=5" alt="User" class="avatar__image">
+    </div>
+    <div class="avatar avatar--square">
+      <img src="https://i.pravatar.cc/150?img=6" alt="User" class="avatar__image">
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Status</h3>
+  <div class="demo-row">
+    <div class="avatar">
+      <img src="https://i.pravatar.cc/150?img=7" alt="User" class="avatar__image">
+      <span class="avatar__status avatar__status--online"></span>
+    </div>
+    <div class="avatar">
+      <img src="https://i.pravatar.cc/150?img=8" alt="User" class="avatar__image">
+      <span class="avatar__status avatar__status--away"></span>
+    </div>
+    <div class="avatar">
+      <img src="https://i.pravatar.cc/150?img=9" alt="User" class="avatar__image">
+      <span class="avatar__status avatar__status--busy"></span>
+    </div>
+    <div class="avatar">
+      <img src="https://i.pravatar.cc/150?img=10" alt="User" class="avatar__image">
+      <span class="avatar__status avatar__status--offline"></span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Avatar Group</h3>
+  <div class="demo-row">
+    <div class="avatar-group">
+      <div class="avatar">
+        <img src="https://i.pravatar.cc/150?img=11" alt="User" class="avatar__image">
+      </div>
+      <div class="avatar">
+        <img src="https://i.pravatar.cc/150?img=12" alt="User" class="avatar__image">
+      </div>
+      <div class="avatar">
+        <img src="https://i.pravatar.cc/150?img=13" alt="User" class="avatar__image">
+      </div>
+      <div class="avatar">
+        <img src="https://i.pravatar.cc/150?img=14" alt="User" class="avatar__image">
+      </div>
+      <div class="avatar-group__more">+5</div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Text</h3>
+  <div style="display: flex; flex-direction: column; gap: 16px;">
+    <div class="avatar-item">
+      <div class="avatar">
+        <img src="https://i.pravatar.cc/150?img=15" alt="Sarah Connor" class="avatar__image">
+      </div>
+      <div class="avatar-item__content">
+        <span class="avatar-item__name">Sarah Connor</span>
+        <span class="avatar-item__description">Product Designer</span>
+      </div>
+    </div>
+    <div class="avatar-item">
+      <div class="avatar avatar--lg">
+        <img src="https://i.pravatar.cc/150?img=16" alt="John Matrix" class="avatar__image">
+        <span class="avatar__status avatar__status--online"></span>
+      </div>
+      <div class="avatar-item__content">
+        <span class="avatar-item__name">John Matrix</span>
+        <span class="avatar-item__description">john.matrix@example.com</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Image Load Error (Fallback)</h3>
+  <div class="demo-row">
+    <div class="avatar" data-initials="BK">
+      <img src="https://broken-url.example/image.jpg" alt="Broken Image" class="avatar__image">
+    </div>
+    <p style="margin-left: 12px; color: var(--text-secondary); font-size: 14px;">
+      ← This image URL is broken, showing initials fallback
+    </p>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Bordered</h3>
+  <div class="demo-row" style="background: var(--color-neutral-100); padding: 16px; border-radius: 8px;">
+    <div class="avatar avatar--bordered">
+      <img src="https://i.pravatar.cc/150?img=17" alt="User" class="avatar__image">
+    </div>
+    <div class="avatar avatar--bordered avatar--lg">
+      <img src="https://i.pravatar.cc/150?img=18" alt="User" class="avatar__image">
+    </div>
+    <div class="avatar avatar--bordered avatar--xl">
+      <img src="https://i.pravatar.cc/150?img=19" alt="User" class="avatar__image">
+    </div>
+  </div>
+</section>

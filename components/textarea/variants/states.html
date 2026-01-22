@@ -1,0 +1,19 @@
+<!-- Textarea: States -->
+<div class="demo-showcase">
+  <div style="max-width: 500px; display: flex; flex-direction: column; gap: 16px;">
+    <div>
+      <label style="display: block; margin-bottom: 4px; font-size: 14px; font-weight: 500;">Disabled</label>
+      <textarea class="textarea" placeholder="Cannot edit this..." disabled>This textarea is disabled and cannot be edited.</textarea>
+    </div>
+    <div>
+      <label style="display: block; margin-bottom: 4px; font-size: 14px; font-weight: 500; color: var(--color-danger-600);">Error</label>
+      <textarea class="textarea textarea--error" placeholder="Something went wrong...">Invalid content here</textarea>
+      <p style="margin-top: 4px; font-size: 12px; color: var(--color-danger-600);">Please enter valid content</p>
+    </div>
+    <div>
+      <label style="display: block; margin-bottom: 4px; font-size: 14px; font-weight: 500; color: var(--color-success-600);">Success</label>
+      <textarea class="textarea textarea--success">Valid content here</textarea>
+      <p style="margin-top: 4px; font-size: 12px; color: var(--color-success-600);">Looks good!</p>
+    </div>
+  </div>
+</div>

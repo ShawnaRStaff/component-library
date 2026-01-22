@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Component Library</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="preview.css">
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Sidebar: Component Tree Navigation -->
+    <aside class="app-sidebar">
+      <div class="sidebar-header">
+        <h1 class="sidebar-title">Components</h1>
+      </div>
+      <div class="sidebar-search">
+        <input
+          type="search"
+          id="component-search"
+          class="sidebar-search-input"
+          placeholder="Search..."
+          autocomplete="off"
+        >
+      </div>
+      <nav class="sidebar-nav">
+        <ul id="component-tree" class="component-tree">
+          <!-- Populated by preview.js -->
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main: Preview Area -->
+    <main class="app-main">
+      <header class="main-header">
+        <div class="main-header-left">
+          <button id="mobile-nav-toggle" class="mobile-nav-toggle" type="button" aria-label="Toggle navigation">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 6h18M3 12h18M3 18h18"/>
+            </svg>
+          </button>
+          <h2 id="component-title" class="main-title">Select a component</h2>
+        </div>
+        <div class="main-header-actions">
+          <button id="copy-code" class="action-btn" type="button" title="Copy HTML">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Copy</span>
+          </button>
+          <button id="view-code" class="action-btn" type="button" title="View Code">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            <span>Code</span>
+          </button>
+          <button id="theme-toggle" class="action-btn" type="button" title="Toggle Theme">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"></circle>
+              <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="main-content">
+        <!-- Preview Frame -->
+        <div id="preview-frame" class="preview-frame">
+          <p class="preview-empty">Select a component variant from the sidebar</p>
+        </div>
+
+        <!-- Code Panel (toggle-able) -->
+        <div id="code-panel" class="code-panel is-hidden">
+          <div class="code-panel-header">
+            <div class="code-panel-tabs">
+              <button class="code-tab is-active" data-tab="html">HTML</button>
+              <button class="code-tab" data-tab="css">CSS</button>
+              <button class="code-tab" data-tab="js">JS</button>
+            </div>
+            <button id="close-code-panel" class="code-panel-close" aria-label="Close">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+          <div id="code-content" class="code-panel-content">
+            <pre class="code-block"><code id="code-display"></code></pre>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Playground: Theme Customization -->
+    <aside class="app-playground">
+      <div class="playground-header">
+        <h3 class="playground-title">Customize</h3>
+        <button id="reset-theme" class="playground-reset" title="Reset to defaults">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+            <path d="M3 3v5h5"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="playground-content">
+        <!-- Colors Section -->
+        <section class="playground-section">
+          <h4 class="playground-section-title">Colors</h4>
+
+          <div class="playground-group">
+            <label class="playground-label">Primary</label>
+            <div class="color-picker-row">
+              <input type="color" id="color-primary" class="color-picker" value="#14b8a6">
+              <input type="text" id="color-primary-hex" class="color-hex" value="#14b8a6">
+            </div>
+          </div>
+
+          <div class="playground-group">
+            <label class="playground-label">Secondary</label>
+            <div class="color-picker-row">
+              <input type="color" id="color-secondary" class="color-picker" value="#06b6d4">
+              <input type="text" id="color-secondary-hex" class="color-hex" value="#06b6d4">
+            </div>
+          </div>
+
+          <div class="playground-group">
+            <label class="playground-label">Accent</label>
+            <div class="color-picker-row">
+              <input type="color" id="color-accent" class="color-picker" value="#f97316">
+              <input type="text" id="color-accent-hex" class="color-hex" value="#f97316">
+            </div>
+          </div>
+
+          <div class="playground-group">
+            <label class="playground-label">Danger</label>
+            <div class="color-picker-row">
+              <input type="color" id="color-danger" class="color-picker" value="#f43f5e">
+              <input type="text" id="color-danger-hex" class="color-hex" value="#f43f5e">
+            </div>
+          </div>
+        </section>
+
+        <!-- Spacing Section -->
+        <section class="playground-section">
+          <h4 class="playground-section-title">Spacing</h4>
+
+          <div class="playground-group">
+            <label class="playground-label">
+              Base Unit <span id="spacing-value">4px</span>
+            </label>
+            <input type="range" id="spacing-base" class="playground-slider" min="2" max="8" value="4" step="1">
+          </div>
+        </section>
+
+        <!-- Border Radius Section -->
+        <section class="playground-section">
+          <h4 class="playground-section-title">Border Radius</h4>
+
+          <div class="playground-group">
+            <label class="playground-label">
+              Small <span id="radius-sm-value">4px</span>
+            </label>
+            <input type="range" id="radius-sm" class="playground-slider" min="0" max="16" value="4" step="1">
+          </div>
+
+          <div class="playground-group">
+            <label class="playground-label">
+              Medium <span id="radius-md-value">6px</span>
+            </label>
+            <input type="range" id="radius-md" class="playground-slider" min="0" max="20" value="6" step="1">
+          </div>
+
+          <div class="playground-group">
+            <label class="playground-label">
+              Large <span id="radius-lg-value">8px</span>
+            </label>
+            <input type="range" id="radius-lg" class="playground-slider" min="0" max="24" value="8" step="1">
+          </div>
+        </section>
+
+        <!-- Typography Section -->
+        <section class="playground-section">
+          <h4 class="playground-section-title">Typography</h4>
+
+          <div class="playground-group">
+            <label class="playground-label">Font Family</label>
+            <select id="font-family" class="playground-select">
+              <option value="system">System Default</option>
+              <option value="inter">Inter</option>
+              <option value="roboto">Roboto</option>
+              <option value="open-sans">Open Sans</option>
+              <option value="poppins">Poppins</option>
+            </select>
+          </div>
+        </section>
+
+        <!-- Export Section -->
+        <section class="playground-section playground-section--actions">
+          <button id="export-theme" class="playground-btn playground-btn--primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Export Theme
+          </button>
+          <button id="copy-theme" class="playground-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            Copy CSS
+          </button>
+        </section>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Toast for notifications -->
+  <div id="toast" class="toast"></div>
+
+  <!-- Core utilities -->
+  <script src="components/_core/event-manager.js"></script>
+  <script src="components/_core/base-component.js"></script>
+  <script src="components/_core/focus-utils.js"></script>
+  <script src="components/_core/keyboard-nav.js"></script>
+  <script src="components/_core/index.js"></script>
+
+  <!-- App scripts -->
+  <script src="playground.js"></script>
+  <script src="preview.js"></script>
+</body>
+</html>

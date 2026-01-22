@@ -1,0 +1,72 @@
+<!-- Command Palette - With Search Results Variant -->
+<div class="demo-showcase">
+  <button class="btn btn--outline" onclick="document.getElementById('demo-palette-2').classList.add('is-open')">
+    Open with Search
+  </button>
+
+  <div class="command-palette-overlay" id="demo-palette-2" onclick="if(event.target === this) this.classList.remove('is-open')">
+    <div class="command-palette">
+      <div class="command-palette__header">
+        <svg class="command-palette__icon" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"/>
+        </svg>
+        <input type="text" class="command-palette__input" placeholder="Search..." value="settings">
+        <div class="command-palette__shortcut">
+          <kbd class="kbd kbd--sm">Esc</kbd>
+        </div>
+      </div>
+
+      <div class="command-palette__results">
+        <div class="command-palette__group">
+          <div class="command-palette__group-title">Best Matches</div>
+          <a href="#" class="command-palette__item is-highlighted">
+            <svg class="command-palette__item-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"/>
+            </svg>
+            <div class="command-palette__item-content">
+              <div class="command-palette__item-title">Open <span class="command-palette__highlight">Settings</span></div>
+              <div class="command-palette__item-description">Preferences > General Settings</div>
+            </div>
+            <div class="command-palette__item-shortcut">
+              <kbd class="kbd kbd--sm">Ctrl</kbd>
+              <kbd class="kbd kbd--sm">,</kbd>
+            </div>
+          </a>
+          <a href="#" class="command-palette__item">
+            <svg class="command-palette__item-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"/>
+            </svg>
+            <div class="command-palette__item-content">
+              <div class="command-palette__item-title">User <span class="command-palette__highlight">Settings</span></div>
+              <div class="command-palette__item-description">Preferences > User Settings</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="command-palette__group">
+          <div class="command-palette__group-title">Files</div>
+          <a href="#" class="command-palette__item">
+            <svg class="command-palette__item-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"/>
+            </svg>
+            <div class="command-palette__item-content">
+              <div class="command-palette__item-title"><span class="command-palette__highlight">settings</span>.json</div>
+              <div class="command-palette__item-description">config/settings.json</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="command-palette__footer">
+        <div class="command-palette__footer-hints">
+          <div class="command-palette__footer-hint">
+            <kbd class="kbd kbd--sm">↑↓</kbd> Navigate
+          </div>
+          <div class="command-palette__footer-hint">
+            <kbd class="kbd kbd--sm">↵</kbd> Open
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

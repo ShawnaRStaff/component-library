@@ -1,0 +1,21 @@
+{
+  "name": "stack",
+  "label": "Stack",
+  "category": "layout",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "vertical-stack", "label": "Vertical Stack", "file": "variants/vertical-stack.html" },
+    { "id": "horizontal-stack", "label": "Horizontal Stack", "file": "variants/horizontal-stack.html" },
+    { "id": "gap-variants", "label": "Gap Variants", "file": "variants/gap-variants.html" },
+    { "id": "justify-content", "label": "Justify Content", "file": "variants/justify-content.html" },
+    { "id": "align-items", "label": "Align Items", "file": "variants/align-items.html" },
+    { "id": "spacer", "label": "Spacer", "file": "variants/spacer.html" },
+    { "id": "divided-stack", "label": "Divided Stack", "file": "variants/divided-stack.html" },
+    { "id": "divided-hstack", "label": "Divided HStack", "file": "variants/divided-hstack.html" },
+    { "id": "wrapping-hstack", "label": "Wrapping HStack", "file": "variants/wrapping-hstack.html" },
+    { "id": "responsive-stack", "label": "Responsive Stack", "file": "variants/responsive-stack.html" },
+    { "id": "center-stack", "label": "Center Stack", "file": "variants/center-stack.html" },
+    { "id": "card-example", "label": "Card Example", "file": "variants/card-example.html" },
+    { "id": "form-layout", "label": "Form Layout", "file": "variants/form-layout.html" }
+  ]
+}

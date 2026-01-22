@@ -1,0 +1,45 @@
+<div class="demo-showcase--full">
+  <div class="table-card" style="max-width: 700px;">
+    <div class="table-card__header">
+      <h3 class="table-card__title">Recent Orders</h3>
+      <button class="btn btn--secondary btn--sm">View All</button>
+    </div>
+    <table class="table table--hover">
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Customer</th>
+          <th>Status</th>
+          <th class="table__cell--right">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#12345</td>
+          <td>John Doe</td>
+          <td><span class="badge badge--success">Completed</span></td>
+          <td class="table__cell--right">$125.00</td>
+        </tr>
+        <tr>
+          <td>#12346</td>
+          <td>Jane Smith</td>
+          <td><span class="badge badge--warning">Pending</span></td>
+          <td class="table__cell--right">$89.00</td>
+        </tr>
+        <tr>
+          <td>#12347</td>
+          <td>Bob Wilson</td>
+          <td><span class="badge badge--primary">Processing</span></td>
+          <td class="table__cell--right">$245.00</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="table-card__footer">
+      <span style="font-size: 14px; color: var(--text-secondary);">Showing 3 of 24 orders</span>
+      <nav class="pagination pagination--compact">
+        <button class="pagination__btn pagination__btn--prev" disabled>Prev</button>
+        <button class="pagination__btn pagination__btn--next">Next</button>
+      </nav>
+    </div>
+  </div>
+</div>

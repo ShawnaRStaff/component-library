@@ -1,0 +1,16 @@
+{
+  "name": "empty-state",
+  "label": "Empty State",
+  "category": "molecules",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic", "file": "variants/basic.html" },
+    { "id": "bordered", "label": "Bordered", "file": "variants/bordered.html" },
+    { "id": "dashed", "label": "Dashed (Dropzone)", "file": "variants/dashed.html" },
+    { "id": "small", "label": "Small", "file": "variants/small.html" },
+    { "id": "large", "label": "Large", "file": "variants/large.html" },
+    { "id": "error", "label": "Error State", "file": "variants/error.html" },
+    { "id": "warning", "label": "Warning State", "file": "variants/warning.html" },
+    { "id": "practical-examples", "label": "Practical Examples", "file": "variants/practical-examples.html" }
+  ]
+}

@@ -1,0 +1,45 @@
+<!-- Modal: Form -->
+<div class="demo-showcase">
+  <button class="btn btn--primary" data-modal-trigger="modal-form-variant">Add User</button>
+
+  <div class="modal" id="modal-form-variant" aria-hidden="true">
+    <div class="modal__backdrop"></div>
+    <div class="modal__container">
+      <div class="modal__content">
+        <header class="modal__header">
+          <h2 class="modal__title">Add New User</h2>
+          <button class="modal__close" data-modal-close aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M4.3 4.3a1 1 0 011.4 0L10 8.6l4.3-4.3a1 1 0 111.4 1.4L11.4 10l4.3 4.3a1 1 0 01-1.4 1.4L10 11.4l-4.3 4.3a1 1 0 01-1.4-1.4L8.6 10 4.3 5.7a1 1 0 010-1.4z"/>
+            </svg>
+          </button>
+        </header>
+        <div class="modal__body">
+          <div style="display: flex; flex-direction: column; gap: var(--space-4);">
+            <div class="input-field">
+              <label class="input-field__label">Full Name</label>
+              <input type="text" class="input" placeholder="John Doe">
+            </div>
+            <div class="input-field">
+              <label class="input-field__label">Email Address</label>
+              <input type="email" class="input" placeholder="john@example.com">
+            </div>
+            <div class="input-field">
+              <label class="input-field__label">Role</label>
+              <select class="select">
+                <option>Select a role...</option>
+                <option>Admin</option>
+                <option>Editor</option>
+                <option>Viewer</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <footer class="modal__footer">
+          <button class="btn btn--secondary" data-modal-close>Cancel</button>
+          <button class="btn btn--primary">Add User</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+</div>

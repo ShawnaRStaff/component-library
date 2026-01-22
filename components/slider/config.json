@@ -1,0 +1,16 @@
+{
+  "name": "slider",
+  "label": "Slider",
+  "category": "atoms",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic", "file": "variants/basic.html" },
+    { "id": "with-label-value", "label": "With Label & Value", "file": "variants/with-label-value.html" },
+    { "id": "with-ticks", "label": "With Ticks", "file": "variants/with-ticks.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "colors", "label": "Colors", "file": "variants/colors.html" },
+    { "id": "disabled", "label": "Disabled", "file": "variants/disabled.html" },
+    { "id": "range", "label": "Range (Two Handles)", "file": "variants/range.html" },
+    { "id": "practical-examples", "label": "Practical Examples", "file": "variants/practical-examples.html" }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "date-picker",
+  "label": "Date Picker",
+  "category": "molecules",
+  "description": "Calendar interface for date selection",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic Date Picker", "file": "variants/basic.html" },
+    { "id": "date-range", "label": "Date Range Selection", "file": "variants/date-range.html" },
+    { "id": "month-year-selectors", "label": "Month/Year Selectors", "file": "variants/month-year-selectors.html" },
+    { "id": "with-time", "label": "With Time Picker", "file": "variants/with-time.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "disabled-dates", "label": "With Disabled Dates", "file": "variants/disabled-dates.html" }
+  ]
+}

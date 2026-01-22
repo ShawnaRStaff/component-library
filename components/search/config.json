@@ -1,0 +1,18 @@
+{
+  "name": "search",
+  "label": "Search",
+  "category": "molecules",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic", "file": "variants/basic.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "variants", "label": "Style Variants", "file": "variants/variants.html" },
+    { "id": "keyboard-shortcut", "label": "Keyboard Shortcut", "file": "variants/keyboard-shortcut.html" },
+    { "id": "dropdown-results", "label": "Dropdown Results", "file": "variants/dropdown-results.html" },
+    { "id": "recent-searches", "label": "Recent Searches", "file": "variants/recent-searches.html" },
+    { "id": "with-filters", "label": "With Filters", "file": "variants/with-filters.html" },
+    { "id": "empty-state", "label": "Empty State", "file": "variants/empty-state.html" },
+    { "id": "loading-state", "label": "Loading State", "file": "variants/loading-state.html" },
+    { "id": "navbar", "label": "Navbar Search", "file": "variants/navbar.html" }
+  ]
+}

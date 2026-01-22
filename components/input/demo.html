@@ -1,0 +1,182 @@
+<!-- Input Component Demo -->
+
+<section class="demo-section">
+  <h3>Default Input</h3>
+  <div class="demo-row" style="max-width: 320px;">
+    <input type="text" class="input" placeholder="Enter your name...">
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>States</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px;">
+    <div class="input-field">
+      <label class="input-field__label">Default</label>
+      <input type="text" class="input" placeholder="Placeholder">
+    </div>
+    <div class="input-field">
+      <label class="input-field__label">With Value</label>
+      <input type="text" class="input" value="John Doe">
+    </div>
+    <div class="input-field">
+      <label class="input-field__label">Disabled</label>
+      <input type="text" class="input" value="Cannot edit" disabled>
+    </div>
+    <div class="input-field">
+      <label class="input-field__label">Read-only</label>
+      <input type="text" class="input" value="Read only" readonly>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Validation States</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px;">
+    <div class="input-field">
+      <label class="input-field__label">Error</label>
+      <input type="text" class="input input--error" value="invalid@">
+      <span class="input-field__error">Please enter a valid email</span>
+    </div>
+    <div class="input-field">
+      <label class="input-field__label">Success</label>
+      <input type="text" class="input input--success" value="valid@email.com">
+      <span class="input-field__hint" style="color: var(--color-success-500);">Email is available</span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Sizes</h3>
+  <div style="display: flex; flex-direction: column; gap: 12px; max-width: 320px;">
+    <input type="text" class="input input--sm" placeholder="Small input">
+    <input type="text" class="input" placeholder="Medium input (default)">
+    <input type="text" class="input input--lg" placeholder="Large input">
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Input Types</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px;">
+    <div class="input-field">
+      <label class="input-field__label">Email</label>
+      <input type="email" class="input" placeholder="name@example.com">
+    </div>
+    <div class="input-field">
+      <label class="input-field__label">Password</label>
+      <div class="input-wrapper input-wrapper--icon-right">
+        <input type="password" class="input" placeholder="Enter password" style="padding-right: 40px;">
+        <button type="button" class="input-wrapper__action" data-password-toggle aria-label="Show password">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 3C4.5 3 1.5 5.5 0 8c1.5 2.5 4.5 5 8 5s6.5-2.5 8-5c-1.5-2.5-4.5-5-8-5zm0 8a3 3 0 110-6 3 3 0 010 6z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="input-field">
+      <label class="input-field__label">Number</label>
+      <input type="number" class="input" placeholder="0" min="0" max="100">
+    </div>
+    <div class="input-field">
+      <label class="input-field__label">Date</label>
+      <input type="date" class="input">
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Label and Hint</h3>
+  <div style="max-width: 320px;">
+    <div class="input-field">
+      <label class="input-field__label input-field__label--required">Email Address</label>
+      <input type="email" class="input" placeholder="name@example.com">
+      <span class="input-field__hint">We'll never share your email.</span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Icon</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px;">
+    <div class="input-field">
+      <label class="input-field__label">Search</label>
+      <div class="input-wrapper">
+        <span class="input-wrapper__icon">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M11.7 10.3l3 3c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0l-3-3c-1 .8-2.2 1.3-3.6 1.3-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6c0 1.4-.5 2.6-1.3 3.6zM6.7 2C4 2 2 4 2 6.7s2 4.7 4.7 4.7 4.7-2 4.7-4.7S9.4 2 6.7 2z"/>
+          </svg>
+        </span>
+        <input type="search" class="input" placeholder="Search...">
+      </div>
+    </div>
+    <div class="input-field">
+      <label class="input-field__label">With Clear</label>
+      <div class="input-wrapper input-wrapper--icon-right">
+        <input type="text" class="input" placeholder="Type something..." value="Clear me" style="padding-right: 40px;">
+        <button type="button" class="input-wrapper__action" data-input-clear aria-label="Clear">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 0a8 8 0 100 16A8 8 0 008 0zm3.5 10.1l-1.4 1.4L8 9.4l-2.1 2.1-1.4-1.4L6.6 8 4.5 5.9l1.4-1.4L8 6.6l2.1-2.1 1.4 1.4L9.4 8l2.1 2.1z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Input with Prefix/Suffix</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px;">
+    <div class="input-field">
+      <label class="input-field__label">Website</label>
+      <div class="input-addon">
+        <span class="input-addon__text">https://</span>
+        <input type="text" class="input" placeholder="example.com">
+      </div>
+    </div>
+    <div class="input-field">
+      <label class="input-field__label">Price</label>
+      <div class="input-addon">
+        <span class="input-addon__text">$</span>
+        <input type="number" class="input" placeholder="0.00">
+        <span class="input-addon__text">USD</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Input Group</h3>
+  <div style="max-width: 400px;">
+    <div class="input-field">
+      <label class="input-field__label">Subscribe</label>
+      <div class="input-group">
+        <input type="email" class="input" placeholder="Enter your email">
+        <button class="btn btn--primary">Subscribe</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Textarea</h3>
+  <div style="max-width: 400px;">
+    <div class="input-field">
+      <label class="input-field__label">Message</label>
+      <textarea class="input" placeholder="Write your message..." rows="4"></textarea>
+      <span class="input-field__hint">Max 500 characters</span>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Character Counter</h3>
+  <div style="max-width: 400px;">
+    <div class="input-field">
+      <label class="input-field__label">Bio</label>
+      <textarea id="bio-input" class="input" placeholder="Tell us about yourself..." rows="3" maxlength="150"></textarea>
+      <div style="display: flex; justify-content: space-between;">
+        <span class="input-field__hint">Keep it short and sweet</span>
+        <span class="input-field__hint" data-char-counter="bio-input">0/150</span>
+      </div>
+    </div>
+  </div>
+</section>

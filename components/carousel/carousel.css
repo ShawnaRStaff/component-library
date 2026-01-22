@@ -1,0 +1,481 @@
+/**
+ * Carousel/Slider Component
+ *
+ * Display multiple items in a sliding carousel.
+ *
+ * Usage:
+ * <div class="carousel" data-carousel>
+ *   <div class="carousel__track">
+ *     <div class="carousel__slide">Slide 1</div>
+ *     <div class="carousel__slide">Slide 2</div>
+ *   </div>
+ * </div>
+ */
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+/* ===================
+   Carousel Track
+   =================== */
+
+.carousel__track {
+  display: flex;
+  transition: transform var(--duration-normal) var(--easing-default);
+}
+
+.carousel--no-transition .carousel__track {
+  transition: none;
+}
+
+/* ===================
+   Carousel Slides
+   =================== */
+
+.carousel__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+/* Multi-slide view */
+.carousel--2-slides .carousel__slide {
+  flex: 0 0 50%;
+}
+
+.carousel--3-slides .carousel__slide {
+  flex: 0 0 33.333%;
+}
+
+.carousel--4-slides .carousel__slide {
+  flex: 0 0 25%;
+}
+
+/* With gap */
+.carousel--gap .carousel__track {
+  gap: var(--space-4);
+}
+
+.carousel--gap .carousel__slide {
+  flex: 0 0 calc(100% - var(--space-4));
+}
+
+.carousel--gap.carousel--2-slides .carousel__slide {
+  flex: 0 0 calc(50% - var(--space-4) / 2);
+}
+
+.carousel--gap.carousel--3-slides .carousel__slide {
+  flex: 0 0 calc(33.333% - var(--space-4) * 2 / 3);
+}
+
+.carousel--gap.carousel--4-slides .carousel__slide {
+  flex: 0 0 calc(25% - var(--space-4) * 3 / 4);
+}
+
+/* ===================
+   Carousel Navigation
+   =================== */
+
+.carousel__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--bg-primary);
+  border: var(--border-width-thin) solid var(--border-default);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-md);
+  color: var(--text-primary);
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color var(--duration-fast) var(--easing-default),
+              opacity var(--duration-fast) var(--easing-default),
+              transform var(--duration-fast) var(--easing-default);
+}
+
+.carousel__nav:hover {
+  background-color: var(--bg-secondary);
+}
+
+.carousel__nav:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.carousel__nav:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.carousel__nav:disabled:hover {
+  background-color: var(--bg-primary);
+}
+
+.carousel__nav svg {
+  width: 20px;
+  height: 20px;
+}
+
+.carousel__nav--prev {
+  left: var(--space-3);
+}
+
+.carousel__nav--next {
+  right: var(--space-3);
+}
+
+/* Navigation inside variant */
+.carousel--nav-inside .carousel__nav {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.carousel--nav-inside .carousel__nav:hover {
+  background-color: white;
+}
+
+/* Navigation outside variant */
+.carousel--nav-outside {
+  padding: 0 calc(40px + var(--space-4));
+}
+
+.carousel--nav-outside .carousel__nav--prev {
+  left: 0;
+}
+
+.carousel--nav-outside .carousel__nav--next {
+  right: 0;
+}
+
+/* Small navigation */
+.carousel--nav-sm .carousel__nav {
+  width: 32px;
+  height: 32px;
+}
+
+.carousel--nav-sm .carousel__nav svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Large navigation */
+.carousel--nav-lg .carousel__nav {
+  width: 48px;
+  height: 48px;
+}
+
+.carousel--nav-lg .carousel__nav svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Hide nav on touch devices */
+@media (hover: none) {
+  .carousel--hide-nav-touch .carousel__nav {
+    display: none;
+  }
+}
+
+/* ===================
+   Carousel Indicators
+   =================== */
+
+.carousel__indicators {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-4) 0;
+}
+
+.carousel__indicator {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  background-color: var(--color-neutral-300);
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: background-color var(--duration-fast) var(--easing-default),
+              width var(--duration-fast) var(--easing-default);
+}
+
+.carousel__indicator:hover {
+  background-color: var(--color-neutral-400);
+}
+
+.carousel__indicator.is-active {
+  background-color: var(--color-primary-500);
+}
+
+/* Pill indicators */
+.carousel--indicators-pill .carousel__indicator.is-active {
+  width: 24px;
+}
+
+/* Line indicators */
+.carousel--indicators-line .carousel__indicator {
+  width: 24px;
+  height: 3px;
+  border-radius: var(--radius-sm);
+}
+
+.carousel--indicators-line .carousel__indicator.is-active {
+  width: 32px;
+}
+
+/* Indicators inside (overlayed) */
+.carousel--indicators-inside .carousel__indicators {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--space-3);
+}
+
+.carousel--indicators-inside .carousel__indicator {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.carousel--indicators-inside .carousel__indicator:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.carousel--indicators-inside .carousel__indicator.is-active {
+  background-color: white;
+}
+
+/* Number indicators */
+.carousel__counter {
+  position: absolute;
+  bottom: var(--space-3);
+  right: var(--space-3);
+  padding: var(--space-1) var(--space-3);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  color: white;
+}
+
+/* ===================
+   Carousel Thumbnails
+   =================== */
+
+.carousel__thumbnails {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  overflow-x: auto;
+  padding-bottom: var(--space-2);
+}
+
+.carousel__thumbnail {
+  flex: 0 0 auto;
+  width: 64px;
+  height: 48px;
+  padding: 0;
+  background: none;
+  border: 2px solid transparent;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity var(--duration-fast) var(--easing-default),
+              border-color var(--duration-fast) var(--easing-default);
+}
+
+.carousel__thumbnail:hover {
+  opacity: 0.8;
+}
+
+.carousel__thumbnail.is-active {
+  opacity: 1;
+  border-color: var(--color-primary-500);
+}
+
+.carousel__thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===================
+   Fade Effect
+   =================== */
+
+.carousel--fade .carousel__track {
+  display: block;
+  position: relative;
+}
+
+.carousel--fade .carousel__slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--duration-normal) var(--easing-default),
+              visibility var(--duration-normal) var(--easing-default);
+}
+
+.carousel--fade .carousel__slide.is-active {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ===================
+   Autoplay Progress
+   =================== */
+
+.carousel__progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carousel__progress-bar {
+  height: 100%;
+  background-color: var(--color-primary-500);
+  width: 0;
+  transition: width 0.1s linear;
+}
+
+.carousel--autoplay .carousel__progress-bar {
+  animation: carousel-progress var(--carousel-interval, 5s) linear infinite;
+}
+
+@keyframes carousel-progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* ===================
+   Card Carousel
+   =================== */
+
+.carousel--cards .carousel__slide {
+  padding: var(--space-2);
+}
+
+.carousel--cards .carousel__track {
+  padding: var(--space-2) 0;
+}
+
+/* ===================
+   Full Width
+   =================== */
+
+.carousel--fullwidth {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+/* ===================
+   Center Mode
+   =================== */
+
+.carousel--center .carousel__track {
+  padding: 0 10%;
+}
+
+.carousel--center .carousel__slide {
+  transition: transform var(--duration-normal) var(--easing-default),
+              opacity var(--duration-normal) var(--easing-default);
+  opacity: 0.5;
+  transform: scale(0.9);
+}
+
+.carousel--center .carousel__slide.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ===================
+   Vertical Carousel
+   =================== */
+
+.carousel--vertical .carousel__track {
+  flex-direction: column;
+}
+
+.carousel--vertical .carousel__slide {
+  flex: 0 0 auto;
+}
+
+.carousel--vertical .carousel__nav {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel--vertical .carousel__nav--prev {
+  top: var(--space-3);
+  bottom: auto;
+}
+
+.carousel--vertical .carousel__nav--next {
+  top: auto;
+  bottom: var(--space-3);
+}
+
+.carousel--vertical .carousel__nav--prev svg {
+  transform: rotate(90deg);
+}
+
+.carousel--vertical .carousel__nav--next svg {
+  transform: rotate(90deg);
+}
+
+/* ===================
+   Draggable
+   =================== */
+
+.carousel--draggable {
+  cursor: grab;
+}
+
+.carousel--draggable.is-dragging {
+  cursor: grabbing;
+}
+
+.carousel--draggable.is-dragging .carousel__track {
+  transition: none;
+}
+
+/* ===================
+   Responsive
+   =================== */
+
+@media (max-width: 767px) {
+  .carousel--2-slides .carousel__slide,
+  .carousel--3-slides .carousel__slide,
+  .carousel--4-slides .carousel__slide {
+    flex: 0 0 100%;
+  }
+
+  .carousel--gap.carousel--2-slides .carousel__slide,
+  .carousel--gap.carousel--3-slides .carousel__slide,
+  .carousel--gap.carousel--4-slides .carousel__slide {
+    flex: 0 0 calc(100% - var(--space-4));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .carousel--4-slides .carousel__slide {
+    flex: 0 0 50%;
+  }
+
+  .carousel--gap.carousel--4-slides .carousel__slide {
+    flex: 0 0 calc(50% - var(--space-4) / 2);
+  }
+}

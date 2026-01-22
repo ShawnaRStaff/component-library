@@ -1,0 +1,180 @@
+<!-- Alert & Toast Component Demo -->
+
+<section class="demo-section">
+  <h3>Alert Variants</h3>
+  <div style="display: flex; flex-direction: column; gap: 16px;">
+    <div class="alert alert--info">
+      <svg class="alert__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"/>
+      </svg>
+      <div class="alert__content">
+        <div class="alert__title">Information</div>
+        <div class="alert__message">This is an informational alert with helpful details.</div>
+      </div>
+    </div>
+
+    <div class="alert alert--success">
+      <svg class="alert__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+      </svg>
+      <div class="alert__content">
+        <div class="alert__title">Success</div>
+        <div class="alert__message">Your changes have been saved successfully.</div>
+      </div>
+    </div>
+
+    <div class="alert alert--warning">
+      <svg class="alert__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"/>
+      </svg>
+      <div class="alert__content">
+        <div class="alert__title">Warning</div>
+        <div class="alert__message">Please review your information before continuing.</div>
+      </div>
+    </div>
+
+    <div class="alert alert--danger">
+      <svg class="alert__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"/>
+      </svg>
+      <div class="alert__content">
+        <div class="alert__title">Error</div>
+        <div class="alert__message">Something went wrong. Please try again later.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Dismissible Alert</h3>
+  <div class="alert alert--info">
+    <svg class="alert__icon" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"/>
+    </svg>
+    <div class="alert__content">
+      <div class="alert__title">New feature available</div>
+      <div class="alert__message">Check out our latest update with improved performance.</div>
+    </div>
+    <button class="alert__close" aria-label="Dismiss">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M4.3 4.3a1 1 0 011.4 0L8 6.6l2.3-2.3a1 1 0 111.4 1.4L9.4 8l2.3 2.3a1 1 0 01-1.4 1.4L8 9.4l-2.3 2.3a1 1 0 01-1.4-1.4L6.6 8 4.3 5.7a1 1 0 010-1.4z"/>
+      </svg>
+    </button>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Alert with Actions</h3>
+  <div class="alert alert--warning">
+    <svg class="alert__icon" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"/>
+    </svg>
+    <div class="alert__content">
+      <div class="alert__title">Your trial is expiring</div>
+      <div class="alert__message">You have 3 days left on your free trial. Upgrade now to keep access.</div>
+      <div class="alert__actions">
+        <button class="btn btn--primary btn--sm">Upgrade Now</button>
+        <button class="btn btn--ghost btn--sm">Remind Me Later</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Simple Alert (No Title)</h3>
+  <div style="display: flex; flex-direction: column; gap: 12px;">
+    <div class="alert alert--info alert--compact">
+      <svg class="alert__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"/>
+      </svg>
+      <div class="alert__content">
+        <div class="alert__message">A new version is available. <a href="#">Update now</a></div>
+      </div>
+    </div>
+
+    <div class="alert alert--success alert--compact">
+      <svg class="alert__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+      </svg>
+      <div class="alert__content">
+        <div class="alert__message">File uploaded successfully.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Solid Alerts</h3>
+  <div style="display: flex; flex-direction: column; gap: 12px;">
+    <div class="alert alert--success-solid">
+      <svg class="alert__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+      </svg>
+      <div class="alert__content">
+        <div class="alert__message">Payment completed successfully!</div>
+      </div>
+      <button class="alert__close" aria-label="Dismiss" style="color: white;">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M4.3 4.3a1 1 0 011.4 0L8 6.6l2.3-2.3a1 1 0 111.4 1.4L9.4 8l2.3 2.3a1 1 0 01-1.4 1.4L8 9.4l-2.3 2.3a1 1 0 01-1.4-1.4L6.6 8 4.3 5.7a1 1 0 010-1.4z"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="alert alert--danger-solid">
+      <svg class="alert__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"/>
+      </svg>
+      <div class="alert__content">
+        <div class="alert__message">Connection failed. Check your network.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Toast Notifications</h3>
+  <div class="demo-row">
+    <button class="btn btn--success" data-show-toast="success">Success Toast</button>
+    <button class="btn btn--danger" data-show-toast="error">Error Toast</button>
+    <button class="btn btn--secondary" data-show-toast="warning">Warning Toast</button>
+    <button class="btn btn--primary" data-show-toast="info">Info Toast</button>
+  </div>
+  <p style="margin-top: 12px; font-size: 14px; color: var(--text-secondary);">
+    Click a button to show a toast notification in the top-right corner.
+  </p>
+</section>
+
+<section class="demo-section">
+  <h3>Static Toast Examples</h3>
+  <div style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
+    <div class="toast toast--success" style="position: relative; animation: none;">
+      <svg class="toast__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+      </svg>
+      <div class="toast__content">
+        <div class="toast__title">File uploaded</div>
+        <div class="toast__message">document.pdf has been uploaded.</div>
+      </div>
+      <button class="toast__close" aria-label="Close">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M4.3 4.3a1 1 0 011.4 0L8 6.6l2.3-2.3a1 1 0 111.4 1.4L9.4 8l2.3 2.3a1 1 0 01-1.4 1.4L8 9.4l-2.3 2.3a1 1 0 01-1.4-1.4L6.6 8 4.3 5.7a1 1 0 010-1.4z"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="toast toast--error" style="position: relative; animation: none;">
+      <svg class="toast__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"/>
+      </svg>
+      <div class="toast__content">
+        <div class="toast__title">Upload failed</div>
+        <div class="toast__message">File size exceeds the limit.</div>
+      </div>
+      <button class="toast__close" aria-label="Close">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M4.3 4.3a1 1 0 011.4 0L8 6.6l2.3-2.3a1 1 0 111.4 1.4L9.4 8l2.3 2.3a1 1 0 01-1.4 1.4L8 9.4l-2.3 2.3a1 1 0 01-1.4-1.4L6.6 8 4.3 5.7a1 1 0 010-1.4z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>

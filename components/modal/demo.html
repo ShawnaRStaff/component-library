@@ -1,0 +1,268 @@
+<!-- Modal Component Demo -->
+
+<section class="demo-section">
+  <h3>Basic Modal</h3>
+  <div class="demo-row">
+    <button class="btn btn--primary" data-modal-trigger="modal-basic">Open Modal</button>
+  </div>
+
+  <div class="modal" id="modal-basic" aria-hidden="true" role="dialog" aria-labelledby="modal-basic-title">
+    <div class="modal__backdrop"></div>
+    <div class="modal__container">
+      <div class="modal__content">
+        <header class="modal__header">
+          <h2 class="modal__title" id="modal-basic-title">Modal Title</h2>
+          <button class="modal__close" data-modal-close aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M4.3 4.3a1 1 0 011.4 0L10 8.6l4.3-4.3a1 1 0 111.4 1.4L11.4 10l4.3 4.3a1 1 0 01-1.4 1.4L10 11.4l-4.3 4.3a1 1 0 01-1.4-1.4L8.6 10 4.3 5.7a1 1 0 010-1.4z"/>
+            </svg>
+          </button>
+        </header>
+        <div class="modal__body">
+          <p>This is a basic modal dialog. You can put any content here.</p>
+          <p>Click the X button, the backdrop, or press Escape to close.</p>
+        </div>
+        <footer class="modal__footer">
+          <button class="btn btn--secondary" data-modal-close>Cancel</button>
+          <button class="btn btn--primary">Confirm</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Modal Sizes</h3>
+  <div class="demo-row">
+    <button class="btn btn--secondary" data-modal-trigger="modal-sm">Small</button>
+    <button class="btn btn--secondary" data-modal-trigger="modal-default">Default</button>
+    <button class="btn btn--secondary" data-modal-trigger="modal-lg">Large</button>
+    <button class="btn btn--secondary" data-modal-trigger="modal-xl">Extra Large</button>
+  </div>
+
+  <div class="modal modal--sm" id="modal-sm" aria-hidden="true">
+    <div class="modal__backdrop"></div>
+    <div class="modal__container">
+      <div class="modal__content">
+        <header class="modal__header">
+          <h2 class="modal__title">Small Modal</h2>
+          <button class="modal__close" data-modal-close aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M4.3 4.3a1 1 0 011.4 0L10 8.6l4.3-4.3a1 1 0 111.4 1.4L11.4 10l4.3 4.3a1 1 0 01-1.4 1.4L10 11.4l-4.3 4.3a1 1 0 01-1.4-1.4L8.6 10 4.3 5.7a1 1 0 010-1.4z"/>
+            </svg>
+          </button>
+        </header>
+        <div class="modal__body">
+          <p>This is a small modal (400px wide).</p>
+        </div>
+        <footer class="modal__footer">
+          <button class="btn btn--primary" data-modal-close>OK</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-default" aria-hidden="true">
+    <div class="modal__backdrop"></div>
+    <div class="modal__container">
+      <div class="modal__content">
+        <header class="modal__header">
+          <h2 class="modal__title">Default Modal</h2>
+          <button class="modal__close" data-modal-close aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M4.3 4.3a1 1 0 011.4 0L10 8.6l4.3-4.3a1 1 0 111.4 1.4L11.4 10l4.3 4.3a1 1 0 01-1.4 1.4L10 11.4l-4.3 4.3a1 1 0 01-1.4-1.4L8.6 10 4.3 5.7a1 1 0 010-1.4z"/>
+            </svg>
+          </button>
+        </header>
+        <div class="modal__body">
+          <p>This is the default modal size (500px wide).</p>
+        </div>
+        <footer class="modal__footer">
+          <button class="btn btn--primary" data-modal-close>OK</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal--lg" id="modal-lg" aria-hidden="true">
+    <div class="modal__backdrop"></div>
+    <div class="modal__container">
+      <div class="modal__content">
+        <header class="modal__header">
+          <h2 class="modal__title">Large Modal</h2>
+          <button class="modal__close" data-modal-close aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M4.3 4.3a1 1 0 011.4 0L10 8.6l4.3-4.3a1 1 0 111.4 1.4L11.4 10l4.3 4.3a1 1 0 01-1.4 1.4L10 11.4l-4.3 4.3a1 1 0 01-1.4-1.4L8.6 10 4.3 5.7a1 1 0 010-1.4z"/>
+            </svg>
+          </button>
+        </header>
+        <div class="modal__body">
+          <p>This is a large modal (700px wide). Good for forms and more complex content.</p>
+        </div>
+        <footer class="modal__footer">
+          <button class="btn btn--primary" data-modal-close>OK</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal--xl" id="modal-xl" aria-hidden="true">
+    <div class="modal__backdrop"></div>
+    <div class="modal__container">
+      <div class="modal__content">
+        <header class="modal__header">
+          <h2 class="modal__title">Extra Large Modal</h2>
+          <button class="modal__close" data-modal-close aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M4.3 4.3a1 1 0 011.4 0L10 8.6l4.3-4.3a1 1 0 111.4 1.4L11.4 10l4.3 4.3a1 1 0 01-1.4 1.4L10 11.4l-4.3 4.3a1 1 0 01-1.4-1.4L8.6 10 4.3 5.7a1 1 0 010-1.4z"/>
+            </svg>
+          </button>
+        </header>
+        <div class="modal__body">
+          <p>This is an extra large modal (900px wide). Good for data tables and complex layouts.</p>
+        </div>
+        <footer class="modal__footer">
+          <button class="btn btn--primary" data-modal-close>OK</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Confirmation Dialog</h3>
+  <div class="demo-row">
+    <button class="btn btn--danger" data-modal-trigger="modal-confirm">Delete Item</button>
+  </div>
+
+  <div class="modal modal--sm modal--centered" id="modal-confirm" aria-hidden="true">
+    <div class="modal__backdrop"></div>
+    <div class="modal__container">
+      <div class="modal__content">
+        <div class="modal__body" style="padding-top: var(--space-8);">
+          <div class="modal__icon modal__icon--danger">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+            </svg>
+          </div>
+          <h3 style="margin-bottom: var(--space-2); color: var(--text-primary);">Delete this item?</h3>
+          <p>This action cannot be undone. This will permanently delete the item from your account.</p>
+        </div>
+        <footer class="modal__footer">
+          <button class="btn btn--secondary" data-modal-close>Cancel</button>
+          <button class="btn btn--danger">Delete</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Success Modal</h3>
+  <div class="demo-row">
+    <button class="btn btn--success" data-modal-trigger="modal-success">Show Success</button>
+  </div>
+
+  <div class="modal modal--sm modal--centered" id="modal-success" aria-hidden="true">
+    <div class="modal__backdrop"></div>
+    <div class="modal__container">
+      <div class="modal__content">
+        <div class="modal__body" style="padding-top: var(--space-8);">
+          <div class="modal__icon modal__icon--success">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 6L9 17l-5-5"/>
+            </svg>
+          </div>
+          <h3 style="margin-bottom: var(--space-2); color: var(--text-primary);">Success!</h3>
+          <p>Your changes have been saved successfully.</p>
+        </div>
+        <footer class="modal__footer">
+          <button class="btn btn--primary" data-modal-close>Continue</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Form Modal</h3>
+  <div class="demo-row">
+    <button class="btn btn--primary" data-modal-trigger="modal-form">Add User</button>
+  </div>
+
+  <div class="modal" id="modal-form" aria-hidden="true">
+    <div class="modal__backdrop"></div>
+    <div class="modal__container">
+      <div class="modal__content">
+        <header class="modal__header">
+          <h2 class="modal__title">Add New User</h2>
+          <button class="modal__close" data-modal-close aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M4.3 4.3a1 1 0 011.4 0L10 8.6l4.3-4.3a1 1 0 111.4 1.4L11.4 10l4.3 4.3a1 1 0 01-1.4 1.4L10 11.4l-4.3 4.3a1 1 0 01-1.4-1.4L8.6 10 4.3 5.7a1 1 0 010-1.4z"/>
+            </svg>
+          </button>
+        </header>
+        <div class="modal__body">
+          <div style="display: flex; flex-direction: column; gap: var(--space-4);">
+            <div class="input-field">
+              <label class="input-field__label">Full Name</label>
+              <input type="text" class="input" placeholder="John Doe">
+            </div>
+            <div class="input-field">
+              <label class="input-field__label">Email Address</label>
+              <input type="email" class="input" placeholder="john@example.com">
+            </div>
+            <div class="input-field">
+              <label class="input-field__label">Role</label>
+              <select class="select">
+                <option>Select a role...</option>
+                <option>Admin</option>
+                <option>Editor</option>
+                <option>Viewer</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <footer class="modal__footer">
+          <button class="btn btn--secondary" data-modal-close>Cancel</button>
+          <button class="btn btn--primary">Add User</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Scrollable Content</h3>
+  <div class="demo-row">
+    <button class="btn btn--secondary" data-modal-trigger="modal-scroll">Long Content</button>
+  </div>
+
+  <div class="modal" id="modal-scroll" aria-hidden="true">
+    <div class="modal__backdrop"></div>
+    <div class="modal__container">
+      <div class="modal__content" style="max-height: 400px;">
+        <header class="modal__header">
+          <h2 class="modal__title">Terms of Service</h2>
+          <button class="modal__close" data-modal-close aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M4.3 4.3a1 1 0 011.4 0L10 8.6l4.3-4.3a1 1 0 111.4 1.4L11.4 10l4.3 4.3a1 1 0 01-1.4 1.4L10 11.4l-4.3 4.3a1 1 0 01-1.4-1.4L8.6 10 4.3 5.7a1 1 0 010-1.4z"/>
+            </svg>
+          </button>
+        </header>
+        <div class="modal__body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <footer class="modal__footer">
+          <button class="btn btn--secondary" data-modal-close>Decline</button>
+          <button class="btn btn--primary">Accept</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,43 @@
+<!-- File Upload: States -->
+<div class="demo-showcase">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+    <div>
+      <p style="margin: 0 0 8px; font-size: 12px; color: var(--text-secondary);">Disabled</p>
+      <div class="file-upload file-upload--sm file-upload--disabled">
+        <input type="file" class="file-upload__input" disabled>
+        <div class="file-upload__content">
+          <svg class="file-upload__icon" viewBox="0 0 20 20" fill="currentColor" style="width: 24px; height: 24px;">
+            <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z"/>
+          </svg>
+          <p class="file-upload__text" style="font-size: 13px;">Upload disabled</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p style="margin: 0 0 8px; font-size: 12px; color: var(--text-secondary);">Error</p>
+      <div class="file-upload file-upload--sm file-upload--error">
+        <input type="file" class="file-upload__input">
+        <div class="file-upload__content">
+          <svg class="file-upload__icon" viewBox="0 0 20 20" fill="var(--color-danger-500)" style="width: 24px; height: 24px;">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"/>
+          </svg>
+          <p class="file-upload__text" style="font-size: 13px; color: var(--color-danger-600);">File too large</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p style="margin: 0 0 8px; font-size: 12px; color: var(--text-secondary);">Success</p>
+      <div class="file-upload file-upload--sm file-upload--success">
+        <input type="file" class="file-upload__input">
+        <div class="file-upload__content">
+          <svg class="file-upload__icon" viewBox="0 0 20 20" fill="var(--color-success-500)" style="width: 24px; height: 24px;">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+          </svg>
+          <p class="file-upload__text" style="font-size: 13px; color: var(--color-success-600);">Upload complete</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+{
+  "name": "spinner",
+  "label": "Spinner",
+  "category": "atoms",
+  "description": "Loading spinner indicators",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic", "file": "variants/basic.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "colors", "label": "Colors", "file": "variants/colors.html" },
+    { "id": "inverse", "label": "Inverse", "file": "variants/inverse.html" },
+    { "id": "alternative-styles", "label": "Alternative Styles", "file": "variants/alternative-styles.html" },
+    { "id": "with-text", "label": "With Text", "file": "variants/with-text.html" },
+    { "id": "inside-button", "label": "Inside Button", "file": "variants/inside-button.html" }
+  ]
+}

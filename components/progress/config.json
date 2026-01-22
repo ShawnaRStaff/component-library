@@ -1,0 +1,20 @@
+{
+  "name": "progress",
+  "label": "Progress",
+  "category": "molecules",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic", "file": "variants/basic.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "colors", "label": "Colors", "file": "variants/colors.html" },
+    { "id": "striped-animated", "label": "Striped & Animated", "file": "variants/striped-animated.html" },
+    { "id": "indeterminate", "label": "Indeterminate", "file": "variants/indeterminate.html" },
+    { "id": "gradient", "label": "Gradient", "file": "variants/gradient.html" },
+    { "id": "with-label", "label": "With Label", "file": "variants/with-label.html" },
+    { "id": "inline-label", "label": "Inline Label", "file": "variants/inline-label.html" },
+    { "id": "value-inside", "label": "Value Inside", "file": "variants/value-inside.html" },
+    { "id": "circular", "label": "Circular", "file": "variants/circular.html" },
+    { "id": "steps", "label": "Steps", "file": "variants/steps.html" },
+    { "id": "multiple", "label": "Multiple Bars", "file": "variants/multiple.html" }
+  ]
+}

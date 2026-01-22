@@ -1,0 +1,14 @@
+{
+  "name": "toggle",
+  "label": "Toggle",
+  "category": "atoms",
+  "description": "Switch component for boolean settings",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "states", "label": "States", "file": "variants/states.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "colors", "label": "Colors", "file": "variants/colors.html" },
+    { "id": "with-icons", "label": "With Icons", "file": "variants/with-icons.html" },
+    { "id": "settings", "label": "Settings Pattern", "file": "variants/settings.html" }
+  ]
+}

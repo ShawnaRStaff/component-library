@@ -1,0 +1,18 @@
+{
+  "name": "list",
+  "label": "List",
+  "category": "molecules",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic", "file": "variants/basic.html" },
+    { "id": "with-icons", "label": "With Icons", "file": "variants/with-icons.html" },
+    { "id": "with-avatars", "label": "With Avatars", "file": "variants/with-avatars.html" },
+    { "id": "with-actions", "label": "With Actions", "file": "variants/with-actions.html" },
+    { "id": "with-subheaders", "label": "With Subheaders", "file": "variants/with-subheaders.html" },
+    { "id": "spaced", "label": "Spaced Style", "file": "variants/spaced.html" },
+    { "id": "ordered", "label": "Ordered List", "file": "variants/ordered.html" },
+    { "id": "selectable", "label": "Selectable", "file": "variants/selectable.html" },
+    { "id": "loading", "label": "Loading State", "file": "variants/loading.html" },
+    { "id": "empty", "label": "Empty State", "file": "variants/empty.html" }
+  ]
+}

@@ -1,0 +1,250 @@
+<!-- List Component Demo -->
+
+<section class="demo-section">
+  <h3>Basic List</h3>
+  <ul class="list list--bordered" style="max-width: 400px;">
+    <li class="list__item">
+      <span class="list__title">List item one</span>
+    </li>
+    <li class="list__item">
+      <span class="list__title">List item two</span>
+    </li>
+    <li class="list__item">
+      <span class="list__title">List item three</span>
+    </li>
+  </ul>
+</section>
+
+<section class="demo-section">
+  <h3>With Icons</h3>
+  <ul class="list list--bordered" style="max-width: 400px;">
+    <li class="list__item">
+      <svg class="list__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+      </svg>
+      <span class="list__title">Home</span>
+    </li>
+    <li class="list__item">
+      <svg class="list__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 01-1.581.814L10 14.229l-4.419 2.585A1 1 0 014 16V4z"/>
+      </svg>
+      <span class="list__title">Bookmarks</span>
+    </li>
+    <li class="list__item">
+      <svg class="list__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"/>
+      </svg>
+      <span class="list__title">Settings</span>
+    </li>
+  </ul>
+</section>
+
+<section class="demo-section">
+  <h3>With Avatars and Descriptions</h3>
+  <ul class="list list--bordered" style="max-width: 450px;">
+    <li class="list__item">
+      <img src="https://i.pravatar.cc/80?img=1" alt="" class="list__avatar">
+      <div class="list__content">
+        <p class="list__title">Sarah Johnson</p>
+        <p class="list__description">Product Designer</p>
+      </div>
+      <span class="list__meta">Online</span>
+    </li>
+    <li class="list__item">
+      <img src="https://i.pravatar.cc/80?img=2" alt="" class="list__avatar">
+      <div class="list__content">
+        <p class="list__title">Mike Chen</p>
+        <p class="list__description">Software Engineer</p>
+      </div>
+      <span class="list__meta">Away</span>
+    </li>
+    <li class="list__item">
+      <img src="https://i.pravatar.cc/80?img=3" alt="" class="list__avatar">
+      <div class="list__content">
+        <p class="list__title">Emily Davis</p>
+        <p class="list__description">Marketing Manager</p>
+      </div>
+      <span class="list__meta">Offline</span>
+    </li>
+  </ul>
+</section>
+
+<section class="demo-section">
+  <h3>With Actions</h3>
+  <ul class="list list--bordered list--hover" style="max-width: 500px;">
+    <li class="list__item">
+      <svg class="list__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"/>
+      </svg>
+      <div class="list__content">
+        <p class="list__title">Project-report.pdf</p>
+        <p class="list__description">2.4 MB - Updated 2 hours ago</p>
+      </div>
+      <div class="list__action">
+        <button class="btn btn--ghost btn--sm btn--icon" aria-label="Download">
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"/>
+          </svg>
+        </button>
+        <button class="btn btn--ghost btn--sm btn--icon" aria-label="Delete">
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z"/>
+          </svg>
+        </button>
+      </div>
+    </li>
+    <li class="list__item">
+      <svg class="list__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"/>
+      </svg>
+      <div class="list__content">
+        <p class="list__title">vacation-photo.jpg</p>
+        <p class="list__description">1.8 MB - Updated yesterday</p>
+      </div>
+      <div class="list__action">
+        <button class="btn btn--ghost btn--sm btn--icon" aria-label="Download">
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"/>
+          </svg>
+        </button>
+        <button class="btn btn--ghost btn--sm btn--icon" aria-label="Delete">
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z"/>
+          </svg>
+        </button>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="demo-section">
+  <h3>With Subheaders</h3>
+  <ul class="list list--bordered" style="max-width: 400px;">
+    <li class="list__subheader">Favorites</li>
+    <li class="list__item list__item--interactive">
+      <svg class="list__icon" viewBox="0 0 20 20" fill="var(--color-primary-500)">
+        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+      </svg>
+      <span class="list__title">Important Project</span>
+    </li>
+    <li class="list__item list__item--interactive">
+      <svg class="list__icon" viewBox="0 0 20 20" fill="var(--color-primary-500)">
+        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+      </svg>
+      <span class="list__title">Key Documents</span>
+    </li>
+    <li class="list__subheader">Recent</li>
+    <li class="list__item list__item--interactive">
+      <svg class="list__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/>
+      </svg>
+      <span class="list__title">New Folder</span>
+    </li>
+    <li class="list__item list__item--interactive">
+      <svg class="list__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/>
+      </svg>
+      <span class="list__title">Archive</span>
+    </li>
+  </ul>
+</section>
+
+<section class="demo-section">
+  <h3>Spaced Style</h3>
+  <ul class="list list--spaced" style="max-width: 400px;">
+    <li class="list__item list__item--interactive">
+      <svg class="list__icon" viewBox="0 0 20 20" fill="var(--color-success-500)">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+      </svg>
+      <div class="list__content">
+        <p class="list__title">Task completed</p>
+        <p class="list__description">Design review finished</p>
+      </div>
+    </li>
+    <li class="list__item list__item--interactive">
+      <svg class="list__icon" viewBox="0 0 20 20" fill="var(--color-warning-500)">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"/>
+      </svg>
+      <div class="list__content">
+        <p class="list__title">Pending review</p>
+        <p class="list__description">Waiting for approval</p>
+      </div>
+    </li>
+    <li class="list__item list__item--interactive">
+      <svg class="list__icon" viewBox="0 0 20 20" fill="var(--color-danger-500)">
+        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"/>
+      </svg>
+      <div class="list__content">
+        <p class="list__title">Action required</p>
+        <p class="list__description">Please update your settings</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="demo-section">
+  <h3>Ordered List</h3>
+  <ol class="list list--ordered list--bordered" style="max-width: 400px;">
+    <li class="list__item">
+      <span class="list__title">Create an account</span>
+    </li>
+    <li class="list__item">
+      <span class="list__title">Set up your profile</span>
+    </li>
+    <li class="list__item">
+      <span class="list__title">Invite team members</span>
+    </li>
+    <li class="list__item">
+      <span class="list__title">Start collaborating</span>
+    </li>
+  </ol>
+</section>
+
+<section class="demo-section">
+  <h3>Selected State</h3>
+  <ul class="list list--bordered list--hover list--selectable" style="max-width: 400px;">
+    <li class="list__item list__item--interactive">
+      <span class="list__title">Option A</span>
+    </li>
+    <li class="list__item list__item--interactive list__item--selected">
+      <span class="list__title">Option B (Selected)</span>
+    </li>
+    <li class="list__item list__item--interactive">
+      <span class="list__title">Option C</span>
+    </li>
+  </ul>
+  <p style="margin-top: 8px; font-size: 12px; color: var(--text-secondary);">Click items to toggle selection</p>
+</section>
+
+<section class="demo-section">
+  <h3>Loading State</h3>
+  <ul class="list list--bordered" style="max-width: 400px;">
+    <li class="list__item list__item--loading">
+      <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--color-neutral-200);"></div>
+      <div class="list__content">
+        <p class="list__title">Loading user name...</p>
+        <p class="list__description">Loading description text here...</p>
+      </div>
+    </li>
+    <li class="list__item list__item--loading">
+      <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--color-neutral-200);"></div>
+      <div class="list__content">
+        <p class="list__title">Loading user name...</p>
+        <p class="list__description">Loading description text here...</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="demo-section">
+  <h3>Empty State</h3>
+  <ul class="list list--bordered" style="max-width: 400px;">
+    <li class="list__empty">
+      <svg width="48" height="48" viewBox="0 0 20 20" fill="var(--color-neutral-300)" style="margin-bottom: 12px;">
+        <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/>
+      </svg>
+      <p style="margin: 0; font-weight: 500; color: var(--text-secondary);">No items</p>
+      <p style="margin: 4px 0 0; font-size: 13px;">Get started by adding your first item</p>
+    </li>
+  </ul>
+</section>

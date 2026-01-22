@@ -1,0 +1,299 @@
+<!-- Tabs Component Demo -->
+
+<section class="demo-section">
+  <h3>Default Tabs</h3>
+  <div class="tabs">
+    <div class="tabs__list" role="tablist">
+      <button class="tabs__tab is-active">Overview</button>
+      <button class="tabs__tab">Features</button>
+      <button class="tabs__tab">Pricing</button>
+      <button class="tabs__tab">FAQ</button>
+    </div>
+    <div class="tabs__panels">
+      <div class="tabs__panel is-active">
+        <p>Welcome to our product overview. This tab contains general information about our offering.</p>
+      </div>
+      <div class="tabs__panel">
+        <p>Explore the amazing features that make our product stand out from the competition.</p>
+      </div>
+      <div class="tabs__panel">
+        <p>Choose the plan that works best for you. We offer flexible pricing options.</p>
+      </div>
+      <div class="tabs__panel">
+        <p>Find answers to commonly asked questions about our product and services.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Boxed Tabs</h3>
+  <div class="tabs tabs--boxed">
+    <div class="tabs__list" role="tablist">
+      <button class="tabs__tab is-active">All</button>
+      <button class="tabs__tab">Active</button>
+      <button class="tabs__tab">Completed</button>
+      <button class="tabs__tab">Archived</button>
+    </div>
+    <div class="tabs__panels">
+      <div class="tabs__panel is-active">
+        <p>Showing all items in your list.</p>
+      </div>
+      <div class="tabs__panel">
+        <p>Showing only active items.</p>
+      </div>
+      <div class="tabs__panel">
+        <p>Showing completed items.</p>
+      </div>
+      <div class="tabs__panel">
+        <p>Showing archived items.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Pill Tabs</h3>
+  <div class="tabs tabs--pill">
+    <div class="tabs__list" role="tablist">
+      <button class="tabs__tab is-active">Day</button>
+      <button class="tabs__tab">Week</button>
+      <button class="tabs__tab">Month</button>
+      <button class="tabs__tab">Year</button>
+    </div>
+    <div class="tabs__panels">
+      <div class="tabs__panel is-active">
+        <p>Viewing daily statistics.</p>
+      </div>
+      <div class="tabs__panel">
+        <p>Viewing weekly statistics.</p>
+      </div>
+      <div class="tabs__panel">
+        <p>Viewing monthly statistics.</p>
+      </div>
+      <div class="tabs__panel">
+        <p>Viewing yearly statistics.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Bordered Tabs</h3>
+  <div class="tabs tabs--bordered">
+    <div class="tabs__list" role="tablist">
+      <button class="tabs__tab is-active">Profile</button>
+      <button class="tabs__tab">Settings</button>
+      <button class="tabs__tab">Notifications</button>
+    </div>
+    <div class="tabs__panels">
+      <div class="tabs__panel is-active">
+        <p>Manage your profile information and preferences.</p>
+      </div>
+      <div class="tabs__panel">
+        <p>Configure your application settings.</p>
+      </div>
+      <div class="tabs__panel">
+        <p>Control how you receive notifications.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Tabs with Icons</h3>
+  <div class="tabs">
+    <div class="tabs__list" role="tablist">
+      <button class="tabs__tab is-active">
+        <svg class="tabs__tab-icon" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M8 0a8 8 0 100 16A8 8 0 008 0zM3 8a5 5 0 1110 0A5 5 0 013 8zm5-3a1 1 0 011 1v2h2a1 1 0 110 2H9v2a1 1 0 11-2 0V10H5a1 1 0 110-2h2V6a1 1 0 011-1z"/>
+        </svg>
+        Dashboard
+      </button>
+      <button class="tabs__tab">
+        <svg class="tabs__tab-icon" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M8 8a3 3 0 100-6 3 3 0 000 6zm-5 6a5 5 0 0110 0H3z"/>
+        </svg>
+        Users
+      </button>
+      <button class="tabs__tab">
+        <svg class="tabs__tab-icon" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M13.5 1h-11A1.5 1.5 0 001 2.5v11A1.5 1.5 0 002.5 15h11a1.5 1.5 0 001.5-1.5v-11A1.5 1.5 0 0013.5 1zM4 4h8v2H4V4zm0 3h8v2H4V7zm0 3h5v2H4v-2z"/>
+        </svg>
+        Reports
+      </button>
+    </div>
+    <div class="tabs__panels">
+      <div class="tabs__panel is-active">
+        <p>Dashboard content goes here.</p>
+      </div>
+      <div class="tabs__panel">
+        <p>Users management interface.</p>
+      </div>
+      <div class="tabs__panel">
+        <p>Reports and analytics.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Tabs with Badges</h3>
+  <div class="tabs">
+    <div class="tabs__list" role="tablist">
+      <button class="tabs__tab is-active">
+        Inbox
+        <span class="tabs__tab-badge">12</span>
+      </button>
+      <button class="tabs__tab">
+        Sent
+        <span class="tabs__tab-badge">5</span>
+      </button>
+      <button class="tabs__tab">
+        Drafts
+        <span class="tabs__tab-badge">3</span>
+      </button>
+      <button class="tabs__tab">
+        Spam
+        <span class="tabs__tab-badge">99+</span>
+      </button>
+    </div>
+    <div class="tabs__panels">
+      <div class="tabs__panel is-active">
+        <p>You have 12 messages in your inbox.</p>
+      </div>
+      <div class="tabs__panel">
+        <p>5 sent messages.</p>
+      </div>
+      <div class="tabs__panel">
+        <p>3 drafts waiting to be sent.</p>
+      </div>
+      <div class="tabs__panel">
+        <p>99+ spam messages (consider cleaning up!).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Vertical Tabs</h3>
+  <div class="tabs tabs--vertical" style="min-height: 200px;">
+    <div class="tabs__list" role="tablist">
+      <button class="tabs__tab is-active">Account</button>
+      <button class="tabs__tab">Security</button>
+      <button class="tabs__tab">Privacy</button>
+      <button class="tabs__tab">Billing</button>
+    </div>
+    <div class="tabs__panels">
+      <div class="tabs__panel is-active">
+        <h4 style="margin-bottom: 8px;">Account Settings</h4>
+        <p>Manage your account details, email preferences, and profile information.</p>
+      </div>
+      <div class="tabs__panel">
+        <h4 style="margin-bottom: 8px;">Security Settings</h4>
+        <p>Configure two-factor authentication and manage your login sessions.</p>
+      </div>
+      <div class="tabs__panel">
+        <h4 style="margin-bottom: 8px;">Privacy Settings</h4>
+        <p>Control your data sharing preferences and visibility settings.</p>
+      </div>
+      <div class="tabs__panel">
+        <h4 style="margin-bottom: 8px;">Billing Settings</h4>
+        <p>Manage your subscription, payment methods, and invoices.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Full Width Tabs</h3>
+  <div class="tabs tabs--full" style="max-width: 500px;">
+    <div class="tabs__list" role="tablist">
+      <button class="tabs__tab is-active">Login</button>
+      <button class="tabs__tab">Register</button>
+    </div>
+    <div class="tabs__panels">
+      <div class="tabs__panel is-active">
+        <p>Login form would go here.</p>
+      </div>
+      <div class="tabs__panel">
+        <p>Registration form would go here.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Centered Tabs</h3>
+  <div class="tabs tabs--centered">
+    <div class="tabs__list" role="tablist">
+      <button class="tabs__tab is-active">Photos</button>
+      <button class="tabs__tab">Videos</button>
+      <button class="tabs__tab">Documents</button>
+    </div>
+    <div class="tabs__panels">
+      <div class="tabs__panel is-active" style="text-align: center;">
+        <p>Your photo gallery.</p>
+      </div>
+      <div class="tabs__panel" style="text-align: center;">
+        <p>Your video collection.</p>
+      </div>
+      <div class="tabs__panel" style="text-align: center;">
+        <p>Your documents.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Disabled Tab</h3>
+  <div class="tabs">
+    <div class="tabs__list" role="tablist">
+      <button class="tabs__tab is-active">Available</button>
+      <button class="tabs__tab">Also Available</button>
+      <button class="tabs__tab" disabled>Coming Soon</button>
+      <button class="tabs__tab">Another Tab</button>
+    </div>
+    <div class="tabs__panels">
+      <div class="tabs__panel is-active">
+        <p>This tab is available.</p>
+      </div>
+      <div class="tabs__panel">
+        <p>This tab is also available.</p>
+      </div>
+      <div class="tabs__panel">
+        <p>This content is coming soon.</p>
+      </div>
+      <div class="tabs__panel">
+        <p>Another available tab.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Tab Sizes</h3>
+  <div style="display: flex; flex-direction: column; gap: 24px;">
+    <div class="tabs tabs--sm">
+      <div class="tabs__list" role="tablist">
+        <button class="tabs__tab is-active">Small</button>
+        <button class="tabs__tab">Tabs</button>
+        <button class="tabs__tab">Here</button>
+      </div>
+    </div>
+    <div class="tabs">
+      <div class="tabs__list" role="tablist">
+        <button class="tabs__tab is-active">Default</button>
+        <button class="tabs__tab">Size</button>
+        <button class="tabs__tab">Tabs</button>
+      </div>
+    </div>
+    <div class="tabs tabs--lg">
+      <div class="tabs__list" role="tablist">
+        <button class="tabs__tab is-active">Large</button>
+        <button class="tabs__tab">Tabs</button>
+        <button class="tabs__tab">Here</button>
+      </div>
+    </div>
+  </div>
+</section>

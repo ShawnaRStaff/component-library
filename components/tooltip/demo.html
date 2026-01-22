@@ -1,0 +1,135 @@
+<!-- Tooltip Component Demo -->
+
+<section class="demo-section">
+  <h3>Default Tooltip (CSS-only)</h3>
+  <div class="demo-row">
+    <span class="tooltip" data-tooltip="This is a helpful tooltip!">Hover over me</span>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Positions</h3>
+  <div class="demo-row" style="gap: 48px; padding: 48px 0;">
+    <span class="tooltip" data-tooltip="Top tooltip (default)">Top</span>
+    <span class="tooltip tooltip--bottom" data-tooltip="Bottom tooltip">Bottom</span>
+    <span class="tooltip tooltip--left" data-tooltip="Left tooltip">Left</span>
+    <span class="tooltip tooltip--right" data-tooltip="Right tooltip">Right</span>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>On Buttons</h3>
+  <div class="demo-row" style="padding-top: 48px;">
+    <span class="tooltip" data-tooltip="Save your changes">
+      <button class="btn btn--primary">Save</button>
+    </span>
+    <span class="tooltip" data-tooltip="Delete this item permanently">
+      <button class="btn btn--danger">Delete</button>
+    </span>
+    <span class="tooltip tooltip--bottom" data-tooltip="This action is disabled">
+      <button class="btn" disabled>Disabled</button>
+    </span>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>On Icon Buttons</h3>
+  <div class="demo-row" style="padding-top: 48px;">
+    <span class="tooltip" data-tooltip="Edit">
+      <button class="btn btn--secondary btn--icon">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M12.1 1.9a1.5 1.5 0 012.1 2.1l-9 9-3 1 1-3 9-9z"/>
+        </svg>
+      </button>
+    </span>
+    <span class="tooltip" data-tooltip="Delete">
+      <button class="btn btn--secondary btn--icon">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M5.5 5.5v6m2.5-6v6m2.5-6v6M3 3.5h10l-.5 10.5a1 1 0 01-1 .5H4.5a1 1 0 01-1-.5L3 3.5zm2-2h6v2H5v-2z"/>
+        </svg>
+      </button>
+    </span>
+    <span class="tooltip" data-tooltip="Share">
+      <button class="btn btn--secondary btn--icon">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M13 5a2 2 0 100-4 2 2 0 000 4zM3 10a2 2 0 100-4 2 2 0 000 4zM13 15a2 2 0 100-4 2 2 0 000 4zM4.7 8.8l6.6 3.4M11.3 3.8L4.7 7.2"/>
+        </svg>
+      </button>
+    </span>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Light Theme</h3>
+  <div class="demo-row" style="padding-top: 48px;">
+    <span class="tooltip tooltip--light" data-tooltip="Light themed tooltip">Light tooltip</span>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Sizes</h3>
+  <div class="demo-row" style="gap: 48px; padding-top: 48px;">
+    <span class="tooltip tooltip--sm" data-tooltip="Small">Small</span>
+    <span class="tooltip" data-tooltip="Default size tooltip">Default</span>
+    <span class="tooltip tooltip--lg" data-tooltip="Large tooltip with more content space for longer descriptions">Large</span>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Long Content</h3>
+  <div class="demo-row" style="padding-top: 80px;">
+    <span class="tooltip" data-tooltip="This is a longer tooltip message that will wrap to multiple lines automatically when it exceeds the maximum width.">
+      Hover for long tooltip
+    </span>
+    <span class="tooltip tooltip--nowrap" data-tooltip="This tooltip will not wrap no matter how long it is">
+      No wrap tooltip
+    </span>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Delay</h3>
+  <div class="demo-row" style="gap: 48px; padding-top: 48px;">
+    <span class="tooltip" data-tooltip="Instant (default)">No delay</span>
+    <span class="tooltip tooltip--delay-short" data-tooltip="Short delay (100ms)">Short delay</span>
+    <span class="tooltip tooltip--delay-long" data-tooltip="Long delay (500ms)">Long delay</span>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Wrapper-based Tooltip</h3>
+  <div class="demo-row" style="gap: 48px; padding-top: 80px;">
+    <div class="tooltip-wrapper">
+      <button class="btn btn--secondary">Hover me</button>
+      <div class="tooltip__content">
+        <div class="tooltip__title">Pro Tip</div>
+        <div class="tooltip__text">You can use keyboard shortcuts for faster navigation.</div>
+      </div>
+    </div>
+
+    <div class="tooltip-wrapper tooltip-wrapper--bottom">
+      <button class="btn btn--secondary">Bottom tooltip</button>
+      <div class="tooltip__content">
+        This appears below the button
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Truncated Text with Tooltip</h3>
+  <div style="max-width: 200px;">
+    <span class="tooltip tooltip--bottom" data-tooltip="This is the full text that was truncated because it was too long to display" style="display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+      This is the full text that was truncated because it was too long to display
+    </span>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Keyboard Accessible</h3>
+  <div class="demo-row" style="padding-top: 48px;">
+    <span class="tooltip" data-tooltip="Focus me with Tab key" tabindex="0" style="padding: 8px 16px; background: var(--bg-secondary); border-radius: var(--radius-md);">
+      Tab to focus
+    </span>
+  </div>
+</section>

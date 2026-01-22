@@ -1,0 +1,46 @@
+<!-- Form Group: Complete Form Example -->
+<div class="demo-showcase--full">
+  <form style="max-width: 500px; background: var(--bg-secondary); padding: 24px; border-radius: 12px;">
+    <h4 style="margin: 0 0 20px; font-size: 18px;">Create Account</h4>
+
+    <div class="form-row form-row--2">
+      <div class="form-group">
+        <label class="form-group__label form-group__label--required">First Name</label>
+        <input class="input" type="text" placeholder="John">
+      </div>
+      <div class="form-group">
+        <label class="form-group__label form-group__label--required">Last Name</label>
+        <input class="input" type="text" placeholder="Doe">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="form-group__label form-group__label--required">Email</label>
+      <input class="input" type="email" placeholder="you@example.com" data-validate>
+    </div>
+
+    <div class="form-group">
+      <label class="form-group__label form-group__label--required">Password</label>
+      <input class="input" type="password" placeholder="Create a strong password">
+      <span class="form-group__helper">Must be at least 8 characters with a number and symbol.</span>
+    </div>
+
+    <div class="form-group">
+      <label class="form-group__label">
+        Company
+        <span class="form-group__optional">(optional)</span>
+      </label>
+      <input class="input" type="text" placeholder="Acme Inc">
+    </div>
+
+    <div class="form-group" style="margin-top: 20px;">
+      <label class="checkbox">
+        <input type="checkbox" class="checkbox__input">
+        <span class="checkbox__box"></span>
+        <span class="checkbox__label">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
+      </label>
+    </div>
+
+    <button type="submit" class="btn btn--primary" style="width: 100%; margin-top: 20px;">Create Account</button>
+  </form>
+</div>

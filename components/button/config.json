@@ -1,0 +1,17 @@
+{
+  "name": "button",
+  "label": "Button",
+  "category": "atoms",
+  "description": "Clickable button component with multiple variants, sizes, and states",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "primary", "label": "Primary", "file": "variants/primary.html" },
+    { "id": "secondary", "label": "Secondary", "file": "variants/secondary.html" },
+    { "id": "danger", "label": "Danger", "file": "variants/danger.html" },
+    { "id": "ghost", "label": "Ghost", "file": "variants/ghost.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "states", "label": "States", "file": "variants/states.html" },
+    { "id": "full-width", "label": "Full Width", "file": "variants/full-width.html" },
+    { "id": "with-icons", "label": "With Icons", "file": "variants/with-icons.html" }
+  ]
+}

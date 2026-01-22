@@ -1,0 +1,166 @@
+<!-- Radio Component Demo -->
+
+<section class="demo-section">
+  <h3>Default Radio</h3>
+  <div class="demo-row">
+    <label class="radio">
+      <input type="radio" class="radio__input" name="demo1" value="1">
+      <span class="radio__circle"></span>
+      <span class="radio__label">Option 1</span>
+    </label>
+    <label class="radio">
+      <input type="radio" class="radio__input" name="demo1" value="2" checked>
+      <span class="radio__circle"></span>
+      <span class="radio__label">Option 2 (checked)</span>
+    </label>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>States</h3>
+  <div class="demo-row">
+    <label class="radio">
+      <input type="radio" class="radio__input" name="demo2" value="1">
+      <span class="radio__circle"></span>
+      <span class="radio__label">Default</span>
+    </label>
+    <label class="radio">
+      <input type="radio" class="radio__input" name="demo3" disabled>
+      <span class="radio__circle"></span>
+      <span class="radio__label">Disabled</span>
+    </label>
+    <label class="radio">
+      <input type="radio" class="radio__input" name="demo4" disabled checked>
+      <span class="radio__circle"></span>
+      <span class="radio__label">Disabled Checked</span>
+    </label>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Error State</h3>
+  <div class="radio-group">
+    <label class="radio radio--error">
+      <input type="radio" class="radio__input" name="demo-error" value="1">
+      <span class="radio__circle"></span>
+      <span class="radio__label">Option A</span>
+    </label>
+    <label class="radio radio--error">
+      <input type="radio" class="radio__input" name="demo-error" value="2">
+      <span class="radio__circle"></span>
+      <span class="radio__label">Option B</span>
+    </label>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Sizes</h3>
+  <div class="demo-row">
+    <label class="radio radio--sm">
+      <input type="radio" class="radio__input" name="demo-sm" checked>
+      <span class="radio__circle"></span>
+      <span class="radio__label">Small</span>
+    </label>
+    <label class="radio">
+      <input type="radio" class="radio__input" name="demo-md" checked>
+      <span class="radio__circle"></span>
+      <span class="radio__label">Medium (default)</span>
+    </label>
+    <label class="radio radio--lg">
+      <input type="radio" class="radio__input" name="demo-lg" checked>
+      <span class="radio__circle"></span>
+      <span class="radio__label">Large</span>
+    </label>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Radio Group (Vertical)</h3>
+  <div class="radio-group">
+    <label class="radio">
+      <input type="radio" class="radio__input" name="plan" value="free">
+      <span class="radio__circle"></span>
+      <span class="radio__label">Free Plan</span>
+    </label>
+    <label class="radio">
+      <input type="radio" class="radio__input" name="plan" value="pro" checked>
+      <span class="radio__circle"></span>
+      <span class="radio__label">Pro Plan</span>
+    </label>
+    <label class="radio">
+      <input type="radio" class="radio__input" name="plan" value="enterprise">
+      <span class="radio__circle"></span>
+      <span class="radio__label">Enterprise Plan</span>
+    </label>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Radio Group (Horizontal)</h3>
+  <div class="radio-group radio-group--horizontal">
+    <label class="radio">
+      <input type="radio" class="radio__input" name="size" value="s">
+      <span class="radio__circle"></span>
+      <span class="radio__label">Small</span>
+    </label>
+    <label class="radio">
+      <input type="radio" class="radio__input" name="size" value="m" checked>
+      <span class="radio__circle"></span>
+      <span class="radio__label">Medium</span>
+    </label>
+    <label class="radio">
+      <input type="radio" class="radio__input" name="size" value="l">
+      <span class="radio__circle"></span>
+      <span class="radio__label">Large</span>
+    </label>
+    <label class="radio">
+      <input type="radio" class="radio__input" name="size" value="xl">
+      <span class="radio__circle"></span>
+      <span class="radio__label">X-Large</span>
+    </label>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Radio Cards</h3>
+  <div class="radio-group" style="max-width: 400px;">
+    <label class="radio-card">
+      <input type="radio" class="radio__input" name="payment" value="card">
+      <span class="radio__circle"></span>
+      <div class="radio-card__content">
+        <div class="radio-card__title">Credit Card</div>
+        <div class="radio-card__description">Pay with Visa, Mastercard, or American Express</div>
+      </div>
+    </label>
+    <label class="radio-card">
+      <input type="radio" class="radio__input" name="payment" value="paypal" checked>
+      <span class="radio__circle"></span>
+      <div class="radio-card__content">
+        <div class="radio-card__title">PayPal</div>
+        <div class="radio-card__description">Pay securely with your PayPal account</div>
+      </div>
+    </label>
+    <label class="radio-card">
+      <input type="radio" class="radio__input" name="payment" value="bank">
+      <span class="radio__circle"></span>
+      <div class="radio-card__content">
+        <div class="radio-card__title">Bank Transfer</div>
+        <div class="radio-card__description">Direct transfer from your bank account</div>
+      </div>
+    </label>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Without Label</h3>
+  <div class="demo-row">
+    <label class="radio">
+      <input type="radio" class="radio__input" name="standalone" aria-label="Option A">
+      <span class="radio__circle"></span>
+    </label>
+    <label class="radio">
+      <input type="radio" class="radio__input" name="standalone" aria-label="Option B">
+      <span class="radio__circle"></span>
+    </label>
+  </div>
+</section>

@@ -1,0 +1,305 @@
+/**
+ * Slider/Range Component
+ *
+ * Custom styled range input with value display.
+ *
+ * Usage:
+ * <div class="slider">
+ *   <input type="range" class="slider__input">
+ * </div>
+ */
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  width: 100%;
+}
+
+/* ===================
+   Range Input Base
+   =================== */
+
+.slider__input {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: var(--color-neutral-200);
+  border-radius: var(--radius-full);
+  outline: none;
+  cursor: pointer;
+}
+
+/* Track - WebKit */
+.slider__input::-webkit-slider-runnable-track {
+  height: 6px;
+  background: var(--color-neutral-200);
+  border-radius: var(--radius-full);
+}
+
+/* Track - Firefox */
+.slider__input::-moz-range-track {
+  height: 6px;
+  background: var(--color-neutral-200);
+  border-radius: var(--radius-full);
+  border: none;
+}
+
+/* Progress fill - Firefox */
+.slider__input::-moz-range-progress {
+  height: 6px;
+  background: var(--color-primary-500);
+  border-radius: var(--radius-full);
+}
+
+/* Thumb - WebKit */
+.slider__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: var(--color-primary-500);
+  border: 2px solid var(--color-neutral-0);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  margin-top: -6px;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--duration-fast) var(--easing-default),
+              box-shadow var(--duration-fast) var(--easing-default);
+}
+
+.slider__input::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-md);
+}
+
+.slider__input::-webkit-slider-thumb:active {
+  transform: scale(1.05);
+}
+
+/* Thumb - Firefox */
+.slider__input::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: var(--color-primary-500);
+  border: 2px solid var(--color-neutral-0);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--duration-fast) var(--easing-default),
+              box-shadow var(--duration-fast) var(--easing-default);
+}
+
+.slider__input::-moz-range-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-md);
+}
+
+/* Focus state */
+.slider__input:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px var(--color-primary-100), var(--shadow-sm);
+}
+
+.slider__input:focus::-moz-range-thumb {
+  box-shadow: 0 0 0 3px var(--color-primary-100), var(--shadow-sm);
+}
+
+/* ===================
+   Slider with Labels
+   =================== */
+
+.slider__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.slider__label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+}
+
+.slider__value {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary-600);
+  min-width: 40px;
+  text-align: right;
+}
+
+/* ===================
+   Ticks / Steps
+   =================== */
+
+.slider__ticks {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 9px; /* Half of thumb width */
+  margin-top: var(--space-1);
+}
+
+.slider__tick {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+}
+
+/* ===================
+   Size Variants
+   =================== */
+
+.slider--sm .slider__input {
+  height: 4px;
+}
+
+.slider--sm .slider__input::-webkit-slider-runnable-track {
+  height: 4px;
+}
+
+.slider--sm .slider__input::-moz-range-track {
+  height: 4px;
+}
+
+.slider--sm .slider__input::-webkit-slider-thumb {
+  width: 14px;
+  height: 14px;
+  margin-top: -5px;
+}
+
+.slider--sm .slider__input::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+}
+
+.slider--lg .slider__input {
+  height: 8px;
+}
+
+.slider--lg .slider__input::-webkit-slider-runnable-track {
+  height: 8px;
+}
+
+.slider--lg .slider__input::-moz-range-track {
+  height: 8px;
+}
+
+.slider--lg .slider__input::-webkit-slider-thumb {
+  width: 24px;
+  height: 24px;
+  margin-top: -8px;
+}
+
+.slider--lg .slider__input::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+}
+
+/* ===================
+   Color Variants
+   =================== */
+
+.slider--success .slider__input::-webkit-slider-thumb {
+  background: var(--color-success-500);
+}
+
+.slider--success .slider__input::-moz-range-thumb {
+  background: var(--color-success-500);
+}
+
+.slider--success .slider__input::-moz-range-progress {
+  background: var(--color-success-500);
+}
+
+.slider--warning .slider__input::-webkit-slider-thumb {
+  background: var(--color-warning-500);
+}
+
+.slider--warning .slider__input::-moz-range-thumb {
+  background: var(--color-warning-500);
+}
+
+.slider--warning .slider__input::-moz-range-progress {
+  background: var(--color-warning-500);
+}
+
+.slider--danger .slider__input::-webkit-slider-thumb {
+  background: var(--color-danger-500);
+}
+
+.slider--danger .slider__input::-moz-range-thumb {
+  background: var(--color-danger-500);
+}
+
+.slider--danger .slider__input::-moz-range-progress {
+  background: var(--color-danger-500);
+}
+
+/* ===================
+   Disabled State
+   =================== */
+
+.slider--disabled .slider__input {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.slider--disabled .slider__input::-webkit-slider-thumb {
+  cursor: not-allowed;
+}
+
+.slider--disabled .slider__input::-moz-range-thumb {
+  cursor: not-allowed;
+}
+
+/* ===================
+   Range Slider (Two Handles)
+   =================== */
+
+.slider--range {
+  position: relative;
+}
+
+.slider--range .slider__track {
+  position: relative;
+  height: 6px;
+  background: var(--color-neutral-200);
+  border-radius: var(--radius-full);
+}
+
+.slider--range .slider__track-fill {
+  position: absolute;
+  height: 100%;
+  background: var(--color-primary-500);
+  border-radius: var(--radius-full);
+}
+
+.slider--range .slider__inputs {
+  position: relative;
+  height: 18px;
+  margin-top: -12px;
+}
+
+.slider--range .slider__input {
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  pointer-events: none;
+}
+
+.slider--range .slider__input::-webkit-slider-thumb {
+  pointer-events: auto;
+}
+
+.slider--range .slider__input::-moz-range-thumb {
+  pointer-events: auto;
+}
+
+.slider--range .slider__input::-webkit-slider-runnable-track {
+  background: transparent;
+}
+
+.slider--range .slider__input::-moz-range-track {
+  background: transparent;
+}

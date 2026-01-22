@@ -1,0 +1,20 @@
+{
+  "name": "card",
+  "label": "Card",
+  "category": "molecules",
+  "description": "Flexible container for grouping related content with multiple layout options",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic Card", "file": "variants/basic.html" },
+    { "id": "styles", "label": "Card Variants", "file": "variants/styles.html" },
+    { "id": "with-image", "label": "With Image", "file": "variants/with-image.html" },
+    { "id": "header-actions", "label": "Header Actions", "file": "variants/header-actions.html" },
+    { "id": "stat", "label": "Stat Cards", "file": "variants/stat.html" },
+    { "id": "status", "label": "Status Cards", "file": "variants/status.html" },
+    { "id": "selectable", "label": "Selectable Cards", "file": "variants/selectable.html" },
+    { "id": "profile", "label": "Profile Card", "file": "variants/profile.html" },
+    { "id": "horizontal", "label": "Horizontal Card", "file": "variants/horizontal.html" },
+    { "id": "empty-state", "label": "Empty State Card", "file": "variants/empty-state.html" },
+    { "id": "clickable", "label": "Clickable Card", "file": "variants/clickable.html" }
+  ]
+}

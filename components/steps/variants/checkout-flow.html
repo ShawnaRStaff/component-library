@@ -1,0 +1,55 @@
+<div class="demo-showcase--full">
+  <div style="background: var(--bg-secondary); padding: 24px; border-radius: 12px; max-width: 600px;">
+    <div class="steps steps--sm" style="margin-bottom: 24px;">
+      <div class="steps__item is-complete">
+        <div class="steps__indicator">
+          <span class="steps__number">1</span>
+          <svg class="steps__check" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z"/>
+          </svg>
+        </div>
+        <div class="steps__content">
+          <p class="steps__title">Cart</p>
+        </div>
+      </div>
+      <div class="steps__item is-active">
+        <div class="steps__indicator">
+          <span class="steps__number">2</span>
+          <svg class="steps__check" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z"/>
+          </svg>
+        </div>
+        <div class="steps__content">
+          <p class="steps__title">Shipping</p>
+        </div>
+      </div>
+      <div class="steps__item">
+        <div class="steps__indicator">
+          <span class="steps__number">3</span>
+          <svg class="steps__check" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z"/>
+          </svg>
+        </div>
+        <div class="steps__content">
+          <p class="steps__title">Payment</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="background: var(--bg-primary); padding: 20px; border-radius: 8px;">
+      <h4 style="margin: 0 0 16px;">Shipping Address</h4>
+      <div style="display: grid; gap: 12px;">
+        <input type="text" placeholder="Full Name" class="input">
+        <input type="text" placeholder="Street Address" class="input">
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 12px;">
+          <input type="text" placeholder="City" class="input">
+          <input type="text" placeholder="ZIP" class="input">
+        </div>
+      </div>
+      <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+        <button class="btn btn--secondary">Back</button>
+        <button class="btn btn--primary">Continue to Payment</button>
+      </div>
+    </div>
+  </div>
+</div>

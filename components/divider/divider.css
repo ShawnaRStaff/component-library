@@ -1,0 +1,216 @@
+/**
+ * Divider Component
+ *
+ * Usage:
+ * <hr class="divider">
+ * <div class="divider divider--vertical"></div>
+ * <div class="divider divider--with-text"><span>OR</span></div>
+ */
+
+/* Horizontal divider */
+.divider {
+  border: none;
+  height: 1px;
+  background-color: var(--border-default);
+  margin: var(--space-4) 0;
+}
+
+/* Variants */
+.divider--subtle {
+  background-color: var(--border-subtle);
+}
+
+.divider--strong {
+  background-color: var(--border-strong);
+}
+
+/* Thickness */
+.divider--thin {
+  height: 1px;
+}
+
+.divider--medium {
+  height: 2px;
+}
+
+.divider--thick {
+  height: 3px;
+}
+
+/* Spacing */
+.divider--xs {
+  margin: var(--space-1) 0;
+}
+
+.divider--sm {
+  margin: var(--space-2) 0;
+}
+
+.divider--md {
+  margin: var(--space-4) 0;
+}
+
+.divider--lg {
+  margin: var(--space-6) 0;
+}
+
+.divider--xl {
+  margin: var(--space-8) 0;
+}
+
+.divider--none {
+  margin: 0;
+}
+
+/* Styles */
+.divider--dashed {
+  background: none;
+  border-top: 1px dashed var(--border-default);
+}
+
+.divider--dotted {
+  background: none;
+  border-top: 1px dotted var(--border-default);
+}
+
+/* Vertical divider */
+.divider--vertical {
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  min-height: 20px;
+  background-color: var(--border-default);
+  margin: 0 var(--space-4);
+  vertical-align: middle;
+}
+
+.divider--vertical.divider--thin {
+  width: 1px;
+}
+
+.divider--vertical.divider--medium {
+  width: 2px;
+}
+
+.divider--vertical.divider--thick {
+  width: 3px;
+}
+
+.divider--vertical.divider--sm {
+  margin: 0 var(--space-2);
+}
+
+.divider--vertical.divider--lg {
+  margin: 0 var(--space-6);
+}
+
+/* With text */
+.divider--with-text {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  background: none;
+  height: auto;
+}
+
+.divider--with-text::before,
+.divider--with-text::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--border-default);
+}
+
+.divider--with-text span {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+/* Text alignment */
+.divider--text-left::before {
+  flex: 0 0 20px;
+}
+
+.divider--text-right::after {
+  flex: 0 0 20px;
+}
+
+/* Colored dividers */
+.divider--primary {
+  background-color: var(--color-primary-500);
+}
+
+.divider--success {
+  background-color: var(--color-success-500);
+}
+
+.divider--warning {
+  background-color: var(--color-warning-500);
+}
+
+.divider--danger {
+  background-color: var(--color-danger-500);
+}
+
+/* Gradient divider */
+.divider--gradient {
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--border-default) 20%,
+    var(--border-default) 80%,
+    transparent
+  );
+}
+
+.divider--gradient-primary {
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-primary-500) 20%,
+    var(--color-primary-500) 80%,
+    transparent
+  );
+}
+
+/* Section divider (decorative) */
+.divider--section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  height: auto;
+  background: none;
+  margin: var(--space-8) 0;
+}
+
+.divider--section::before,
+.divider--section::after {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: var(--border-default);
+}
+
+.divider--section span {
+  color: var(--text-tertiary);
+  font-size: var(--font-size-lg);
+}
+
+/* Inset divider (for lists) */
+.divider--inset {
+  margin-left: var(--space-10);
+}
+
+.divider--inset-right {
+  margin-right: var(--space-10);
+}
+
+.divider--inset-both {
+  margin-left: var(--space-10);
+  margin-right: var(--space-10);
+}

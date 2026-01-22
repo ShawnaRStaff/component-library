@@ -1,0 +1,25 @@
+<!-- Modal: Confirmation Dialog -->
+<div class="demo-showcase">
+  <button class="btn btn--danger" data-modal-trigger="modal-confirm-variant">Delete Item</button>
+
+  <div class="modal modal--sm modal--centered" id="modal-confirm-variant" aria-hidden="true">
+    <div class="modal__backdrop"></div>
+    <div class="modal__container">
+      <div class="modal__content">
+        <div class="modal__body" style="padding-top: var(--space-8);">
+          <div class="modal__icon modal__icon--danger">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+            </svg>
+          </div>
+          <h3 style="margin-bottom: var(--space-2); color: var(--text-primary);">Delete this item?</h3>
+          <p>This action cannot be undone. This will permanently delete the item from your account.</p>
+        </div>
+        <footer class="modal__footer">
+          <button class="btn btn--secondary" data-modal-close>Cancel</button>
+          <button class="btn btn--danger">Delete</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+</div>

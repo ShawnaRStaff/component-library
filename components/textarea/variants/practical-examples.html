@@ -1,0 +1,46 @@
+<!-- Textarea: Practical Examples -->
+<div class="demo-showcase">
+  <div style="max-width: 500px; display: flex; flex-direction: column; gap: 24px;">
+    <!-- Comment Box -->
+    <div style="background: var(--bg-secondary); padding: 16px; border-radius: 8px;">
+      <h4 style="margin: 0 0 12px; font-size: 14px;">Leave a Comment</h4>
+      <div class="textarea-wrapper">
+        <textarea class="textarea textarea--auto-grow" placeholder="Write your comment..." style="min-height: 80px;" maxlength="500"></textarea>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span class="textarea-wrapper__counter">0/500</span>
+          <button class="btn btn--primary btn--sm" style="margin-top: 8px;">Post Comment</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Support Ticket -->
+    <div style="background: var(--bg-secondary); padding: 16px; border-radius: 8px;">
+      <h4 style="margin: 0 0 12px; font-size: 14px;">Describe your issue</h4>
+      <textarea class="textarea" placeholder="Please provide as much detail as possible about the issue you're experiencing..." rows="5"></textarea>
+      <div style="display: flex; gap: 8px; margin-top: 12px;">
+        <div class="file-upload file-upload--compact" style="display: inline-flex;">
+          <input type="file" class="file-upload__input">
+          <div class="file-upload__content" style="gap: 4px;">
+            <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z"/>
+            </svg>
+            <span style="font-size: 13px;">Attach</span>
+          </div>
+        </div>
+        <div style="flex: 1;"></div>
+        <button class="btn btn--primary btn--sm">Submit Ticket</button>
+      </div>
+    </div>
+
+    <!-- Notes -->
+    <div style="background: var(--color-warning-50); padding: 16px; border-radius: 8px; border: 1px solid var(--color-warning-200);">
+      <h4 style="margin: 0 0 8px; font-size: 14px; display: flex; align-items: center; gap: 6px;">
+        <svg width="16" height="16" viewBox="0 0 20 20" fill="var(--color-warning-600)">
+          <path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"/>
+        </svg>
+        Internal Notes
+      </h4>
+      <textarea class="textarea textarea--bordered" placeholder="Add internal notes (only visible to team members)..." rows="3" style="border-color: var(--color-warning-300); background: white;"></textarea>
+    </div>
+  </div>
+</div>

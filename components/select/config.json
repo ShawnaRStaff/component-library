@@ -1,0 +1,19 @@
+{
+  "name": "select",
+  "label": "Select",
+  "category": "molecules",
+  "description": "Dropdown select menus with search support",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "custom", "label": "Custom Select", "file": "variants/custom.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "states", "label": "States", "file": "variants/states.html" },
+    { "id": "with-icons", "label": "With Icons", "file": "variants/with-icons.html" },
+    { "id": "with-checkmark", "label": "With Checkmark", "file": "variants/with-checkmark.html" },
+    { "id": "with-groups", "label": "With Groups", "file": "variants/with-groups.html" },
+    { "id": "action-dropdown", "label": "Action Dropdown", "file": "variants/action-dropdown.html" },
+    { "id": "alignment", "label": "Alignment", "file": "variants/alignment.html" },
+    { "id": "disabled-items", "label": "Disabled Items", "file": "variants/disabled-items.html" },
+    { "id": "native", "label": "Native Select", "file": "variants/native.html" }
+  ]
+}

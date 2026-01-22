@@ -1,0 +1,282 @@
+/**
+ * Tabs Component
+ *
+ * Usage:
+ * <div class="tabs">
+ *   <div class="tabs__list" role="tablist">
+ *     <button class="tabs__tab is-active" role="tab">Tab 1</button>
+ *     <button class="tabs__tab" role="tab">Tab 2</button>
+ *   </div>
+ *   <div class="tabs__panels">
+ *     <div class="tabs__panel is-active" role="tabpanel">Content 1</div>
+ *     <div class="tabs__panel" role="tabpanel">Content 2</div>
+ *   </div>
+ * </div>
+ */
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tab list */
+.tabs__list {
+  display: flex;
+  gap: var(--space-1);
+  border-bottom: var(--border-width-thin) solid var(--border-default);
+}
+
+/* Individual tab */
+.tabs__tab {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
+  white-space: nowrap;
+
+  background: none;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+
+  transition: color var(--duration-fast) var(--easing-default);
+}
+
+.tabs__tab:hover {
+  color: var(--text-primary);
+}
+
+.tabs__tab:focus {
+  outline: none;
+}
+
+.tabs__tab:focus-visible {
+  box-shadow: inset 0 0 0 2px var(--color-primary-500);
+}
+
+/* Active tab */
+.tabs__tab.is-active {
+  color: var(--color-primary-500);
+}
+
+.tabs__tab.is-active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--color-primary-500);
+}
+
+/* Disabled tab */
+.tabs__tab:disabled {
+  color: var(--text-disabled);
+  cursor: not-allowed;
+}
+
+/* Tab icon */
+.tabs__tab-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Tab badge/count */
+.tabs__tab-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 var(--space-1);
+
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+
+  background-color: var(--color-neutral-200);
+  border-radius: var(--radius-full);
+}
+
+.tabs__tab.is-active .tabs__tab-badge {
+  background-color: var(--color-primary-100);
+  color: var(--color-primary-700);
+}
+
+/* Tab panels container */
+.tabs__panels {
+  flex: 1;
+}
+
+/* Individual panel */
+.tabs__panel {
+  display: none;
+  padding: var(--space-4) 0;
+}
+
+.tabs__panel.is-active {
+  display: block;
+}
+
+/* ===================
+   Variants
+   =================== */
+
+/* Boxed tabs */
+.tabs--boxed .tabs__list {
+  background-color: var(--bg-secondary);
+  border: none;
+  border-radius: var(--radius-md);
+  padding: var(--space-1);
+}
+
+.tabs--boxed .tabs__tab {
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-4);
+}
+
+.tabs--boxed .tabs__tab.is-active {
+  background-color: var(--bg-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.tabs--boxed .tabs__tab.is-active::after {
+  display: none;
+}
+
+/* Pill tabs */
+.tabs--pill .tabs__list {
+  border: none;
+  gap: var(--space-2);
+}
+
+.tabs--pill .tabs__tab {
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+}
+
+.tabs--pill .tabs__tab.is-active {
+  background-color: var(--color-primary-500);
+  color: var(--color-neutral-0);
+}
+
+.tabs--pill .tabs__tab.is-active::after {
+  display: none;
+}
+
+/* Vertical tabs */
+.tabs--vertical {
+  flex-direction: row;
+}
+
+.tabs--vertical .tabs__list {
+  flex-direction: column;
+  border-bottom: none;
+  border-right: var(--border-width-thin) solid var(--border-default);
+  min-width: 180px;
+}
+
+.tabs--vertical .tabs__tab {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.tabs--vertical .tabs__tab.is-active::after {
+  top: 0;
+  bottom: 0;
+  left: auto;
+  right: -1px;
+  width: 2px;
+  height: auto;
+}
+
+.tabs--vertical .tabs__panels {
+  padding-left: var(--space-6);
+}
+
+/* Full width tabs */
+.tabs--full .tabs__list {
+  width: 100%;
+}
+
+.tabs--full .tabs__tab {
+  flex: 1;
+  justify-content: center;
+}
+
+/* Bordered tabs */
+.tabs--bordered .tabs__list {
+  border-bottom: none;
+}
+
+.tabs--bordered .tabs__tab {
+  border: var(--border-width-thin) solid transparent;
+  border-bottom: var(--border-width-thin) solid var(--border-default);
+  margin-bottom: -1px;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.tabs--bordered .tabs__tab.is-active {
+  border-color: var(--border-default);
+  border-bottom-color: var(--bg-primary);
+  background-color: var(--bg-primary);
+}
+
+.tabs--bordered .tabs__tab.is-active::after {
+  display: none;
+}
+
+.tabs--bordered .tabs__panels {
+  border: var(--border-width-thin) solid var(--border-default);
+  border-top: none;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  padding: var(--space-4);
+}
+
+/* Sizes */
+.tabs--sm .tabs__tab {
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--font-size-xs);
+}
+
+.tabs--lg .tabs__tab {
+  padding: var(--space-4) var(--space-5);
+  font-size: var(--font-size-md);
+}
+
+/* Centered tabs */
+.tabs--centered .tabs__list {
+  justify-content: center;
+}
+
+/* Right-aligned tabs */
+.tabs--right .tabs__list {
+  justify-content: flex-end;
+}
+
+/* With dividers between tabs */
+.tabs--divided .tabs__tab + .tabs__tab::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 25%;
+  height: 50%;
+  width: 1px;
+  background-color: var(--border-default);
+}
+
+/* Scrollable tabs */
+.tabs--scrollable .tabs__list {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.tabs--scrollable .tabs__list::-webkit-scrollbar {
+  display: none;
+}

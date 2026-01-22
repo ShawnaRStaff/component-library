@@ -1,0 +1,293 @@
+<!-- Aspect Ratio Component Demo -->
+
+<section class="demo-section">
+  <h3>Common Aspect Ratios</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px;">
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">1:1 (Square)</p>
+      <div class="aspect-ratio aspect-ratio--1-1 aspect-ratio--rounded">
+        <img src="https://picsum.photos/400/400?random=1" alt="Square image">
+      </div>
+    </div>
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">4:3 (Classic)</p>
+      <div class="aspect-ratio aspect-ratio--4-3 aspect-ratio--rounded">
+        <img src="https://picsum.photos/400/300?random=2" alt="4:3 image">
+      </div>
+    </div>
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">16:9 (Widescreen)</p>
+      <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+        <img src="https://picsum.photos/400/225?random=3" alt="16:9 image">
+      </div>
+    </div>
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">21:9 (Cinematic)</p>
+      <div class="aspect-ratio aspect-ratio--21-9 aspect-ratio--rounded">
+        <img src="https://picsum.photos/400/171?random=4" alt="21:9 image">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Portrait Ratios</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 200px)); gap: 24px;">
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">4:5 (Instagram)</p>
+      <div class="aspect-ratio aspect-ratio--4-5 aspect-ratio--rounded">
+        <img src="https://picsum.photos/400/500?random=5" alt="4:5 image">
+      </div>
+    </div>
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">2:3 (Portrait)</p>
+      <div class="aspect-ratio aspect-ratio--2-3 aspect-ratio--rounded">
+        <img src="https://picsum.photos/400/600?random=6" alt="2:3 image">
+      </div>
+    </div>
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">9:16 (Stories)</p>
+      <div class="aspect-ratio aspect-ratio--9-16 aspect-ratio--rounded">
+        <img src="https://picsum.photos/225/400?random=7" alt="9:16 image">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Object Fit Options</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px;">
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">Cover (default)</p>
+      <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded aspect-ratio--bg-secondary">
+        <img src="https://picsum.photos/600/300?random=8" alt="Cover fit">
+      </div>
+    </div>
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">Contain</p>
+      <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--contain aspect-ratio--rounded aspect-ratio--bg-secondary">
+        <img src="https://picsum.photos/300/300?random=9" alt="Contain fit">
+      </div>
+    </div>
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">Scale Down</p>
+      <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--scale-down aspect-ratio--rounded aspect-ratio--bg-secondary">
+        <img src="https://picsum.photos/150/100?random=10" alt="Scale down fit">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Object Position</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; max-width: 800px;">
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">Top</p>
+      <div class="aspect-ratio aspect-ratio--1-1 aspect-ratio--top aspect-ratio--rounded">
+        <img src="https://picsum.photos/400/600?random=11" alt="Top position">
+      </div>
+    </div>
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">Center (default)</p>
+      <div class="aspect-ratio aspect-ratio--1-1 aspect-ratio--rounded">
+        <img src="https://picsum.photos/400/600?random=11" alt="Center position">
+      </div>
+    </div>
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">Bottom</p>
+      <div class="aspect-ratio aspect-ratio--1-1 aspect-ratio--bottom aspect-ratio--rounded">
+        <img src="https://picsum.photos/400/600?random=11" alt="Bottom position">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Border Radius Options</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 24px; max-width: 800px;">
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">Rounded (md)</p>
+      <div class="aspect-ratio aspect-ratio--1-1 aspect-ratio--rounded">
+        <img src="https://picsum.photos/200/200?random=12" alt="">
+      </div>
+    </div>
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">Rounded (lg)</p>
+      <div class="aspect-ratio aspect-ratio--1-1 aspect-ratio--rounded-lg">
+        <img src="https://picsum.photos/200/200?random=13" alt="">
+      </div>
+    </div>
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">Rounded (xl)</p>
+      <div class="aspect-ratio aspect-ratio--1-1 aspect-ratio--rounded-xl">
+        <img src="https://picsum.photos/200/200?random=14" alt="">
+      </div>
+    </div>
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">Circle</p>
+      <div class="aspect-ratio aspect-ratio--1-1 aspect-ratio--circle">
+        <img src="https://picsum.photos/200/200?random=15" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Overlays</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;">
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">Hover Overlay</p>
+      <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded" style="cursor: pointer;">
+        <img src="https://picsum.photos/400/225?random=16" alt="">
+        <div class="aspect-ratio__overlay">
+          <span style="font-weight: 500;">View Details</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">Gradient Bottom</p>
+      <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+        <img src="https://picsum.photos/400/225?random=17" alt="">
+        <div class="aspect-ratio__overlay aspect-ratio__overlay--gradient-bottom">
+          <div>
+            <div style="font-weight: 600; font-size: 16px;">Mountain Landscape</div>
+            <div style="font-size: 14px; opacity: 0.8;">Photo by John Doe</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">Gradient Top</p>
+      <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+        <img src="https://picsum.photos/400/225?random=18" alt="">
+        <div class="aspect-ratio__overlay aspect-ratio__overlay--gradient-top">
+          <span class="badge badge--sm" style="background: white; color: black;">Featured</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Video with Play Button</h3>
+  <div style="max-width: 500px;">
+    <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+      <img src="https://picsum.photos/800/450?random=19" alt="Video thumbnail">
+      <div class="aspect-ratio__play">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Video Embed</h3>
+  <div style="max-width: 640px;">
+    <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+      <iframe
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title="Video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Loading & Placeholder States</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px;">
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">Placeholder</p>
+      <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded aspect-ratio--placeholder"></div>
+    </div>
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">Loading (Shimmer)</p>
+      <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded aspect-ratio--loading"></div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Grid Layouts</h3>
+  <div style="max-width: 800px;">
+    <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">2 Column Grid</p>
+    <div class="aspect-ratio-grid aspect-ratio-grid--2" style="margin-bottom: 24px;">
+      <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+        <img src="https://picsum.photos/400/225?random=20" alt="">
+      </div>
+      <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+        <img src="https://picsum.photos/400/225?random=21" alt="">
+      </div>
+    </div>
+
+    <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">3 Column Grid</p>
+    <div class="aspect-ratio-grid aspect-ratio-grid--3" style="margin-bottom: 24px;">
+      <div class="aspect-ratio aspect-ratio--1-1 aspect-ratio--rounded">
+        <img src="https://picsum.photos/300/300?random=22" alt="">
+      </div>
+      <div class="aspect-ratio aspect-ratio--1-1 aspect-ratio--rounded">
+        <img src="https://picsum.photos/300/300?random=23" alt="">
+      </div>
+      <div class="aspect-ratio aspect-ratio--1-1 aspect-ratio--rounded">
+        <img src="https://picsum.photos/300/300?random=24" alt="">
+      </div>
+    </div>
+
+    <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">Featured Layout</p>
+    <div class="aspect-ratio-grid aspect-ratio-grid--featured" style="height: 300px;">
+      <div class="aspect-ratio aspect-ratio--rounded" style="height: 100%;">
+        <img src="https://picsum.photos/600/400?random=25" alt="">
+        <div class="aspect-ratio__overlay aspect-ratio__overlay--gradient-bottom">
+          <div style="font-weight: 600;">Featured Image</div>
+        </div>
+      </div>
+      <div class="aspect-ratio aspect-ratio--rounded">
+        <img src="https://picsum.photos/300/200?random=26" alt="">
+      </div>
+      <div class="aspect-ratio aspect-ratio--rounded">
+        <img src="https://picsum.photos/300/200?random=27" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Map Embed</h3>
+  <div style="max-width: 600px;">
+    <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30596073366!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1640000000000!5m2!1sen!2s"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Card with Aspect Ratio Image</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 900px;">
+    <div style="background: var(--bg-primary); border: 1px solid var(--border-default); border-radius: var(--radius-lg); overflow: hidden;">
+      <div class="aspect-ratio aspect-ratio--16-9">
+        <img src="https://picsum.photos/400/225?random=28" alt="">
+      </div>
+      <div style="padding: 16px;">
+        <h4 style="margin: 0 0 8px; font-size: 16px;">Card Title</h4>
+        <p style="margin: 0; font-size: 14px; color: var(--text-secondary);">This card uses a 16:9 aspect ratio for its image.</p>
+      </div>
+    </div>
+    <div style="background: var(--bg-primary); border: 1px solid var(--border-default); border-radius: var(--radius-lg); overflow: hidden;">
+      <div class="aspect-ratio aspect-ratio--4-3">
+        <img src="https://picsum.photos/400/300?random=29" alt="">
+      </div>
+      <div style="padding: 16px;">
+        <h4 style="margin: 0 0 8px; font-size: 16px;">Another Card</h4>
+        <p style="margin: 0; font-size: 14px; color: var(--text-secondary);">This card uses a 4:3 aspect ratio for its image.</p>
+      </div>
+    </div>
+  </div>
+</section>

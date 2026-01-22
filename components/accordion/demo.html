@@ -1,0 +1,290 @@
+<!-- Accordion Component Demo -->
+
+<section class="demo-section">
+  <h3>Default Accordion</h3>
+  <div class="accordion" style="max-width: 600px;">
+    <div class="accordion__item is-open">
+      <button class="accordion__header">
+        What is this component library?
+        <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M5 7l5 5 5-5"/>
+        </svg>
+      </button>
+      <div class="accordion__content">
+        <div class="accordion__body">
+          This is a vanilla HTML, CSS, and JavaScript component library designed for maximum portability. Each component can be easily converted to any framework.
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__header">
+        How do I use these components?
+        <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M5 7l5 5 5-5"/>
+        </svg>
+      </button>
+      <div class="accordion__content">
+        <div class="accordion__body">
+          Simply copy the HTML structure and include the corresponding CSS file. JavaScript is optional and only needed for interactive features.
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__header">
+        Can I customize the styles?
+        <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M5 7l5 5 5-5"/>
+        </svg>
+      </button>
+      <div class="accordion__content">
+        <div class="accordion__body">
+          Yes! All components use CSS custom properties (tokens) that you can override. Check the tokens.css file to see all available variables.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Allow Multiple Open</h3>
+  <div class="accordion" data-allow-multiple style="max-width: 600px;">
+    <div class="accordion__item is-open">
+      <button class="accordion__header">
+        First Item
+        <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M5 7l5 5 5-5"/>
+        </svg>
+      </button>
+      <div class="accordion__content">
+        <div class="accordion__body">
+          This accordion allows multiple items to be open at the same time.
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item is-open">
+      <button class="accordion__header">
+        Second Item
+        <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M5 7l5 5 5-5"/>
+        </svg>
+      </button>
+      <div class="accordion__content">
+        <div class="accordion__body">
+          Both this item and the first item can be open simultaneously.
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__header">
+        Third Item
+        <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M5 7l5 5 5-5"/>
+        </svg>
+      </button>
+      <div class="accordion__content">
+        <div class="accordion__body">
+          Click to open this item too.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Flush Style</h3>
+  <div class="accordion accordion--flush" style="max-width: 600px;">
+    <div class="accordion__item">
+      <button class="accordion__header">
+        Getting Started
+        <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M5 7l5 5 5-5"/>
+        </svg>
+      </button>
+      <div class="accordion__content">
+        <div class="accordion__body">
+          Learn the basics of setting up your project with our quick start guide.
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__header">
+        Installation
+        <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M5 7l5 5 5-5"/>
+        </svg>
+      </button>
+      <div class="accordion__content">
+        <div class="accordion__body">
+          Step by step instructions for installing the library in your project.
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__header">
+        Configuration
+        <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M5 7l5 5 5-5"/>
+        </svg>
+      </button>
+      <div class="accordion__content">
+        <div class="accordion__body">
+          Customize the library to match your project's needs.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Separated Items</h3>
+  <div class="accordion accordion--separated" style="max-width: 600px;">
+    <div class="accordion__item">
+      <button class="accordion__header">
+        Account Settings
+        <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M5 7l5 5 5-5"/>
+        </svg>
+      </button>
+      <div class="accordion__content">
+        <div class="accordion__body">
+          Manage your account details, email preferences, and profile information.
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__header">
+        Privacy Settings
+        <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M5 7l5 5 5-5"/>
+        </svg>
+      </button>
+      <div class="accordion__content">
+        <div class="accordion__body">
+          Control your privacy options and data sharing preferences.
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__header">
+        Notification Settings
+        <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M5 7l5 5 5-5"/>
+        </svg>
+      </button>
+      <div class="accordion__content">
+        <div class="accordion__body">
+          Choose how and when you want to receive notifications.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Elevated Style</h3>
+  <div class="accordion accordion--elevated" style="max-width: 600px;">
+    <div class="accordion__item is-open">
+      <button class="accordion__header">
+        Premium Plan
+        <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M5 7l5 5 5-5"/>
+        </svg>
+      </button>
+      <div class="accordion__content">
+        <div class="accordion__body">
+          Access all features with our premium plan. Includes priority support and advanced analytics.
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__header">
+        Basic Plan
+        <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M5 7l5 5 5-5"/>
+        </svg>
+      </button>
+      <div class="accordion__content">
+        <div class="accordion__body">
+          Perfect for getting started. Includes core features and email support.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>FAQ Style</h3>
+  <div class="accordion accordion--faq" style="max-width: 600px;">
+    <div class="accordion__item">
+      <button class="accordion__header">
+        How do I reset my password?
+        <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M5 7l5 5 5-5"/>
+        </svg>
+      </button>
+      <div class="accordion__content">
+        <div class="accordion__body">
+          Click on "Forgot Password" on the login page. Enter your email address and we'll send you a link to reset your password.
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__header">
+        Can I cancel my subscription?
+        <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M5 7l5 5 5-5"/>
+        </svg>
+      </button>
+      <div class="accordion__content">
+        <div class="accordion__body">
+          Yes, you can cancel your subscription at any time from your account settings. Your access will continue until the end of your billing period.
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__header">
+        Do you offer refunds?
+        <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M5 7l5 5 5-5"/>
+        </svg>
+      </button>
+      <div class="accordion__content">
+        <div class="accordion__body">
+          We offer a 30-day money-back guarantee for all new subscriptions. Contact our support team for refund requests.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Filled Header</h3>
+  <div class="accordion accordion--filled" style="max-width: 600px;">
+    <div class="accordion__item is-open">
+      <button class="accordion__header">
+        Active Section
+        <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M5 7l5 5 5-5"/>
+        </svg>
+      </button>
+      <div class="accordion__content">
+        <div class="accordion__body">
+          This section is currently expanded and has a highlighted header.
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__header">
+        Inactive Section
+        <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M5 7l5 5 5-5"/>
+        </svg>
+      </button>
+      <div class="accordion__content">
+        <div class="accordion__body">
+          Click to expand this section.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

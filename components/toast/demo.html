@@ -1,0 +1,305 @@
+<!-- Toast/Snackbar Component Demo -->
+
+<section class="demo-section">
+  <h3>Basic Toasts</h3>
+  <div style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
+    <div class="toast" style="position: relative; animation: none;">
+      <div class="toast__content">
+        <p class="toast__message">This is a basic toast notification.</p>
+      </div>
+      <button class="toast__close" aria-label="Close">
+        <svg viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Toast Variants</h3>
+  <div style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
+    <div class="toast toast--success" style="position: relative; animation: none;">
+      <svg class="toast__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+      </svg>
+      <div class="toast__content">
+        <p class="toast__message">Changes saved successfully!</p>
+      </div>
+      <button class="toast__close" aria-label="Close">
+        <svg viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="toast toast--error" style="position: relative; animation: none;">
+      <svg class="toast__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"/>
+      </svg>
+      <div class="toast__content">
+        <p class="toast__message">Failed to save changes. Please try again.</p>
+      </div>
+      <button class="toast__close" aria-label="Close">
+        <svg viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="toast toast--warning" style="position: relative; animation: none;">
+      <svg class="toast__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"/>
+      </svg>
+      <div class="toast__content">
+        <p class="toast__message">Your session will expire in 5 minutes.</p>
+      </div>
+      <button class="toast__close" aria-label="Close">
+        <svg viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="toast toast--info" style="position: relative; animation: none;">
+      <svg class="toast__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"/>
+      </svg>
+      <div class="toast__content">
+        <p class="toast__message">New features are available. Check them out!</p>
+      </div>
+      <button class="toast__close" aria-label="Close">
+        <svg viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Title</h3>
+  <div style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
+    <div class="toast toast--success" style="position: relative; animation: none;">
+      <svg class="toast__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+      </svg>
+      <div class="toast__content">
+        <p class="toast__title">Payment Successful</p>
+        <p class="toast__message">Your payment of $29.99 has been processed.</p>
+      </div>
+      <button class="toast__close" aria-label="Close">
+        <svg viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="toast toast--error" style="position: relative; animation: none;">
+      <svg class="toast__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"/>
+      </svg>
+      <div class="toast__content">
+        <p class="toast__title">Upload Failed</p>
+        <p class="toast__message">The file "document.pdf" could not be uploaded. File size exceeds 10MB limit.</p>
+      </div>
+      <button class="toast__close" aria-label="Close">
+        <svg viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Actions</h3>
+  <div style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
+    <div class="toast" style="position: relative; animation: none;">
+      <svg class="toast__icon" viewBox="0 0 20 20" fill="currentColor" style="color: var(--color-primary-500);">
+        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+      </svg>
+      <div class="toast__content">
+        <p class="toast__title">New Message</p>
+        <p class="toast__message">You have a new message from Sarah.</p>
+        <div class="toast__actions">
+          <button class="toast__action">View</button>
+          <button class="toast__action">Mark as Read</button>
+        </div>
+      </div>
+      <button class="toast__close" aria-label="Close">
+        <svg viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="toast toast--warning" style="position: relative; animation: none;">
+      <svg class="toast__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"/>
+      </svg>
+      <div class="toast__content">
+        <p class="toast__message">Unsaved changes will be lost.</p>
+        <div class="toast__actions">
+          <button class="toast__action">Save Now</button>
+          <button class="toast__action" style="color: var(--text-secondary);">Discard</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Dark Toast</h3>
+  <div style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
+    <div class="toast toast--dark" style="position: relative; animation: none;">
+      <svg class="toast__icon" viewBox="0 0 20 20" fill="currentColor" style="color: var(--color-success-400);">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+      </svg>
+      <div class="toast__content">
+        <p class="toast__message">File uploaded successfully</p>
+      </div>
+      <button class="toast__close" aria-label="Close">
+        <svg viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Compact (Snackbar)</h3>
+  <div style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
+    <div class="toast toast--compact toast--dark" style="position: relative; animation: none;">
+      <div class="toast__content">
+        <p class="toast__message">Item deleted</p>
+        <div class="toast__actions">
+          <button class="toast__action" style="color: var(--color-primary-400);">Undo</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast toast--compact" style="position: relative; animation: none;">
+      <svg class="toast__icon" viewBox="0 0 20 20" fill="currentColor" style="color: var(--color-success-500); width: 16px; height: 16px;">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+      </svg>
+      <div class="toast__content">
+        <p class="toast__message">Copied to clipboard</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Loading State</h3>
+  <div style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
+    <div class="toast toast--loading" style="position: relative; animation: none;">
+      <svg class="toast__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--color-primary-500);">
+        <circle cx="12" cy="12" r="10" stroke-opacity="0.25"/>
+        <path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"/>
+      </svg>
+      <div class="toast__content">
+        <p class="toast__message">Uploading file...</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>With Progress Bar</h3>
+  <div style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
+    <div class="toast toast--info" style="position: relative; animation: none; overflow: hidden;">
+      <svg class="toast__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"/>
+      </svg>
+      <div class="toast__content">
+        <p class="toast__message">This toast will auto-dismiss in 5 seconds.</p>
+      </div>
+      <button class="toast__close" aria-label="Close">
+        <svg viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+      <div class="toast__progress" style="animation: none; transform: scaleX(0.6);"></div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Positions Preview</h3>
+  <div style="position: relative; height: 300px; background: var(--bg-secondary); border-radius: var(--radius-lg); overflow: hidden;">
+    <!-- Top Left -->
+    <div style="position: absolute; top: 12px; left: 12px;">
+      <div class="toast toast--compact toast--dark" style="animation: none; min-width: auto; font-size: 11px; padding: 6px 10px;">
+        <span>Top Left</span>
+      </div>
+    </div>
+
+    <!-- Top Center -->
+    <div style="position: absolute; top: 12px; left: 50%; transform: translateX(-50%);">
+      <div class="toast toast--compact toast--dark" style="animation: none; min-width: auto; font-size: 11px; padding: 6px 10px;">
+        <span>Top Center</span>
+      </div>
+    </div>
+
+    <!-- Top Right -->
+    <div style="position: absolute; top: 12px; right: 12px;">
+      <div class="toast toast--compact toast--success" style="animation: none; min-width: auto; font-size: 11px; padding: 6px 10px;">
+        <span>Top Right (default)</span>
+      </div>
+    </div>
+
+    <!-- Bottom Left -->
+    <div style="position: absolute; bottom: 12px; left: 12px;">
+      <div class="toast toast--compact toast--dark" style="animation: none; min-width: auto; font-size: 11px; padding: 6px 10px;">
+        <span>Bottom Left</span>
+      </div>
+    </div>
+
+    <!-- Bottom Center -->
+    <div style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%);">
+      <div class="toast toast--compact toast--dark" style="animation: none; min-width: auto; font-size: 11px; padding: 6px 10px;">
+        <span>Bottom Center</span>
+      </div>
+    </div>
+
+    <!-- Bottom Right -->
+    <div style="position: absolute; bottom: 12px; right: 12px;">
+      <div class="toast toast--compact toast--dark" style="animation: none; min-width: auto; font-size: 11px; padding: 6px 10px;">
+        <span>Bottom Right</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo-section">
+  <h3>Stacked Toasts</h3>
+  <div style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
+    <div class="toast toast--success" style="position: relative; animation: none;">
+      <svg class="toast__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+      </svg>
+      <div class="toast__content">
+        <p class="toast__message">First notification</p>
+      </div>
+    </div>
+    <div class="toast toast--info" style="position: relative; animation: none;">
+      <svg class="toast__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"/>
+      </svg>
+      <div class="toast__content">
+        <p class="toast__message">Second notification</p>
+      </div>
+    </div>
+    <div class="toast toast--warning" style="position: relative; animation: none;">
+      <svg class="toast__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"/>
+      </svg>
+      <div class="toast__content">
+        <p class="toast__message">Third notification</p>
+      </div>
+    </div>
+  </div>
+</section>

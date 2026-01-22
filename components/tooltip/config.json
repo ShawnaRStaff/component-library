@@ -1,0 +1,20 @@
+{
+  "name": "tooltip",
+  "label": "Tooltip",
+  "category": "atoms",
+  "description": "Informational tooltips that appear on hover",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic", "file": "variants/basic.html" },
+    { "id": "positions", "label": "Positions", "file": "variants/positions.html" },
+    { "id": "on-buttons", "label": "On Buttons", "file": "variants/on-buttons.html" },
+    { "id": "on-icon-buttons", "label": "On Icon Buttons", "file": "variants/on-icon-buttons.html" },
+    { "id": "light-theme", "label": "Light Theme", "file": "variants/light-theme.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "long-content", "label": "Long Content", "file": "variants/long-content.html" },
+    { "id": "with-delay", "label": "With Delay", "file": "variants/with-delay.html" },
+    { "id": "wrapper-based", "label": "Wrapper-based", "file": "variants/wrapper-based.html" },
+    { "id": "truncated-text", "label": "Truncated Text", "file": "variants/truncated-text.html" },
+    { "id": "keyboard-accessible", "label": "Keyboard Accessible", "file": "variants/keyboard-accessible.html" }
+  ]
+}
