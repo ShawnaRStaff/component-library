@@ -2,5 +2,19 @@
   "name": "divider",
   "label": "Divider",
   "category": "atoms",
-  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic", "file": "variants/basic.html" },
+    { "id": "variants", "label": "Variants", "file": "variants/variants.html" },
+    { "id": "thickness", "label": "Thickness", "file": "variants/thickness.html" },
+    { "id": "styles", "label": "Styles", "file": "variants/styles.html" },
+    { "id": "with-text", "label": "With Text", "file": "variants/with-text.html" },
+    { "id": "colored", "label": "Colored", "file": "variants/colored.html" },
+    { "id": "gradient", "label": "Gradient", "file": "variants/gradient.html" },
+    { "id": "vertical", "label": "Vertical", "file": "variants/vertical.html" },
+    { "id": "in-buttons", "label": "In Buttons", "file": "variants/in-buttons.html" },
+    { "id": "section", "label": "Section", "file": "variants/section.html" },
+    { "id": "inset", "label": "Inset", "file": "variants/inset.html" },
+    { "id": "spacing", "label": "Spacing", "file": "variants/spacing.html" }
+  ]
 }

@@ -4,6 +4,14 @@
   "category": "molecules",
   "description": "Data tables with sorting and selection",
   "variants": [
-    { "id": "default", "label": "Default", "file": "demo.html" }
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "striped-hover", "label": "Striped & Hover", "file": "variants/striped-hover.html" },
+    { "id": "bordered", "label": "Bordered", "file": "variants/bordered.html" },
+    { "id": "with-selection", "label": "With Selection", "file": "variants/with-selection.html" },
+    { "id": "sortable", "label": "Sortable Columns", "file": "variants/sortable.html" },
+    { "id": "with-actions", "label": "With Actions", "file": "variants/with-actions.html" },
+    { "id": "table-card", "label": "Table Card", "file": "variants/table-card.html" },
+    { "id": "row-states", "label": "Row States", "file": "variants/row-states.html" },
+    { "id": "compact", "label": "Compact", "file": "variants/compact.html" }
   ]
 }

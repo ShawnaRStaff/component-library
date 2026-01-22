@@ -1,0 +1,39 @@
+<!-- Bottom Sheet Variant -->
+<div class="demo-showcase">
+  <button class="btn btn--secondary" data-drawer-trigger="drawer-bottom">Open Bottom Sheet</button>
+
+  <div class="drawer-overlay" data-drawer-overlay="drawer-bottom"></div>
+  <div class="drawer drawer--bottom" id="drawer-bottom">
+    <div class="drawer__handle"></div>
+    <div class="drawer__header">
+      <h3 class="drawer__title">Share</h3>
+      <button class="drawer__close" data-drawer-close aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="drawer__body">
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; text-align: center;">
+        <div>
+          <div style="width: 48px; height: 48px; margin: 0 auto 8px; background: #1DA1F2; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">T</div>
+          <span style="font-size: 12px;">Twitter</span>
+        </div>
+        <div>
+          <div style="width: 48px; height: 48px; margin: 0 auto 8px; background: #4267B2; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">F</div>
+          <span style="font-size: 12px;">Facebook</span>
+        </div>
+        <div>
+          <div style="width: 48px; height: 48px; margin: 0 auto 8px; background: #0A66C2; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">L</div>
+          <span style="font-size: 12px;">LinkedIn</span>
+        </div>
+        <div>
+          <div style="width: 48px; height: 48px; margin: 0 auto 8px; background: var(--color-neutral-200); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"/></svg>
+          </div>
+          <span style="font-size: 12px;">Copy Link</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

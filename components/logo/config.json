@@ -2,5 +2,19 @@
   "name": "logo",
   "label": "Logo",
   "category": "atoms",
-  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic", "file": "variants/basic.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "mark-shapes", "label": "Mark Shapes", "file": "variants/mark-shapes.html" },
+    { "id": "mark-colors", "label": "Mark Colors", "file": "variants/mark-colors.html" },
+    { "id": "gradient-marks", "label": "Gradient Marks", "file": "variants/gradient-marks.html" },
+    { "id": "with-icons", "label": "With Icons", "file": "variants/with-icons.html" },
+    { "id": "stacked", "label": "Stacked Layout", "file": "variants/stacked.html" },
+    { "id": "with-tagline", "label": "With Tagline", "file": "variants/with-tagline.html" },
+    { "id": "mark-only", "label": "Mark Only", "file": "variants/mark-only.html" },
+    { "id": "text-only", "label": "Text Only", "file": "variants/text-only.html" },
+    { "id": "real-world", "label": "Real-World Examples", "file": "variants/real-world.html" },
+    { "id": "dark-background", "label": "Dark Background", "file": "variants/dark-background.html" }
+  ]
 }

@@ -1,0 +1,35 @@
+<!-- Aspect Ratio: With Overlays -->
+<div class="demo-showcase">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;">
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">Hover Overlay</p>
+      <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded" style="cursor: pointer;">
+        <img src="https://picsum.photos/400/225?random=16" alt="">
+        <div class="aspect-ratio__overlay">
+          <span style="font-weight: 500;">View Details</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">Gradient Bottom</p>
+      <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+        <img src="https://picsum.photos/400/225?random=17" alt="">
+        <div class="aspect-ratio__overlay aspect-ratio__overlay--gradient-bottom">
+          <div>
+            <div style="font-weight: 600; font-size: 16px;">Mountain Landscape</div>
+            <div style="font-size: 14px; opacity: 0.8;">Photo by John Doe</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px;">Gradient Top</p>
+      <div class="aspect-ratio aspect-ratio--16-9 aspect-ratio--rounded">
+        <img src="https://picsum.photos/400/225?random=18" alt="">
+        <div class="aspect-ratio__overlay aspect-ratio__overlay--gradient-top">
+          <span class="badge badge--sm" style="background: white; color: black;">Featured</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

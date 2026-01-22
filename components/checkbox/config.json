@@ -4,6 +4,10 @@
   "category": "atoms",
   "description": "Selectable checkboxes with various states",
   "variants": [
-    { "id": "default", "label": "Default", "file": "demo.html" }
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "states", "label": "States", "file": "variants/states.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "error", "label": "Error", "file": "variants/error.html" },
+    { "id": "group", "label": "Group", "file": "variants/group.html" }
   ]
 }

@@ -4,6 +4,12 @@
   "category": "molecules",
   "description": "Collapsible content sections",
   "variants": [
-    { "id": "default", "label": "Default", "file": "demo.html" }
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "allow-multiple", "label": "Allow Multiple Open", "file": "variants/allow-multiple.html" },
+    { "id": "flush", "label": "Flush Style", "file": "variants/flush.html" },
+    { "id": "separated", "label": "Separated Items", "file": "variants/separated.html" },
+    { "id": "elevated", "label": "Elevated Style", "file": "variants/elevated.html" },
+    { "id": "faq", "label": "FAQ Style", "file": "variants/faq.html" },
+    { "id": "filled", "label": "Filled Header", "file": "variants/filled.html" }
   ]
 }

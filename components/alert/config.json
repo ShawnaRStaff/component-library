@@ -4,6 +4,13 @@
   "category": "molecules",
   "description": "Notification messages with different severity levels",
   "variants": [
-    { "id": "default", "label": "Default", "file": "demo.html" }
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "info", "label": "Info", "file": "variants/info.html" },
+    { "id": "success", "label": "Success", "file": "variants/success.html" },
+    { "id": "warning", "label": "Warning", "file": "variants/warning.html" },
+    { "id": "danger", "label": "Danger", "file": "variants/danger.html" },
+    { "id": "dismissible", "label": "Dismissible", "file": "variants/dismissible.html" },
+    { "id": "with-actions", "label": "With Actions", "file": "variants/with-actions.html" },
+    { "id": "solid", "label": "Solid", "file": "variants/solid.html" }
   ]
 }

@@ -2,5 +2,16 @@
   "name": "menu",
   "label": "Menu",
   "category": "molecules",
-  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic", "file": "variants/basic.html" },
+    { "id": "with-icons", "label": "With Icons", "file": "variants/with-icons.html" },
+    { "id": "with-shortcuts", "label": "With Shortcuts", "file": "variants/with-shortcuts.html" },
+    { "id": "with-headers", "label": "With Headers", "file": "variants/with-headers.html" },
+    { "id": "with-checkboxes", "label": "With Checkboxes", "file": "variants/with-checkboxes.html" },
+    { "id": "icon-trigger", "label": "Icon Trigger", "file": "variants/icon-trigger.html" },
+    { "id": "right-aligned", "label": "Right Aligned", "file": "variants/right-aligned.html" },
+    { "id": "disabled-items", "label": "Disabled Items", "file": "variants/disabled-items.html" },
+    { "id": "user-menu", "label": "User Menu", "file": "variants/user-menu.html" }
+  ]
 }

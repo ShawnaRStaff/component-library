@@ -2,5 +2,19 @@
   "name": "aspect-ratio",
   "label": "Aspect Ratio",
   "category": "layout",
-  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "common-ratios", "label": "Common Ratios", "file": "variants/common-ratios.html" },
+    { "id": "portrait-ratios", "label": "Portrait Ratios", "file": "variants/portrait-ratios.html" },
+    { "id": "object-fit", "label": "Object Fit", "file": "variants/object-fit.html" },
+    { "id": "object-position", "label": "Object Position", "file": "variants/object-position.html" },
+    { "id": "border-radius", "label": "Border Radius", "file": "variants/border-radius.html" },
+    { "id": "overlays", "label": "Overlays", "file": "variants/overlays.html" },
+    { "id": "video-play-button", "label": "Video Play Button", "file": "variants/video-play-button.html" },
+    { "id": "video-embed", "label": "Video Embed", "file": "variants/video-embed.html" },
+    { "id": "loading-states", "label": "Loading States", "file": "variants/loading-states.html" },
+    { "id": "grid-layouts", "label": "Grid Layouts", "file": "variants/grid-layouts.html" },
+    { "id": "map-embed", "label": "Map Embed", "file": "variants/map-embed.html" },
+    { "id": "card-with-image", "label": "Card with Image", "file": "variants/card-with-image.html" }
+  ]
 }

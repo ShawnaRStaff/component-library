@@ -2,5 +2,16 @@
   "name": "pagination",
   "label": "Pagination",
   "category": "molecules",
-  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic", "file": "variants/basic.html" },
+    { "id": "with-ellipsis", "label": "With Ellipsis", "file": "variants/with-ellipsis.html" },
+    { "id": "outlined", "label": "Outlined", "file": "variants/outlined.html" },
+    { "id": "rounded", "label": "Rounded", "file": "variants/rounded.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "simple", "label": "Simple", "file": "variants/simple.html" },
+    { "id": "icon-only", "label": "Icon Only", "file": "variants/icon-only.html" },
+    { "id": "mini", "label": "Mini (Mobile)", "file": "variants/mini.html" },
+    { "id": "disabled", "label": "Disabled State", "file": "variants/disabled.html" }
+  ]
 }

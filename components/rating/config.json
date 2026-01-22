@@ -2,5 +2,14 @@
   "name": "rating",
   "label": "Rating",
   "category": "molecules",
-  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "display", "label": "Display Rating", "file": "variants/display.html" },
+    { "id": "interactive", "label": "Interactive", "file": "variants/interactive.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "emoji", "label": "Emoji", "file": "variants/emoji.html" },
+    { "id": "thumbs", "label": "Thumbs Up/Down", "file": "variants/thumbs.html" },
+    { "id": "summary", "label": "Summary", "file": "variants/summary.html" },
+    { "id": "hearts", "label": "Hearts", "file": "variants/hearts.html" }
+  ]
 }

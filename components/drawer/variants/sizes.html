@@ -1,0 +1,53 @@
+<!-- Drawer Size Variants -->
+<div class="demo-showcase">
+  <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+    <button class="btn btn--secondary btn--sm" data-drawer-trigger="drawer-sm">Small (320px)</button>
+    <button class="btn btn--secondary btn--sm" data-drawer-trigger="drawer-lg">Large (560px)</button>
+    <button class="btn btn--secondary btn--sm" data-drawer-trigger="drawer-xl">XL (720px)</button>
+  </div>
+
+  <div class="drawer-overlay" data-drawer-overlay="drawer-sm"></div>
+  <div class="drawer drawer--sm" id="drawer-sm">
+    <div class="drawer__header">
+      <h3 class="drawer__title">Small Drawer</h3>
+      <button class="drawer__close" data-drawer-close aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="drawer__body">
+      <p>A compact 320px drawer for simple content.</p>
+    </div>
+  </div>
+
+  <div class="drawer-overlay" data-drawer-overlay="drawer-lg"></div>
+  <div class="drawer drawer--lg" id="drawer-lg">
+    <div class="drawer__header">
+      <h3 class="drawer__title">Large Drawer</h3>
+      <button class="drawer__close" data-drawer-close aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="drawer__body">
+      <p>A larger 560px drawer for forms or detailed content.</p>
+    </div>
+  </div>
+
+  <div class="drawer-overlay" data-drawer-overlay="drawer-xl"></div>
+  <div class="drawer drawer--xl" id="drawer-xl">
+    <div class="drawer__header">
+      <h3 class="drawer__title">Extra Large Drawer</h3>
+      <button class="drawer__close" data-drawer-close aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="drawer__body">
+      <p>An extra large 720px drawer for complex interfaces.</p>
+    </div>
+  </div>
+</div>

@@ -2,5 +2,12 @@
   "name": "sidebar",
   "label": "Sidebar",
   "category": "organisms",
-  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic Sidebar", "file": "variants/basic.html" },
+    { "id": "dark", "label": "Dark Sidebar", "file": "variants/dark.html" },
+    { "id": "compact", "label": "Compact (Icons Only)", "file": "variants/compact.html" },
+    { "id": "expandable", "label": "Expandable Sections", "file": "variants/expandable.html" },
+    { "id": "inset", "label": "Inset/Floating", "file": "variants/inset.html" }
+  ]
 }

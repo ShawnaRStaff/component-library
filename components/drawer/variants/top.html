@@ -1,0 +1,35 @@
+<!-- Top Drawer Variant -->
+<div class="demo-showcase">
+  <button class="btn btn--secondary" data-drawer-trigger="drawer-top">Open Top Drawer</button>
+
+  <div class="drawer-overlay" data-drawer-overlay="drawer-top"></div>
+  <div class="drawer drawer--top" id="drawer-top">
+    <div class="drawer__header">
+      <h3 class="drawer__title">Notifications</h3>
+      <button class="drawer__close" data-drawer-close aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="drawer__body">
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="display: flex; gap: 12px; padding: 12px; background: var(--color-primary-50); border-radius: 8px;">
+          <div style="width: 40px; height: 40px; background: var(--color-primary-500); border-radius: 50%; flex-shrink: 0;"></div>
+          <div>
+            <p style="margin: 0; font-weight: 500;">New message from Sarah</p>
+            <p style="margin: 4px 0 0; font-size: 14px; color: var(--text-secondary);">Hey, are you available for a quick call?</p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 12px; padding: 12px; border-radius: 8px;">
+          <div style="width: 40px; height: 40px; background: var(--color-neutral-200); border-radius: 50%; flex-shrink: 0;"></div>
+          <div>
+            <p style="margin: 0; font-weight: 500;">Project update</p>
+            <p style="margin: 4px 0 0; font-size: 14px; color: var(--text-secondary);">The design review is scheduled for tomorrow.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="drawer__handle"></div>
+  </div>
+</div>

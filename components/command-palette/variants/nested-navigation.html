@@ -1,0 +1,66 @@
+<!-- Command Palette - Nested Navigation Variant -->
+<div class="demo-showcase">
+  <button class="btn btn--outline" onclick="document.getElementById('demo-palette-5').classList.add('is-open')">
+    Open Nested Commands
+  </button>
+
+  <div class="command-palette-overlay" id="demo-palette-5" onclick="if(event.target === this) this.classList.remove('is-open')">
+    <div class="command-palette">
+      <div class="command-palette__header">
+        <div class="command-palette__path">
+          <span class="command-palette__path-item">Theme</span>
+          <span class="command-palette__path-separator">/</span>
+          <span class="command-palette__path-item">Color</span>
+        </div>
+        <input type="text" class="command-palette__input" placeholder="Select a color theme...">
+        <div class="command-palette__shortcut">
+          <kbd class="kbd kbd--sm">Backspace</kbd>
+        </div>
+      </div>
+
+      <div class="command-palette__results">
+        <div class="command-palette__group">
+          <a href="#" class="command-palette__item is-highlighted">
+            <span style="width: 16px; height: 16px; border-radius: 50%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></span>
+            <div class="command-palette__item-content">
+              <div class="command-palette__item-title">Default Dark</div>
+              <div class="command-palette__item-description">A dark theme with purple accents</div>
+            </div>
+          </a>
+          <a href="#" class="command-palette__item">
+            <span style="width: 16px; height: 16px; border-radius: 50%; background: linear-gradient(135deg, #0891b2 0%, #22d3ee 100%);"></span>
+            <div class="command-palette__item-content">
+              <div class="command-palette__item-title">Ocean</div>
+              <div class="command-palette__item-description">A calming blue theme</div>
+            </div>
+          </a>
+          <a href="#" class="command-palette__item">
+            <span style="width: 16px; height: 16px; border-radius: 50%; background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);"></span>
+            <div class="command-palette__item-content">
+              <div class="command-palette__item-title">Sunset</div>
+              <div class="command-palette__item-description">Warm orange and coral tones</div>
+            </div>
+          </a>
+          <a href="#" class="command-palette__item">
+            <span style="width: 16px; height: 16px; border-radius: 50%; background: linear-gradient(135deg, #10b981 0%, #34d399 100%);"></span>
+            <div class="command-palette__item-content">
+              <div class="command-palette__item-title">Forest</div>
+              <div class="command-palette__item-description">Natural green theme</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="command-palette__footer">
+        <div class="command-palette__footer-hints">
+          <div class="command-palette__footer-hint">
+            <kbd class="kbd kbd--sm">←</kbd> Back
+          </div>
+          <div class="command-palette__footer-hint">
+            <kbd class="kbd kbd--sm">↵</kbd> Apply
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

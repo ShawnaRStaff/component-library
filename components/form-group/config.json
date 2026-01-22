@@ -2,5 +2,20 @@
   "name": "form-group",
   "label": "Form Group",
   "category": "molecules",
-  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic", "file": "variants/basic.html" },
+    { "id": "required", "label": "Required Field", "file": "variants/required.html" },
+    { "id": "optional", "label": "Optional Field", "file": "variants/optional.html" },
+    { "id": "error", "label": "Error State", "file": "variants/error.html" },
+    { "id": "success", "label": "Success State", "file": "variants/success.html" },
+    { "id": "disabled", "label": "Disabled State", "file": "variants/disabled.html" },
+    { "id": "with-addons", "label": "With Addons", "file": "variants/with-addons.html" },
+    { "id": "character-counter", "label": "Character Counter", "file": "variants/character-counter.html" },
+    { "id": "inline", "label": "Inline Layout", "file": "variants/inline.html" },
+    { "id": "horizontal", "label": "Horizontal Layout", "file": "variants/horizontal.html" },
+    { "id": "form-row", "label": "Form Row", "file": "variants/form-row.html" },
+    { "id": "fieldset", "label": "Fieldset", "file": "variants/fieldset.html" },
+    { "id": "complete-form", "label": "Complete Form", "file": "variants/complete-form.html" }
+  ]
 }

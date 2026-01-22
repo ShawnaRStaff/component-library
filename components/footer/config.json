@@ -2,5 +2,12 @@
   "name": "footer",
   "label": "Footer",
   "category": "organisms",
-  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "full", "label": "Full Footer", "file": "variants/full.html" },
+    { "id": "dark", "label": "Dark Footer", "file": "variants/dark.html" },
+    { "id": "simple", "label": "Simple Footer", "file": "variants/simple.html" },
+    { "id": "centered", "label": "Centered Footer", "file": "variants/centered.html" },
+    { "id": "compact", "label": "Compact Footer", "file": "variants/compact.html" }
+  ]
 }

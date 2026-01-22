@@ -4,6 +4,15 @@
   "category": "atoms",
   "description": "Small status descriptors for UI elements",
   "variants": [
-    { "id": "default", "label": "Default", "file": "demo.html" }
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "solid", "label": "Solid", "file": "variants/solid.html" },
+    { "id": "outline", "label": "Outline", "file": "variants/outline.html" },
+    { "id": "pill", "label": "Pill", "file": "variants/pill.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "dot", "label": "Dot", "file": "variants/dot.html" },
+    { "id": "with-icons", "label": "With Icons", "file": "variants/with-icons.html" },
+    { "id": "removable", "label": "Removable", "file": "variants/removable.html" },
+    { "id": "status", "label": "Status", "file": "variants/status.html" },
+    { "id": "notification", "label": "Notification", "file": "variants/notification.html" }
   ]
 }

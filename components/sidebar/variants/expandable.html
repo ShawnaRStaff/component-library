@@ -1,0 +1,93 @@
+<!-- Sidebar with Expandable Sections Variant -->
+<div class="demo-showcase">
+  <div style="height: 450px; border: 1px solid var(--border-default); border-radius: var(--radius-lg); overflow: hidden; display: flex;">
+    <aside class="sidebar">
+      <div class="sidebar__header">
+        <a href="#" class="sidebar__logo">
+          <span class="logo__mark logo__mark--success" style="width: 32px; height: 32px; border-radius: var(--radius-md);">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </span>
+          <span class="sidebar__logo-text">Store Admin</span>
+        </a>
+      </div>
+
+      <nav class="sidebar__nav">
+        <ul class="sidebar__menu">
+          <li class="sidebar__menu-item">
+            <a href="#" class="sidebar__link is-active">
+              <svg class="sidebar__link-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+              </svg>
+              <span class="sidebar__link-text">Dashboard</span>
+            </a>
+          </li>
+          <li class="sidebar__menu-item is-expanded">
+            <a href="#" class="sidebar__link sidebar__link--expandable">
+              <svg class="sidebar__link-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"/>
+              </svg>
+              <span class="sidebar__link-text">Products</span>
+            </a>
+            <ul class="sidebar__submenu">
+              <li class="sidebar__menu-item">
+                <a href="#" class="sidebar__link">All Products</a>
+              </li>
+              <li class="sidebar__menu-item">
+                <a href="#" class="sidebar__link">Add Product</a>
+              </li>
+              <li class="sidebar__menu-item">
+                <a href="#" class="sidebar__link">Categories</a>
+              </li>
+              <li class="sidebar__menu-item">
+                <a href="#" class="sidebar__link">Inventory</a>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar__menu-item">
+            <a href="#" class="sidebar__link sidebar__link--expandable">
+              <svg class="sidebar__link-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"/>
+                <path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"/>
+              </svg>
+              <span class="sidebar__link-text">Orders</span>
+            </a>
+            <ul class="sidebar__submenu">
+              <li class="sidebar__menu-item">
+                <a href="#" class="sidebar__link">All Orders</a>
+              </li>
+              <li class="sidebar__menu-item">
+                <a href="#" class="sidebar__link">Pending</a>
+              </li>
+              <li class="sidebar__menu-item">
+                <a href="#" class="sidebar__link">Completed</a>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar__menu-item">
+            <a href="#" class="sidebar__link">
+              <svg class="sidebar__link-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+              </svg>
+              <span class="sidebar__link-text">Customers</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sidebar__footer">
+        <div class="sidebar__user">
+          <img src="https://i.pravatar.cc/36?img=8" alt="" class="sidebar__user-avatar">
+          <div class="sidebar__user-info">
+            <div class="sidebar__user-name">Admin User</div>
+            <div class="sidebar__user-email">admin@store.com</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div style="flex: 1; padding: 24px; background: var(--bg-secondary);">
+      <p style="color: var(--text-secondary);">Main content area - click Products to toggle submenu</p>
+    </div>
+  </div>
+</div>

@@ -2,5 +2,16 @@
   "name": "textarea",
   "label": "Textarea",
   "category": "atoms",
-  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic", "file": "variants/basic.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "with-counter", "label": "With Counter", "file": "variants/with-counter.html" },
+    { "id": "auto-grow", "label": "Auto-grow", "file": "variants/auto-grow.html" },
+    { "id": "states", "label": "States", "file": "variants/states.html" },
+    { "id": "resize-options", "label": "Resize Options", "file": "variants/resize-options.html" },
+    { "id": "code", "label": "Code", "file": "variants/code.html" },
+    { "id": "floating-label", "label": "Floating Label", "file": "variants/floating-label.html" },
+    { "id": "practical-examples", "label": "Practical Examples", "file": "variants/practical-examples.html" }
+  ]
 }

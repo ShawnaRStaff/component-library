@@ -4,6 +4,19 @@
   "category": "atoms",
   "description": "Label tags for categorization",
   "variants": [
-    { "id": "default", "label": "Default", "file": "demo.html" }
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic", "file": "variants/basic.html" },
+    { "id": "solid", "label": "Solid", "file": "variants/solid.html" },
+    { "id": "outline", "label": "Outline", "file": "variants/outline.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "with-icons", "label": "With Icons", "file": "variants/with-icons.html" },
+    { "id": "with-status-dot", "label": "With Status Dot", "file": "variants/with-status-dot.html" },
+    { "id": "with-avatar", "label": "With Avatar", "file": "variants/with-avatar.html" },
+    { "id": "removable", "label": "Removable", "file": "variants/removable.html" },
+    { "id": "clickable", "label": "Clickable", "file": "variants/clickable.html" },
+    { "id": "selected", "label": "Selected State", "file": "variants/selected.html" },
+    { "id": "square", "label": "Square Shape", "file": "variants/square.html" },
+    { "id": "tag-input", "label": "Tag Input", "file": "variants/tag-input.html" },
+    { "id": "real-world", "label": "Real-World Examples", "file": "variants/real-world.html" }
   ]
 }

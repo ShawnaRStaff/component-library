@@ -2,5 +2,13 @@
   "name": "command-palette",
   "label": "Command Palette",
   "category": "molecules",
-  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+  "description": "Keyboard-driven command interface for quick actions",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Command Palette", "file": "variants/basic.html" },
+    { "id": "search-results", "label": "With Search Results", "file": "variants/search-results.html" },
+    { "id": "empty-state", "label": "Empty State", "file": "variants/empty-state.html" },
+    { "id": "dark-mode", "label": "Dark Mode", "file": "variants/dark-mode.html" },
+    { "id": "nested-navigation", "label": "Nested Navigation", "file": "variants/nested-navigation.html" }
+  ]
 }

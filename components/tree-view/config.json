@@ -2,5 +2,12 @@
   "name": "tree-view",
   "label": "Tree View",
   "category": "molecules",
-  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "with-lines", "label": "With Lines", "file": "variants/with-lines.html" },
+    { "id": "with-checkboxes", "label": "With Checkboxes", "file": "variants/with-checkboxes.html" },
+    { "id": "with-actions", "label": "With Actions", "file": "variants/with-actions.html" },
+    { "id": "compact", "label": "Compact", "file": "variants/compact.html" },
+    { "id": "loading", "label": "Loading State", "file": "variants/loading.html" }
+  ]
 }

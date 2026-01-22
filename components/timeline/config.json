@@ -2,5 +2,15 @@
   "name": "timeline",
   "label": "Timeline",
   "category": "molecules",
-  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "status-colors", "label": "Status Colors", "file": "variants/status-colors.html" },
+    { "id": "with-icons", "label": "With Icons", "file": "variants/with-icons.html" },
+    { "id": "compact", "label": "Compact", "file": "variants/compact.html" },
+    { "id": "with-cards", "label": "With Cards", "file": "variants/with-cards.html" },
+    { "id": "activity-feed", "label": "Activity Feed", "file": "variants/activity-feed.html" },
+    { "id": "horizontal", "label": "Horizontal", "file": "variants/horizontal.html" },
+    { "id": "dashed", "label": "Dashed Line", "file": "variants/dashed.html" },
+    { "id": "gradient", "label": "Gradient Line", "file": "variants/gradient.html" }
+  ]
 }

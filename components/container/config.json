@@ -2,5 +2,16 @@
   "name": "container",
   "label": "Container",
   "category": "layout",
-  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "default-container", "label": "Default Container", "file": "variants/default-container.html" },
+    { "id": "container-sizes", "label": "Container Sizes", "file": "variants/container-sizes.html" },
+    { "id": "fluid-container", "label": "Fluid Container", "file": "variants/fluid-container.html" },
+    { "id": "section-containers", "label": "Section Containers", "file": "variants/section-containers.html" },
+    { "id": "section-sizes", "label": "Section Sizes", "file": "variants/section-sizes.html" },
+    { "id": "prose-container", "label": "Prose Container", "file": "variants/prose-container.html" },
+    { "id": "prose-sizes", "label": "Prose Sizes", "file": "variants/prose-sizes.html" },
+    { "id": "centered-container", "label": "Centered Container", "file": "variants/centered-container.html" },
+    { "id": "page-layout", "label": "Page Layout", "file": "variants/page-layout.html" }
+  ]
 }

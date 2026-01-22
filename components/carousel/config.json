@@ -2,5 +2,17 @@
   "name": "carousel",
   "label": "Carousel",
   "category": "molecules",
-  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+  "description": "Slideshow component for cycling through content",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic Carousel", "file": "variants/basic.html" },
+    { "id": "autoplay", "label": "With Autoplay & Progress", "file": "variants/autoplay.html" },
+    { "id": "multiple-slides", "label": "Multiple Slides View", "file": "variants/multiple-slides.html" },
+    { "id": "card-carousel", "label": "Card Carousel", "file": "variants/card-carousel.html" },
+    { "id": "thumbnails", "label": "With Thumbnails", "file": "variants/thumbnails.html" },
+    { "id": "fade", "label": "Fade Effect", "file": "variants/fade.html" },
+    { "id": "with-counter", "label": "With Counter", "file": "variants/with-counter.html" },
+    { "id": "pill-indicators", "label": "Pill Indicators", "file": "variants/pill-indicators.html" },
+    { "id": "testimonial", "label": "Testimonial Carousel", "file": "variants/testimonial.html" }
+  ]
 }

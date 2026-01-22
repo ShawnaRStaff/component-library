@@ -1,0 +1,89 @@
+<!-- Command Palette - Basic Variant -->
+<div class="demo-showcase">
+  <p style="margin-bottom: 16px; color: var(--text-secondary); font-size: var(--font-size-sm);">
+    Press <kbd class="kbd kbd--sm">Ctrl</kbd> + <kbd class="kbd kbd--sm">K</kbd> or click the button to open.
+  </p>
+  <button class="btn btn--primary" onclick="document.getElementById('demo-palette-1').classList.add('is-open')">
+    Open Command Palette
+  </button>
+
+  <div class="command-palette-overlay" id="demo-palette-1" onclick="if(event.target === this) this.classList.remove('is-open')">
+    <div class="command-palette">
+      <div class="command-palette__header">
+        <svg class="command-palette__icon" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"/>
+        </svg>
+        <input type="text" class="command-palette__input" placeholder="Search commands...">
+        <div class="command-palette__shortcut">
+          <kbd class="kbd kbd--sm">Esc</kbd>
+        </div>
+      </div>
+
+      <div class="command-palette__results">
+        <div class="command-palette__group">
+          <div class="command-palette__group-title">Recent</div>
+          <a href="#" class="command-palette__item command-palette__item--recent is-highlighted">
+            <svg class="command-palette__item-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"/>
+            </svg>
+            <div class="command-palette__item-content">
+              <div class="command-palette__item-title">Open Settings</div>
+            </div>
+            <div class="command-palette__item-shortcut">
+              <kbd class="kbd kbd--sm">Ctrl</kbd>
+              <kbd class="kbd kbd--sm">,</kbd>
+            </div>
+          </a>
+          <a href="#" class="command-palette__item command-palette__item--recent">
+            <svg class="command-palette__item-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"/>
+            </svg>
+            <div class="command-palette__item-content">
+              <div class="command-palette__item-title">Create New File</div>
+            </div>
+            <div class="command-palette__item-shortcut">
+              <kbd class="kbd kbd--sm">Ctrl</kbd>
+              <kbd class="kbd kbd--sm">N</kbd>
+            </div>
+          </a>
+        </div>
+
+        <div class="command-palette__group">
+          <div class="command-palette__group-title">Actions</div>
+          <a href="#" class="command-palette__item">
+            <svg class="command-palette__item-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"/>
+            </svg>
+            <div class="command-palette__item-content">
+              <div class="command-palette__item-title">New File</div>
+              <div class="command-palette__item-description">Create a new file in the current folder</div>
+            </div>
+          </a>
+          <a href="#" class="command-palette__item">
+            <svg class="command-palette__item-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/>
+            </svg>
+            <div class="command-palette__item-content">
+              <div class="command-palette__item-title">New Folder</div>
+              <div class="command-palette__item-description">Create a new folder</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="command-palette__footer">
+        <div class="command-palette__footer-hints">
+          <div class="command-palette__footer-hint">
+            <kbd class="kbd kbd--sm">↑↓</kbd> Navigate
+          </div>
+          <div class="command-palette__footer-hint">
+            <kbd class="kbd kbd--sm">↵</kbd> Select
+          </div>
+          <div class="command-palette__footer-hint">
+            <kbd class="kbd kbd--sm">Esc</kbd> Close
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

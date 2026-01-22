@@ -2,5 +2,13 @@
   "name": "steps",
   "label": "Steps",
   "category": "molecules",
-  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "small-size", "label": "Small Size", "file": "variants/small-size.html" },
+    { "id": "dot-style", "label": "Dot Style", "file": "variants/dot-style.html" },
+    { "id": "vertical", "label": "Vertical", "file": "variants/vertical.html" },
+    { "id": "progress-bar", "label": "Progress Bar", "file": "variants/progress-bar.html" },
+    { "id": "clickable", "label": "Clickable", "file": "variants/clickable.html" },
+    { "id": "checkout-flow", "label": "Checkout Flow", "file": "variants/checkout-flow.html" }
+  ]
 }

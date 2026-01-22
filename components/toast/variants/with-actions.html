@@ -1,0 +1,36 @@
+<div class="demo-showcase">
+  <div style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
+    <div class="toast" style="position: relative; animation: none;">
+      <svg class="toast__icon" viewBox="0 0 20 20" fill="currentColor" style="color: var(--color-primary-500);">
+        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+      </svg>
+      <div class="toast__content">
+        <p class="toast__title">New Message</p>
+        <p class="toast__message">You have a new message from Sarah.</p>
+        <div class="toast__actions">
+          <button class="toast__action">View</button>
+          <button class="toast__action">Mark as Read</button>
+        </div>
+      </div>
+      <button class="toast__close" aria-label="Close">
+        <svg viewBox="0 0 20 20" fill="currentColor">
+          <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="toast toast--warning" style="position: relative; animation: none;">
+      <svg class="toast__icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"/>
+      </svg>
+      <div class="toast__content">
+        <p class="toast__message">Unsaved changes will be lost.</p>
+        <div class="toast__actions">
+          <button class="toast__action">Save Now</button>
+          <button class="toast__action" style="color: var(--text-secondary);">Discard</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -2,5 +2,20 @@
   "name": "code-block",
   "label": "Code Block",
   "category": "molecules",
-  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+  "description": "Formatted code display with syntax highlighting options",
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "inline", "label": "Inline Code", "file": "variants/inline.html" },
+    { "id": "basic", "label": "Basic Code Block", "file": "variants/basic.html" },
+    { "id": "with-header", "label": "With Header", "file": "variants/with-header.html" },
+    { "id": "line-numbers", "label": "With Line Numbers", "file": "variants/line-numbers.html" },
+    { "id": "syntax-highlighting", "label": "Syntax Highlighting", "file": "variants/syntax-highlighting.html" },
+    { "id": "line-highlighting", "label": "Line Highlighting", "file": "variants/line-highlighting.html" },
+    { "id": "diff", "label": "Diff View", "file": "variants/diff.html" },
+    { "id": "terminal", "label": "Terminal Style", "file": "variants/terminal.html" },
+    { "id": "light-theme", "label": "Light Theme", "file": "variants/light-theme.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "multiple-languages", "label": "Multiple Languages", "file": "variants/multiple-languages.html" },
+    { "id": "with-copy-button", "label": "With Copy Button", "file": "variants/with-copy-button.html" }
+  ]
 }

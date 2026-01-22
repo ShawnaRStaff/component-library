@@ -305,6 +305,8 @@ class ComponentPreview {
     const variant = config.variants?.find(v => v.id === variantId) || config.variants?.[0];
     if (!variant) return;
 
+    console.log('Loading variant:', componentName, variantId, 'File:', variant.file);
+
     // Update state
     this.currentComponent = componentName;
     this.currentVariant = variantId;

@@ -1,0 +1,47 @@
+<!-- Select: States -->
+<div class="demo-showcase">
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px;">
+    <div class="form-group">
+      <label class="form-group__label">Default</label>
+      <div class="dropdown dropdown--block">
+        <button class="dropdown__trigger" aria-haspopup="listbox">
+          <span class="select-dropdown__value select-dropdown__placeholder">Select option</span>
+          <svg class="dropdown__trigger-icon" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M4 6l4 4 4-4"/>
+          </svg>
+        </button>
+        <div class="dropdown__menu" role="listbox">
+          <button class="dropdown__item" role="option">Option 1</button>
+          <button class="dropdown__item" role="option">Option 2</button>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-group__label">Disabled</label>
+      <div class="dropdown dropdown--block dropdown--disabled">
+        <button class="dropdown__trigger" aria-haspopup="listbox" disabled>
+          <span class="select-dropdown__value">Disabled</span>
+          <svg class="dropdown__trigger-icon" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M4 6l4 4 4-4"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="form-group form-group--error">
+      <label class="form-group__label">Error</label>
+      <div class="dropdown dropdown--block dropdown--error">
+        <button class="dropdown__trigger dropdown__trigger--error" aria-haspopup="listbox">
+          <span class="select-dropdown__value select-dropdown__placeholder">Select option</span>
+          <svg class="dropdown__trigger-icon" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M4 6l4 4 4-4"/>
+          </svg>
+        </button>
+        <div class="dropdown__menu" role="listbox">
+          <button class="dropdown__item" role="option">Option 1</button>
+          <button class="dropdown__item" role="option">Option 2</button>
+        </div>
+      </div>
+      <span class="form-group__error">Please select an option</span>
+    </div>
+  </div>
+</div>

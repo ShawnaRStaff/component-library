@@ -2,5 +2,17 @@
   "name": "skeleton",
   "label": "Skeleton",
   "category": "molecules",
-  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic-shapes", "label": "Basic Shapes", "file": "variants/basic-shapes.html" },
+    { "id": "avatar-sizes", "label": "Avatar Sizes", "file": "variants/avatar-sizes.html" },
+    { "id": "common-elements", "label": "Common Elements", "file": "variants/common-elements.html" },
+    { "id": "animations", "label": "Animations", "file": "variants/animations.html" },
+    { "id": "card", "label": "Card", "file": "variants/card.html" },
+    { "id": "list", "label": "List", "file": "variants/list.html" },
+    { "id": "table", "label": "Table", "file": "variants/table.html" },
+    { "id": "article", "label": "Article", "file": "variants/article.html" },
+    { "id": "dashboard-stats", "label": "Dashboard Stats", "file": "variants/dashboard-stats.html" },
+    { "id": "profile", "label": "Profile", "file": "variants/profile.html" }
+  ]
 }

@@ -2,5 +2,19 @@
   "name": "kbd",
   "label": "Kbd",
   "category": "atoms",
-  "variants": [{ "id": "default", "label": "Default", "file": "demo.html" }]
+  "variants": [
+    { "id": "default", "label": "Default", "file": "demo.html" },
+    { "id": "basic", "label": "Basic Keys", "file": "variants/basic.html" },
+    { "id": "sizes", "label": "Sizes", "file": "variants/sizes.html" },
+    { "id": "variants", "label": "Variants", "file": "variants/variants.html" },
+    { "id": "combinations", "label": "Key Combinations", "file": "variants/combinations.html" },
+    { "id": "mac-style", "label": "Mac Style", "file": "variants/mac-style.html" },
+    { "id": "special-keys", "label": "Special Keys", "file": "variants/special-keys.html" },
+    { "id": "function-keys", "label": "Function Keys", "file": "variants/function-keys.html" },
+    { "id": "interactive", "label": "Interactive", "file": "variants/interactive.html" },
+    { "id": "gaming", "label": "Gaming Style", "file": "variants/gaming.html" },
+    { "id": "shortcut-hints", "label": "Shortcut Hints", "file": "variants/shortcut-hints.html" },
+    { "id": "mini-keyboard", "label": "Mini Keyboard", "file": "variants/mini-keyboard.html" },
+    { "id": "shortcuts-reference", "label": "Shortcuts Reference", "file": "variants/shortcuts-reference.html" }
+  ]
 }
